@@ -1,0 +1,63 @@
+% !TEX root = ../rasd.tex
+
+\begin{abstract}
+The main task of this document is to give a specification of the requirements that our system has to fulfil adopting the IEEE-STD-830-1993 standard for RASD documentation . It also introduces the functional and non-functional requirements via UML diagrams and a high level specification of the system. In the last part of this document it presents the formal model of the specification using Alloy analysis. 
+\\
+\\
+The information in this document are intended for the stakeholders and the developers of the project. For the stakeholders this document presents a description useful to understand the project development, meanwhile for the developers it's an useful way to show the matching between the stakeholders' requests and the developed solution. 
+\end{abstract} 
+
+\chapter{Introduction}
+
+% Parte da copiare all'inizio di ogni capitolo
+\setmyfancystyle
+% ----------------
+
+\label{intro}
+This chapter will show the main purposes of this project, a general description of the system, the stakeholders involved and the glossary, to interpret correctly each term that will be used in this document.
+
+\section{Purpose}
+The system is a software called myTaxiService. It's composed by both a website and a mobile application and it aims to give the opportunities to join the city taxi service easily and fastly.
+\\
+\\
+Besides the systems manages the taxists' worktimes and the assignment of each ride to the corresponding customer.
+
+\section{Scope}
+Users, once registered, are able to ask for an immediate ride or to book one of them.\\
+\\
+The system provides the user with a complete map of the city and its suburbs within the taxi service is available. The current position of the user is obtained by localization services of the user's smartphone if it's possible, otherwise the user notifies his position directly on the map with a marker or by a searching box. The destination is also chosen either graphically or by a research. The user can view the suggested path and then he must confirm the request.\\
+\\
+When a user asks for a ride, the system checks the availability of a taxist near the current position, by splitting the city in several areas and using a FIFO (First In First Out) policy to manage the assignment of the ride's driver. The selected driver can accept or decline the ride. In the former case the system informs the user about waiting time, estimated travelling time, prices and cab car-code. \\
+\\
+The system gives also the possibility to book a ride with at least two hours in advance. As the user does when he asks for a ride, he selects the desired starting venue and the destination. Afterwards, the system gives a calendar where the customer can choose the date (at most 30 days in advance) and the starting hour. Ten minutes before the meeting time the system starts all the operations described before in order to assign a taxi-driver.\\
+\\
+A reservation from the app or the website can be undone until the system confirmation of the availability of a taxi, while a booking can be cancelled at most fifteen minutes before the meeting hour.\\
+\\
+After those deadlines the ride is considered bought by the customers and an eventual absence on the established venue forbids other possibilities to book or to take a ride.
+
+
+\section{Stakeholders}
+%If the myTaxiService project is considered as an academic exercise the stakeholder is the professor who assigned us the project. In this case the stakeholder expects to receive a working that satisfies all the requests and provides the documentation about requirements analysis, design, testing and, maybe, a final presentation. The purpose of this stakeholder is to evaluate the abilities of students in learning, comprehension and applying the studied concepts.
+The stakeholders are two: the city's government where the service will be given to the populations and the software house to which the city's government assigns the project. Their requests are the same with reference to the documentations about the project and its development, while the implementation (in this project will not be done) must be complete and easy to use, due to maximize the number of people who will use it.\\
+Hence, the purpose of the city is the improvement of the current taxi service and the possibility to have an alternative easy way to access the service. At the same time, the purpose of the company is to realize the application respecting all the characteristics, in order to receive the established remuneration by the city.
+
+\section{Glossary}
+In this paragraph are defined all acronyms and the meaning that the developers associate to the common words used in the context of the project:
+\begin{itemize}
+	\item \textbf{WS}: acronym for the websites of the system.
+	\item \textbf{MA}: acronym for the mobile application.
+	\item \textbf{Visitor}: a person who accesses to the WS or opens the MA, but it isn't enrolled or logged in the system (usually it is his first visit).
+	\item \textbf{User}: a person who is logged in the system.
+	\item \textbf{Passenger}: a person who is using the service in the current moment.
+	\item \textbf{GPS}: a system ables to calculate the correct position of each driver.
+	\item \textbf{Map}: an informatics representation of the taxi company's city, that can be used either by the user and by the system (also with GPS). 
+	\item \textbf{Venue (leaving or destination venue)}: a valid address that identifies a precise point on the map (and in the real city).
+	\item \textbf{Zero-time}: a neologism (due to precision it is a composed word) that indicates an action that the system tries to provide immediately.
+	\item \textbf{Future}: a temporal period that in our project is between 1 hour and 30 days from the current day.
+	\item \textbf{Delay-time}: the maximum time of waiting ensured by the system to each user. It is calculated from the ride's established time.
+	\item \textbf{Driver}: an employer of the taxi's company who drives the reserved taxi.
+	\item \textbf{Ride}: word referred to any single service given by the taxi's company. The service is a single-passenger travel with a driver between two precise venues.
+	\item \textbf{Reservation or booking}: the action that allows an user to take a ride in zero-time or in the future.
+	\item \textbf{Alert}: a system internal message to inform about, ask (a driver) and organize a single ride.
+\end{itemize}
+

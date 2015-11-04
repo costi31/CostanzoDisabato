@@ -1,0 +1,25 @@
+\select@language {english}
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram for MeteoCal\relax }}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Class diagram for MeteoCal\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Sequence diagram for the registration\relax }}{13}{figure.caption.10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Sequence diagram for the login\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence diagram for the profile management\relax }}{15}{figure.caption.12}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sequence diagram for the event creation\relax }}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Sequence diagram for the event modification\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sequence diagram for the invitation sending\relax }}{20}{figure.caption.15}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sequence diagram for the invitation acceptance\relax }}{21}{figure.caption.16}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Sequence diagram for the alert management\relax }}{21}{figure.caption.17}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Sequence diagram for the WFI control\relax }}{23}{figure.caption.18}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces The behaviour of the Invitation class presented via UML state diagram\relax }}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces The behaviour of the Event class presented via UML state diagram\relax }}{25}{figure.caption.20}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

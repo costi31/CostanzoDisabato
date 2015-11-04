@@ -1,0 +1,46 @@
+Cominciamo con le formalità, la licenza, potete fare di questo template quello che preferite. :D
+
+Ora invece proseguiamo con le cose serie, confido che chiunque abbia intenzione di usare questo template (non si tratta di un template a tutti gli effetti, è solo uno "scheletro") per scrivere la sua tesi abbia una vaga idea di come si utilizza LaTeX... se non l'avete vi consiglio di leggere "The not so short LaTeX introduction". ;)
+
+Ciò detto, cominciamo con un po' di spiegazioni su come è organizzato questo template:
+* frontespizio: nella directory ./title trovate il frontespizio, si tratta di un file LaTeX completamente separato di cui dovete fare un typeset separato. In questo file dovete inserire il titolo della vostra tesi (in maiuscolo), il nome e cognome (il cognome in maiuscolo) del vostro relatore e correlatore (sempre che abbiate un correlatore, nel caso non lo aveste commentate o eliminate la riga della tabella a lui riferita), inserite anche il vostro nome e cognome (il cognome sempre in maiuscolo) e la vostra matricola. Non dimenticatevi dell'anno accademico, ultimo campo in basso. Una volta che avete ottenuto il PDF del frontespizio questo verrà automaticamente incluso da thesis.tex nel PDF finale. ;)
+* dedica: nella directory ./frontmatter trovate il file dedication.tex, è la dedica. Se volete metterla scrivetela in quel file (mettetela al posto del testo che ho inserito nel template, non altrove altrimenti non sarà correttamente posizionata). Se non volete la dedica (che è breve, non i ringraziamenti) commentate l'inclusione del file dedication.tex nel file thesis.tex che si trova in ./ .
+* ringraziamenti: sempre nella directory ./frontmatter trovate il file acknowledgements.tex, siete liberi di ringraziare chiunque volete. Ricordatevi che di solito finiscono con la sigla, nella posizione prevista.
+* sommario: si trova nella directory ./frontmatter, il file si chiama summary-it.tex.
+* abbreviazioni: in fine, nel frontmatter troverete l'elenco delle abbreviazioni. Con le più quotate distribuzioni di LaTeX trovate il pacchetto acronym, vi consiglio di leggere la documentazione a riguardo: http://mirror.ctan.org/macros/latex/contrib/acronym/acronym.pdf . Giusto per fare un esempio ho inserito un'abbreviazione (FPGA), per usarla al singolare scrivete \ac{FPGA}, per il plurale... beh, questo pacchetto non è propriamente localizzato. :D Se è la prima volta che in capitolo usate l'abbreviazione di cui sopra questa verrà automaticamente espansa. ;)
+* impostazioni generali: le trovate nel file preamble.tex in ./ . Inserite le info mancanti per il pacchetto hyperref in modo da avere i riferimenti a voi ed al titolo della tesi nei metadati del PDF. Se volete cambiare il carattere e tornare da "Palatino" a quello di default di LaTeX potete commentare le seguenti righe:
+---
+\renewcommand{\rmdefault}{ppl}
+\usepackage[scaled]{helvet}
+\usepackage{courier}
+\usepackage{eulervm}
+\normalfont
+---
+ovviamente potete modificare lo stile dei listati a vostro piacimento.
+
+Quasi dimenticavo... modificate il parametro del pacchetto inputenc per riflettere quello del vostro sistema, latin1 è supportato bene da tutti però dovrete scrivere le accentate alla vecchia maniera, non con i caratteri predisposti sulla vostra tastiera. Per chi utilizza Mac OS X consiglio di inserire applemac invece di latin1, per chi usa GNU/Linux può inserire utf8 se non erro. Chi usa Windows... non lo so. :)
+
+Che altro dire, il file della biblio è thesis.bib, confido che siate in grado di usarlo come si deve. Magari non scrivetelo a mano, usate un editor decente come BibDesk per Mac o cose simili. ;)
+
+Qualche suggerimento, quando inserite un'immagine usate:
+\begin{figure}
+\begin{center}
+\includegraphics[width=x.xx\textwidth]{figures/<file>}
+\caption{<caption>}
+\label{figure:<label>}
+\end{center}
+\end{figure}
+e vi consiglio di creare delle immagini in formato PDF. La qualità è più alta nel momento in cui create il PDF finale.
+ATTENZIONE: mettete tutte le immagini in una sola cartella (per e.g., ./figures). :O
+
+Per inserire il codice io uso:
+\begin{lstlisting}[emph={eventuali elementi (come le variabili) che volete enfatizzare, gli elementi dell'elenco sono separati da virgole},language=C,caption={inserite la caption},label={code:inserite la label}]
+...
+\end{lstlisting}
+piccolo svantaggio, dovete formattare voi il codice, niente auto-indentazione (usate i TAB!!!)
+
+Per chi deve scrivere in inglese e non in italiano... dovrà cambiare la lingua nel preambolo, cambiare il titolo per i listati e la lista dei listati, il titolo della lista delle abbreviaziani e dovrò ricordarsi di inserire sia il sommario in italiano che quello in inglese. Aggiungete anche "english" nelle opzioni del pacchetto babel in tal caso. ;)
+
+Buon lavoro,
+Filippo
+filippo.sironi@gmail.com
