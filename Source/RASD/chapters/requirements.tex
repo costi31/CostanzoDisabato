@@ -84,7 +84,7 @@ The \figurename~\ref{cDia} describes a first proposal of entities and their rela
 \\
 
 \begin{figure}[h!]
-	\centerline{\includegraphics[width=\textwidth]{./figures/ClassDiagram.png}}
+	\centerline{\includegraphics[width=\paperwidth]{./figures/ClassDiagram.png}}
 	\caption{Class diagram for myTaxyService}
 	\label{cDia}
 \end{figure}
@@ -161,14 +161,10 @@ The \figurename~\ref{cDia} describes a first proposal of entities and their rela
 The modifications are invalid: the system rejects them.\\ \hline
 \end{tabular}
 
-\clearpage
-
 \begin{figure}
 	\centerline{\includegraphics[width=\paperwidth]{./figures/SD_PersonalInformationManagement.jpg}}
 	\caption{Sequence diagram for the personal information management}
 \end{figure}
-
-\clearpage
 
 \subsection{Zerotime reservation (MA version)}
 \begin{tabular}{lp{8cm}}
@@ -195,7 +191,7 @@ The modifications are invalid: the system rejects them.\\ \hline
 The driver rejects the ride: the system puts him at the end of the queue and contacts the following one. The queue is empty: the system contacts the near areas (special mode).\\
 &
 The user aborts the ride before system confirmations: the system aborts all operations executed to assign the ride.\\ \hline
-\end{tabular}
+\end{tabular}\\
 
 \subsection{Zerotime reservation (WS version)}
 \begin{tabular}{lp{8cm}}
@@ -228,12 +224,10 @@ In the following page there is a sequence diagram for both zerotime \gls{reserva
 
 \clearpage
 
-\begin{figure}
+\begin{figure}[h!]
 	\centerline{\includegraphics[width=\paperwidth]{./figures/SD_ZerotimeReservation.png}}
 	\caption{Sequence diagram for the zero time \gls{reservation}}
 \end{figure}
-
-\clearpage
 
 \subsection{Future reservation}
 \begin{tabular}{lp{8cm}}
@@ -253,8 +247,8 @@ In the following page there is a sequence diagram for both zerotime \gls{reserva
 				& The starting or the destination address is invalid. The departure time is not between 1 hour and 30 days from the current time. In both cases the system rejects the ride.  \\ \hline
 \end{tabular}\\
 
-\begin{figure}
-	\centerline{\includegraphics[width=\paperwidth]{./figures/SD_FutureReservation.jpg}}
+\begin{figure}[h!]
+	\centerline{\includegraphics[scale=0.7]{./figures/SD_FutureReservation.jpg}}
 	\caption{Sequence diagram for the \gls{future} \gls{reservation}}
 \end{figure}
 
@@ -302,8 +296,8 @@ In the following page there is a sequence diagram for both zerotime \gls{reserva
 	 Exceptions & The driver inserts less hour than the minimum requested in a month: the system accepts the new shifts and notifies to driver that he has to insert more shifts. The driver insert illegal shifts (opposed to the laws or opposed to cab company rules or overlapped): the system refused them and notifies the driver.  \\ \hline
 \end{tabular}
 
-\begin{figure}
-	\centerline{\includegraphics[width=\paperwidth]{./figures/SD_WorkShiftsManagement.jpg}}
+\begin{figure}[h!]
+	\centerline{\includegraphics[scale=0.76]{./figures/SD_WorkShiftsManagement.jpg}}
 	\caption{Sequence diagram for the work shifts management}
 \end{figure}
 

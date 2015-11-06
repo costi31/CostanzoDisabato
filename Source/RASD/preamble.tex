@@ -31,39 +31,34 @@
 	\lfoot{} \cfoot{}
 	\rfoot{\thepage}
 }
-
-%\usepackage{alloy}
+%---
 
 \usepackage[pdftex]{hyperref}
 \hypersetup{
-breaklinks=true,
-pdfborder={0 0 0},
-pdfstartview={FitH},
-pdfpagemode={UseOutlines},
-pdftitle={},
-pdfauthor={},
-pdfsubject={},
-pdfkeywords={}
+	breaklinks=true,
+	pdfborder={0 0 0},
+	pdfstartview={FitH},
+	pdfpagemode={UseOutlines},
+	pdftitle={},
+	pdfauthor={},
+	pdfsubject={},
+	pdfkeywords={}
 }
 
 \usepackage{listings}
 \lstset{
-tabsize=8,
-numbers=left,
-breaklines,
-breakatwhitespace,
-basicstyle=\scriptsize\ttfamily,
-keywordstyle=\bfseries,
-emphstyle=\ttfamily\itshape\underbar,
-showstringspaces=false,
-frame=single,
-captionpos=b,
-aboveskip=1em
+	tabsize=8,
+	numbers=left,
+	breaklines,
+	breakatwhitespace,
+	basicstyle=\scriptsize\ttfamily,
+	keywordstyle=\bfseries,
+	emphstyle=\ttfamily\itshape\underbar,
+	showstringspaces=false,
+	frame=single,
+	captionpos=b,
+	aboveskip=1em
 }
-
-
-
-
 
 
 
@@ -80,9 +75,16 @@ aboveskip=1em
 \frenchspacing
 \linespread{1.25}
 
+% Alloy
+\usepackage{xcolor}
+\usepackage{alloy-style}
+%---
+
 
 \newcommand{\eg}{\textit{e.g.,}~}
 \newcommand{\ie}{\textit{i.e.,}~}
+
+
 
 % Glossary package, with the options to show it as a numbered section and to show it in the table of contents
 

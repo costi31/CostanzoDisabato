@@ -150,14 +150,14 @@ fact noSelfRide {
 	no r : Ride | r.startingPosition = r.destination
 }
 
--- if the cabman is driving or travelling he isn't in any queue
+-- if the cabman is driving or traveling he isn't in any queue
 fact waitOrWork {
-	all d : Driver | ( driverBusy [d] = True || driverTravelling[d] = True ) => no a : Area | d.currentArea = a
+	all d : Driver | ( driverBusy [d] = True || driverTraveling[d] = True ) implies no a : Area | d.currentArea = a
 }
 
--- if the cabman is not driving or travelling he is in a queue
+-- if the cabman is not driving or traveling he is in a queue
 fact waitOrWork2 {
-	all d : Driver | driverBusy[d] = False && driverTravelling[d] = False => one a : Area | d.currentArea = a
+	all d : Driver | driverBusy[d] = False && driverTraveling[d] = False implies one a : Area | d.currentArea = a
 }
 
 -- The driver is into the correct queue
@@ -169,17 +169,17 @@ fact driverInCorrectArea {
 
 -- Return true if a ride is in progress
 fun nowRide [r : Ride] : one Boolean {
-	( CurrentTime.current >= r.departure && CurrentTime.current =< r.arrival ) => {True} else {False}
+	( CurrentTime.current >= r.departure && CurrentTime.current =< r.arrival ) implies {True} else {False}
 }
 
 -- Return true if a driver is working
 fun driverBusy [d : Driver] : one Boolean {
-	( some r : Ride | nowRide [r] = True && r.driver = d ) => {True} else {False}
+	( some r : Ride | nowRide [r] = True && r.driver = d ) implies {True} else {False}
 }
 
--- Return true if a driver is travelling as customer
-fun driverTravelling [d : Driver] : one Boolean {
-	( some r : Ride | nowRide [r] = True && r.customer = d ) => {True} else {False}
+-- Return true if a driver is traveling as customer
+fun driverTraveling [d : Driver] : one Boolean {
+	( some r : Ride | nowRide [r] = True && r.customer = d ) implies {True} else {False}
 }
 
 /*** ASSERTIONS AND PREDICATES ***/
@@ -200,7 +200,7 @@ check multipleReservation for 5
 
 -- A driver who is now working (driving) is not customer of any other ride
 assert noUbiquity {
-	all d : Driver | ( driverBusy [d] = True ) => no r : Ride | 
+	all d : Driver | ( driverBusy [d] = True ) implies no r : Ride | 
 	( nowRide[r] = True && r.customer = d )
 }
 

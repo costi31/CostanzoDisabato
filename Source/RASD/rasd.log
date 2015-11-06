@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.30)  6 NOV 2015 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.30)  6 NOV 2015 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -262,7 +262,10 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-))
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
@@ -503,7 +506,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip63
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 47.
+Package hyperref Info: Option `breaklinks' set `true' on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count129
@@ -536,11 +539,11 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 78.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
+) (./alloy-style.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2014/09/01 v4.11 (NLCT)
 
@@ -701,9 +704,9 @@ Package: glossary-tree 2014/08/27 v4.10 (NLCT)
 \glo@main@file=\write6
 \openout6 = `rasd.glo'.
 
-Package glossaries Info: Writing glossary file rasd.glo on input line 189.
+Package glossaries Info: Writing glossary file rasd.glo on input line 191.
 ) (./rasd.aux (./chapters/introduction.aux) (./chapters/actors.aux)
-(./chapters/requirements.aux) (./chapters/tools.aux))
+(./chapters/requirements.aux) (./chapters/alloy.aux) (./chapters/tools.aux))
 \openout1 = `rasd.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -798,7 +801,7 @@ LaTeX Info: Redefining \nameref on input line 8.
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/dict/glossaries-dictionary-
 English.dict
 Dictionary: glossaries-dictionary, Language: English 
-) <title/title.pdf, id=172, 597.50829pt x 845.0471pt>
+) <title/title.pdf, id=192, 597.50829pt x 845.0471pt>
 File: title/title.pdf Graphic file (type pdf)
 
 <use title/title.pdf>
@@ -809,7 +812,7 @@ File: title/title.pdf Graphic file (type pdf)
 Package pdftex.def Info: title/title.pdf used on input line 15.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<title/title.pdf, id=175, page=1, 597.50829pt x 845.0471pt>
+<title/title.pdf, id=195, page=1, 597.50829pt x 845.0471pt>
 File: title/title.pdf Graphic file (type pdf)
 
 <use title/title.pdf, page 1>
@@ -998,7 +1001,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
  []
 
-<./figures/UseCaseDiagram.jpg, id=492, 1003.75pt x 823.075pt>
+<./figures/UseCaseDiagram.jpg, id=517, 1003.75pt x 823.075pt>
 File: ./figures/UseCaseDiagram.jpg Graphic file (type jpg)
 
 <use ./figures/UseCaseDiagram.jpg>
@@ -1014,12 +1017,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
-<./figures/ClassDiagram.png, id=503, 832.10875pt x 661.47125pt>
+<./figures/ClassDiagram.png, id=529, 832.10875pt x 661.47125pt>
 File: ./figures/ClassDiagram.png Graphic file (type png)
 
 <use ./figures/ClassDiagram.png>
 Package pdftex.def Info: ./figures/ClassDiagram.png used on input line 87.
-(pdftex.def)             Requested size: 390.0pt x 310.02351pt.
+(pdftex.def)             Requested size: 597.50787pt x 474.99728pt.
  [19
 
  <./figures/ClassDiagram.png>]
@@ -1034,7 +1037,7 @@ Underfull \hbox (badness 3492) in paragraph at lines 101--102
 
 [20
 
-] <./figures/SD_Registration.jpg, id=522, 711.65875pt x 679.53876pt>
+] <./figures/SD_Registration.jpg, id=547, 711.65875pt x 679.53876pt>
 File: ./figures/SD_Registration.jpg Graphic file (type jpg)
 
 <use ./figures/SD_Registration.jpg>
@@ -1048,7 +1051,7 @@ LaTeX Warning: Float too large for page by 3.55981pt on input line 117.
 
 
 ]
-<./figures/SD_Login.jpg, id=539, 711.65875pt x 771.88374pt>
+<./figures/SD_Login.jpg, id=564, 711.65875pt x 771.88374pt>
 File: ./figures/SD_Login.jpg Graphic file (type jpg)
 
 <use ./figures/SD_Login.jpg>
@@ -1068,89 +1071,94 @@ Underfull \hbox (badness 1052) in paragraph at lines 156--157
 []\T1/ppl/m/n/12 Only if the user has mod-i-fied the
  []
 
-[24
 
-
-]
-<./figures/SD_PersonalInformationManagement.jpg, id=556, 791.95876pt x 711.6587
+<./figures/SD_PersonalInformationManagement.jpg, id=572, 791.95876pt x 711.6587
 5pt>
 File: ./figures/SD_PersonalInformationManagement.jpg Graphic file (type jpg)
  <use ./figures/SD_PersonalInformationManagement.jpg>
 Package pdftex.def Info: ./figures/SD_PersonalInformationManagement.jpg used on
- input line 167.
+ input line 165.
 (pdftex.def)             Requested size: 597.50787pt x 536.9353pt.
- [25 <./figures/SD_PersonalInformationManagement.jpg>]
-Underfull \hbox (badness 1389) in paragraph at lines 181--182
+
+Underfull \hbox (badness 1389) in paragraph at lines 177--178
 []\T1/ppl/m/n/12 The user con-firms his po-si-tion by
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 181--182
+Underfull \hbox (badness 1137) in paragraph at lines 177--178
 \T1/ppl/m/n/12 click-ing on the shown popup and
  []
 
-[26
+[24
 
 
-]
-Underfull \hbox (badness 2538) in paragraph at lines 209--210
+] [25 <./figures/SD_PersonalInformationManagement.jpg>] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 185--195
+
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 205--206
 []\T1/ppl/m/n/12 The sys-tem con-firms the re-ceived
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 209--210
+Underfull \hbox (badness 1127) in paragraph at lines 205--206
 \T1/ppl/m/n/12 data to the user and in-forms him
  []
 
 [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 216--228
+Underfull \hbox (badness 10000) in paragraph at lines 212--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--228
+Underfull \hbox (badness 10000) in paragraph at lines 212--224
 
  []
 
-[29] <./figures/SD_ZerotimeReservation.png, id=600, 901.3675pt x 799.98875pt>
+[29] <./figures/SD_ZerotimeReservation.png, id=625, 901.3675pt x 799.98875pt>
 File: ./figures/SD_ZerotimeReservation.png Graphic file (type png)
 
 <use ./figures/SD_ZerotimeReservation.png>
 Package pdftex.def Info: ./figures/SD_ZerotimeReservation.png used on input lin
-e 232.
+e 228.
 (pdftex.def)             Requested size: 597.50787pt x 530.32571pt.
- [30 <./figures/SD_ZerotimeReservation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 239--255
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--249
 
  []
 
-<./figures/SD_FutureReservation.jpg, id=612, 791.95876pt x 599.23875pt>
+<./figures/SD_FutureReservation.jpg, id=631, 791.95876pt x 599.23875pt>
 File: ./figures/SD_FutureReservation.jpg Graphic file (type jpg)
 
 <use ./figures/SD_FutureReservation.jpg>
 Package pdftex.def Info: ./figures/SD_FutureReservation.jpg used on input line 
-257.
-(pdftex.def)             Requested size: 597.50787pt x 452.1162pt.
+251.
+(pdftex.def)             Requested size: 554.36736pt x 419.46426pt.
+ [30
 
-Underfull \hbox (badness 1107) in paragraph at lines 270--271
+ <./figures/SD_ZerotimeReservation.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 264--265
 []\T1/ppl/m/n/12 The driver clicks the start wait-ing
  []
 
-<./figures/SD_StartWaitingTime.jpg, id=623, 791.95876pt x 759.83875pt>
+<./figures/SD_StartWaitingTime.jpg, id=649, 791.95876pt x 759.83875pt>
 File: ./figures/SD_StartWaitingTime.jpg Graphic file (type jpg)
 
 <use ./figures/SD_StartWaitingTime.jpg>
 Package pdftex.def Info: ./figures/SD_StartWaitingTime.jpg used on input line 2
-83.
+77.
 (pdftex.def)             Requested size: 597.50787pt x 573.28635pt.
 
 
-LaTeX Warning: Float too large for page by 36.28635pt on input line 285.
+LaTeX Warning: Float too large for page by 36.28635pt on input line 279.
 
-[31
-
-
-] [32 <./figures/SD_FutureReservation.jpg>] [33]
+[31] [32 <./figures/SD_FutureReservation.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1158,118 +1166,214 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Overfull \vbox (107.96861pt too high) has occurred while \output is active []
 
 
-[34] [35 <./figures/SD_StartWaitingTime.jpg>]
-Underfull \hbox (badness 2726) in paragraph at lines 297--298
+[33] [34 <./figures/SD_StartWaitingTime.jpg>]
+Underfull \hbox (badness 2726) in paragraph at lines 291--292
 []\T1/ppl/m/n/12 The driver fills the de-sired work
  []
 
-<./figures/SD_WorkShiftsManagement.jpg, id=659, 746.79pt x 671.50874pt>
+<./figures/SD_WorkShiftsManagement.jpg, id=680, 746.79pt x 671.50874pt>
 File: ./figures/SD_WorkShiftsManagement.jpg Graphic file (type jpg)
 
 <use ./figures/SD_WorkShiftsManagement.jpg>
 Package pdftex.def Info: ./figures/SD_WorkShiftsManagement.jpg used on input li
-ne 306.
-(pdftex.def)             Requested size: 597.50787pt x 537.29994pt.
+ne 300.
+(pdftex.def)             Requested size: 567.55489pt x 510.3417pt.
 
-Underfull \hbox (badness 1033) in paragraph at lines 319--320
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 313--314
 \T1/ppl/m/n/12 sys-tem redi-rects him to the [][]fu-ture[]
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 319--320
+Underfull \hbox (badness 1014) in paragraph at lines 313--314
 \T1/ppl/m/n/12 book-ing page (al-ready filled in all
  []
 
-[36
+[35
 
-] [37 <./figures/SD_WorkShiftsManagement.jpg>] [38]
+] [36 <./figures/SD_WorkShiftsManagement.jpg>]
 Overfull \vbox (14.68916pt too high) has occurred while \output is active []
 
 
-[39] <./figures/SD_CheckReservations.png, id=700, 746.79pt x 679.53876pt>
+[37] <./figures/SD_CheckReservations.png, id=716, 746.79pt x 679.53876pt>
 File: ./figures/SD_CheckReservations.png Graphic file (type png)
 
 <use ./figures/SD_CheckReservations.png>
 Package pdftex.def Info: ./figures/SD_CheckReservations.png used on input line 
-330.
+324.
 (pdftex.def)             Requested size: 597.50787pt x 543.72507pt.
- [40 <./figures/SD_CheckReservations.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 337--350
+ [38 <./figures/SD_CheckReservations.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 331--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--350
+Underfull \hbox (badness 10000) in paragraph at lines 331--344
 
  []
 
-<./figures/SD_ReadTheAlerts.jpg, id=712, 746.79pt x 294.09875pt>
+<./figures/SD_ReadTheAlerts.jpg, id=728, 746.79pt x 294.09875pt>
 File: ./figures/SD_ReadTheAlerts.jpg Graphic file (type jpg)
 
 <use ./figures/SD_ReadTheAlerts.jpg>
-Package pdftex.def Info: ./figures/SD_ReadTheAlerts.jpg used on input line 352.
+Package pdftex.def Info: ./figures/SD_ReadTheAlerts.jpg used on input line 346.
 
 (pdftex.def)             Requested size: 597.50787pt x 235.3197pt.
- [41
+ [39
 
 
  <./figures/SD_ReadTheAlerts.jpg>]
-<./figures/Statechart_ZerotimeRideClass.png, id=723, 766.865pt x 733.74126pt>
+<./figures/Statechart_ZerotimeRideClass.png, id=740, 766.865pt x 733.74126pt>
 File: ./figures/Statechart_ZerotimeRideClass.png Graphic file (type png)
 
 <use ./figures/Statechart_ZerotimeRideClass.png>
 Package pdftex.def Info: ./figures/Statechart_ZerotimeRideClass.png used on inp
-ut line 364.
+ut line 358.
 (pdftex.def)             Requested size: 390.0pt x 373.16187pt.
- [42
+ [40
 
  <./figures/Statechart_ZerotimeRideClass.png>]
-<./figures/Statechart_FutureRideClass.png, id=730, 781.92125pt x 886.31125pt>
+<./figures/Statechart_FutureRideClass.png, id=747, 781.92125pt x 886.31125pt>
 File: ./figures/Statechart_FutureRideClass.png Graphic file (type png)
 
 <use ./figures/Statechart_FutureRideClass.png>
 Package pdftex.def Info: ./figures/Statechart_FutureRideClass.png used on input
- line 371.
+ line 365.
 (pdftex.def)             Requested size: 390.0pt x 442.07262pt.
-) [43
+) [41
 
  <./figures/Statechart_FutureRideClass.png>]
+\openout2 = `chapters/alloy.aux'.
+
+ (./chapters/alloy.tex
+Chapter 4.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 10.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 10.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+(./code/alloy/ALLOY_myTaxiService.als
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 3.
+ [42
+
+
+
+] [43] [44] [45] [46]) [47]
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 46.
+ [48
+
+]
+<./figures/ALLOY_FirstAssertionCounterexample.png, id=1023, 557.08125pt x 296.9
+0926pt>
+File: ./figures/ALLOY_FirstAssertionCounterexample.png Graphic file (type png)
+ <use ./figures/ALLOY_FirstAssertionCounterexample.png>
+Package pdftex.def Info: ./figures/ALLOY_FirstAssertionCounterexample.png used 
+on input line 55.
+(pdftex.def)             Requested size: 592.0pt x 315.52873pt.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 57.
+
+
+LaTeX Warning: Float too large for page by 70.0pt on input line 59.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[49] [50 <./figures/ALLOY_FirstAssertionCounterexample.png>]
+<./figures/ALLOY_SecondAssertionCounterexample.png, id=1033, 588.39825pt x 216.
+20775pt>
+File: ./figures/ALLOY_SecondAssertionCounterexample.png Graphic file (type png)
+
+ <use ./figures/ALLOY_SecondAssertionCounterexample.png>
+Package pdftex.def Info: ./figures/ALLOY_SecondAssertionCounterexample.png used
+ on input line 65.
+(pdftex.def)             Requested size: 592.0pt x 217.53673pt.
+
+
+LaTeX Warning: Float too large for page by 25.0pt on input line 68.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[51 <./figures/ALLOY_SecondAssertionCounterexample.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
+
+ []
+
+[52
+
+
+] <./figures/ALLOY_FirstPredicate.png, id=1044, 568.524pt x 263.18324pt>
+File: ./figures/ALLOY_FirstPredicate.png Graphic file (type png)
+
+<use ./figures/ALLOY_FirstPredicate.png>
+Package pdftex.def Info: ./figures/ALLOY_FirstPredicate.png used on input line 
+83.
+(pdftex.def)             Requested size: 528.72186pt x 244.75789pt.
+ [53
+
+ <./figures/ALLOY_FirstPredicate.png>] <./figures/ALLOY_AModelOfTheWorld.png, i
+d=1051, 577.07594pt x 400.73715pt>
+File: ./figures/ALLOY_AModelOfTheWorld.png Graphic file (type png)
+
+<use ./figures/ALLOY_AModelOfTheWorld.png>
+Package pdftex.def Info: ./figures/ALLOY_AModelOfTheWorld.png used on input lin
+e 93.
+(pdftex.def)             Requested size: 530.9075pt x 368.67653pt.
+) [54
+
+ <./figures/ALLOY_AModelOfTheWorld.png>]
 \openout2 = `chapters/tools.aux'.
 
  (./chapters/tools.tex
-Chapter 4.
-[44
+Chapter 5.
+[55
 
 
 
-]) [45] 
+]) [56
+
+] 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
 (./rasd.aux (./chapters/introduction.aux) (./chapters/actors.aux)
-(./chapters/requirements.aux) (./chapters/tools.aux))
+(./chapters/requirements.aux) (./chapters/alloy.aux) (./chapters/tools.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
 Package rerunfilecheck Info: File `rasd.out' has not changed.
-(rerunfilecheck)             Checksum: 02C5031E7F2844784B5A5F3DEB8D6A6E;2911.
+(rerunfilecheck)             Checksum: C207D6D61D1A3C0159A636B6042D5466;3214.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 16328 strings out of 494977
- 242932 string characters out of 6180182
- 386324 words of memory out of 5000000
- 19007 multiletter control sequences out of 15000+600000
- 24563 words of font info for 54 fonts, out of 8000000 for 9000
+ 17212 strings out of 494977
+ 253932 string characters out of 6180182
+ 522404 words of memory out of 5000000
+ 19604 multiletter control sequences out of 15000+600000
+ 29878 words of font info for 69 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 48i,18n,77p,2211b,769s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,18n,77p,2211b,2091s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/palatino/uplri8a.pfb>
-Output written on rasd.pdf (49 pages, 909174 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
+r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on rasd.pdf (60 pages, 1337000 bytes).
 PDF statistics:
- 800 PDF objects out of 1000 (max. 8388607)
- 707 compressed objects within 8 object streams
- 168 named destinations out of 1000 (max. 500000)
- 422 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1187 PDF objects out of 1200 (max. 8388607)
+ 1070 compressed objects within 11 object streams
+ 419 named destinations out of 1000 (max. 500000)
+ 482 words of extra memory for PDF output out of 10000 (max. 10000000)
 
