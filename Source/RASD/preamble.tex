@@ -84,3 +84,106 @@ aboveskip=1em
 \newcommand{\eg}{\textit{e.g.,}~}
 \newcommand{\ie}{\textit{i.e.,}~}
 
+% Glossary package, with the options to show it as a numbered section and to show it in the table of contents
+
+\usepackage[nonumberlist, section, numberedsection, toc, style=altlist]{glossaries}
+
+\newglossaryentry{ws}
+{
+	name=WS,
+	description={acronym for the website of the system}
+}
+\newglossaryentry{ma}
+{
+	name=MA,
+	description={acronym for the mobile application}
+}
+\newglossaryentry{visitor}
+{
+	name=Visitor,
+	text=visitor,
+	plural=visitors,
+	description={a person who accesses to the \gls{ws} or opens the \gls{ma}, but it isn't enrolled or logged in the system (usually it is his first visit)}
+}
+\newglossaryentry{user}
+{
+	name=User,
+	text=user,
+	plural=users,
+	description={a person who is logged in the system}
+}
+\newglossaryentry{passenger}
+{
+	name=Passenger,
+	text=passenger,
+	plural=passengers,
+	description={a person who is using the service in the current moment}
+}
+\newglossaryentry{gps}
+{
+	name=GPS,
+	description={a system able to calculate the correct position of each driver}
+}
+\newglossaryentry{map}
+{
+	name=Map,
+	text=map,
+	plural=maps,
+	description={an informatics representation of the taxi company's city, that can be used either by the user and by the system (also with \gls{gps})}
+} 
+\newglossaryentry{venue}
+{
+	name=Venue,
+	text=venue,
+	plural=venues,
+	description={(departure or destination venue): a valid address that identifies a precise point on the map (and in the real city)}
+}
+\newglossaryentry{zerotime}
+{
+	name=Zerotime,
+	text=zerotime,
+	description={a neologism (due to precision it is a composed word) that indicates an action that the system tries to provide immediately}
+}
+\newglossaryentry{future}
+{
+	name=Future,
+	text=future,
+	description={a temporal period that in our project is between 1 hour and 30 days from the current day}
+}
+\newglossaryentry{delay-time}
+{
+	name=Delay-time,
+	text=delay-time,
+	description={the maximum time of waiting ensured by the system to each user. It is calculated from the ride's established time}
+}
+\newglossaryentry{driver}
+{
+	name=Driver,
+	text=driver,
+	plural=drivers,
+	description={an employer of the taxi's company who drives the reserved taxi}
+}
+\newglossaryentry{ride}
+{
+	name=Ride,
+	text=ride,
+	plural=rides,
+	description={word referred to any single service given by the taxi's company. The service is a single-passenger travel with a driver between two precise venues}
+}
+\newglossaryentry{reservation}
+{
+	name=Reservation or booking,
+	text=reservation,
+	plural=reservations,
+	description={the action that allows an user to take a \gls{ride} in \gls{zerotime} or in the \gls{future}}
+}
+\newglossaryentry{alert}
+{
+	name=Alert,
+	text=alert,
+	plural=alerts,
+	description={a system internal message to inform about, ask (a \gls{driver}) and organize a single \gls{ride}}
+}
+	
+
+\makeglossaries

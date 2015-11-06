@@ -6,23 +6,23 @@
 % ----------------
 
 \label{overall}
-This chapter defines: a summary of the major functions provided by the system, the user characteristics, the constraints and the assumptions over the domain, the actors involved and a list of non-functional requirements.
+This chapter defines: a summary of the major functions provided by the system, the \gls{user} characteristics, the constraints and the assumptions over the domain, the actors involved and a list of non-functional requirements.
  
 \section{User Characteristics}
-The application doesn't specify user target, so everyone with a basic web knowledge of WS or of mobile applications in general (for MA) will be able to access the service and its benefits. The user has to be registered to allow the system to recognize all the passengers and provide their with the best service. For instance, with recognition each user has to comply his contract rules and he has to use the requested services. This precludes the company to send a taxi where no-one will arrive, so it can manage better the resources.
+The application doesn't specify \gls{user} target, so everyone with a basic web knowledge of \gls{ws} or of mobile applications in general (for MA) will be able to access the service and its benefits. The \gls{user} has to be registered to allow the system to recognize all the passengers and provide their with the best service. For instance, with recognition each \gls{user} has to comply his contract rules and he has to use the requested services. This precludes the company to send a taxi where no-one will arrive, so it can manage better the resources.
 
 \section{Domain Assumption}
 In the assignments there are some ambiguities. In order to solve them some hypothesis has been added:
 \begin{itemize}
-	\item \textit{User identifications}. The uniqueness of the user is the main issue. The property is guaranteed by the fiscal-code (or the equivalent ID-code in the country where the service is activated), which is unique by definition and forbids to an user multiple registrations on the service.
-	\item \textit{Ubiquity}. An user cannot have overlapped rides. Hence, if an user books a ride (even in zero-time) it cannot reserve or ask for another ride until the ride isn't finished.
-Besides, only one driver can be assigned to each ride.
-	\item \textit{Drivers' work times}. A driver is alerted for a ride only when he's at work (in his work shifts).
-	\item \textit{GPS correctness}. The GPS's data received are correct with a precision of two meters, so that the real current position of a driver/user is into a circle with center in the position given by the GPS and radius equal to two.
-	\item \textit{Map unicity}. The map of the city is unique both for WS and MA. As consequence, all users access the same version of the map.
-	\item \textit{Deadlines integrity}. A zero-time ride can be undone until the system confirmation, while a reservation can be cancelled at most 15 minutes before the leaving hour. After that, the aborts are invalid.
-	\item \textit{Driver Availability}. A taxi driver who is working (so he is in his work hours) replies to a system request in a maximum time. It is a strong assumption, but when a driver is waiting for a ride we suppose he is on his cab and can immediately sees a noisy notification on his smartphone.
-	\item \textit{Taxi Availability}. We assume that can occur, with an estimated probability of 0.01, that there isn't no available drivers in the selected area. 
+	\item \textit{\Gls{user} identifications}. The uniqueness of the \gls{user} is the main issue. The property is guaranteed by the fiscal-code (or the equivalent ID-code in the country where the service is activated), which is unique by definition and forbids to an \gls{user} multiple registrations on the service.
+	\item \textit{Ubiquity}. An \gls{user} cannot have overlapped \glspl{ride}. Hence, if an \gls{user} books a \gls{ride} (even in zero-time) it cannot reserve or ask for another \gls{ride} until the \gls{ride} isn't finished.
+Besides, only one \gls{driver} can be assigned to each \gls{ride}.
+	\item \textit{\Glspl{driver}' work times}. A \gls{driver} is alerted for a \gls{ride} only when he's at work (in his work shifts).
+	\item \textit{\gls{gps} correctness}. The \gls{gps}'s data received are correct with a precision of two meters, so that the real current position of a \gls{driver}/\gls{user} is into a circle with center in the position given by the \gls{gps} and radius equal to two.
+	\item \textit{\Gls{map} unicity}. The \gls{map} of the city is unique both for \gls{ws} and \gls{ma}. As consequence, all \glspl{user} access the same version of the \gls{map}.
+	\item \textit{Deadlines integrity}. A zero-time \gls{ride} can be undone until the system confirmation, while a \gls{reservation} can be cancelled at most 15 minutes before the leaving hour. After that, the aborts are invalid.
+	\item \textit{\Gls{driver} Availability}. A taxi \gls{driver} who is working (so he is in his work hours) replies to a system request in a maximum time. It is a strong assumption, but when a \gls{driver} is waiting for a \gls{ride} we suppose he is on his cab and can immediately sees a noisy notification on his smartphone.
+	\item \textit{Taxi Availability}. We assume that can occur, with an estimated probability of 0.01, that there isn't no available \glspl{driver} in the selected area. 
 \end{itemize}
 
 \section{Constraints and General Assumption}
@@ -30,56 +30,56 @@ The main constraints in the assigned project is the interaction of the system wi
 \\
 The other constraints are the following:
 \begin{itemize}
-	\item \textit{Policies and laws}. The developed system, both WS and MA, must follow all the laws concerning the taxi service and the websites. For example, the WS has to inform all users and visitors about the cookie use.
-	\item \textit{Hardware limitation}. There is no specific limitation on hardware requirements. Due to allow a greater number of people the use of the service, it is strictly recommended to develop a MA that can be installed on all the three mobile platforms (the requirement is at least the two majors).
-	\item \textit{Interface's implementation}. The system must be developed with interfaces extendable to other possible functions. With refer to external interfaces is required only the correct integration with the GPS.
-	\item \textit{Privacy of users' data}. No user is able to search and find any data about another user.
-	\item \textit{Delay time}. The systems has to ensure a maximum waiting time, called delay time, to each user, that may be different in zero-time and future reservation.
+	\item \textit{Policies and laws}. The developed system, both \gls{ws} and \gls{ma}, must follow all the laws concerning the taxi service and the websites. For example, the \gls{ws} has to inform all \glspl{user} and visitors about the cookie use.
+	\item \textit{Hardware limitation}. There is no specific limitation on hardware requirements. Due to allow a greater number of people the use of the service, it is strictly recommended to develop a \gls{ma} that can be installed on all the three mobile platforms (the requirement is at least the two majors).
+	\item \textit{Interface's implementation}. The system must be developed with interfaces extendable to other possible functions. With refer to external interfaces is required only the correct integration with the \gls{gps}.
+	\item \textit{Privacy of \glspl{user}' data}. No \gls{user} is able to search and find any data about another \gls{user}.
+	\item \textit{Delay time}. The systems has to ensure a maximum waiting time, called delay time, to each \gls{user}, that may be different in zero-time and \gls{future} \gls{reservation}.
 	\item \textit{Area dimension}. The dimension of each area is estimated in 2 squared kilometers.
-	\item \textit{Taxi Availability}. In the particular cases of taxi's absence in the current area the system has to enter a special mode where it is be able to asks for a ride in the areas closest to the first one.
+	\item \textit{Taxi Availability}. In the particular cases of taxi's absence in the current area the system has to enter a special mode where it is be able to asks for a \gls{ride} in the areas closest to the first one.
 \end{itemize}
 
 \section{Actors and Functionalities}
 The actors of myTaxiService are:
 \begin{itemize}
 	
-	\item \textbf{A1 Visitor}: a visitor is a person who is not logged in the system. The only two functionalities that a visitor is allowed to do are the registration (only the first time) and the login, both for the WS and the MA.
+	\item \textbf{A1 Visitor}: a visitor is a person who is not logged in the system. The only two functionalities that a visitor is allowed to do are the registration (only the first time) and the login, both for the \gls{ws} and the \gls{ma}.
 	
-	\item \textbf{A2 User}: an user is a person who is logged in the system. He is able to:
+	\item \textbf{A2 \Gls{user}}: an \gls{user} is a person who is logged in the system. He is able to:
 	\begin{itemize}
-		\item Ask for a zerotime ride.
-		\item Book a future ride.
+		\item Ask for a \gls{zerotime} \gls{ride}.
+		\item Book a \gls{future} \gls{ride}.
 		\item Manage his personal information.
-		\item Check his reservations (also with the historical ones).
-		\item Modify or cancel his reservations.
-		\item Read his alerts.
+		\item Check his \glspl{reservation} (also with the historical ones).
+		\item Modify or cancel his \glspl{reservation}.
+		\item Read his \glspl{alert}.
 	\end{itemize}
 	
-	\item \textbf{A3 Driver}: a driver is a special case of user (even if it is a very strange situation, the system doesn't forbid a driver to book a ride with another driver, so all the functions of a normal user are also available for a driver), with reserved special functions:
+	\item \textbf{A3 \Gls{driver}}: a \gls{driver} is a special case of \gls{user} (even if it is a very strange situation, the system doesn't forbid a \gls{driver} to book a \gls{ride} with another \gls{driver}, so all the functions of a normal \gls{user} are also available for a \gls{driver}), with reserved special functions:
 	\begin{itemize}
 		\item Management (with specific global rules) of work shifts.
 		\item Start waiting time:\\
-		this function means that the driver notifies the system that he's waiting for a ride and about his current position (with GPS). 	
-		\item Accept or deny a ride.
+		this function means that the \gls{driver} notifies the system that he's waiting for a \gls{ride} and about his current position (with \gls{gps}). 	
+		\item Accept or deny a \gls{ride}.
 	\end{itemize}
 	
-	\item \textbf{A4 Cab company}: The taxi corporation is a public company, directly managed by the city's government. In the system it is a special user that has only a few special functionalities:
+	\item \textbf{A4 Cab company}: The taxi corporation is a public company, directly managed by the city's government. In the system it is a special \gls{user} that has only a few special functionalities:
 	\begin{itemize}
 		\item Employees' management:\\
-		the taxi corporation can add or remove a driver (this action correspond to an assumption or a sacking of the driver) and check their work shifts.
-		\item Control the current situation of the service and, in emergency states, it can ask some drivers a transfer to another area.
-		\item Alert all users about service informations, for instance dates of worker's strikes, city's areas unreachable and so on.
+		the taxi corporation can add or remove a \gls{driver} (this action correspond to an assumption or a sacking of the \gls{driver}) and check their work shifts.
+		\item Control the current situation of the service and, in emergency states, it can ask some \glspl{driver} a transfer to another area.
+		\item Alert all \glspl{user} about service informations, for instance dates of worker's strikes, city's areas unreachable and so on.
 	\end{itemize}
 	
-	\item \textbf{A5 Ride's allocator}:	the ride's allocator isn't a physical person, but an actor internal to the system that handles the assignments of the rides.\\
-Hence, it is called when a ride needs to be carry out and its functions are:
+	\item \textbf{A5 \Gls{ride}'s allocator}:	the \gls{ride}'s allocator isn't a physical person, but an actor internal to the system that handles the assignments of the \glspl{ride}.\\
+Hence, it is called when a \gls{ride} needs to be carry out and its functions are:
 	\begin{itemize}
 		\item Management of the taxi's queues.
-		\item Check the availability of the designed driver.
-		\item Sending of the alerts to inform both users and drivers.
+		\item Check the availability of the designed \gls{driver}.
+		\item Sending of the \glspl{alert} to inform both \glspl{user} and \glspl{driver}.
 	\end{itemize}
 
-	\item \textbf{A6 GPS}: the GPS isn't a physical actor, it gives the correct position of a driver or an user (if it uses the MA on a smartphone that support this functionalities).
+	\item \textbf{A6 \gls{gps}}: the \gls{gps} isn't a physical actor, it gives the correct position of a \gls{driver} or an \gls{user} (if it uses the \gls{ma} on a smartphone that support this functionalities).
 	
 \end{itemize}
 
@@ -87,24 +87,24 @@ Hence, it is called when a ride needs to be carry out and its functions are:
 In this paragraph are shown some non functional requirements that describe some qualities of the system and the correctness of the sequential execution of each operation:
 
 \begin{itemize}
-	\item \textit{User friendliness}. The system should be as simple as possible. Hence, each user that has never seen the WS or the MA is able to use it easily. In particular, no training should be needed to use the application.
+	\item \textit{\Gls{user} friendliness}. The system should be as simple as possible. Hence, each \gls{user} that has never seen the \gls{ws} or the \gls{ma} is able to use it easily. In particular, no training should be needed to use the application.
 
-	\item \textit{Portability}. As we said above under the hardware limitations' constraint, the system has to be compatible with at least two of the three mobile platforms for the MA. Referring to the WS, it should be accessible and correctly shown on all common browsers.
+	\item \textit{Portability}. As we said above under the hardware limitations' constraint, the system has to be compatible with at least two of the three mobile platforms for the \gls{ma}. Referring to the \gls{ws}, it should be accessible and correctly shown on all common browsers.
 
 	\item \textit{Performance}. To supply suitable service, the system has to be reactive and able to answer to a high number of also simultaneous requests. Because of this the interaction between the client and the server has to be reduced to a minimum, in order to no overload the net.
 	
-	\item \textit{Requests processing and performance}. When an user asks for a taxi it is supposed that he want to use the service immediately with the minimum waiting time possible. Therefore, the system must respect the maximum delay time (see above under the homonymous lemma in paragraph 2.3) and it is be able to process a number of contemporary actions estimated in 0.01\% of the city's population.\\
+	\item \textit{Requests processing and performance}. When an \gls{user} asks for a taxi it is supposed that he want to use the service immediately with the minimum waiting time possible. Therefore, the system must respect the maximum delay time (see above under the homonymous lemma in paragraph 2.3) and it is be able to process a number of contemporary actions estimated in 0.01\% of the city's population.\\
 An important observation on this requirement is the following: the management of more than one contemporary requests into the same area forces the developer to implement specific parallel techniques of programming due to not overlap them.
 
-	\item \textit{Input error}. Whenever the GPS is available to identify the correct position of an user, the system should use it. In the other cases, to prevents misunderstandings on leaving address caused by input errors, the system should asks the user to confirm his position with a complete message (for instance, "are you in [address]?"). The same requirement is mandatory for the booking functions, the work shifts management and during the registration. In the last case it is requested to check the validity of all information before saving it on the DBMS.
+	\item \textit{Input error}. Whenever the \gls{gps} is available to identify the correct position of an \gls{user}, the system should use it. In the other cases, to prevents misunderstandings on leaving address caused by input errors, the system should asks the \gls{user} to confirm his position with a complete message (for instance, "are you in [address]?"). The same requirement is mandatory for the booking functions, the work shifts management and during the registration. In the last case it is requested to check the validity of all information before saving it on the DBMS.
 
-	\item \textit{Robustness}. The system should reacts to all the possible situations, in order to don't fall down or lose data. Hence, it should inhibit spam's attacks (this can be guaranteed by identification and denial of multiple requests by the same user) and any kind of data attacks (see also Data integrity, consistency and availability).\\
+	\item \textit{Robustness}. The system should reacts to all the possible situations, in order to don't fall down or lose data. Hence, it should inhibit spam's attacks (this can be guaranteed by identification and denial of multiple requests by the same \gls{user}) and any kind of data attacks (see also Data integrity, consistency and availability).\\
 After a failure the system must be able to restore all data and reactivate all the functionalities in less than 30 minutes.
 
 	\item \textit{Data integrity, consistency and availability}. In normal conditions, data have to be always accessible. To restore the system after an eventual fault and to prevent data loss, the data should be duplicated adopting special DBMS architectures.
 
 	\item \textit{Reliability}. In the ideal situation the system is active 24 hours per day and 7 days per week, so the maintenance should be allowed every day without compromising the functionalities.\\
-In particular cases, especially on critical function of the system, it is allowed to shut down all the system. This situation must be notified to all users in advance (about one week before) and the night hours are the most indicated to perform the needed operations.
+In particular cases, especially on critical function of the system, it is allowed to shut down all the system. This situation must be notified to all \glspl{user} in advance (about one week before) and the night hours are the most indicated to perform the needed operations.
 
 	\item \textit{Security}. To guarantee the privacy on all users' informations and data, the system has to implement specific security protocols and techniques.
 First of all, all accounts must be protected by an email and a password associated to the account. This one must be created only with the personal tax code (or the equivalent code in the city's country) and confirmed with a link send by emails. Then, all inserted data must be controlled before the storing on the system to prevent undesired modifications (SQL injections and others).\\

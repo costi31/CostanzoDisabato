@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.30)  4 NOV 2015 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.30)  6 NOV 2015 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -540,8 +540,169 @@ LaTeX Font Info:    Try loading font information for T1+ppl on input line 78.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)) (./rasd.aux
-(./chapters/introduction.aux) (./chapters/actors.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2014/09/01 v4.11 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
+)
+\XKV@depth=\count137
+File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/mfirstuc.sty
+Package: mfirstuc 2014/07/30 v1.09 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count138
+)
+\etb@tempcnta=\count139
+)
+\@glsmfirst=\toks32
+\@glsmrest=\toks33
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2014/06/10 v2.22 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2013/08/29 v2.17 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count141
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count142
+\FP@xia=\count143
+\FP@xib=\count144
+\FP@xfa=\count145
+\FP@xfb=\count146
+\FP@rega=\count147
+\FP@regb=\count148
+\FP@regs=\count149
+\FP@times=\count150
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count151
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks34
+\@dtl@tmpcount=\count152
+\dtl@tmplength=\skip64
+\dtl@sortresult=\count153
+\@dtl@numgrpsepcount=\count154
+\@dtl@datatype=\count155
+\dtl@codeA=\count156
+\dtl@codeB=\count157
+\@dtl@foreach@level=\count158
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
+307.sty
+Package: glossaries-compatible-307 2013/11/14 v4.0 (NLCT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex))
+\gls@level=\count159
+\@gls@tmpb=\toks35
+\gls@tmplen=\skip65
+\glskeylisttok=\toks36
+\glslabeltok=\toks37
+\glsshorttok=\toks38
+\glslongtok=\toks39
+
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
+y
+Package: glossary-hypernav 2013/11/14 v4.0 (NLCT)
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2013/11/14 v4.0 (NLCT)
+\glslistdottedwidth=\skip66
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2013/11/14 v4.0 (NLCT)
+\glsdescwidth=\skip67
+\glspagelistwidth=\skip68
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2013/11/14 v4.0 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count160
+\ST@wd=\dimen134
+\ST@rightskip=\skip69
+\ST@leftskip=\skip70
+\ST@parfillskip=\skip71
+\ST@pageleft=\dimen135
+\ST@headht=\dimen136
+\ST@tailht=\dimen137
+\ST@pagesofar=\dimen138
+\ST@pboxht=\dimen139
+\ST@lineht=\dimen140
+\ST@stretchht=\dimen141
+\ST@prevht=\dimen142
+\ST@toadd=\dimen143
+\ST@dimen=\dimen144
+\ST@pbox=\box40
+))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2014/08/27 v4.10 (NLCT)
+\glstreeindent=\skip72
+))
+\glswrite=\write5
+\glo@main@file=\write6
+\openout6 = `rasd.glo'.
+
+Package glossaries Info: Writing glossary file rasd.glo on input line 189.
+) (./rasd.aux (./chapters/introduction.aux) (./chapters/actors.aux)
 (./chapters/requirements.aux) (./chapters/tools.aux))
 \openout1 = `rasd.aux'.
 
@@ -575,21 +736,22 @@ Package caption Info: longtable package is loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
+Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
-\scratchdimen=\dimen134
-\scratchbox=\box40
-\nofMPsegments=\count138
-\nofMParguments=\count139
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count140
-\MPscratchDim=\dimen135
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count161
+\scratchdimen=\dimen145
+\scratchbox=\box41
+\nofMPsegments=\count162
+\nofMParguments=\count163
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count164
+\MPscratchDim=\dimen146
+\MPnumerator=\count165
+\makeMPintoPDFobject=\count166
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -605,7 +767,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box41
+\AtBeginShipoutBox=\box42
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
@@ -621,18 +783,22 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count143
+\c@section@level=\count167
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
 (./rasd.out) (./rasd.out)
-\@outlinefile=\write5
-\openout5 = `rasd.out'.
+\@outlinefile=\write7
+\openout7 = `rasd.out'.
 
-\c@lstlisting=\count144
- <title/title.pdf, id=172, 597.50829pt x 845.0471pt>
+\c@lstlisting=\count168
+
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/dict/glossaries-dictionary-
+English.dict
+Dictionary: glossaries-dictionary, Language: English 
+) <title/title.pdf, id=172, 597.50829pt x 845.0471pt>
 File: title/title.pdf Graphic file (type pdf)
 
 <use title/title.pdf>
@@ -669,6 +835,8 @@ Package pdftex.def Info: title/title.pdf, page1 used on input line 15.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [1
 
+\openout5 = `rasd.ist'.
+
 
  <./title/title.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
@@ -688,8 +856,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ])
-\tf@toc=\write6
-\openout6 = `rasd.toc'.
+\tf@toc=\write8
+\openout8 = `rasd.toc'.
 
  [2]
 \openout2 = `chapters/introduction.aux'.
@@ -749,22 +917,20 @@ been already used, duplicate ignored
 l.37 
       [1
 
-] [2]
-Overfull \hbox (7.65173pt too wide) in paragraph at lines 45--47
-\T1/ppl/m/n/12 de-vel-op-ers as-so-ciate to the com-mon words used in the con-t
-ext of the project: 
- []
+] [2] (./rasd.gls
 
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 47.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [3]) [4]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\translate ' on input line 1.
+
+[3])) [4]
 \openout2 = `chapters/actors.aux'.
 
-
-(./chapters/actors.tex
+ (./chapters/actors.tex
 Chapter 2.
-[5
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 17.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [5
 
 
 
@@ -832,7 +998,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
  []
 
-<./figures/UseCaseDiagram.jpg, id=324, 1003.75pt x 823.075pt>
+<./figures/UseCaseDiagram.jpg, id=492, 1003.75pt x 823.075pt>
 File: ./figures/UseCaseDiagram.jpg Graphic file (type jpg)
 
 <use ./figures/UseCaseDiagram.jpg>
@@ -848,7 +1014,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
-<./figures/ClassDiagram.png, id=335, 832.10875pt x 661.47125pt>
+<./figures/ClassDiagram.png, id=503, 832.10875pt x 661.47125pt>
 File: ./figures/ClassDiagram.png Graphic file (type png)
 
 <use ./figures/ClassDiagram.png>
@@ -868,7 +1034,7 @@ Underfull \hbox (badness 3492) in paragraph at lines 101--102
 
 [20
 
-] <./figures/SD_Registration.jpg, id=353, 711.65875pt x 679.53876pt>
+] <./figures/SD_Registration.jpg, id=522, 711.65875pt x 679.53876pt>
 File: ./figures/SD_Registration.jpg Graphic file (type jpg)
 
 <use ./figures/SD_Registration.jpg>
@@ -882,7 +1048,7 @@ LaTeX Warning: Float too large for page by 3.55981pt on input line 117.
 
 
 ]
-<./figures/SD_Login.jpg, id=368, 711.65875pt x 771.88374pt>
+<./figures/SD_Login.jpg, id=539, 711.65875pt x 771.88374pt>
 File: ./figures/SD_Login.jpg Graphic file (type jpg)
 
 <use ./figures/SD_Login.jpg>
@@ -906,7 +1072,7 @@ Underfull \hbox (badness 1052) in paragraph at lines 156--157
 
 
 ]
-<./figures/SD_PersonalInformationManagement.jpg, id=383, 791.95876pt x 711.6587
+<./figures/SD_PersonalInformationManagement.jpg, id=556, 791.95876pt x 711.6587
 5pt>
 File: ./figures/SD_PersonalInformationManagement.jpg Graphic file (type jpg)
  <use ./figures/SD_PersonalInformationManagement.jpg>
@@ -946,7 +1112,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--228
 
  []
 
-[29] <./figures/SD_ZerotimeReservation.png, id=419, 901.3675pt x 799.98875pt>
+[29] <./figures/SD_ZerotimeReservation.png, id=600, 901.3675pt x 799.98875pt>
 File: ./figures/SD_ZerotimeReservation.png Graphic file (type png)
 
 <use ./figures/SD_ZerotimeReservation.png>
@@ -958,7 +1124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--255
 
  []
 
-<./figures/SD_FutureReservation.jpg, id=426, 791.95876pt x 599.23875pt>
+<./figures/SD_FutureReservation.jpg, id=612, 791.95876pt x 599.23875pt>
 File: ./figures/SD_FutureReservation.jpg Graphic file (type jpg)
 
 <use ./figures/SD_FutureReservation.jpg>
@@ -970,7 +1136,7 @@ Underfull \hbox (badness 1107) in paragraph at lines 270--271
 []\T1/ppl/m/n/12 The driver clicks the start wait-ing
  []
 
-<./figures/SD_StartWaitingTime.jpg, id=427, 791.95876pt x 759.83875pt>
+<./figures/SD_StartWaitingTime.jpg, id=623, 791.95876pt x 759.83875pt>
 File: ./figures/SD_StartWaitingTime.jpg Graphic file (type jpg)
 
 <use ./figures/SD_StartWaitingTime.jpg>
@@ -997,7 +1163,7 @@ Underfull \hbox (badness 2726) in paragraph at lines 297--298
 []\T1/ppl/m/n/12 The driver fills the de-sired work
  []
 
-<./figures/SD_WorkShiftsManagement.jpg, id=461, 746.79pt x 671.50874pt>
+<./figures/SD_WorkShiftsManagement.jpg, id=659, 746.79pt x 671.50874pt>
 File: ./figures/SD_WorkShiftsManagement.jpg Graphic file (type jpg)
 
 <use ./figures/SD_WorkShiftsManagement.jpg>
@@ -1006,7 +1172,7 @@ ne 306.
 (pdftex.def)             Requested size: 597.50787pt x 537.29994pt.
 
 Underfull \hbox (badness 1033) in paragraph at lines 319--320
-\T1/ppl/m/n/12 sys-tem redi-rects him to the fu-ture
+\T1/ppl/m/n/12 sys-tem redi-rects him to the [][]fu-ture[]
  []
 
 
@@ -1020,7 +1186,7 @@ Underfull \hbox (badness 1014) in paragraph at lines 319--320
 Overfull \vbox (14.68916pt too high) has occurred while \output is active []
 
 
-[39] <./figures/SD_CheckReservations.png, id=488, 746.79pt x 679.53876pt>
+[39] <./figures/SD_CheckReservations.png, id=700, 746.79pt x 679.53876pt>
 File: ./figures/SD_CheckReservations.png Graphic file (type png)
 
 <use ./figures/SD_CheckReservations.png>
@@ -1037,7 +1203,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--350
 
  []
 
-<./figures/SD_ReadTheAlerts.jpg, id=495, 746.79pt x 294.09875pt>
+<./figures/SD_ReadTheAlerts.jpg, id=712, 746.79pt x 294.09875pt>
 File: ./figures/SD_ReadTheAlerts.jpg Graphic file (type jpg)
 
 <use ./figures/SD_ReadTheAlerts.jpg>
@@ -1048,7 +1214,7 @@ Package pdftex.def Info: ./figures/SD_ReadTheAlerts.jpg used on input line 352.
 
 
  <./figures/SD_ReadTheAlerts.jpg>]
-<./figures/Statechart_ZerotimeRideClass.png, id=504, 766.865pt x 733.74126pt>
+<./figures/Statechart_ZerotimeRideClass.png, id=723, 766.865pt x 733.74126pt>
 File: ./figures/Statechart_ZerotimeRideClass.png Graphic file (type png)
 
 <use ./figures/Statechart_ZerotimeRideClass.png>
@@ -1058,7 +1224,7 @@ ut line 364.
  [42
 
  <./figures/Statechart_ZerotimeRideClass.png>]
-<./figures/Statechart_FutureRideClass.png, id=511, 781.92125pt x 886.31125pt>
+<./figures/Statechart_FutureRideClass.png, id=730, 781.92125pt x 886.31125pt>
 File: ./figures/Statechart_FutureRideClass.png Graphic file (type png)
 
 <use ./figures/Statechart_FutureRideClass.png>
@@ -1089,21 +1255,21 @@ Package rerunfilecheck Info: File `rasd.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 12241 strings out of 494977
- 179700 string characters out of 6180182
- 274194 words of memory out of 5000000
- 15058 multiletter control sequences out of 15000+600000
+ 16328 strings out of 494977
+ 242932 string characters out of 6180182
+ 386324 words of memory out of 5000000
+ 19007 multiletter control sequences out of 15000+600000
  24563 words of font info for 54 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 40i,18n,45p,677b,585s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,18n,77p,2211b,769s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on rasd.pdf (49 pages, 902148 bytes).
+Output written on rasd.pdf (49 pages, 909174 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
- 492 compressed objects within 5 object streams
- 152 named destinations out of 1000 (max. 500000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 707 compressed objects within 8 object streams
+ 168 named destinations out of 1000 (max. 500000)
  422 words of extra memory for PDF output out of 10000 (max. 10000000)
 
