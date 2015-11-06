@@ -189,14 +189,14 @@ assert driversInTheQueue {
 	all d : Driver | one a : Area | d in a.availableDrivers
 }
 
---check driversInTheQueue for 5 but exactly 3 Area , 2 FutureRide, exactly 3 Driver
+check driversInTheQueue for 5 but exactly 3 Area , 2 FutureRide, exactly 3 Driver
 
 -- A person that is on a zerotime ride can have booked a future ride (defined as the opposite assertion to find a counterexample)
 assert multipleReservation {
 	no u : User | some ztr : ZerotimeRide , fr : FutureRide | ztr.customer = u && fr.customer = u
 }
 
---check multipleReservation for 5
+check multipleReservation for 5
 
 -- A driver who is now working (driving) is not customer of any other ride
 assert noUbiquity {
@@ -204,7 +204,7 @@ assert noUbiquity {
 	( nowRide[r] = True && r.customer = d )
 }
 
---check noUbiquity for 5
+check noUbiquity for 5
 
 pred noDriverAsCustomer () {
 	no d : Driver | some r : Ride | r.customer = d
@@ -216,7 +216,7 @@ pred noDriverAsCustomer () {
 	one a : Area | a.availableDrivers != none
 }
 
---run noDriverAsCustomer for 5
+run noDriverAsCustomer for 5
 
 pred show () {
 	#ZerotimeRide = 2
