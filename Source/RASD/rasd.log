@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.30)  6 NOV 2015 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.30)  16 NOV 2015 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,7 +801,7 @@ LaTeX Info: Redefining \nameref on input line 8.
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/dict/glossaries-dictionary-
 English.dict
 Dictionary: glossaries-dictionary, Language: English 
-) <title/title.pdf, id=192, 597.50829pt x 845.0471pt>
+) <title/title.pdf, id=196, 597.50829pt x 845.0471pt>
 File: title/title.pdf Graphic file (type pdf)
 
 <use title/title.pdf>
@@ -812,7 +812,7 @@ File: title/title.pdf Graphic file (type pdf)
 Package pdftex.def Info: title/title.pdf used on input line 15.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<title/title.pdf, id=195, page=1, 597.50829pt x 845.0471pt>
+<title/title.pdf, id=199, page=1, 597.50829pt x 845.0471pt>
 File: title/title.pdf Graphic file (type pdf)
 
 <use title/title.pdf, page 1>
@@ -867,7 +867,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 (./chapters/introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
@@ -875,41 +875,41 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8 \end{abstract}
+l.7 \end{abstract}
                    [1
 
 
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Underfull \hbox (badness 10000) in paragraph at lines 24--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Underfull \hbox (badness 10000) in paragraph at lines 24--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Underfull \hbox (badness 10000) in paragraph at lines 24--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Underfull \hbox (badness 10000) in paragraph at lines 24--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--35
 
  []
 
@@ -917,7 +917,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 
+l.35 
       [1
 
 ] [2] (./rasd.gls
@@ -1001,7 +1001,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
  []
 
-<./figures/UseCaseDiagram.jpg, id=517, 1003.75pt x 823.075pt>
+<./figures/UseCaseDiagram.jpg, id=523, 1003.75pt x 823.075pt>
 File: ./figures/UseCaseDiagram.jpg Graphic file (type jpg)
 
 <use ./figures/UseCaseDiagram.jpg>
@@ -1017,7 +1017,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
-<./figures/ClassDiagram.png, id=529, 832.10875pt x 661.47125pt>
+<./figures/ClassDiagram.png, id=534, 832.10875pt x 661.47125pt>
 File: ./figures/ClassDiagram.png Graphic file (type png)
 
 <use ./figures/ClassDiagram.png>
@@ -1037,7 +1037,7 @@ Underfull \hbox (badness 3492) in paragraph at lines 101--102
 
 [20
 
-] <./figures/SD_Registration.jpg, id=547, 711.65875pt x 679.53876pt>
+] <./figures/SD_Registration.jpg, id=552, 711.65875pt x 679.53876pt>
 File: ./figures/SD_Registration.jpg Graphic file (type jpg)
 
 <use ./figures/SD_Registration.jpg>
@@ -1051,7 +1051,7 @@ LaTeX Warning: Float too large for page by 3.55981pt on input line 117.
 
 
 ]
-<./figures/SD_Login.jpg, id=564, 711.65875pt x 771.88374pt>
+<./figures/SD_Login.jpg, id=569, 711.65875pt x 771.88374pt>
 File: ./figures/SD_Login.jpg Graphic file (type jpg)
 
 <use ./figures/SD_Login.jpg>
@@ -1072,7 +1072,7 @@ Underfull \hbox (badness 1052) in paragraph at lines 156--157
  []
 
 
-<./figures/SD_PersonalInformationManagement.jpg, id=572, 791.95876pt x 711.6587
+<./figures/SD_PersonalInformationManagement.jpg, id=577, 791.95876pt x 711.6587
 5pt>
 File: ./figures/SD_PersonalInformationManagement.jpg Graphic file (type jpg)
  <use ./figures/SD_PersonalInformationManagement.jpg>
@@ -1117,7 +1117,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--224
 
  []
 
-[29] <./figures/SD_ZerotimeReservation.png, id=625, 901.3675pt x 799.98875pt>
+[29] <./figures/SD_ZerotimeReservation.png, id=630, 901.3675pt x 799.98875pt>
 File: ./figures/SD_ZerotimeReservation.png Graphic file (type png)
 
 <use ./figures/SD_ZerotimeReservation.png>
@@ -1129,7 +1129,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--249
 
  []
 
-<./figures/SD_FutureReservation.jpg, id=631, 791.95876pt x 599.23875pt>
+<./figures/SD_FutureReservation.jpg, id=636, 791.95876pt x 599.23875pt>
 File: ./figures/SD_FutureReservation.jpg Graphic file (type jpg)
 
 <use ./figures/SD_FutureReservation.jpg>
@@ -1147,7 +1147,7 @@ Underfull \hbox (badness 1107) in paragraph at lines 264--265
 []\T1/ppl/m/n/12 The driver clicks the start wait-ing
  []
 
-<./figures/SD_StartWaitingTime.jpg, id=649, 791.95876pt x 759.83875pt>
+<./figures/SD_StartWaitingTime.jpg, id=654, 791.95876pt x 759.83875pt>
 File: ./figures/SD_StartWaitingTime.jpg Graphic file (type jpg)
 
 <use ./figures/SD_StartWaitingTime.jpg>
@@ -1171,7 +1171,7 @@ Underfull \hbox (badness 2726) in paragraph at lines 291--292
 []\T1/ppl/m/n/12 The driver fills the de-sired work
  []
 
-<./figures/SD_WorkShiftsManagement.jpg, id=680, 746.79pt x 671.50874pt>
+<./figures/SD_WorkShiftsManagement.jpg, id=685, 746.79pt x 671.50874pt>
 File: ./figures/SD_WorkShiftsManagement.jpg Graphic file (type jpg)
 
 <use ./figures/SD_WorkShiftsManagement.jpg>
@@ -1198,7 +1198,7 @@ Underfull \hbox (badness 1014) in paragraph at lines 313--314
 Overfull \vbox (14.68916pt too high) has occurred while \output is active []
 
 
-[37] <./figures/SD_CheckReservations.png, id=716, 746.79pt x 679.53876pt>
+[37] <./figures/SD_CheckReservations.png, id=721, 746.79pt x 679.53876pt>
 File: ./figures/SD_CheckReservations.png Graphic file (type png)
 
 <use ./figures/SD_CheckReservations.png>
@@ -1215,7 +1215,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--344
 
  []
 
-<./figures/SD_ReadTheAlerts.jpg, id=728, 746.79pt x 294.09875pt>
+<./figures/SD_ReadTheAlerts.jpg, id=733, 746.79pt x 294.09875pt>
 File: ./figures/SD_ReadTheAlerts.jpg Graphic file (type jpg)
 
 <use ./figures/SD_ReadTheAlerts.jpg>
@@ -1226,7 +1226,7 @@ Package pdftex.def Info: ./figures/SD_ReadTheAlerts.jpg used on input line 346.
 
 
  <./figures/SD_ReadTheAlerts.jpg>]
-<./figures/Statechart_ZerotimeRideClass.png, id=740, 766.865pt x 733.74126pt>
+<./figures/Statechart_ZerotimeRideClass.png, id=745, 766.865pt x 733.74126pt>
 File: ./figures/Statechart_ZerotimeRideClass.png Graphic file (type png)
 
 <use ./figures/Statechart_ZerotimeRideClass.png>
@@ -1236,7 +1236,7 @@ ut line 358.
  [40
 
  <./figures/Statechart_ZerotimeRideClass.png>]
-<./figures/Statechart_FutureRideClass.png, id=747, 781.92125pt x 886.31125pt>
+<./figures/Statechart_FutureRideClass.png, id=752, 781.92125pt x 886.31125pt>
 File: ./figures/Statechart_FutureRideClass.png Graphic file (type png)
 
 <use ./figures/Statechart_FutureRideClass.png>
@@ -1271,7 +1271,7 @@ LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
  [48
 
 ]
-<./figures/ALLOY_FirstAssertionCounterexample.png, id=1023, 557.08125pt x 296.9
+<./figures/ALLOY_FirstAssertionCounterexample.png, id=1028, 557.08125pt x 296.9
 0926pt>
 File: ./figures/ALLOY_FirstAssertionCounterexample.png Graphic file (type png)
  <use ./figures/ALLOY_FirstAssertionCounterexample.png>
@@ -1288,7 +1288,7 @@ LaTeX Warning: Float too large for page by 70.0pt on input line 59.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [49] [50 <./figures/ALLOY_FirstAssertionCounterexample.png>]
-<./figures/ALLOY_SecondAssertionCounterexample.png, id=1033, 588.39825pt x 216.
+<./figures/ALLOY_SecondAssertionCounterexample.png, id=1038, 588.39825pt x 216.
 20775pt>
 File: ./figures/ALLOY_SecondAssertionCounterexample.png Graphic file (type png)
 
@@ -1311,7 +1311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--77
 [52
 
 
-] <./figures/ALLOY_FirstPredicate.png, id=1044, 568.524pt x 263.18324pt>
+] <./figures/ALLOY_FirstPredicate.png, id=1049, 568.524pt x 263.18324pt>
 File: ./figures/ALLOY_FirstPredicate.png Graphic file (type png)
 
 <use ./figures/ALLOY_FirstPredicate.png>
@@ -1321,7 +1321,7 @@ Package pdftex.def Info: ./figures/ALLOY_FirstPredicate.png used on input line
  [53
 
  <./figures/ALLOY_FirstPredicate.png>] <./figures/ALLOY_AModelOfTheWorld.png, i
-d=1051, 577.07594pt x 400.73715pt>
+d=1056, 577.07594pt x 400.73715pt>
 File: ./figures/ALLOY_AModelOfTheWorld.png Graphic file (type png)
 
 <use ./figures/ALLOY_AModelOfTheWorld.png>
@@ -1339,9 +1339,9 @@ Chapter 5.
 
 
 
-]) [56
+] [56
 
-] 
+]) [57] 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
@@ -1350,14 +1350,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
 Package rerunfilecheck Info: File `rasd.out' has not changed.
-(rerunfilecheck)             Checksum: C207D6D61D1A3C0159A636B6042D5466;3214.
+(rerunfilecheck)             Checksum: CB1F0941453BA51B15BBB8E355A95DC9;3269.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 17212 strings out of 494977
- 253932 string characters out of 6180182
- 522404 words of memory out of 5000000
- 19604 multiletter control sequences out of 15000+600000
+ 17215 strings out of 494977
+ 253963 string characters out of 6180182
+ 522401 words of memory out of 5000000
+ 19605 multiletter control sequences out of 15000+600000
  29878 words of font info for 69 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,18n,77p,2211b,2091s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1370,10 +1370,10 @@ r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on rasd.pdf (60 pages, 1337000 bytes).
+Output written on rasd.pdf (61 pages, 1337347 bytes).
 PDF statistics:
- 1187 PDF objects out of 1200 (max. 8388607)
- 1070 compressed objects within 11 object streams
- 419 named destinations out of 1000 (max. 500000)
- 482 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1198 PDF objects out of 1200 (max. 8388607)
+ 1080 compressed objects within 11 object streams
+ 421 named destinations out of 1000 (max. 500000)
+ 490 words of extra memory for PDF output out of 10000 (max. 10000000)
 

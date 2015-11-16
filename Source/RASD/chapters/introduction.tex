@@ -1,8 +1,7 @@
 % !TEX root = ../rasd.tex
 
 \begin{abstract}
-The main task of this document is to give a specification of the requirements that our system has to fulfil adopting the IEEE-STD-830-1993 standard for RASD documentation . It also introduces the functional and non-functional requirements via UML diagrams and a high level specification of the system. In the last part of this document it presents the formal model of the specification using Alloy analysis. 
-\\
+The main task of this document is to give a specification of the requirements that our system has to fulfil adopting the IEEE-STD-830-1993 standard for RASD documentation . It also introduces the functional and non-functional requirements via UML diagrams and a high level specification of the system. In the last part of this document it presents the formal model of the specification using Alloy analysis.\\
 \\
 The information in this document are intended for the stakeholders and the developers of the project. For the stakeholders this document presents a description useful to understand the project development, meanwhile for the developers it's an useful way to show the matching between the stakeholders' requests and the developed solution. 
 \end{abstract} 
@@ -17,17 +16,16 @@ The information in this document are intended for the stakeholders and the devel
 This chapter will show the main purposes of this project, a general description of the system, the stakeholders involved and the glossary, to interpret correctly each term that will be used in this document.
 
 \section{Purpose}
-The system is a software called myTaxiService. It's composed by both a website and a mobile application and it aims to give the opportunities to join the city taxi service easily and fastly.
+The system is a software called myTaxiService. It's composed by both a website and a mobile application and it aims to give the opportunities to join the city taxi service easily and fastly.\\
 \\
-\\
-Besides the systems manages the taxists' worktimes and the assignment of each ride to the corresponding customer.
+Besides the systems manages the taxi drivers' working hours and the assignment of each ride to the corresponding customer.
 
 \section{Scope}
 Users, once registered, are able to ask for an immediate ride or to book one of them.\\
 \\
 The system provides the user with a complete map of the city and its suburbs within the taxi service is available. The current position of the user is obtained by localization services of the user's smartphone if it's possible, otherwise the user notifies his position directly on the map with a marker or by a searching box. The destination is also chosen either graphically or by a research. The user can view the suggested path and then he must confirm the request.\\
 \\
-When a user asks for a ride, the system checks the availability of a taxist near the current position, by splitting the city in several areas and using a FIFO (First In First Out) policy to manage the assignment of the ride's driver. The selected driver can accept or decline the ride. In the former case the system informs the user about waiting time, estimated travelling time, prices and cab car-code. \\
+When a user asks for a ride, the system checks the availability of a taxi driver near the current position, by splitting the city in several areas and using a FIFO (First In First Out) policy to manage the assignment of the ride's driver. The selected driver can accept or decline the ride. In the former case the system informs the user about waiting time, estimated travelling time, prices and cab car-code. \\
 \\
 The system gives also the possibility to book a ride with at least two hours in advance. As the user does when he asks for a ride, he selects the desired starting venue and the destination. Afterwards, the system gives a calendar where the customer can choose the date (at most 30 days in advance) and the starting hour. Ten minutes before the meeting time the system starts all the operations described before in order to assign a taxi-driver.\\
 \\
