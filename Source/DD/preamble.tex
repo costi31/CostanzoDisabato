@@ -1,0 +1,29 @@
+\usepackage{hyperref} % Package for references
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage[english]{babel}
+\selectlanguage{english} %Set to English the language of document
+
+\usepackage[printonlyused]{acronym} %Delete some blank pages
+
+\usepackage[T1]{fontenc}	% Define characters' type
+\usepackage[latin1]{inputenc} 	% Define admissible fonts
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\linespread{1.25} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Figures/}} % Specifies the directory where pictures are stored
+
+\usepackage[nonumberlist, section, numberedsection, toc, style=altlist]{glossaries}	% Define the glossary as non numbered list, as numbered section (not chapter) and as an element into table of contents
+
+\usepackage{subfiles} % Allow to manage the document as different files (useful for working in two at the same time

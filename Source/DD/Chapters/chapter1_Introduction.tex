@@ -1,0 +1,42 @@
+% !TEX root = ../dd.tex
+
+\documentclass[../dd]{subfiles}
+\begin{document}
+
+\chapter{Introduction} % First chapter
+\label{introduction}
+
+This chapter provides a short description about the purposes and the scope of this document. After that, a glossary is given to help the readers to understand the meaning of each word or acronym used in this document. At last, the main structure of the document is shown.
+
+\section{Purpose}
+The design document of myTaxiService aims to describe all the aspects concerning the architecture of the system. The introduced tiers or levels into that architecture are described and studied more in details, explaining the reasons for the single choices and the interactions between them.\\
+\\
+After that, the key algorithms of this system are shown in pseudo-code to suggest and describe the real implementation of the code. Finally, the last purpose is to give the readers the idea of final applications (both MA and WS) using mockups.
+
+\section{Scope}
+Users, once registered, are able to ask for an immediate ride or to book one of them.\\
+\\
+The system provides the user with a complete map of the city and its suburbs within the taxi service is available. The current position of the user is obtained by localization services of the user's smartphone if it's possible, otherwise the user notifies his position directly on the map with a marker or by a searching box. The destination is also chosen either graphically or by a research. The user can view the suggested path and then he must confirm the request.\\
+\\
+When a user asks for a ride, the system checks the availability of a taxi driver near the current position, by splitting the city in several areas and using a FIFO (First In First Out) policy to manage the assignment of the ride's driver. The selected driver can accept or decline the ride. In the former case the system informs the user about waiting time, estimated travelling time, prices and cab car-code. \\
+\\
+The system gives also the possibility to book a ride with at least two hours in advance. As the user does when he asks for a ride, he selects the desired starting venue and the destination. Afterwards, the system gives a calendar where the customer can choose the date (at most 30 days in advance) and the starting hour. Ten minutes before the meeting time the system starts all the operations described before in order to assign a taxi-driver.\\
+\\
+A reservation from the app or the website can be undone until the system confirmation of the availability of a taxi, while a booking can be cancelled at most fifteen minutes before the meeting hour.\\
+\\
+After those deadlines the ride is considered bought by the customers and an eventual absence on the established venue forbids other possibilities to book or to take a ride.
+
+\section{Definitions, Acronyms, Abbreviations}
+[To be filled]
+
+
+\section{Document Structure}
+The \autoref{architectural_design}, called Architectural Design, describes all architectural choices. First, the high hierarchy of that architecture is shown and the interactions between its components are explain. Then, for each defined level or tier a standalone paragraph is dedicate to present all its characteristics.\\
+\\
+The \autoref{algorithm-design}, called Algorithm Design, points out the key algorithms of this system. In particular, these algorithms are the ones which manage the cabs' queues and the city areas and the ones which manage the special case that happen when no taxi are available in the desired area.\\
+\\
+The \autoref{ui}, called User Interface Design, describes all the graphical interfaces, using mockups.\\
+\\
+Finally, the \autoref{requirement_traceability} is dedicated to point out the links between requirements presented in the RASD document and the decisions taken and shown in this document.
+
+\end{document}

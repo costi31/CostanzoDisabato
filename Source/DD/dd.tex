@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[12pt]{report} 
+
+\input{preamble}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\huge \bf{Politecnico di Milano}}\\[0.5cm]
+\textsf{\Large Department of Electronics, Information and Bioengineering}\\[0.25cm] % Major heading such as course name
+\textsf{\large Master Degree course in Computer Science Engineering}\\[0.5cm] % Minor heading such as course title
+
+\begin{figure}[h]
+	\center \includegraphics[width = 3 cm]{Figures/PoliMi}
+\end{figure}
+
+
+\HRule \\
+{\Huge \bfseries {Design Document (DD)} \\[0.2cm] \Large {myTaxiService}}\\ % Title of your document
+\HRule \\[1cm]
+
+\begin{figure}[h]
+	\center \includegraphics[width=2cm]{Figures/logo3}
+\end{figure}
+
+
+\begin{flushleft}
+	\large \textit{Instructor:} Prof. Elisabetta Di Nitto \\[0.5cm]
+
+\begin{minipage}{0.45\textwidth}
+\begin{flushleft} \large
+\emph{Authors:}\\
+Luca Costanzo\\
+Simone Disabato
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.45\textwidth}
+\begin{flushright} \large
+\emph{Code:} \\
+789038\\
+852863
+\end{flushright}
+\end{minipage}\\[1 cm]
+
+\end{flushleft} 
+
+{\large \today}\\ % Date, change the \today to a set date if you want to be precise
+
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+%	CHAPTERS
+%----------------------------------------------------------------------------------------
+
+%Introduction
+\subfile{Chapters/chapter1_Introduction}
+%Architectural Design
+\subfile{Chapters/chapter2_ArchitecturalDesign}
+%Algorithm Design
+%\include{Chapters/chapter3_AlgorithmDesign}
+% User Interface Design
+%\include{Chapters/chapter4_UIDesign}
+%Requirements traceability
+%\include{Chapters/chapter5_RequirementsTraceability}
+%Info
+\subfile{Chapters/OtherInfo}
+
+
+\end{document}
