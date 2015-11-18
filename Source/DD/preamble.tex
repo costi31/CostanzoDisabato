@@ -18,12 +18,42 @@
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
+\usepackage{fancyvrb}
+
+\usepackage{fancyhdr} % Used to customize the header and footer of pages, like page numbering
+
+\usepackage{lastpage} % Used to obtain the number of pages
+
+\usepackage{enumitem}
+\setlist{nosep} % Deletes the space before an items list and after
+
+% Custom command to reset the page header and footer style
+% This command must be called every time after a begin document is called or after a new chapter has begun
+\newcommand{\setmyfancystyle}{
+	\thispagestyle{fancy}
+	\fancyhead{}
+	\fancyfoot{}
+	\renewcommand{\headrulewidth}{0pt} % deletes the horizontal line in the page header
+	\lhead{} \chead{} \rhead{}
+	\lfoot{} \cfoot{}
+	\rfoot{\thepage}
+}
+%-----------
+
+\renewcommand{\rmdefault}{ppl}
+\usepackage[scaled]{helvet}
+\usepackage{courier}
+\normalfont
+
+\frenchspacing
 \linespread{1.25} % Line spacing
 
 %\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
 
 \graphicspath{{Figures/}} % Specifies the directory where pictures are stored
 
+\usepackage{subfiles} % Allow to manage the document as different files (useful for working in two at the same time
+
 \usepackage[nonumberlist, section, numberedsection, toc, style=altlist]{glossaries}	% Define the glossary as non numbered list, as numbered section (not chapter) and as an element into table of contents
 
-\usepackage{subfiles} % Allow to manage the document as different files (useful for working in two at the same time
+\makeglossaries

@@ -21,6 +21,10 @@
 
 \begin{document}
 
+\pagestyle{empty}
+
+\cleardoublepage
+
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -42,10 +46,10 @@
 
 \HRule \\
 {\Huge \bfseries {Design Document (DD)} \\[0.2cm] \Large {myTaxiService}}\\ % Title of your document
-\HRule \\[1cm]
+\HRule \\[0.2cm]
 
 \begin{figure}[h]
-	\center \includegraphics[width=2cm]{Figures/logo3}
+	\center \includegraphics[width=2cm]{logo3}
 \end{figure}
 
 
@@ -66,26 +70,34 @@ Simone Disabato
 789038\\
 852863
 \end{flushright}
-\end{minipage}\\[1 cm]
+\end{minipage}\\[1cm]
 
 \end{flushleft} 
 
-{\large \today}\\ % Date, change the \today to a set date if you want to be precise
+{\large \today} % Date, change the \today to a set date if you want to be precise
 
 %\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
 
 \vfill % Fill the rest of the page with whitespace
 
 \end{titlepage}
-\newpage
+\clearpage
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 
-\tableofcontents % Include a table of contents
+\pagestyle{plain}
+\pagenumbering{Roman}
 
-\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+\tableofcontents % Include a table of contents
+\listoffigures
+
+\cleardoublepage
+
+\pagestyle{fancy}
+\setmyfancystyle
+\pagenumbering{arabic}
 
 %----------------------------------------------------------------------------------------
 %	CHAPTERS
