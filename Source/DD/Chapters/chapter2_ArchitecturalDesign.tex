@@ -11,11 +11,11 @@
 % ----------------
 
 In this chapter the complete architecture of myTaxiService is shown with various levels of description. In the \autoref{ArchitecturalDesign:high_level} there is a global view and the interactions between all the components are described.\\ 
-The data tier is illustrated in \autoref{ArchitecturalDesign:component} with all related policies and entities. Then the other tiers are characterized using special diagrams.\\
-In the \autoref{ArchitecturalDesign:deploy} I don't know yet what we have to write.\\
+The data tier is illustrated in \autoref{ArchitecturalDesign:component} with all related policies and entities. Then the other tiers are characterized using different diagrams.\\
+In the \autoref{ArchitecturalDesign:deploy} the deployment of each components is illustrated (for instance the data component is sit in a different place with respect to the other component? It is replaced twice or more? And similar question will have an answer).\\
 in \autoref{ArchitecturalDesign:runtime} the view level is defined. The interactions between all kinds of user and the system are described using UX diagrams and sequence diagrams that display the order in which each screen is visualized. Besides, the mockups of these screens are shown in %\autoref{UI}.
 \\
-% component interfaces?
+A standalone paragraph, the \autoref{ArchitecturalDesign:comp_interfaces}, is dedicated to list all interfaces, both internal (between two components) and external.\\
 Finally, in the \autoref{ArchitecturalDesign:design_patterns} the design patterns used to develop myTaxiService are described first in general case. After that, all the changes needed to adapt this design patterns to our system are characterized.
 
 
@@ -24,20 +24,47 @@ Finally, in the \autoref{ArchitecturalDesign:design_patterns} the design pattern
 
 \section{High level components and their interaction}
 \label{ArchitecturalDesign:high_level}
-afsjfasjkf
+
+TESTO NON UFFICIALE\\
+Fare qui un mega diagramma component che illustra le relazioni tra i vari componenti del nostro sistema. Architectures with three main components: data tier, server tier (split into 
+various components, like manager of DB, security controller, client handler, ... we have to decide all of this component) and client tier that not contain the client applications, but the component which interacts with the client application, sends the pages, and makes a first check on data received by user (then the homonymous component into the server tier handles all the available actions).. 
+
+Descrizione precisa delle interazioni\\
+
 
 \section{Component view}
 \label{ArchitecturalDesign:component}
-asdkjfjasfk
+
+TESTO NON UFFICIALE\\
+qui si descrivono nel dettaglio tutti i vari componenti, specialmente il data tier e il server tier. 
 
 \section{Deployment view}
 \label{ArchitecturalDesign:deploy}
-adshjkfasjkf
+
+$TESTO NON UFFICIALE\\
+Distribuzione dei vari component\\
+Ci sono più macchine per il server? Ci sono altri componenti come firewall? ecc$
 
 \section{Runtime view}
 \label{ArchitecturalDesign:runtime}
-jkfagfsjakgkjasghakjghjsdfglhljas
+
+TESTO NON UFFICIALE\\
+qui si pone particolare attenzione alle screen e quindi al client tier.\\
+Tutti i sequence diagram e gli UX saranno messi qui\\
+
+\section{Component Interfaces}
+\label{ArchitecturalDesign:comp_interfaces}
+
+TESTO NON UFFICIALE\\
+descrizione di tutte le interfacce tra i vari component e verso l'esterno.\\
+Forse si metteranno anche i principali metodi?\\
+
 
 \section{Selected architectural styles and patterns}
 \label{ArchitecturalDesign:design_patterns}
-EVENTBASED per ora
+
+
+EVENTBASED per ora\\
+
+
+%End of chapter
