@@ -4,6 +4,11 @@
 \BOOKMARK [1][-]{section.1.3}{Definitions, Acronyms, Abbreviations}{chapter.1}% 4
 \BOOKMARK [1][-]{section.1.4}{Document Structure}{chapter.1}% 5
 \BOOKMARK [0][-]{chapter.2}{Architectural Design}{}% 6
-\BOOKMARK [0][-]{chapter.3}{Other Info}{}% 7
-\BOOKMARK [1][-]{section.3.1}{Working hours}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{Tools}{chapter.3}% 9
+\BOOKMARK [1][-]{section.2.1}{High level components and their interaction}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Component view}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Deployment view}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{Runtime view}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.5}{Selected architectural styles and patterns}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Other Info}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Working hours}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Tools}{chapter.3}% 14
