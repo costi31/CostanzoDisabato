@@ -37,6 +37,13 @@ When a driver logs into the service, we suppose that it is working, so his speci
 \section{High level components and their interaction}
 \label{ArchitecturalDesign:high_level}
 
+The main structure of myTaxiService can be described as a Service-Oriented architecture (see \autoref{ArchitecturalDesign:design_patterns} to have a detailed description of this design pattern). In addition to this idea the Model-View-Control paradigm is applied in order to develop a good-programmed, a reusable and a easy-maintainable system.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=15cm] {main_architecture}
+\end{figure}
+
+
 TESTO NON UFFICIALE\\
 Fare qui un mega diagramma component che illustra le relazioni tra i vari componenti del nostro sistema. Architectures with three main components: data tier, server tier (split into 
 various components, like manager of DB, security controller, client handler, ... we have to decide all of this component) and client tier that not contain the client applications, but the component which interacts with the client application, sends the pages, and makes a first check on data received by user (then the homonymous component into the server tier handles all the available actions).. 
