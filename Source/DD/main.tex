@@ -15,9 +15,11 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
+\providecommand{\mainpath}{.} % Command to retrieve the path of the main file. It must be defined before documentclass.
+
 \documentclass[12pt]{report} 
 
-\input{preamble}
+\input{\mainpath/preamble}
 
 \begin{document}
 
@@ -95,7 +97,6 @@ Simone Disabato
 
 \cleardoublepage
 
-\pagestyle{fancy}
 \setmyfancystyle
 \pagenumbering{arabic}
 
