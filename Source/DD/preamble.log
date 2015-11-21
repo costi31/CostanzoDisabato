@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  21 NOV 2015 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2015.11.16)  21 NOV 2015 18:37
 entering extended mode
  restricted \write18 enabled.
+ Source specials enabled.
  %&-line parsing enabled.
 **preamble.tex
 (./preamble.tex
@@ -158,7 +159,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no = in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 3--12
-[]
+[][]
  []
 
 
@@ -229,7 +230,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 18--19
-[] 
+[][] 
  []
 
 
@@ -509,7 +510,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 51.
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 45--57
-[]
+[][]
  []
 
 
@@ -587,7 +588,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 60--61
-[] 
+[][] 
  []
 
 
@@ -642,7 +643,7 @@ If that doesn't work, type  X <return>  to quit.
 
 
 Overfull \hbox (108.89893pt too wide) in paragraph at lines 86--87
-[]\OT1/ppl/m/n/10 Figures/../Figures/ 
+[][]\OT1/ppl/m/n/10 Figures/../Figures/ 
  []
 
 
@@ -665,15 +666,175 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 ...ion, numberedsection, toc, style=altlist]{
+l.97 ...ion, numberedsection, toc, style=altlist]{
                                                   glossaries}	% Define the g...
 
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.92 \makeglossaries
-                    
+l.99 \newglossaryentry
+                      {ws}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \newglossaryentry{w
+                        s}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.104 \newglossaryentry
+                       {ma}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (32.57994pt too wide) in paragraph at lines 99--109
+[][]\OT1/ppl/m/n/10 ws
+ []
+
+
+Overfull \hbox (48.24974pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 name=WS,
+ []
+
+
+Overfull \hbox (14.22986pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 de-
+ []
+
+
+Overfull \hbox (24.8796pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 scrip-
+ []
+
+
+Overfull \hbox (62.38934pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 tion=acronym
+ []
+
+
+Overfull \hbox (12.73984pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 for
+ []
+
+
+Overfull \hbox (13.86975pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 the
+ []
+
+
+Overfull \hbox (21.98973pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 web-
+ []
+
+
+Overfull \hbox (15.19968pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 site
+ []
+
+
+Overfull \hbox (8.7899pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 of
+ []
+
+
+Overfull \hbox (13.86975pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 the
+ []
+
+
+Overfull \hbox (17.36984pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 sys-
+ []
+
+
+Overfull \hbox (16.87976pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 tem
+ []
+
+
+Overfull \hbox (13.82996pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 ma
+ []
+
+
+Overfull \hbox (50.23961pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 name=MA,
+ []
+
+
+Overfull \hbox (14.22986pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 de-
+ []
+
+
+Overfull \hbox (24.8796pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 scrip-
+ []
+
+
+Overfull \hbox (62.38934pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 tion=acronym
+ []
+
+
+Overfull \hbox (12.73984pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 for
+ []
+
+
+Overfull \hbox (13.86975pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 the
+ []
+
+
+Overfull \hbox (17.61986pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 mo-
+ []
+
+
+Overfull \hbox (16.1396pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 bile
+ []
+
+
+Overfull \hbox (14.33984pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 ap-
+ []
+
+
+Overfull \hbox (15.15964pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 pli-
+ []
+
+
+Overfull \hbox (12.7699pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 ca-
+ []
+
+
+Overfull \hbox (17.44968pt too wide) in paragraph at lines 99--109
+\OT1/ppl/m/n/10 tion
+ []
+
+! Undefined control sequence.
+l.110 \makeglossaries
+                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -688,11 +849,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 61 strings out of 494957
- 878 string characters out of 6180027
- 46355 words of memory out of 5000000
+ 61 strings out of 494958
+ 878 string characters out of 6180053
+ 47352 words of memory out of 5000000
  3396 multiletter control sequences out of 15000+600000
  4403 words of font info for 17 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  19i,4n,13p,217b,102s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+No pages of output.

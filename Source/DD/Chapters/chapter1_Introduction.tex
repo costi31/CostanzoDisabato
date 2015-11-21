@@ -15,7 +15,7 @@ This chapter provides a short description about the purposes and the scope of th
 \section{Purpose}
 The design document of myTaxiService aims to describe all the aspects concerning the architecture of the system. The introduced tiers or levels into that architecture are described and studied more in details, explaining the reasons for the single choices and the interactions between them.\\
 \\
-After that, the key algorithms of this system are shown in pseudo-code to suggest and describe the real implementation of the code. Finally, the last purpose is to give the readers the idea of final applications (both MA and WS) using mockups.
+After that, the key algorithms of this system are shown in pseudo-code to suggest and describe the real implementation of the code. Finally, the last purpose is to give the readers the idea of final applications (both \gls{ma} and \gls{ws}) using \glspl{mockup}.
 
 \section{Scope}
 Users, once registered, are able to ask for an immediate ride or to book one of them.\\
@@ -30,8 +30,8 @@ A reservation from the app or the website can be undone until the system confirm
 \\
 After those deadlines the ride is considered bought by the customers and an eventual absence on the established venue forbids other possibilities to book or to take a ride.
 
-\section{Definitions, Acronyms, Abbreviations}
-[To be filled]
+\glsaddall
+\printglossary[title={Definitions, Acronyms, Abbreviations}, toctitle={Definitions, Acronyms, Abbreviations}]
 
 
 \section{Document Structure}
@@ -39,7 +39,7 @@ The \autoref{architectural_design}, called Architectural Design, describes all a
 \\
 The \autoref{algorithm-design}, called Algorithm Design, points out the key algorithms of this system. In particular, these algorithms are the ones which manage the cabs' queues and the city areas and the ones which manage the special case that happen when no taxi are available in the desired area.\\
 \\
-The \autoref{ui}, called User Interface Design, describes all the graphical interfaces, using mockups.\\
+The \autoref{ui}, called User Interface Design, describes all the graphical interfaces, using \glspl{mockup}.\\
 \\
 Finally, the \autoref{requirement_traceability} is dedicated to point out the links between requirements presented in the RASD document and the decisions taken and shown in this document.
 

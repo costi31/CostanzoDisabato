@@ -87,6 +87,34 @@
 
 \usepackage{subfiles} % Allow to manage the document as different files (useful for working in two at the same time
 
+
+
+
+%----------------------------------------------------------------------------------------
+%	GLOSSARY
+%----------------------------------------------------------------------------------------
+
 \usepackage[nonumberlist, section, numberedsection, toc, style=altlist]{glossaries}	% Define the glossary as non numbered list, as numbered section (not chapter) and as an element into table of contents
+
+\newglossaryentry{ws}
+{
+	name=WS,
+	description={acronym for the website of the system}
+}
+
+\newglossaryentry{ma}
+{
+	name=MA,
+	description={acronym for the mobile application}
+}
+
+\newglossaryentry{mockup}
+{
+	name=Mockup,
+	text=mockup,
+	plural=mockups,
+	description={a simple graphical representation}
+}
+
 
 \makeglossaries

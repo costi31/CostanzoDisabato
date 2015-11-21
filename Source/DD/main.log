@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  21 NOV 2015 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  21 NOV 2015 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,7 +597,7 @@ Package: glossary-tree 2015/07/17 v4.17 (NLCT)
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 92.
+Package glossaries Info: Writing glossary file main.glo on input line 120.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -793,7 +793,7 @@ l.32
       [1
 
 
-] [2]
+] (./main.gls [2])
 
 LaTeX Warning: Reference `algorithm-design' on page 3 undefined on input line 4
 0.
@@ -845,7 +845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--34
 
 [4
 
-] <Figures/main_architecture.png, id=142, 666.49pt x 655.44875pt>
+] <Figures/main_architecture.png, id=160, 666.49pt x 655.44875pt>
 File: Figures/main_architecture.png Graphic file (type png)
 
 <use Figures/main_architecture.png>
@@ -917,14 +917,9 @@ AED: lastpage setting LastPage
 [10
 
 ]
-
-Package glossaries Warning: No \printglossary or \printglossaries found.
-(Remove \makeglossaries if you don't want any glossaries.)
-This document will not have a glossary.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
-(./main.aux)
+ (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -936,13 +931,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 15134 strings out of 494957
- 226769 string characters out of 6180027
- 489908 words of memory out of 5000000
- 18032 multiletter control sequences out of 15000+600000
+ 15234 strings out of 494957
+ 228199 string characters out of 6180027
+ 490728 words of memory out of 5000000
+ 18125 multiletter control sequences out of 15000+600000
  37312 words of font info for 62 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 48i,10n,76p,1989b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,10n,76p,1989b,870s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
@@ -951,10 +946,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/u
 plb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (13 pages, 204142 bytes).
+Output written on main.pdf (13 pages, 204657 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
  152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
