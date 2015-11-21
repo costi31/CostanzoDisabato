@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  20 NOV 2015 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  21 NOV 2015 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -145,11 +145,19 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 11.
 
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count98
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count98
-\Gm@cntv=\count99
-\c@Gm@tempcnt=\count100
+\Gm@cnth=\count99
+\Gm@cntv=\count100
+\c@Gm@tempcnt=\count101
 \Gm@bindingoffset=\dimen107
 \Gm@wd@mp=\dimen108
 \Gm@odd@mp=\dimen109
@@ -176,7 +184,7 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count101
+\Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
@@ -189,7 +197,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2014/09/25 3.9l Babel common definitions
-\babel@savecnt=\count102
+\babel@savecnt=\count103
 \U@D=\dimen117
 )
 \l@canadian = a dialect from \language\l@american 
@@ -205,8 +213,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
-\integerpart=\count103
-\decimalpart=\count104
+\integerpart=\count104
+\decimalpart=\count105
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -232,7 +240,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count105
+\c@float@type=\count106
 \float@exts=\toks19
 \float@box=\box26
 \@float@everytoks=\toks20
@@ -241,25 +249,25 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen118
 \WF@size=\dimen119
-\c@WF@wrappedlines=\count106
+\c@WF@wrappedlines=\count107
 \WF@box=\box28
 \WF@everypar=\toks21
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count107
+\c@lips@count=\count108
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count108
+\FV@CodeLineNo=\count109
 \FV@InFile=\read1
 \FV@TabBox=\box29
-\c@FancyVerbLine=\count109
-\FV@StepNumber=\count110
+\c@FancyVerbLine=\count110
+\FV@StepNumber=\count111
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -277,23 +285,23 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count111
+\lst@mode=\count112
 \lst@gtempboxa=\box30
 \lst@token=\toks22
-\lst@length=\count112
+\lst@length=\count113
 \lst@currlwidth=\dimen120
-\lst@column=\count113
-\lst@pos=\count114
+\lst@column=\count114
+\lst@pos=\count115
 \lst@lostspace=\dimen121
 \lst@width=\dimen122
-\lst@newlines=\count115
-\lst@lineno=\count116
+\lst@newlines=\count116
+\lst@lineno=\count117
 \lst@maxwidth=\dimen123
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count117
-\lst@skipnumbers=\count118
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
 \lst@framebox=\box31
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
@@ -307,7 +315,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen124
 \enit@toks=\toks23
 \enit@inbox=\box32
-\enitdp@description=\count119
+\enitdp@description=\count120
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
@@ -315,7 +323,7 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 75.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 77.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -343,7 +351,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks26
 \XKV@tempa@toks=\toks27
 )
-\XKV@depth=\count120
+\XKV@depth=\count121
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/mfirstuc.sty
@@ -351,7 +359,7 @@ Package: mfirstuc 2015/02/03 v1.10 (NLCT)
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count121
+\etb@tempcnta=\count122
 )
 \@glsmfirst=\toks28
 \@glsmrest=\toks29
@@ -385,13 +393,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count122
+\inf@bad=\count123
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count123
-\leftroot@=\count124
+\uproot@=\count124
+\leftroot@=\count125
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count125
-\DOTSCASE@=\count126
+\classnum@=\count126
+\DOTSCASE@=\count127
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -400,15 +408,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen127
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count127
-\c@MaxMatrixCols=\count128
+\macc@depth=\count128
+\c@MaxMatrixCols=\count129
 \dotsspace@=\muskip11
-\c@parentequation=\count129
-\dspbrk@lvl=\count130
+\c@parentequation=\count130
+\dspbrk@lvl=\count131
 \tag@help=\toks31
-\row@=\count131
-\column@=\count132
-\maxfields@=\count133
+\row@=\count132
+\column@=\count133
+\maxfields@=\count134
 \andhelp@=\toks32
 \eqnshift@=\dimen128
 \alignsep@=\dimen129
@@ -425,7 +433,7 @@ LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count134
+\c@su@anzahl=\count135
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2013/08/29 v2.17 (NLCT)
@@ -436,19 +444,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count135
+\actioncount=\count136
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count136
-\FP@xia=\count137
-\FP@xib=\count138
-\FP@xfa=\count139
-\FP@xfb=\count140
-\FP@rega=\count141
-\FP@regb=\count142
-\FP@regs=\count143
-\FP@times=\count144
+\FP@xs=\count137
+\FP@xia=\count138
+\FP@xib=\count139
+\FP@xfa=\count140
+\FP@xfb=\count141
+\FP@rega=\count142
+\FP@regb=\count143
+\FP@regs=\count144
+\FP@times=\count145
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -467,7 +475,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count145
+\FPseed=\count146
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -479,14 +487,14 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks35
-\@dtl@tmpcount=\count146
+\@dtl@tmpcount=\count147
 \dtl@tmplength=\skip57
-\dtl@sortresult=\count147
-\@dtl@numgrpsepcount=\count148
-\@dtl@datatype=\count149
-\dtl@codeA=\count150
-\dtl@codeB=\count151
-\@dtl@foreach@level=\count152
+\dtl@sortresult=\count148
+\@dtl@numgrpsepcount=\count149
+\@dtl@datatype=\count150
+\dtl@codeA=\count151
+\dtl@codeB=\count152
+\@dtl@foreach@level=\count153
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/glossaries-compat
 ible-307.sty
@@ -505,7 +513,7 @@ uage-mappings.tex))
 lish.ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-\gls@level=\count153
+\gls@level=\count154
 \@gls@tmpb=\toks36
 \gls@tmplen=\skip58
 \glskeylisttok=\toks37
@@ -531,16 +539,16 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip61
 \LTpre=\skip62
 \LTpost=\skip63
-\LTchunksize=\count154
+\LTchunksize=\count155
 \LTcapwidth=\dimen134
 \LT@head=\box35
 \LT@firsthead=\box36
 \LT@foot=\box37
 \LT@lastfoot=\box38
-\LT@cols=\count155
-\LT@rows=\count156
-\c@LT@tables=\count157
-\c@LT@chunks=\count158
+\LT@cols=\count156
+\LT@rows=\count157
+\c@LT@tables=\count158
+\c@LT@chunks=\count159
 \LT@p@ftn=\toks41
 )
 \glsdescwidth=\skip64
@@ -551,7 +559,7 @@ sty
 Package: glossary-super 2013/11/14 v4.0 (NLCT)
  (/usr/local/texlive/2015/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count159
+\c@tracingst=\count160
 \ST@wd=\dimen135
 \ST@rightskip=\skip66
 \ST@leftskip=\skip67
@@ -577,7 +585,7 @@ Package: glossary-tree 2015/02/03 v4.13 (NLCT)
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 88.
+Package glossaries Info: Writing glossary file main.glo on input line 90.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -597,20 +605,10 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 \AtBeginShipoutBox=\box40
 Package hyperref Info: Link coloring OFF on input line 24.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
-)
-\c@section@level=\count160
-)
 LaTeX Info: Redefining \ref on input line 24.
 LaTeX Info: Redefining \pageref on input line 24.
 LaTeX Info: Redefining \nameref on input line 24.
-
-(./main.out) (./main.out)
+ (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
@@ -695,7 +693,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 13.67995pt on input line 42.
 
-<Figures/PoliMi.pdf, id=68, 578.20877pt x 578.08434pt>
+<Figures/PoliMi.pdf, id=72, 578.20877pt x 578.08434pt>
 File: Figures/PoliMi.pdf Graphic file (type pdf)
 
 <use Figures/PoliMi.pdf>
@@ -703,7 +701,7 @@ Package pdftex.def Info: Figures/PoliMi.pdf used on input line 46.
 (pdftex.def)             Requested size: 85.35826pt x 85.33286pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 51.
- <Figures/logo3.png, id=69, 124.465pt x 244.915pt>
+ <Figures/logo3.png, id=73, 124.465pt x 244.915pt>
 File: Figures/logo3.png Graphic file (type png)
 
 <use Figures/logo3.png>
@@ -824,42 +822,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--34
 
 [4
 
-] <Figures/main_architecture.png, id=133, 666.49pt x 655.44875pt>
+] <Figures/main_architecture.png, id=140, 666.49pt x 655.44875pt>
 File: Figures/main_architecture.png Graphic file (type png)
 
 <use Figures/main_architecture.png>
-Package pdftex.def Info: Figures/main_architecture.png used on input line 43.
-(pdftex.def)             Requested size: 426.79134pt x 419.7258pt.
-
-Overfull \hbox (8.53766pt too wide) in paragraph at lines 43--44
- [][] 
- []
-
-[5] [6 <./Figures/main_architecture.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Package pdftex.def Info: Figures/main_architecture.png used on input line 44.
+(pdftex.def)             Requested size: 284.52756pt x 279.8172pt.
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 48--60
 
  []
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 65.
+Underfull \hbox (badness 10000) in paragraph at lines 48--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--60
+
+ []
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.60 
+      <./Figures/main_architecture.png>] [7]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 65.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 77.
 
 Missing character: There is no Ã in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--73
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-) (./Chapters/OtherInfo.tex [8]
+) (./Chapters/OtherInfo.tex [9]
 Chapter 3.
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 33.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
@@ -870,7 +888,7 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
 )
 
 AED: lastpage setting LastPage
-[9
+[10
 
 ]
 
@@ -884,7 +902,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5B351B6A2B38BBCE6B9B4F4D6A6E956A;1036.
+(rerunfilecheck)             Checksum: 1A6042F257AAFA0AE1967F396A8AB1C5;1099.
 
 
 LaTeX Warning: There were undefined references.
@@ -892,13 +910,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 14068 strings out of 493089
- 208292 string characters out of 6134841
- 475577 words of memory out of 5000000
- 17229 multiletter control sequences out of 15000+600000
- 32424 words of font info for 55 fonts, out of 8000000 for 9000
+ 14087 strings out of 493089
+ 208586 string characters out of 6134841
+ 477540 words of memory out of 5000000
+ 17241 multiletter control sequences out of 15000+600000
+ 37312 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,10n,43p,1819b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,10n,43p,1819b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
@@ -908,10 +926,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (12 pages, 200749 bytes).
+Output written on main.pdf (13 pages, 203975 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

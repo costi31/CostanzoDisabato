@@ -37,22 +37,34 @@ When a driver logs into the service, we suppose that it is working, so his speci
 \section{High level components and their interaction}
 \label{ArchitecturalDesign:high_level}
 
-The main structure of myTaxiService can be described as a Service-Oriented architecture (see \autoref{ArchitecturalDesign:design_patterns} to have a detailed description of this design pattern). In addition to this idea the Model-View-Control paradigm is applied in order to develop a good-programmed, a reusable and a easy-maintainable system.
+The main structure of myTaxiService can be described as a Service-Oriented architecture (see \autoref{ArchitecturalDesign:design_patterns} to have a detailed description of this design pattern). In addition to this idea the Model-View-Control paradigm is applied in order to develop a good-programmed, reusable and easy-maintainable system.
 \begin{figure}[h]
+	\label{ArchitecturalDesign:figure1}
 	\centering
-	\includegraphics[width=15cm] {main_architecture}
+	\includegraphics[width=10cm] {main_architecture}
+	\caption{High level architecture}
 \end{figure}
 
-
-TESTO NON UFFICIALE\\
-Fare qui un mega diagramma component che illustra le relazioni tra i vari componenti del nostro sistema. Architectures with three main components: data tier, server tier (split into 
-various components, like manager of DB, security controller, client handler, ... we have to decide all of this component) and client tier that not contain the client applications, but the component which interacts with the client application, sends the pages, and makes a first check on data received by user (then the homonymous component into the server tier handles all the available actions).. 
-
-Descrizione precisa delle interazioni\\
-
+In the \ref{ArchitecturalDesign:figure1} is shown the architecture. At the bottom of the figure there is the \nameref{ArchitecturalDesign:datatier} which contains only the database (a component that stores all data about the customers, the rides and the system).\\
+\\
+The central part of the picture contains the provider, the big component that gives the service. At this level of description we can look in the provider. This component is splitted into five parts. The DataBase Managment System (DMBS) manages all communications with the \nameref{ArchitecturalDesign:datatier}. The Ride Allocator has only one role, to assign and to handle the ride, both future and zerotime. The system controller is the \textquotedblleft heart\textquotedblright of the provider: it involves the ride allocator when is needed, it gives all the services of the system, it provides the DBMS with the data to be stored (or asks him some data to be found) and, communicate with the Client and Users Handler. The Client and User Handler, as its name said, handles the communications with the clients and administrates the Uses, so which services can be shown and selected by them.\\
+\\
+The third tier is a presentation level. In the Service-Oriented pattern this level represents the presentation of available services. Here, the clients can see the services and select the desired one.\\
+Finally, at the top of the image, there is a representation of the two kind of clients, the Ws and the MA.\\
+\\
+All the tiers are also distinguished into the three parts of MVC-paradigm. The \nameref{ArchitecturalDesign:datatier} is the model\footnote{see the Alloy section or the UML class diagram into the RASD to see it. However, in section \ref{ArchitecturalDesign:datatier} it is studied again.}. The provider is also the controller: even if the controller can be see as the component that manages the interaction between the view and the model, in this application we consider other \textquotedblleft handler\textquotedblright as part of controller because they encapsulate rules and action codes. The view is the union between the presentation tier (here the services are only shown to client, the \textquotedblleft decisions\textquotedblright are taken by the provider) and the clients.\\
+\\
+Up to now, we have introduced all the main components or tier of our system, without focus on the communications between them, so we'll dedicate a little part of this paragraph on this argument.\\
+All the communications between the model and the provider are managed by the DBMS that has store policies and finds the required data. The system controller is the central node in communication because it is the only way to all other component of the provider.
+The Client and User Handler is the link between the provider and the clients. It checks the type of the current user and, as consequence, the available services that he can uses. When a user asks a service, he binds the request asking for the related function it the System Controller. Finally, it checks the type of client, because they have two ways of communication. When a user is connected with the WS, the Client and User Handler load the pages into itself and then, using the HTTPS protocol sent them to the client. Besides, the communications with the MA is implemented using sockets. The implementation of these ways of communication with the clients is realized by a common interface (see the section \ref{ArchitecturalDesign:comp_interfaces} for further information).
 
 \section{Component view}
 \label{ArchitecturalDesign:component}
+
+
+\subsection{Data Tier}
+\label{ArchitecturalDesign:datatier}
+
 
 TESTO NON UFFICIALE\\
 qui si descrivono nel dettaglio tutti i vari componenti, specialmente il data tier e il server tier. 
