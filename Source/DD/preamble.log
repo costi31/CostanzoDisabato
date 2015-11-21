@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  20 NOV 2015 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  21 NOV 2015 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **preamble.tex
 (./preamble.tex
 LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+Babel <3.9l> and hyphenation patterns for 4 languages loaded.
 
 ! LaTeX Error: \usepackage before \documentclass.
 
@@ -169,12 +169,37 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.13 \usepackage{
+                 nameref}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \usepackage[footnotesize]{
+                               caption} % Adds the possibility to write text...
+
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \usepackage{
                  geometry} % Required to change the page size to A4
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.14 \geometry
+l.18 \geometry
               {a4paper} % Set the page size to be A4 as opposed to the defau...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -189,7 +214,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.14 \geometry{a
+l.18 \geometry{a
                 4paper} % Set the page size to be A4 as opposed to the defau...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -203,7 +228,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--19
 [] 
  []
 
@@ -214,7 +239,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 \usepackage{
+l.20 \usepackage{
                  graphicx} % Required for including pictures
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -226,7 +251,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 \usepackage[english]{
+l.22 \usepackage[english]{
                           babel}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -241,7 +266,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 \selectlanguage{english}
+l.23 \selectlanguage{english}
                               % Sets to English the language of document
 You may proceed, but expect unexpected results
 
@@ -252,7 +277,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21 \usepackage[printonlyused]{
+l.25 \usepackage[printonlyused]{
                                 acronym} %Deletes some blank pages
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -264,7 +289,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 \usepackage[T1]{
+l.27 \usepackage[T1]{
                      fontenc}	% Defines characters' type
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -276,7 +301,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 \usepackage[latin1]{
+l.28 \usepackage[latin1]{
                          inputenc} 	% Defines admissible fonts
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -288,7 +313,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 \usepackage{
+l.30 \usepackage{
                  indentfirst} % Indents the first row of a paragraph
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -300,7 +325,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \usepackage{
+l.32 \usepackage{
                  float} % Allows putting an [H] in \begin{figure} to specify...
 
 \usepackage may only appear in the document preamble, i.e.,
@@ -313,7 +338,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \usepackage{
+l.33 \usepackage{
                  wrapfig} % Allows in-line images such as the example fish p...
 
 \usepackage may only appear in the document preamble, i.e.,
@@ -326,7 +351,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 \usepackage{
+l.35 \usepackage{
                  lipsum} % Used for inserting dummy 'Lorem ipsum' text into ...
 
 \usepackage may only appear in the document preamble, i.e.,
@@ -339,7 +364,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 \usepackage{
+l.37 \usepackage{
                  fancyvrb}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -351,7 +376,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 \usepackage{
+l.39 \usepackage{
                  fancyhdr} % Used to customize the header and footer of page...
 
 \usepackage may only appear in the document preamble, i.e.,
@@ -364,7 +389,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 \usepackage{
+l.41 \usepackage{
                  lastpage} % Used to obtain the number of pages
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -376,13 +401,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 \usepackage{
+l.43 \usepackage{
                  listings} % Package for listings
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.40 \lstset
+l.44 \lstset
             {
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -397,7 +422,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 	t
+l.45 	t
        absize=8,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -466,7 +491,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 ! Undefined control sequence.
-l.45 	basicstyle=\scriptsize
+l.49 	basicstyle=\scriptsize
                             \ttfamily,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -475,50 +500,50 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 46.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 47.
+(Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 47.
+(Font)              <7> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 47.
+(Font)              <5> on input line 51.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 41--53
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--57
 []
  []
 
 
-Overfull \hbox (5.24995pt too wide) in paragraph at lines 41--53
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 45--57
 \OT1/cmtt/m/n/10 ,
  []
 
 
-Overfull \hbox (73.49936pt too wide) in paragraph at lines 41--53
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 45--57
 \OT1/cmtt/m/n/10 keywordstyle=,
  []
 
 
-Overfull \hbox (57.7495pt too wide) in paragraph at lines 41--53
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 45--57
 \OT1/cmtt/m/n/10 emphstyle=$[]$
  []
 
 
-Overfull \hbox (120.74895pt too wide) in paragraph at lines 41--53
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 45--57
 \OT1/cmtt/m/it/10 showstringspaces=false,
  []
 
 
-Overfull \hbox (68.2494pt too wide) in paragraph at lines 41--53
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 45--57
 \OT1/cmtt/m/it/10 frame=single,
  []
 
 
-Overfull \hbox (68.2494pt too wide) in paragraph at lines 41--53
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 45--57
 \OT1/cmtt/m/it/10 captionpos=b,
  []
 
 
-Overfull \hbox (68.2494pt too wide) in paragraph at lines 41--53
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 45--57
 \OT1/cmtt/m/it/10 aboveskip=1em
  []
 
@@ -529,13 +554,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55 \usepackage{
+l.59 \usepackage{
                  enumitem}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.56 \setlist
+l.60 \setlist
              {nosep} % Deletes the space before an items list and after
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -550,7 +575,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 \setlist{n
+l.60 \setlist{n
                osep} % Deletes the space before an items list and after
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -561,7 +586,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 56--57
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--61
 [] 
  []
 
@@ -572,7 +597,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 \usepackage[scaled]{
+l.77 \usepackage[scaled]{
                          helvet}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -584,18 +609,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 \usepackage{
+l.78 \usepackage{
                  courier}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 75.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 79.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 ! Undefined control sequence.
-l.82 \graphicspath
-                  {{Figures/}} % Specifies the directory where pictures are ...
+l.86 \graphicspath
+                  {{Figures/}{../Figures/}} % Specifies the directory where ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -609,15 +634,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \graphicspath{{F
-                     igures/}} % Specifies the directory where pictures are ...
+l.86 \graphicspath{{F
+                     igures/}{../Figures/}} % Specifies the directory where ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (58.9195pt too wide) in paragraph at lines 82--83
-[]\OT1/ppl/m/n/10 Figures/ 
+Overfull \hbox (108.89893pt too wide) in paragraph at lines 86--87
+[]\OT1/ppl/m/n/10 Figures/../Figures/ 
  []
 
 
@@ -627,7 +652,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 \usepackage{
+l.88 \usepackage{
                  subfiles} % Allow to manage the document as different files...
 
 \usepackage may only appear in the document preamble, i.e.,
@@ -640,14 +665,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 ...ion, numberedsection, toc, style=altlist]{
+l.90 ...ion, numberedsection, toc, style=altlist]{
                                                   glossaries}	% Define the g...
 
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.88 \makeglossaries
+l.92 \makeglossaries
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -663,11 +688,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 61 strings out of 493089
- 886 string characters out of 6134841
- 53199 words of memory out of 5000000
- 3639 multiletter control sequences out of 15000+600000
+ 61 strings out of 494957
+ 878 string characters out of 6180027
+ 46355 words of memory out of 5000000
+ 3396 multiletter control sequences out of 15000+600000
  4403 words of font info for 17 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 36 hyphenation exceptions out of 8191
  19i,4n,13p,217b,102s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
