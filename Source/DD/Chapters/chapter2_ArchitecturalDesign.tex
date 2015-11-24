@@ -62,12 +62,69 @@ The Client and User Handler is the link between the provider and the clients. It
 \label{ArchitecturalDesign:component}
 
 
-\subsection{Data Tier}
+\subsection{Data tier}
 \label{ArchitecturalDesign:datatier}
 
+This paragraph shows the Logical schema of the database in figure num for the application.\\
+The underlined attributes are the primary keys of the tuples, while the
+bold attributes are the reference keys.\\
+\begin{itemize}
+	\item rides (\underline{rideID}, \textbf{passenger}, \textbf{driver}, \textbf{departure}, \textbf{destination}, departureTime, arrivalTime, creationDate, isFuture) : \\
+	it contains both the zerotime rides and future rides, the field isFuture has value 1 when it's a future ride, 0 when zerotime ride.
+	
+	\item users (\underline{userID}, email, password, name, surname, taxcode, birthday, cityOfResidence, isDriver, registrationDate, activationCode, activated) : \\
+	it contains the general and fundamental information of all the users. The field isDriver has value 1 when the user is a driver, 0 otherwise. The field activated has value 1 if the user has completed the registration process by confirming on the link with his activation code sent to his e-mail address, 0 otherwise.
+	
+	\item drivers (\underline{driverID}, \textbf{userProfile} ,cabCarCode, \textbf{cabCompany}) : \\
+	it contains all the information of the drivers. The field userProfile is the reference key to the record in the users table which contains all the other general information of the driver.
+	
+	\item cabCompanies (\underline{cabCompanyID}, name) : \\
+	it contains all the cab companies that use myTaxyService.
+	
+	\item positions (\underline{positionID}, gpsCoordinates, \textbf{address}, civicNumber) : \\
+	it contains the stored positions for the rides (departure and destination) with the reference to the corresponding address in the table addresses and optionally the gps coordinates and the civic number.
+	
+	\item addresses (\underline{addressID}, city, street, \underline{area}) : \\
+	it contains all the existing streets and cities covered by myTaxyService, with the reference to the area which they belong to.
+	
+	\item areas (\underline{areaID}, name) : \\
+	it contains all the areas covered by myTaxyService.
+	
+	\item driversWaiting (\underline{\textbf{area, driver}}, driverAddedTime) : \\
+	it contains all the available drivers waiting for a ride request. The tuple "area,driver" is unique because a driver cannot be available in more than one area at time. The field driverAddedTime contains the date and time when the driver is added to the list of available drivers for a certain area, it is useful to sort the list with the desired order (a FIFO queue in our application).
+	
+	\item workShifts (\underline{workShiftID}, \textbf{driver}, weekDayNumber, startingTime, endingTime) : \\
+	it contains all the work shifts of a driver. weekDayNumber is the number of the day of the week (between 1 and 7, 1 is Monday, 7 Sunday). startingTime and endingTime represent a continuous time range of a work shift of a driver in a certain day of the week.
+	
+	\item alerts (\underline{alertID}, \textbf{user}, receptionDate, message) : \\
+	it contains all the alerts that a user has received. "user" field is the reference to the receiver of the alert.
+	
+\end{itemize}
 
-TESTO NON UFFICIALE\\
-qui si descrivono nel dettaglio tutti i vari componenti, specialmente il data tier e il server tier. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\paperheight, angle=90] {DataTier}
+	\caption{Logical schema of the database}
+	\label{ArchitecturalDesign:datatier_figure}
+\end{figure}
+
+\clearpage
+
+\subsection{Presentation tier}
+\label{ArchitecturalDesign:services}
+
+The available services are grouped into four main section:\\
+\begin{itemize}
+	\item \textit{Login and Registration.} This service is always available at the first access to myTaxiService, both for the \gls{ma} and the \gls{ws}. The user (it is not important which kind of user he want to become) has to log into the service or to register himself the first time. When the visitor clicks on login \footnote{see \autoref{UIdesign} for further information)}, he inserts his personal keys, then the Client and User Handler verifies the correctness of those keys, then checks the type of user to shows his services. (If the user is a driver or a cab company administrator other special credentials will be asked to increase security).\\
+	
+	\item \textit{Ride services.} This macro section contains all the functionalities related to the rides, so the characteristic ones of myTaxiService. The zerotime and future rides' reservation, the possibility to view or to modify the personal rides and the reading of user's alerts belong to this area and they are all shown together.\\
+	The Client and User Handler shows these services to all logged users (except for the administrators).\\
+	
+	\item \textit{Driver services.} Driver services is a section reserved to the drivers logged into the \gls{ma}, for the reason presented in \autoref{ArchitecturalDesign:preamble}. The functionalities give here are the management of work shifts, the notifications of availability and the reading of reserved alerts (for instance, the request for a ride or the confirmation of a ride).\\
+	
+	\item \textit{Administration services.} This section, for security reasons, can be accessed only with administrator credentials (they consists in a couple name and password and in the use of an electronic card) into the company's headquarters on the \gls{ws} version. The Client and User Handler shows into this section the following functionalities: create or remove a driver profile, notification for all the users (usually, for general information or problems with the service) and checks some service information (for instance anomaly values of taxi queues).
+\end{itemize}
+
 
 \section{Deployment view}
 \label{ArchitecturalDesign:deploy}
