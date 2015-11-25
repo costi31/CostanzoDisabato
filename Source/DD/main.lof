@@ -3,9 +3,23 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces High level architecture\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Logical schema of the database\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces UX Diagram from the Starting Page.}}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces UX Diagram for Profile Management.}}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces UX Diagram for the Ride booking.}}{15}{figure.caption.13}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces UX Diagram for Check the Reservations.}}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces UX Diagram for the Driver functionalities.}}{16}{figure.caption.17}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Sequence Diagram for the Registration.}}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Sequence Diagram for the login.}}{18}{figure.caption.21}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Sequence Diagram for the Profile Management.}}{18}{figure.caption.23}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Sequence Diagram for Start Waiting Time.}}{19}{figure.caption.25}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Sequence Diagram for the Workshifts Management.}}{20}{figure.caption.27}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Sequence Diagram for Check the Reservations.}}{20}{figure.caption.29}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Sequence Diagram for the Zerotime Ride.}}{21}{figure.caption.31}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Sequence Diagram for the Future Ride.}}{22}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Login page into website.\relax }}{11}{figure.caption.7}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont Login page into mobile application.\relax }}{11}{figure.caption.7}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Registration page into website.\relax }}{12}{figure.caption.8}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont Registration page in mobile application.\relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Login page into website.\relax }}{24}{figure.caption.34}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Login page into mobile application.}}{24}{figure.caption.34}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Registration page into website.\relax }}{25}{figure.caption.35}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Registration page in mobile application.}}{25}{figure.caption.35}
 \addvspace {10\p@ }

@@ -9,13 +9,29 @@
 \contentsline {section}{\numberline {2.1}Distinctions between various kind of Users and Clients}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}High level components and their interaction}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Component view}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Data Tier}{8}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Deployment view}{8}{section.2.4}
-\contentsline {section}{\numberline {2.5}Runtime view}{8}{section.2.5}
-\contentsline {section}{\numberline {2.6}Component Interfaces}{9}{section.2.6}
-\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{9}{section.2.7}
-\contentsline {chapter}{\numberline {3}User Interfaces Design}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Registration/Login}{10}{section.3.1}
-\contentsline {chapter}{\numberline {4}Other Info}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Working hours}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Tools}{13}{section.4.2}
+\contentsline {subsection}{\numberline {2.3.1}Data tier}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Presentation tier}{11}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Deployment view}{12}{section.2.4}
+\contentsline {section}{\numberline {2.5}Runtime view}{12}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}UX Diagram}{13}{subsection.2.5.1}
+\contentsline {subsubsection}{Starting Page}{13}{section*.8}
+\contentsline {subsubsection}{Profile Management}{14}{section*.10}
+\contentsline {subsubsection}{Zerotime and Future Rides}{15}{section*.12}
+\contentsline {subsubsection}{Check The Reservations}{16}{section*.14}
+\contentsline {subsubsection}{Driver Functionalities}{16}{section*.16}
+\contentsline {subsection}{\numberline {2.5.2}Sequence Diagram}{17}{subsection.2.5.2}
+\contentsline {subsubsection}{Registration}{17}{section*.18}
+\contentsline {subsubsection}{Login}{18}{section*.20}
+\contentsline {subsubsection}{Profile Management}{18}{section*.22}
+\contentsline {subsubsection}{Start Waiting Time}{19}{section*.24}
+\contentsline {subsubsection}{Workshifts Management}{20}{section*.26}
+\contentsline {subsubsection}{Check The Reservations}{20}{section*.28}
+\contentsline {subsubsection}{Zerotime Ride}{21}{section*.30}
+\contentsline {subsubsection}{Future Ride Booking}{22}{section*.32}
+\contentsline {section}{\numberline {2.6}Component Interfaces}{22}{section.2.6}
+\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{22}{section.2.7}
+\contentsline {chapter}{\numberline {3}User Interfaces Design}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Registration/Login}{23}{section.3.1}
+\contentsline {chapter}{\numberline {4}Other Info}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Working hours}{26}{section.4.1}
+\contentsline {section}{\numberline {4.2}Tools}{27}{section.4.2}

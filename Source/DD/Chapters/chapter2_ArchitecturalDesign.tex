@@ -135,9 +135,182 @@ e quindi dobbiamo fare un diagramma contenente le classi principali del controll
 \section{Runtime view}
 \label{ArchitecturalDesign:runtime}
 
-TESTO NON UFFICIALE\\
-qui si pone particolare attenzione alle screen e quindi al client tier.\\
-Tutti i sequence diagram e gli UX saranno messi qui\\
+In this paragraph we'll show the main features on the runtime view, which means the UX diagrams and the sequence diagrams.\\
+The UX diagrams display the structure of the myTaxiService's screens (input forms, available functions and shown data) and the effects of each function (the next screens viewed). The sequence diagrams show the sequence of functions's calling and screens to benefit of a functionality.\\
+\\
+An important note is the following: the functionality Read The Alerts\footnote{see the RASD for further information.} is not shown here. It is performed as a simple screen on the Homepage that redirect to another screen with only the list of alerts (composed by a title and a written text).\\
+\\
+Finally, the two version of myTaxiService (\gls{ws} and \gls{ma}) have no differences on the visualization of the screen. In fact, the screen has the same name and the same purpose, but they are adapted to the particular version where they are displayed.\\
+
+\clearpage
+
+\subsection{UX Diagram}
+\label{ArchitecturalDesign:UX}
+
+\subsubsection{Starting Page}
+\label{ArchitecturalDesign:UX_StartingPage}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:firstUX}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/UX_StartingPage}
+	\caption[UX Diagram from the Starting Page.] {The UX diagram from the Starting Page. The main functionalities available from this screen are displayed here.}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Profile Management}
+\label{ArchitecturalDesign:UX_Homepage}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:secondUX}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/UX_ProfileManagement}
+	\caption[UX Diagram for Profile Management.] {The UX diagram for the management of the personal profile. All the possible operations are displayed here.}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Zerotime and Future Rides}
+\label{ArchitecturalDesign:UX_Ride}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:fourthUX}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/UX_Ride}
+	\caption[UX Diagram for the Ride booking.] {The UX diagram for both the booking of a future ride and the asking for a zerotime ride, starting from the homepage.\\
+		In order to make the diagram easy to understand, not all the error screens are inserted into the diagram: only the first one is shown.The other ones are similar and where there is an input form.}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Check The Reservations}
+\label{ArchitecturalDesign:UX_CheckReservations}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:thirdUX}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/UX_CheckReservation}
+	\caption[UX Diagram for Check the Reservations.] {The UX diagram for the management of the personal reservations.}
+\end{figure}
+
+%\clearpage
+
+\subsubsection{Driver Functionalities}
+\label{ArchitecturalDesign:UX_Driver}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:fifthUX}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/UX_Driver}
+	\caption[UX Diagram for the Driver functionalities.] {The Ux diagram for the Driver functionalities.}
+\end{figure}
+
+\clearpage
+
+\subsection{Sequence Diagram}
+\label{ArchitecturalDesign:SD}
+
+In this section are displayed the sequence diagram of myTaxiService run-view. In each diagram where the actor is an user and not a visitor of the website there is always an edge with \textquotedblleft Login Procedure\textquotedblright that can be misunderstood: the login to the websites it is required to perform the desired action, but if it is already done (for instance when the user is on his homepage after another operation) the login it is not requested again.\\
+
+\subsubsection{Registration}
+\label{ArchitecturalDesign:SD_Registration}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:firstSD}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/SD_Registration}
+	\caption[Sequence Diagram for the Registration.] {The sequence diagram for the Registration.}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Login}
+\label{ArchitecturalDesign:SD_Login}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:secondSD}
+	\centering
+	\includegraphics[width = 0.75\textwidth] {runtime/SD_Login}
+	\caption[Sequence Diagram for the login.] {The sequence diagram for the Login.}
+\end{figure}
+
+%\clearpage
+
+\subsubsection{Profile Management}
+\label{ArchitecturalDesign:SD_ProfileManagement}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:thirdSD}
+	\centering
+	\includegraphics[width = 0.85\textwidth] {runtime/SD_ProfileManagement}
+	\caption[Sequence Diagram for the Profile Management.] {The sequence diagram for the management of the personal profile.\\
+		 The only data that can be modified are the email and the password used to log into the system, while name, surname, tax code, gender and birthday are not modifiable by definition.}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Start Waiting Time}
+\label{ArchitecturalDesign:SD_StartWaitingTime}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:fourthSD}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/SD_StartWaitingTime}
+	\caption[Sequence Diagram for Start Waiting Time.] {The sequence diagram for the notification of waiting time's start.}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Workshifts Management}
+\label{ArchitecturalDesign:SD_WorkshiftsManagement}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:fifthSD}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/SD_WorkshiftsManagement}
+	\caption[Sequence Diagram for the Workshifts Management.] {The sequence diagram for the management of the driver's workshifts.}
+\end{figure}
+
+%\clearpage
+
+\subsubsection{Check The Reservations}
+\label{ArchitecturalDesign:SD_CheckReservation}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:sixthSD}
+	\centering
+	\includegraphics[width = 0.9\textwidth] {runtime/SD_CheckTheReservations}
+	\caption[Sequence Diagram for Check the Reservations.] {The sequence diagram for the management of personal booking.}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Zerotime Ride}
+\label{ArchitecturalDesign:SD_Zerotime}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:seventhSD}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/SD_ZerotimeRide}
+	\caption[Sequence Diagram for the Zerotime Ride.] {The sequence diagram for the asking for a zerotime ride.\\
+		In order to make the diagram easy to understand, the errors on inserting the positions are not modelled.}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Future Ride Booking}
+\label{ArchitecturalDesign:SD_Zerotime}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:seventhSD}
+	\centering
+	\includegraphics[width = \textwidth] {runtime/SD_FutureRideBooking}
+	\caption[Sequence Diagram for the Future Ride.] {The sequence diagram for the booking of a future ride.\\
+		In order to make the diagram easy to understand, the errors on inserting either the positions or the departure are not modelled.}
+\end{figure}
+
+%\clearpage
 
 \section{Component Interfaces}
 \label{ArchitecturalDesign:comp_interfaces}
