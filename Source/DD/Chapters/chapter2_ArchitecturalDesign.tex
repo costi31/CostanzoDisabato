@@ -47,7 +47,7 @@ The main structure of myTaxiService can be described as a Service-Oriented archi
 
 In the figure \ref{ArchitecturalDesign:figure1} is shown the architecture. At the bottom of the figure there is the \nameref{ArchitecturalDesign:datatier} which contains only the database (a component that stores all data about the customers, the rides and the system).\\
 \\
-The central part of the picture contains the provider, the big component that gives the service. At this level of description we can look in the provider. This component is split into five parts. The DataBase Managment System (DMBS) manages all communications with the \nameref{ArchitecturalDesign:datatier}. The Ride Allocator has only one role, to assign and to handle the ride, both future and zerotime. The system controller is the \textquotedblleft heart\textquotedblright of the provider: it involves the ride allocator when is needed, it gives all the services of the system, it provides the DBMS with the data to be stored (or asks him some data to be found) and communicates with the Client and Users Handler. The Client and User Handler, as its name said, handles the communications with the clients and administrates the Users, so which services can be shown and selected by them.\\
+The central part of the picture contains the provider, the big component that gives the service. At this level of description we can look in the provider. This component is split into five parts. The DataBase Management System (DBMS) manages all communications with the \nameref{ArchitecturalDesign:datatier}. The Ride Allocator has only one role, to assign and to handle the ride, both future and zerotime. The system controller is the \textquotedblleft heart\textquotedblright of the provider: it involves the ride allocator when is needed, it gives all the services of the system, it provides the DBMS with the data to be stored (or asks him some data to be found) and communicates with the Client and Users Handler. The Client and User Handler, as its name said, handles the communications with the clients and administrates the Users, so which services can be shown and selected by them.\\
 \\
 The third tier is a presentation level. In the Service-Oriented pattern this level represents the available services. Here, the clients can see the services and select the desired one.\\
 Finally, at the top of the image, there is a representation of the two kind of clients, the \gls{ws} and the \gls{ma}.\\
@@ -65,38 +65,38 @@ The Client and User Handler is the link between the provider and the clients. It
 \subsection{Data tier}
 \label{ArchitecturalDesign:datatier}
 
-This paragraph shows the Logical schema of the database in figure num for the application.\\
-The underlined attributes are the primary keys of the tuples, while the
+This paragraph shows the Logical schema of the database in figure \ref{ArchitecturalDesign:datatier_figure} for the application.\\
+The tuples names are written in italic style, the underlined attributes are the primary keys, while the
 bold attributes are the reference keys.\\
 \begin{itemize}
-	\item rides (\underline{rideID}, \textbf{passenger}, \textbf{driver}, \textbf{departure}, \textbf{destination}, departureTime, arrivalTime, creationDate, isFuture) : \\
+	\item \textit{rides} (\underline{rideID}, \textbf{passenger}, \textbf{driver}, \textbf{departure}, \textbf{destination}, departureTime, arrivalTime, creationDate, isFuture) : \\
 	it contains both the zerotime rides and future rides, the field isFuture has value 1 when it's a future ride, 0 when zerotime ride.
 	
-	\item users (\underline{userID}, email, password, name, surname, taxcode, birthday, cityOfResidence, isDriver, registrationDate, activationCode, activated) : \\
+	\item \textit{users} (\underline{userID}, email, password, name, surname, taxcode, birthday, cityOfResidence, isDriver, registrationDate, activationCode, activated) : \\
 	it contains the general and fundamental information of all the users. The field isDriver has value 1 when the user is a driver, 0 otherwise. The field activated has value 1 if the user has completed the registration process by confirming on the link with his activation code sent to his e-mail address, 0 otherwise.
 	
-	\item drivers (\underline{driverID}, \textbf{userProfile} ,cabCarCode, \textbf{cabCompany}) : \\
+	\item \textit{drivers} (\underline{driverID}, \textbf{userProfile}, cabCarCode, \textbf{cabCompany}) : \\
 	it contains all the information of the drivers. The field userProfile is the reference key to the record in the users table which contains all the other general information of the driver.
 	
-	\item cabCompanies (\underline{cabCompanyID}, name) : \\
+	\item \textit{cabCompanies} (\underline{cabCompanyID}, name) : \\
 	it contains all the cab companies that use myTaxyService.
 	
-	\item positions (\underline{positionID}, gpsCoordinates, \textbf{address}, civicNumber) : \\
+	\item \textit{positions} (\underline{positionID}, gpsLatitude, gpsLongitude, \textbf{address}, civicNumber) : \\
 	it contains the stored positions for the rides (departure and destination) with the reference to the corresponding address in the table addresses and optionally the gps coordinates and the civic number.
 	
-	\item addresses (\underline{addressID}, city, street, \underline{area}) : \\
+	\item \textit{addresses} (\underline{addressID}, city, street, \underline{area}) : \\
 	it contains all the existing streets and cities covered by myTaxyService, with the reference to the area which they belong to.
 	
-	\item areas (\underline{areaID}, name) : \\
+	\item \textit{areas} (\underline{areaID}, name) : \\
 	it contains all the areas covered by myTaxyService.
 	
-	\item driversWaiting (\underline{\textbf{area, driver}}, driverAddedTime) : \\
-	it contains all the available drivers waiting for a ride request. The tuple "area,driver" is unique because a driver cannot be available in more than one area at time. The field driverAddedTime contains the date and time when the driver is added to the list of available drivers for a certain area, it is useful to sort the list with the desired order (a FIFO queue in our application).
+	\item \textit{driversWaiting} (\underline{\textbf{area, driver}}, driverAddedTime) : \\
+	it contains all the available drivers waiting for a ride request. The couple of keys "area,driver" is unique because a driver cannot be available in more than one area at time. The field driverAddedTime contains the date and time when the driver is added to the list of available drivers for a certain area, it is useful to sort the list with the desired order (a FIFO queue in our application).
 	
-	\item workShifts (\underline{workShiftID}, \textbf{driver}, weekDayNumber, startingTime, endingTime) : \\
+	\item \textit{workShifts} (\underline{workShiftID}, \textbf{driver}, weekDayNumber, startingTime, endingTime) : \\
 	it contains all the work shifts of a driver. weekDayNumber is the number of the day of the week (between 1 and 7, 1 is Monday, 7 Sunday). startingTime and endingTime represent a continuous time range of a work shift of a driver in a certain day of the week.
 	
-	\item alerts (\underline{alertID}, \textbf{user}, receptionDate, message) : \\
+	\item \textit{alerts} (\underline{alertID}, \textbf{user}, receptionDate, message) : \\
 	it contains all the alerts that a user has received. "user" field is the reference to the receiver of the alert.
 	
 \end{itemize}
@@ -104,7 +104,7 @@ bold attributes are the reference keys.\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.75\paperheight, angle=90] {DataTier}
-	\caption{Logical schema of the database}
+	\caption{Logical schema of the database in the Data tier}
 	\label{ArchitecturalDesign:datatier_figure}
 \end{figure}
 
@@ -113,9 +113,50 @@ bold attributes are the reference keys.\\
 \subsection{Provider tier}
 \label{ArchitecturalDesign:provider}
 
-DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT
-DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT
-DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT DO IT
+The provider is the \textquotedblleft hearth\textquotedblright of myTaxiService and it is split into several components, each one dedicated to a specific function. In \autoref{ArchitecturalDesign:high_level} a short description of the provider's components has been written. In this paragraph we'll go in deep for each one.\\
+The \textbf{DBMS}, as its name says, manages the database and gives the system an interface to search, update or delete data. This interface can be used only by the System Controller by the use of queries already written into the application code. When the DBMS receives a query, first checks it to prevent some malevolent data (for instance SQL injection on same parameter asked to the client), then performs the required operations and gives methods to access the result.\\
+\\
+The \textbf{Security Manager} is a small component that implements all the security procedures of the provider. It contains:
+\begin{itemize}
+	\item The definition of the data encryption methods;
+	\item The firewall methods between the Provider and the Client and Users Handler;
+	\item The HTTPS protocol implementation;
+	\item The algorithms to check the authenticity of the administrators. \\
+\end{itemize}
+
+The \textbf{Client and Users Handler} binds the clients to the provider, so it has the following functions:
+\begin{itemize}
+	\item \textit{Client interface.} The handler implements the common interfaces of the clients\footnote{see \autoref{ArchitecturalDesign:comp_interfaces} to have a precise description of the interface.} to hide the kind of the client to the provider. In \autoref{ArchitecturalDesign:preamble} it is available a description of the main differences between the two client's versions.
+	\item \textit{Authentication.} The handler implements the methods to recognize the type of user by a code automatically generated by the System Controller at each valid session (typically it is the cookie used by the user or a similar number if he is using the \gls{ma}).
+	\item \textit{Services showing.} With the authentication module support the handler can decide which class of services can be seen by the user.
+	\item \textit{Services interfaces} In this component the interfaces for each group of services (there is an hereditary hierarchy to realize them) are defined to allows the handler to bind the desired service by callings for the System Controller (for security reason it is only possible to enqueue the request on the System Controller buffer). An other reason for their presence in this component it's the possibility to show that on the presentation tier.\\
+\end{itemize}
+
+The figure \ref{ArchitecturalDesign:clientAndUsersHandler} shows a simple class diagram that models the Client and User Handler, as it was described above.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{component/ClientAndUsersHandler}
+	\caption{A class diagram for the Client and Users Handler.}
+	\label{ArchitecturalDesign:clientAndUsersHandler}
+\end{figure}
+
+The \textbf{Ride Allocator} is a component involved by the System Controller only when a ride needs to be assigned and when a driver starts to wait for a new ride. Its functionalities are related to the situations described a few words before. The implementation of these functionalities is hidden to System Controller, that invokes them by an interface\footnote{In \autoref{ArchitecturalDesign:comp_interfaces} it is described this interface and the external interfaces used to implement the city map and the localization}.\\
+First, the Ride Allocator creates a representation of the city map split into areas\footnote{An important remark on area division is the following. As it is partially described into data tier model, the division into the areas is not made by a set of positions. An area is composed by a set of streets that are closest to each other. This choice can create same strange areas when a street is very long: in this case the area is composed by a set of closer streets that defines a polygonal area and by a street that is include into this polygon, but \textquotedblleft fills out\textquotedblright for part of itself.}. With this representation and the external APIs it is easy to identify the area where either a position or an address is into.\\
+Second, the Ride Allocator has to manage the queues for each areas, so it has two subcomponents dedicated to this purpose: the Queue Creator which creates and defines a queue for each area; the Queue Manager that implements the methods to handle the queues, so the management policies, the adding or the removing of a driver and so on.\\
+Finally, the Allocator assigns a cab-man to a ride for which the starting position (the destination is only an information for the driver, but not for this component) is passed by the System Controller.\\
+In figure \ref{ArchitecturalDesign:rideAllocator} the Ride Allocator is modelled by a simple class diagram.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{component/RideAllocator}
+	\caption{A class diagram for the Ride Allocator.}
+	\label{ArchitecturalDesign:rideAllocator}
+\end{figure}
+
+TODO SYSTEM CONTROLLER TODO\\
+
+\clearpage
 
 \subsection{Presentation tier}
 \label{ArchitecturalDesign:services}
@@ -269,14 +310,14 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 
 \clearpage
 
-\subsubsection{Workshifts Management}
+\subsubsection{Work shifts Management}
 \label{ArchitecturalDesign:SD_WorkshiftsManagement}
 
 \begin{figure}[hb!]
 	\label{ArchitecturalDesign:fifthSD}
 	\centering
 	\includegraphics[width = \textwidth] {runtime/SD_WorkshiftsManagement}
-	\caption[Sequence Diagram for the Workshifts Management.] {The sequence diagram for the management of the driver's workshifts.}
+	\caption[Sequence Diagram for the Work shifts Management.] {The sequence diagram for the management of the driver's work shifts.}
 \end{figure}
 
 %\clearpage
@@ -325,9 +366,8 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 
 \section{Selected architectural styles and patterns}
 \label{ArchitecturalDesign:design_patterns}
-
-
-EVENTBASED per ora\\
+As already mentioned and fully described before in section \ref{ArchitecturalDesign:high_level}, we have chosen two fundamental patterns, Service-Oriented and Model-View-Controller.\\
+According to the class diagram presented in the RASD, we have chosen to follow also some design patterns, such as the Factory Pattern that allows to create objects without exposing the creation logic to the client and refer to newly created object using a common interface or super class. We use this pattern to create a User of a specific type (Driver or normal User) and also a Ride of a specific type (zerotime or future ride).
 
 
 %End of chapter
