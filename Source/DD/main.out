@@ -8,15 +8,21 @@
 \BOOKMARK [1][-]{section.2.2}{High level components and their interaction}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.3}{Component view}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.3.1}{Data tier}{section.2.3}% 10
-\BOOKMARK [2][-]{subsection.2.3.2}{Presentation tier}{section.2.3}% 11
-\BOOKMARK [1][-]{section.2.4}{Deployment view}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.5}{Runtime view}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.5.1}{UX Diagram}{section.2.5}% 14
-\BOOKMARK [2][-]{subsection.2.5.2}{Sequence Diagram}{section.2.5}% 15
-\BOOKMARK [1][-]{section.2.6}{Component Interfaces}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.7}{Selected architectural styles and patterns}{chapter.2}% 17
-\BOOKMARK [0][-]{chapter.3}{User Interfaces Design}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Registration/Login}{chapter.3}% 19
-\BOOKMARK [0][-]{chapter.4}{Other Info}{}% 20
-\BOOKMARK [1][-]{section.4.1}{Working hours}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.2}{Tools}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.2.3.2}{Provider tier}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.3}{Presentation tier}{section.2.3}% 12
+\BOOKMARK [1][-]{section.2.4}{Deployment view}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.5}{Runtime view}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.5.1}{UX Diagram}{section.2.5}% 15
+\BOOKMARK [2][-]{subsection.2.5.2}{Sequence Diagram}{section.2.5}% 16
+\BOOKMARK [1][-]{section.2.6}{Component Interfaces}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.7}{Selected architectural styles and patterns}{chapter.2}% 18
+\BOOKMARK [0][-]{chapter.3}{User Interfaces Design}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Registration/Login}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{Personal Information Management}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Driver functionalities}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Zerotime Ride}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.5}{Future Ride}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.6}{Other User Functionalities}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{Other Info}{}% 26
+\BOOKMARK [1][-]{section.4.1}{Working hours}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{Tools}{chapter.4}% 28
