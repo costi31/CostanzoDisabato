@@ -3,41 +3,44 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces High level architecture\relax }}{6}{figure.caption.6}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Logical schema of the database\relax }}{10}{figure.caption.7}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces UX Diagram from the Starting Page.}}{14}{figure.caption.9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces UX Diagram for Profile Management.}}{15}{figure.caption.11}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces UX Diagram for the Ride booking.}}{16}{figure.caption.13}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces UX Diagram for Check the Reservations.}}{17}{figure.caption.15}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces UX Diagram for the Driver functionalities.}}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Sequence Diagram for the Registration.}}{18}{figure.caption.19}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Sequence Diagram for the login.}}{19}{figure.caption.21}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Sequence Diagram for the Profile Management.}}{19}{figure.caption.23}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Sequence Diagram for Start Waiting Time.}}{20}{figure.caption.25}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Sequence Diagram for the Workshifts Management.}}{21}{figure.caption.27}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Sequence Diagram for Check the Reservations.}}{21}{figure.caption.29}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Sequence Diagram for the Zerotime Ride.}}{22}{figure.caption.31}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Sequence Diagram for the Future Ride.}}{23}{figure.caption.33}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Logical schema of the database in the Data tier\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A class diagram for the Client and Users Handler.\relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A class diagram for the Ride Allocator.\relax }}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces A class diagram for the System Controller.\relax }}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces UX Diagram from the Starting Page.}}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces UX Diagram for Profile Management.}}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces UX Diagram for the Ride booking.}}{20}{figure.caption.16}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces UX Diagram for Check the Reservations.}}{21}{figure.caption.18}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces UX Diagram for the Driver functionalities.}}{21}{figure.caption.20}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Sequence Diagram for the Registration.}}{22}{figure.caption.22}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Sequence Diagram for the login.}}{23}{figure.caption.24}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Sequence Diagram for the Profile Management.}}{23}{figure.caption.26}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Sequence Diagram for Start Waiting Time.}}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Sequence Diagram for the Work shifts Management.}}{25}{figure.caption.30}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Sequence Diagram for Check the Reservations.}}{25}{figure.caption.32}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Sequence Diagram for the Zerotime Ride.}}{26}{figure.caption.34}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Sequence Diagram for the Future Ride.}}{27}{figure.caption.36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Login page into website.\relax }}{25}{figure.caption.34}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Login page into mobile application.}}{25}{figure.caption.34}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Registration page into website.\relax }}{26}{figure.caption.35}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Registration page in mobile application.}}{26}{figure.caption.35}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Personal Information Management page into website.\relax }}{26}{figure.caption.36}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Personal Information Management page in mobile application.\relax }}{26}{figure.caption.36}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces The Start Waiting Time page.\relax }}{27}{figure.caption.37}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The request for a ride to a driver page.}}{27}{figure.caption.37}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces The workshifts management page.\relax }}{28}{figure.caption.38}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Zerotime ride request part1 into mobile application.}}{29}{figure.caption.39}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Zerotime ride request part2 into mobile application.}}{29}{figure.caption.39}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Zerotime ride request part3 into mobile application.}}{29}{figure.caption.40}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Zerotime ride request into website.}}{29}{figure.caption.40}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Future ride request part1 into mobile application.}}{30}{figure.caption.41}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Future ride request part2 into mobile application.}}{30}{figure.caption.41}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Future ride request part3 into mobile application.}}{31}{figure.caption.42}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Future ride request into website.}}{31}{figure.caption.42}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces View reservation into mobile application.}}{32}{figure.caption.43}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Modify reservations into mobile application.}}{32}{figure.caption.43}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Check reservation into website.}}{32}{figure.caption.44}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Read the alerts into mobile application.}}{33}{figure.caption.45}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Read the alerts into website.}}{33}{figure.caption.45}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Login page into website.\relax }}{29}{figure.caption.37}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Login page into mobile application.}}{29}{figure.caption.37}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Registration page into website.\relax }}{30}{figure.caption.38}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Registration page in mobile application.}}{30}{figure.caption.38}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Personal Information Management page into website.\relax }}{30}{figure.caption.39}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Personal Information Management page in mobile application.\relax }}{30}{figure.caption.39}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces The Start Waiting Time page.\relax }}{31}{figure.caption.40}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The request for a ride to a driver page.}}{31}{figure.caption.40}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The workshifts management page.\relax }}{32}{figure.caption.41}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Zerotime ride request part1 into mobile application.}}{33}{figure.caption.42}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Zerotime ride request part2 into mobile application.}}{33}{figure.caption.42}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Zerotime ride request part3 into mobile application.}}{33}{figure.caption.43}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Zerotime ride request into website.}}{33}{figure.caption.43}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Future ride request part1 into mobile application.}}{34}{figure.caption.44}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Future ride request part2 into mobile application.}}{34}{figure.caption.44}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Future ride request part3 into mobile application.}}{35}{figure.caption.45}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Future ride request into website.}}{35}{figure.caption.45}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces View reservation into mobile application.}}{36}{figure.caption.46}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Modify reservations into mobile application.}}{36}{figure.caption.46}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Check reservation into website.}}{36}{figure.caption.47}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Read the alerts into mobile application.}}{37}{figure.caption.48}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Read the alerts into website.}}{37}{figure.caption.48}
 \addvspace {10\p@ }

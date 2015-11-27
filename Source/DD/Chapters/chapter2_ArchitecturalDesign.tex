@@ -149,14 +149,27 @@ In figure \ref{ArchitecturalDesign:rideAllocator} the Ride Allocator is modelled
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{component/RideAllocator}
+	\includegraphics[width=0.75\textwidth]{component/RideAllocator}
 	\caption{A class diagram for the Ride Allocator.}
 	\label{ArchitecturalDesign:rideAllocator}
 \end{figure}
 
-TODO SYSTEM CONTROLLER TODO\\
+The \textbf{System Controller} is the central node of the application: all the communications pass through it. As consequence it requires a very good design to do not slow down the system.\\
+The main subcomponent is the Dispatcher, realized first as an interface with only the method to enqueue a request for another component (for instance the an user request coming from the Client and Users Handler), then as a concrete implementation with all the hidden methods. The policy to manage the request is a three priority levels FIFO\footnote{FIFO means \textit{First In First Out}, so the first arrived request is handled before the others. In addition there are three priority levels to allows the possibility to a more important message of be handled earlier than a low-priority one arrived in advance.} queue, where the first level is reserved to some problems that can occurs during system execution and the second one is dedicated to the administrators' operations. To clarify, near the 100\% of the message have the low-level priority, but the system is able to immediately react when a fault or an external attack happen (the related messages have the high-level priority).\\
+Second, the User Creator is able to create user by Factory Method pattern\footnote{see \autoref{ArchitecturalDesign:design_patterns} for a formal description of this design pattern.}. Hence, with some strategies hidden by that pattern the User Creator creates the correct type of user. This fact implies an important consequence to the system: each type of user can create or not particular cookies to allow the Client and User Handler recognize them and perform the available operations.\\
+Third, the User Checker is a supplementary component to increase the security of the system and works in parallel to the Dispatcher. When a request is enqueued to the dispatcher low-level the Checker immediately checks the validity of that request and, if any, the request is removed by the queue.\\
+Fourth, the Data Checker has the only role of checks the validity of input data inserted by an user. Thus, it checks the correctness of inserted addresses (in collaboration with the Ride Allocator) and of personal data.\\
+Finally this component contains all the main logic of the system, so all the classes not related to some particular component (for instance all the handlers and the rides's definition and management) is defined here.\\
+In figure \ref{ArchitecturalDesign:systemController} a class diagram that model this component is shown.
 
-\clearpage
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth]{component/SystemController}
+	\caption{A class diagram for the System Controller.}
+	\label{ArchitecturalDesign:systemController}
+\end{figure}
+
+%\clearpage
 
 \subsection{Presentation tier}
 \label{ArchitecturalDesign:services}
@@ -177,8 +190,7 @@ The available services are grouped into four main section:\\
 \section{Deployment view}
 \label{ArchitecturalDesign:deploy}
 
-cosa scrivere qui? c'è un diagramma che mostra i vari componenti software/hardware\\
-e quindi dobbiamo fare un diagramma contenente le classi principali del controller
+TEXT
 
 \section{Runtime view}
 \label{ArchitecturalDesign:runtime}
