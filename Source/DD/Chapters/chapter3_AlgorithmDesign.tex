@@ -3,30 +3,57 @@
 \documentclass[\mainpath/main]{subfiles}
 \begin{document}
 
-\chapter{Architectural Design}
-\label{architectural_design}
+\chapter{Algorithm Design}
+\label{algorithm_design}
 
 % Command to be executed after the starting of every chapter
 \setmyfancystyle
 % ----------------
 
-In this chapter the most interesting algorithm of myTaxiService are presented using pseudo-code (every developer can easily translate the pseudo-code into the desired programming language).\\
-The meaning of word \textit{interesting}, used above to define the algorithms which we are presenting, is the following: a characteristic and unique algorithm, used to implement some specific functionalities of this system. For instance, an algorithm to manage the backup of the database can be very complicated in describing the policies, the exceptions and the situations when execute its, but it is a common algorithm to all the systems that store data into a database.\\
-In this chapter the algorithms analysed are the following:\\
+In this chapter the most interesting algorithm of myTaxiService are presented using pseudo-code (every developer can easily translate the pseudo-code into the desired programming language). In addition this pseudo-code is referred to an object-oriented programming language, like C++ or Java (the reader can think about the equivalent algorithm in non object-oriented programming language like C, so he has to create manually all the object data structures, the objects himself and he has to define a way to manage and save all the created objects).\\
+The meaning of word \textit{interesting}, used above to define the algorithms which we will present in this chapter, is the following: a characteristic and unique algorithm, used to implement a specific functionalities of this system. For instance, an algorithm to manage the backup of the database can be very complicated in describing the policies, the exceptions and the situations when execute its, but it is a common algorithm for all the systems that store data into a database.\\
+\\
+In this chapter the algorithms analysed are the following:
 \begin{itemize}
 	\item the city's areas creations and management;
 	\item the queue's management;
-	\item all the algorithms used to handle the special situation which occur when no cabmen are available in the area where the ride (which the Ride Allocator is no assigning) starting position is.
+	\item all the algorithms used to handle the special situation which occur when no cabmen are available in the area where the ride (which the Ride Allocator is no assigning) starting position is.\\
 \end{itemize}
 
+\section{Map and Areas Creation Algorithms}
+\label{AlgorithmDesign:MapAreaAlgorithms}
+
+TO BE FILLED
 
 
+\section{Queue Creator Algorithms}
+\label{AlgorithmDesign:QueueCreatorAlgorithms}
 
+The Queue Creator is a subcomponent of the Ride Allocator\footnote{see the \autoref{ArchitecturalDesign:provider} for a complete description.}.\\
+The queues' creation is an iterative process performed at the Ride Allocator creation and initialization. After the definition of the map and its areas, the Queue Creator is involved to create one queue into each area.\\
 
+\fbox{\begin{minipage}{0.8\textwidth}
+		\centering
+		{\color{blue} \textit{forall}} Area a {\color{blue} \textit{in}} Map {\color{blue} \textit{do}}\\
+		a.createQueue();
+	\end{minipage}}\\
 
+TO BE FILLED
 
+\section{Queue Manager Algorithms}
+\label{AlgorithmDesign:QueueManagerAlgorithms}
 
+TO BE FILLED
 
+\section{Ride Assignment Algorithm}
+\label{AlgorithmDesign:RideAssignmentAlgorithm}
+
+TO BE FILLED
+
+\section{Special Algorithms}
+\label{AlgorithmDesign:special}
+
+TO BE FILLED
 
 
 

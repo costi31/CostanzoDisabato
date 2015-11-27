@@ -17,14 +17,18 @@
 \BOOKMARK [1][-]{section.2.6}{Component Interfaces}{chapter.2}% 17
 \BOOKMARK [1][-]{section.2.7}{Selected architectural styles and patterns}{chapter.2}% 18
 \BOOKMARK [0][-]{chapter.3}{Algorithm Design}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Queue Creator Algorithms}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{User Interfaces Design}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Registration/Login}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Personal Information Management}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.3}{Driver functionalities}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.4}{Zerotime Ride}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.5}{Future Ride}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.6}{Other User Functionalities}{chapter.4}% 27
-\BOOKMARK [0][-]{chapter.5}{Other Info}{}% 28
-\BOOKMARK [1][-]{section.5.1}{Working hours}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.2}{Tools}{chapter.5}% 30
+\BOOKMARK [1][-]{section.3.1}{Map and Areas Creation Algorithms}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{Queue Creator Algorithms}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Queue Manager Algorithms}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Ride Assignment Algorithm}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.5}{Special Algorithms}{chapter.3}% 24
+\BOOKMARK [0][-]{chapter.4}{User Interfaces Design}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Registration/Login}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Personal Information Management}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{Driver functionalities}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.4}{Zerotime Ride}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.5}{Future Ride}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.6}{Other User Functionalities}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Other Info}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Working hours}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.2}{Tools}{chapter.5}% 34
