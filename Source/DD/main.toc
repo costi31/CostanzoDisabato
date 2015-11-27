@@ -24,21 +24,22 @@
 \contentsline {subsubsection}{Registration}{23}{section*.22}
 \contentsline {subsubsection}{Login}{24}{section*.24}
 \contentsline {subsubsection}{Profile Management}{24}{section*.26}
-\contentsline {subsubsection}{Start Waiting Time}{25}{section*.28}
-\contentsline {subsubsection}{Work shifts Management}{26}{section*.30}
-\contentsline {subsubsection}{Check The Reservations}{26}{section*.32}
-\contentsline {subsubsection}{Zerotime Ride}{27}{section*.34}
-\contentsline {subsubsection}{Future Ride Booking}{28}{section*.36}
+\contentsline {subsubsection}{Check The Reservations}{25}{section*.28}
+\contentsline {subsubsection}{Start Waiting Time}{25}{section*.30}
+\contentsline {subsubsection}{Work shifts Management}{26}{section*.32}
+\contentsline {subsubsection}{Future Ride Booking}{26}{section*.34}
+\contentsline {subsubsection}{Zerotime Ride}{27}{section*.36}
 \contentsline {section}{\numberline {2.6}Component Interfaces}{28}{section.2.6}
 \contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{28}{section.2.7}
-\contentsline {chapter}{\numberline {3}Architectural Design}{29}{chapter.3}
-\contentsline {chapter}{\numberline {4}User Interfaces Design}{30}{chapter.4}
-\contentsline {section}{\numberline {4.1}Registration/Login}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}Personal Information Management}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}Driver functionalities}{33}{section.4.3}
-\contentsline {section}{\numberline {4.4}Zerotime Ride}{34}{section.4.4}
-\contentsline {section}{\numberline {4.5}Future Ride}{36}{section.4.5}
-\contentsline {section}{\numberline {4.6}Other User Functionalities}{37}{section.4.6}
-\contentsline {chapter}{\numberline {5}Other Info}{40}{chapter.5}
-\contentsline {section}{\numberline {5.1}Working hours}{40}{section.5.1}
-\contentsline {section}{\numberline {5.2}Tools}{41}{section.5.2}
+\contentsline {chapter}{\numberline {3}Algorithm Design}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Queue Creator Algorithms}{30}{section.3.1}
+\contentsline {chapter}{\numberline {4}User Interfaces Design}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Registration/Login}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Personal Information Management}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}Driver functionalities}{34}{section.4.3}
+\contentsline {section}{\numberline {4.4}Zerotime Ride}{35}{section.4.4}
+\contentsline {section}{\numberline {4.5}Future Ride}{37}{section.4.5}
+\contentsline {section}{\numberline {4.6}Other User Functionalities}{38}{section.4.6}
+\contentsline {chapter}{\numberline {5}Other Info}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Working hours}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}Tools}{42}{section.5.2}

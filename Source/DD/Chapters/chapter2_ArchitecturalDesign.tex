@@ -194,8 +194,8 @@ In this section the deployment of myTaxyService is pointed out.
 Due to the reasons explained in \autoref{ArchitecturalDesign:provider} the most important component of the system is the Dispatcher, thus this components has a half of the computational power of the system dedicated only to itself. The other components of the provider are located in the same physical location of the System Controller unit, but on various nodes, according to this guide line:\\
 
 \begin{itemize}
-	\item the remaining computational power is equally distributed among four other nodes;
-	\item the Ride Allocator and the subcomponents of the System Controller (except for the Dispatcher) are sit in the same node;
+	\item the remaining computational power is equally distributed among four other nodes;\\
+	\item the Ride Allocator and the subcomponents of the System Controller (except for the Dispatcher) are sit in the same node;\\
 	\item the DBMS and the Client and Users Handler are located on standalone nodes.\\
 \end{itemize} 
 
@@ -222,7 +222,7 @@ An important note is the following: the functionality Read The Alerts\footnote{s
 Finally, the two version of myTaxiService (\gls{ws} and \gls{ma}) have no differences on the visualization of the screen. In fact, the screen has the same name and the same purpose, but they are adapted to the particular version where they are displayed.\\
 In particular, the sequence diagrams are usually referred to the \gls{ws} version to define the labels of each arcs, but the same labels can easily \textquotedblleft translated\textquotedblright to the \gls{ma} version. For instance, in figure \ref{ArchitecturalDesign:SD_Registration} the first edge has as label \textquotedblleft \textit{navigate to myTaxiService websites}\textquotedblright . In the \gls{ma} this sentence is equivalent to \textquotedblleft \textit{open myTaxiService's application}\textquotedblright .
 
-\clearpage
+%\clearpage
 
 \subsection{UX Diagram}
 \label{ArchitecturalDesign:UX}
@@ -330,13 +330,25 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 
 \clearpage
 
+\subsubsection{Check The Reservations}
+\label{ArchitecturalDesign:SD_CheckReservation}
+
+\begin{figure}[hb!]
+	\label{ArchitecturalDesign:sixthSD}
+	\centering
+	\includegraphics[width = 0.9\textwidth] {runtime/SD_CheckTheReservations}
+	\caption[Sequence Diagram for Check the Reservations.] {The sequence diagram for the management of personal booking.}
+\end{figure}
+
+%\clearpage
+
 \subsubsection{Start Waiting Time}
 \label{ArchitecturalDesign:SD_StartWaitingTime}
 
 \begin{figure}[hb!]
 	\label{ArchitecturalDesign:fourthSD}
 	\centering
-	\includegraphics[width = \textwidth] {runtime/SD_StartWaitingTime}
+	\includegraphics[width = 0.9\textwidth] {runtime/SD_StartWaitingTime}
 	\caption[Sequence Diagram for Start Waiting Time.] {The sequence diagram for the notification of waiting time's start.}
 \end{figure}
 
@@ -348,20 +360,21 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 \begin{figure}[hb!]
 	\label{ArchitecturalDesign:fifthSD}
 	\centering
-	\includegraphics[width = \textwidth] {runtime/SD_WorkshiftsManagement}
+	\includegraphics[width = 0.85\textwidth] {runtime/SD_WorkshiftsManagement}
 	\caption[Sequence Diagram for the Work shifts Management.] {The sequence diagram for the management of the driver's work shifts.}
 \end{figure}
 
 %\clearpage
 
-\subsubsection{Check The Reservations}
-\label{ArchitecturalDesign:SD_CheckReservation}
+\subsubsection{Future Ride Booking}
+\label{ArchitecturalDesign:SD_Zerotime}
 
 \begin{figure}[hb!]
-	\label{ArchitecturalDesign:sixthSD}
+	\label{ArchitecturalDesign:seventhSD}
 	\centering
-	\includegraphics[width = 0.9\textwidth] {runtime/SD_CheckTheReservations}
-	\caption[Sequence Diagram for Check the Reservations.] {The sequence diagram for the management of personal booking.}
+	\includegraphics[width = 0.9\textwidth] {runtime/SD_FutureRideBooking}
+	\caption[Sequence Diagram for the Future Ride.] {The sequence diagram for the booking of a future ride.\\
+		In order to make the diagram easy to understand, the errors on inserting either the positions or the departure are not modelled.}
 \end{figure}
 
 \clearpage
@@ -375,19 +388,6 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 	\includegraphics[width = \textwidth] {runtime/SD_ZerotimeRide}
 	\caption[Sequence Diagram for the Zerotime Ride.] {The sequence diagram for the asking for a zerotime ride.\\
 		In order to make the diagram easy to understand, the errors on inserting the positions are not modelled.}
-\end{figure}
-
-\clearpage
-
-\subsubsection{Future Ride Booking}
-\label{ArchitecturalDesign:SD_Zerotime}
-
-\begin{figure}[hb!]
-	\label{ArchitecturalDesign:seventhSD}
-	\centering
-	\includegraphics[width = \textwidth] {runtime/SD_FutureRideBooking}
-	\caption[Sequence Diagram for the Future Ride.] {The sequence diagram for the booking of a future ride.\\
-		In order to make the diagram easy to understand, the errors on inserting either the positions or the departure are not modelled.}
 \end{figure}
 
 %\clearpage
