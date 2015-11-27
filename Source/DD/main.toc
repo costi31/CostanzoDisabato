@@ -13,31 +13,32 @@
 \contentsline {subsection}{\numberline {2.3.2}Provider tier}{11}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Presentation tier}{15}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Deployment view}{16}{section.2.4}
-\contentsline {section}{\numberline {2.5}Runtime view}{17}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}UX Diagram}{18}{subsection.2.5.1}
-\contentsline {subsubsection}{Starting Page}{18}{section*.12}
-\contentsline {subsubsection}{Profile Management}{19}{section*.14}
-\contentsline {subsubsection}{Zerotime and Future Rides}{20}{section*.16}
-\contentsline {subsubsection}{Check The Reservations}{21}{section*.18}
-\contentsline {subsubsection}{Driver Functionalities}{21}{section*.20}
-\contentsline {subsection}{\numberline {2.5.2}Sequence Diagram}{22}{subsection.2.5.2}
-\contentsline {subsubsection}{Registration}{22}{section*.22}
-\contentsline {subsubsection}{Login}{23}{section*.24}
-\contentsline {subsubsection}{Profile Management}{23}{section*.26}
-\contentsline {subsubsection}{Start Waiting Time}{24}{section*.28}
-\contentsline {subsubsection}{Work shifts Management}{25}{section*.30}
-\contentsline {subsubsection}{Check The Reservations}{25}{section*.32}
-\contentsline {subsubsection}{Zerotime Ride}{26}{section*.34}
-\contentsline {subsubsection}{Future Ride Booking}{27}{section*.36}
-\contentsline {section}{\numberline {2.6}Component Interfaces}{27}{section.2.6}
-\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{27}{section.2.7}
-\contentsline {chapter}{\numberline {3}User Interfaces Design}{28}{chapter.3}
-\contentsline {section}{\numberline {3.1}Registration/Login}{28}{section.3.1}
-\contentsline {section}{\numberline {3.2}Personal Information Management}{29}{section.3.2}
-\contentsline {section}{\numberline {3.3}Driver functionalities}{31}{section.3.3}
-\contentsline {section}{\numberline {3.4}Zerotime Ride}{32}{section.3.4}
-\contentsline {section}{\numberline {3.5}Future Ride}{34}{section.3.5}
-\contentsline {section}{\numberline {3.6}Other User Functionalities}{35}{section.3.6}
-\contentsline {chapter}{\numberline {4}Other Info}{38}{chapter.4}
-\contentsline {section}{\numberline {4.1}Working hours}{38}{section.4.1}
-\contentsline {section}{\numberline {4.2}Tools}{39}{section.4.2}
+\contentsline {section}{\numberline {2.5}Runtime view}{18}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}UX Diagram}{19}{subsection.2.5.1}
+\contentsline {subsubsection}{Starting Page}{19}{section*.12}
+\contentsline {subsubsection}{Profile Management}{20}{section*.14}
+\contentsline {subsubsection}{Zerotime and Future Rides}{21}{section*.16}
+\contentsline {subsubsection}{Check The Reservations}{22}{section*.18}
+\contentsline {subsubsection}{Driver Functionalities}{22}{section*.20}
+\contentsline {subsection}{\numberline {2.5.2}Sequence Diagram}{23}{subsection.2.5.2}
+\contentsline {subsubsection}{Registration}{23}{section*.22}
+\contentsline {subsubsection}{Login}{24}{section*.24}
+\contentsline {subsubsection}{Profile Management}{24}{section*.26}
+\contentsline {subsubsection}{Start Waiting Time}{25}{section*.28}
+\contentsline {subsubsection}{Work shifts Management}{26}{section*.30}
+\contentsline {subsubsection}{Check The Reservations}{26}{section*.32}
+\contentsline {subsubsection}{Zerotime Ride}{27}{section*.34}
+\contentsline {subsubsection}{Future Ride Booking}{28}{section*.36}
+\contentsline {section}{\numberline {2.6}Component Interfaces}{28}{section.2.6}
+\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{28}{section.2.7}
+\contentsline {chapter}{\numberline {3}Architectural Design}{29}{chapter.3}
+\contentsline {chapter}{\numberline {4}User Interfaces Design}{30}{chapter.4}
+\contentsline {section}{\numberline {4.1}Registration/Login}{30}{section.4.1}
+\contentsline {section}{\numberline {4.2}Personal Information Management}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}Driver functionalities}{33}{section.4.3}
+\contentsline {section}{\numberline {4.4}Zerotime Ride}{34}{section.4.4}
+\contentsline {section}{\numberline {4.5}Future Ride}{36}{section.4.5}
+\contentsline {section}{\numberline {4.6}Other User Functionalities}{37}{section.4.6}
+\contentsline {chapter}{\numberline {5}Other Info}{40}{chapter.5}
+\contentsline {section}{\numberline {5.1}Working hours}{40}{section.5.1}
+\contentsline {section}{\numberline {5.2}Tools}{41}{section.5.2}

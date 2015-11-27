@@ -191,7 +191,14 @@ The available services are grouped into four main section:\\
 \label{ArchitecturalDesign:deploy}
 
 In this section the deployment of myTaxyService is pointed out.
-Due to the reasons explained in \autoref{ArchitecturalDesign:provider} the most important component of the system is the System Controller into the Provider, so this components has a half of the computational power of the system dedicated only to itself. The other components, including the other parts of the System Controller have exactly one node dedicated and as 
+Due to the reasons explained in \autoref{ArchitecturalDesign:provider} the most important component of the system is the Dispatcher, thus this components has a half of the computational power of the system dedicated only to itself. The other components of the provider are located in the same physical location of the System Controller unit, but on various nodes, according to this guide line:\\
+
+\begin{itemize}
+	\item the remaining computational power is equally distributed among four other nodes;
+	\item the Ride Allocator and the subcomponents of the System Controller (except for the Dispatcher) are sit in the same node;
+	\item the DBMS and the Client and Users Handler are located on standalone nodes.\\
+\end{itemize} 
+
 In figure \autoref{ArchitecturalDesign:deploymentFigure} is shown a deployment diagram that focus on the communications between significant nodes and on the presence of the nodes themselves.
 
 \begin{figure}[ht!]
@@ -201,17 +208,21 @@ In figure \autoref{ArchitecturalDesign:deploymentFigure} is shown a deployment d
 	\label{ArchitecturalDesign:deploymentFigure}
 \end{figure}
 
-In addition to this short description, two firewalls are located to improve security: one out of the Provider (the communication links outgoing from the Client and User Handler to the Clients) and one on the communication link between the Dispatcher and the Client and User Handler.
+In addition to this short description, two firewalls are located to improve security: one out of the Provider (the communication links outgoing from the Client and User Handler to the Clients) and one on the communication link between the Dispatcher and the Client and User Handler.\\
+At last, in figure the database is represented as a node: into the designed architecture the database is replaced twice to prevent loss of data and these two portions are located in different places with respect to each other and with respect to the physical location of the provider architecture. To be precise these two position are into a circle with radius fifty kilometres and centre on the provider's location. The policies related to access the database, to store and to backup all the data (into other location) are defined by the DBMS, that communicate with the two database thanks to an encrypted connection.
 
 \section{Runtime view}
 \label{ArchitecturalDesign:runtime}
 
 In this paragraph we'll show the main features on the runtime view, which means the UX diagrams and the sequence diagrams.\\
 The UX diagrams display the structure of the myTaxiService's screens (input forms, available functions and shown data) and the effects of each function (the next screens viewed). The sequence diagrams show the sequence of functions's calling and screens to benefit of a functionality.\\
+\\
 An important note is the following: the functionality Read The Alerts\footnote{see the RASD for further information.} is not shown here. It is performed as a simple screen on the Homepage that redirect to another screen with only the list of alerts (composed by a title and a written text).\\
+\\
 Finally, the two version of myTaxiService (\gls{ws} and \gls{ma}) have no differences on the visualization of the screen. In fact, the screen has the same name and the same purpose, but they are adapted to the particular version where they are displayed.\\
+In particular, the sequence diagrams are usually referred to the \gls{ws} version to define the labels of each arcs, but the same labels can easily \textquotedblleft translated\textquotedblright to the \gls{ma} version. For instance, in figure \ref{ArchitecturalDesign:SD_Registration} the first edge has as label \textquotedblleft \textit{navigate to myTaxiService websites}\textquotedblright . In the \gls{ma} this sentence is equivalent to \textquotedblleft \textit{open myTaxiService's application}\textquotedblright .
 
-%\clearpage
+\clearpage
 
 \subsection{UX Diagram}
 \label{ArchitecturalDesign:UX}
