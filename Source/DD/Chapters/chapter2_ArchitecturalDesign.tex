@@ -155,7 +155,7 @@ In figure \ref{ArchitecturalDesign:rideAllocator} the Ride Allocator is modelled
 \end{figure}
 
 The \textbf{System Controller} is the central node of the application: all the communications pass through it. As consequence it requires a very good design to do not slow down the system.\\
-The main subcomponent is the Dispatcher, realized first as an interface with only the method to enqueue a request for another component (for instance the an user request coming from the Client and Users Handler), then as a concrete implementation with all the hidden methods. The policy to manage the request is a three priority levels FIFO\footnote{FIFO means \textit{First In First Out}, so the first arrived request is handled before the others. In addition there are three priority levels to allows the possibility to a more important message of be handled earlier than a low-priority one arrived in advance.} queue, where the first level is reserved to some problems that can occurs during system execution and the second one is dedicated to the administrators' operations. To clarify, near the 100\% of the message have the low-level priority, but the system is able to immediately react when a fault or an external attack happen (the related messages have the high-level priority).\\
+The main subcomponent is the Dispatcher, realized first as an interface with only the method to enqueue a request for another component (for instance an user request coming from the Client and Users Handler), then as a concrete implementation with all the hidden methods. The requests are also handled. The policy to manage the request is a three priority levels FIFO\footnote{FIFO means \textit{First In First Out}, so the first arrived request is handled before the others. In addition there are three priority levels to allows the possibility to a more important message of be handled earlier than a low-priority one arrived in advance.} queue, where the first level is reserved to some problems that can occurs during system execution and the second one is dedicated to the administrators' operations. To clarify, near the 100\% of the message have the low-level priority, but the system is able to immediately react when a fault or an external attack happen (the related messages have the high-level priority).\\
 Second, the User Creator is able to create user by Factory Method pattern\footnote{see \autoref{ArchitecturalDesign:design_patterns} for a formal description of this design pattern.}. Hence, with some strategies hidden by that pattern the User Creator creates the correct type of user. This fact implies an important consequence to the system: each type of user can create or not particular cookies to allow the Client and User Handler recognize them and perform the available operations.\\
 Third, the User Checker is a supplementary component to increase the security of the system and works in parallel to the Dispatcher. When a request is enqueued to the dispatcher low-level the Checker immediately checks the validity of that request and, if any, the request is removed by the queue.\\
 Fourth, the Data Checker has the only role of checks the validity of input data inserted by an user. Thus, it checks the correctness of inserted addresses (in collaboration with the Ride Allocator) and of personal data.\\
@@ -190,19 +190,28 @@ The available services are grouped into four main section:\\
 \section{Deployment view}
 \label{ArchitecturalDesign:deploy}
 
-TEXT
+In this section the deployment of myTaxyService is pointed out.
+Due to the reasons explained in \autoref{ArchitecturalDesign:provider} the most important component of the system is the System Controller into the Provider, so this components has a half of the computational power of the system dedicated only to itself. The other components, including the other parts of the System Controller have exactly one node dedicated and as 
+In figure \autoref{ArchitecturalDesign:deploymentFigure} is shown a deployment diagram that focus on the communications between significant nodes and on the presence of the nodes themselves.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width = \textwidth] {DeploymentDiagram}
+	\caption{A deployment diagram for myTaxiService.}
+	\label{ArchitecturalDesign:deploymentFigure}
+\end{figure}
+
+In addition to this short description, two firewalls are located to improve security: one out of the Provider (the communication links outgoing from the Client and User Handler to the Clients) and one on the communication link between the Dispatcher and the Client and User Handler.
 
 \section{Runtime view}
 \label{ArchitecturalDesign:runtime}
 
 In this paragraph we'll show the main features on the runtime view, which means the UX diagrams and the sequence diagrams.\\
 The UX diagrams display the structure of the myTaxiService's screens (input forms, available functions and shown data) and the effects of each function (the next screens viewed). The sequence diagrams show the sequence of functions's calling and screens to benefit of a functionality.\\
-\\
 An important note is the following: the functionality Read The Alerts\footnote{see the RASD for further information.} is not shown here. It is performed as a simple screen on the Homepage that redirect to another screen with only the list of alerts (composed by a title and a written text).\\
-\\
 Finally, the two version of myTaxiService (\gls{ws} and \gls{ma}) have no differences on the visualization of the screen. In fact, the screen has the same name and the same purpose, but they are adapted to the particular version where they are displayed.\\
 
-\clearpage
+%\clearpage
 
 \subsection{UX Diagram}
 \label{ArchitecturalDesign:UX}

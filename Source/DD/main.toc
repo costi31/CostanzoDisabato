@@ -13,22 +13,22 @@
 \contentsline {subsection}{\numberline {2.3.2}Provider tier}{11}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Presentation tier}{15}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Deployment view}{16}{section.2.4}
-\contentsline {section}{\numberline {2.5}Runtime view}{16}{section.2.5}
+\contentsline {section}{\numberline {2.5}Runtime view}{17}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}UX Diagram}{18}{subsection.2.5.1}
-\contentsline {subsubsection}{Starting Page}{18}{section*.11}
-\contentsline {subsubsection}{Profile Management}{19}{section*.13}
-\contentsline {subsubsection}{Zerotime and Future Rides}{20}{section*.15}
-\contentsline {subsubsection}{Check The Reservations}{21}{section*.17}
-\contentsline {subsubsection}{Driver Functionalities}{21}{section*.19}
+\contentsline {subsubsection}{Starting Page}{18}{section*.12}
+\contentsline {subsubsection}{Profile Management}{19}{section*.14}
+\contentsline {subsubsection}{Zerotime and Future Rides}{20}{section*.16}
+\contentsline {subsubsection}{Check The Reservations}{21}{section*.18}
+\contentsline {subsubsection}{Driver Functionalities}{21}{section*.20}
 \contentsline {subsection}{\numberline {2.5.2}Sequence Diagram}{22}{subsection.2.5.2}
-\contentsline {subsubsection}{Registration}{22}{section*.21}
-\contentsline {subsubsection}{Login}{23}{section*.23}
-\contentsline {subsubsection}{Profile Management}{23}{section*.25}
-\contentsline {subsubsection}{Start Waiting Time}{24}{section*.27}
-\contentsline {subsubsection}{Work shifts Management}{25}{section*.29}
-\contentsline {subsubsection}{Check The Reservations}{25}{section*.31}
-\contentsline {subsubsection}{Zerotime Ride}{26}{section*.33}
-\contentsline {subsubsection}{Future Ride Booking}{27}{section*.35}
+\contentsline {subsubsection}{Registration}{22}{section*.22}
+\contentsline {subsubsection}{Login}{23}{section*.24}
+\contentsline {subsubsection}{Profile Management}{23}{section*.26}
+\contentsline {subsubsection}{Start Waiting Time}{24}{section*.28}
+\contentsline {subsubsection}{Work shifts Management}{25}{section*.30}
+\contentsline {subsubsection}{Check The Reservations}{25}{section*.32}
+\contentsline {subsubsection}{Zerotime Ride}{26}{section*.34}
+\contentsline {subsubsection}{Future Ride Booking}{27}{section*.36}
 \contentsline {section}{\numberline {2.6}Component Interfaces}{27}{section.2.6}
 \contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{27}{section.2.7}
 \contentsline {chapter}{\numberline {3}User Interfaces Design}{28}{chapter.3}
