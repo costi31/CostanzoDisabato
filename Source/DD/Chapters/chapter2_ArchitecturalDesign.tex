@@ -154,12 +154,12 @@ In figure \ref{ArchitecturalDesign:rideAllocator} the Ride Allocator is modelled
 	\label{ArchitecturalDesign:rideAllocator}
 \end{figure}
 
-The \textbf{System Controller} is the central node of the application: all the communications pass through it. As consequence it requires a very good design to do not slow down the system.\\
-The main subcomponent is the Dispatcher, realized first as an interface with only the method to enqueue a request for another component (for instance an user request coming from the Client and Users Handler), then as a concrete implementation with all the hidden methods. The requests are also handled. The policy to manage the request is a three priority levels FIFO\footnote{FIFO means \textit{First In First Out}, so the first arrived request is handled before the others. In addition there are three priority levels to allows the possibility to a more important message of be handled earlier than a low-priority one arrived in advance.} queue, where the first level is reserved to some problems that can occurs during system execution and the second one is dedicated to the administrators' operations. To clarify, near the 100\% of the message have the low-level priority, but the system is able to immediately react when a fault or an external attack happen (the related messages have the high-level priority).\\
-Second, the User Creator is able to create user by Factory Method pattern\footnote{see \autoref{ArchitecturalDesign:design_patterns} for a formal description of this design pattern.}. Hence, with some strategies hidden by that pattern the User Creator creates the correct type of user. This fact implies an important consequence to the system: each type of user can create or not particular cookies to allow the Client and User Handler recognize them and perform the available operations.\\
+The \textbf{System Controller} is the central node of the application: all the communications pass through it. As consequence it requires a very good design to not slow down the system.\\
+The main subcomponent is the Dispatcher, realized first as an interface with only the method to enqueue a request for another component (for instance an user request coming from the Client and Users Handler), then as a concrete implementation with all the hidden methods. The requests are also handled. The policy to manage the request is a three priority levels FIFO\footnote{FIFO means \textit{First In First Out}, so the first arrived request is handled before the others. In addition there are three priority levels to allow a more important message to be handled earlier than a low-priority one arrived in advance.} queue, where the first level is reserved to some problems that can occur during system execution and the second one is dedicated to the administrators' operations. To clarify, near the 100\% of the message have the low-level priority, but the system is able to immediately react when a fault or an external attack happen (the related messages have the high-level priority).\\
+Second, the User Creator is able to create user by Factory Method pattern\footnote{see \autoref{ArchitecturalDesign:design_patterns} for a formal description of this design pattern.}. Hence, with some strategies hidden by that pattern the User Creator creates the correct type of user. This fact implies an important consequence to the system: each type of user can create or not particular cookies to allow the Client and User Handler to recognize them and to perform the available operations.\\
 Third, the User Checker is a supplementary component to increase the security of the system and works in parallel to the Dispatcher. When a request is enqueued to the dispatcher low-level the Checker immediately checks the validity of that request and, if any, the request is removed by the queue.\\
-Fourth, the Data Checker has the only role of checks the validity of input data inserted by an user. Thus, it checks the correctness of inserted addresses (in collaboration with the Ride Allocator) and of personal data.\\
-Finally this component contains all the main logic of the system, so all the classes not related to some particular component (for instance all the handlers and the rides's definition and management) is defined here.\\
+Fourth, the Data Checker has the only role of checking the validity of input data inserted by an user. Thus, it checks the correctness of inserted addresses (in collaboration with the Ride Allocator) and of personal data.\\
+Finally this component contains all the main logic of the system, so all the classes not related to some particular component (for instance all the handlers and the rides' definition and management) is defined here.\\
 In figure \ref{ArchitecturalDesign:systemController} a class diagram that model this component is shown.
 
 \begin{figure}[ht!]
@@ -191,7 +191,7 @@ The available services are grouped into four main section:\\
 \label{ArchitecturalDesign:deploy}
 
 In this section the deployment of myTaxyService is pointed out.
-Due to the reasons explained in \autoref{ArchitecturalDesign:provider} the most important component of the system is the Dispatcher, thus this components has a half of the computational power of the system dedicated only to itself. The other components of the provider are located in the same physical location of the System Controller unit, but on various nodes, according to this guide line:\\
+Due to the reasons explained in \autoref{ArchitecturalDesign:provider} the most important component of the system is the Dispatcher, thus this component has a half of the computational power of the system dedicated only to itself. The other components of the provider are located in the same physical location of the System Controller unit, but on various nodes, according to this guide line:\\
 
 \begin{itemize}
 	\item the remaining computational power is equally distributed among four other nodes;\\
@@ -199,7 +199,7 @@ Due to the reasons explained in \autoref{ArchitecturalDesign:provider} the most 
 	\item the DBMS and the Client and Users Handler are located on standalone nodes.\\
 \end{itemize} 
 
-In figure \autoref{ArchitecturalDesign:deploymentFigure} is shown a deployment diagram that focus on the communications between significant nodes and on the presence of the nodes themselves.
+Figure \autoref{ArchitecturalDesign:deploymentFigure} shows a deployment diagram that focuses on the communications between significant nodes and on the presence of the nodes themselves.
 
 \begin{figure}[ht!]
 	\centering
@@ -209,13 +209,13 @@ In figure \autoref{ArchitecturalDesign:deploymentFigure} is shown a deployment d
 \end{figure}
 
 In addition to this short description, two firewalls are located to improve security: one out of the Provider (the communication links outgoing from the Client and User Handler to the Clients) and one on the communication link between the Dispatcher and the Client and User Handler.\\
-At last, in figure the database is represented as a node: into the designed architecture the database is replaced twice to prevent loss of data and these two portions are located in different places with respect to each other and with respect to the physical location of the provider architecture. To be precise these two position are into a circle with radius fifty kilometres and centre on the provider's location. The policies related to access the database, to store and to backup all the data (into other location) are defined by the DBMS, that communicate with the two database thanks to an encrypted connection.
+At last, in figure the database is represented as a node: into the designed architecture the database is replaced twice to prevent loss of data and these two portions are located in different places with respect to each other and to the physical location of the provider architecture. To be precise these two position are into a circle with radius fifty kilometres and centre on the provider's location. The policies related to access the database, to store and to backup all the data (into other location) are defined by the DBMS, that communicate with the two database thanks to an encrypted connection.
 
 \section{Runtime view}
 \label{ArchitecturalDesign:runtime}
 
 In this paragraph we'll show the main features on the runtime view, which means the UX diagrams and the sequence diagrams.\\
-The UX diagrams display the structure of the myTaxiService's screens (input forms, available functions and shown data) and the effects of each function (the next screens viewed). The sequence diagrams show the sequence of functions's calling and screens to benefit of a functionality.\\
+The UX diagrams display the structure of the myTaxiService's screens (input forms, available functions and shown data) and the effects of each function (the next screens viewed). The sequence diagrams show the sequence of functions' calling and screens to benefit of a functionality.\\
 \\
 An important note is the following: the functionality Read The Alerts\footnote{see the RASD for further information.} is not shown here. It is performed as a simple screen on the Homepage that redirect to another screen with only the list of alerts (composed by a title and a written text).\\
 \\
@@ -398,9 +398,34 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 
 \section{Selected architectural styles and patterns}
 \label{ArchitecturalDesign:design_patterns}
-As already mentioned and fully described before in section \ref{ArchitecturalDesign:high_level}, we have chosen two fundamental patterns, Service-Oriented and Model-View-Controller.\\
-According to the class diagram presented in the RASD, we have chosen to follow also some design patterns, such as the Factory Pattern that allows to create objects without exposing the creation logic to the client and refer to newly created object using a common interface or super class. We use this pattern to create a User of a specific type (Driver or normal User) and also a Ride of a specific type (zerotime or future ride).
+For myTaxyService we have chosen to follow two fundamental architectural patterns combined, Model-View-Controller (also called MVC) and Service-Oriented Architecture (also called SOA).\\
+The pattern MVC, as its name says, consists in the clear division between three main interconnected software parts, so as to separate internal representations of information from the ways that information is presented to or accepted from the user. The three parts are:
+\begin{itemize}
+	\item \textit{Model.} It represents the underlying, logical structure of data in a software application and the high-level class associated with it. The Model does not contain any information about the user interface.\\
+	It communicates with the Controller, which can read or modify the data contained. The only interaction with the View is the notification of the data changing in some applications of MVC pattern.
+	
+	\item \textit{View.} It is a collection of classes representing the elements in the user interface (all of the things the user can see and respond to on the screen, such as buttons, display boxes, and so forth). Usually the View is generalized and made extensible with the use of an interface with public methods, implemented by different view implementations for various user interfaces.\\
+	The View doesn't contain any information of the real data contained in the Model, it knows only the information that receives from the Controller and sends to user input to it.
+	
+	
+	\item \textit{Controller.} It represents the bridge between the Model and the View, and is used to communicate between their classes. It receives the user inputs from the View and as consequence retrieves or modifies the data contained in the Model. It contains information of the Model and of the View and knows how to interact with them.\\
+\end{itemize}
 
+A Service-Oriented Architecture is composed of three parts:
+\begin{itemize}
+	\item \textit{Service requestor.} It  requests the execution of a service. It asks for a service contained in the Service registry and once that is found, the Service requestor is bound to the correct service offered by the Service provider. 
+	\item \textit{Service provider.} It offers services. It publish all the available services with their description in the public Service registry and when receives a request it bind the requestor with the correct service.
+	\item \textit{Service registry.} It provides information about all the available services.
+\end{itemize}
+
+Our application and adaptation of MVC and SOA for myTaxyService, is fully described before in \autoref{ArchitecturalDesign:high_level}.\\
+\\
+According to the class diagram presented in the RASD, we have chosen to follow also some design patterns, such as the Factory Pattern and Singleton.\\
+The \textit{Factory Pattern} consists in the creation of objects without exposing the creation logic to the client and referring to newly created object using a common interface or super class. In the Factory Pattern a specific class (a Factory class) offers public methods to create objects using a common interface or abstract class and it knows the creation logic of the concrete implementation of the common interface. The client that calls the factory methods (the methods used to create objects) of the factory class, passing a parameter identifier of the required object, don't know the real creation logic of the object, they knows only the Factory class and its factory methods and the common interface or abstract class which the desired object belongs to.\\
+In the case of myTaxyService we use this pattern to create a User of a specific type (Driver or normal User) and also a Ride of a specific type (zerotime or future ride), without knowing in fact the real create logic of the users and rides depending by the type of them. There will be a factory class for the users and one for the rides that know the real create logic of them.\\
+\\
+The \textit{Singleton Pattern} involves a single class which is responsible to create an object while making sure that only single object gets created. This class provides a way to access its only object which can be accessed directly without need to instantiate the object of the class. The constructor of the class is hidden to the external world to make sure that the only way that an instance of the object can be obtained is by a static method of the class that doesn't create more than one instance of its object.\\
+We use the Singleton pattern for the internal components of the Provider to make sure that have always only one instance of them and they can be easily accessible with a static method. (for more information about the provider see \autoref{ArchitecturalDesign:provider}).
 
 %End of chapter
 \end{document}
