@@ -20,11 +20,99 @@ In this chapter the algorithms analysed are the following:
 	\item all the algorithms used to handle the special situation which occur when no cabmen are available in the area where the ride (which the Ride Allocator is no assigning) starting position is.\\
 \end{itemize}
 
-\section{Map and Areas Creation Algorithms}
+\section{Map and Areas' Creation Algorithms}
 \label{AlgorithmDesign:MapAreaAlgorithms}
 
-TO BE FILLED
+\textit{Premise. The system has, at its disposal, an XML document that describes the city and its streets. The structure of the document is shown below and it is the following: first there are the four extreme coordinates in order to create a rectangle which contains all the city's area (if the borders of the city are irregular the rectangle's area is bigger than the city's area), then all the streets are listed with the name and two coordinates. In fact, with this two points the street can be represent as the line that joins these two points.}
 
+\begin{figure}[ht!]
+	\centering
+\fbox{\begin{minipage}{0.8\textwidth}
+		\footnotesize
+		\textit{\hspace*{1cm}  <City> \\
+		\hspace*{2cm} <Extreme Coordinates>\\
+		\hspace*{3cm} <WestX> \textellipsis </WestX>\\
+		\hspace*{3cm} <SouthY> \textellipsis </SouthY>\\
+		\hspace*{3cm} <EastX> \textellipsis </EastX>\\
+		\hspace*{3cm} <NorthY> \textellipsis </NorthY>\\
+		\hspace*{2cm} </Extreme Coordinates>\\
+		\hspace*{2cm} <Streets>\\
+		\hspace*{3cm} <Street direction = \textquotedblleft H\textquotedblright>\\
+		\hspace*{4cm} <Name> \textellipsis </Name>\\
+		\hspace*{4cm} <Left Position>\\
+		\hspace*{5cm} <X> \textellipsis </X>\\
+		\hspace*{5cm} <Y> \textellipsis </Y>\\
+		\hspace*{4cm} </Left Position>\\
+		\hspace*{4cm} <Right Position>\\
+		\hspace*{5cm} <X> \textellipsis </X>\\
+		\hspace*{5cm} <Y> \textellipsis </Y>\\
+		\hspace*{4cm} </Right Position>\\
+		\hspace*{3cm} </Street>\\
+		\hspace*{3cm} [\textellipsis]\\
+		\hspace*{3cm} <Street> [\textellipsis] </Street>\\
+		\hspace*{2cm} </Streets>\\
+		\hspace*{1cm} </City>}
+\end{minipage}}
+\caption{Structure of XML document that describes the city.}
+\end{figure}
+
+\textit{For each street an attribute direction is defined: the value H indicates a horizontal road so the two coordinates are the left and the right, while the value V indicates a vertical road so the two coordinates are the high and the low.}\\
+\\
+When the system starts the map creation it first creates the areas objects. The idea is simple: starting form the Northwest angle of the map it create square areas of side 1.5 kilometres\footnote{Due to the city is not perfectly rectangular, this algorithm can create some areas that cover lands out of the city borders. This is not a relevant problem in memory usage.}.\\
+
+\fbox{\begin{minipage}{0.8\textwidth}
+		\hspace*{0.5 cm} MapCreator.createMap(WestX , SouthY , EastX , NorthY);\\[0.1cm]
+		\hspace*{0.5 cm} {\color{green} horizontalSectors} = (EastX - WestX) / {\color{red} 1.5} + {\color{red} 1};\\
+		\hspace*{0.5 cm} {\color{green} verticalSectors} = (NorthY - SouthY) / {\color{red} 1.5} + {\color{red} 1};\\
+		\hspace*{0.5cm} {\color{cyan} \textit{for}} {\color{green} i} = {\color{red} 0} -> {\color{green} verticalSectors} {\color{cyan} \textit{do}}\\
+		\hspace*{1.5 cm} {\color{cyan} \textit{for}} {\color{green} j} = {\color{red} 0} -> {\color{green} horizontalSectors} {\color{cyan} \textit{do}}\\
+		\hspace*{2.5cm} MapCreator.createArea(j , i);
+	\end{minipage}}\\[0.5cm]
+	
+We point out two aspect of the code shown above: first, in the calculus of the number of areas, both in vertical and horizontal, we sum one at the result to count the final area which has a size less than the fixed dimension (1.5 km); second, the notation used in the \textit{for} indicates a cycle of \textit{n} interactions where \textit{n} is equal to the value written at the right of the edge.\\
+\\
+Now, the objects of type \textit{area} are created, but they do not contain any street. The algorithm used to add the streets is simple: for each street into the XML document (we suppose we have a parser which gives all the streets found into the document as an object), the belonging area is the one where the first coordinates is in. To avoid strange situations where a street is assigned to an area even if only a small part belongs to the area\footnote{This situation happens, for instance, when the left coordinate is near the right bound of the area and it has an horizontal direction.} an additional parameter \textit{CORRECTOR} is defined. The parameter assumes on value into the interval [0,1] (the value we have chosen is 0.7). To assign a horizontal street (for the vertical ones is similar) the rules are the following (the map can consider as a grid):
+\begin{itemize}
+	\item the row into the map is exactly the one where the left coordinate is in;
+	\item the column into the map is exactly the one where the left coordinate is in if and only if its position is not near the right bound (on the other hand the street is assigned to the next area on the right). Called \textit{size} the dimension of an area and \textit{x} the distance between the coordinate and the starting of the area \textit{start}, the coordinate is near the area's right bound if:
+	\begin{center}
+		$ x \textgreater start + size * CORRECTOR $;
+	\end{center}
+\end{itemize}
+Now the algorithm is shown by restricting the use of chain invocations in order to make the algorithm easy to read.\\
+
+\fbox{\begin{minipage}{0.8\textwidth}
+		{\color{blue} \textit{//We suppose we have an iterator between the streets, given by the parser. From now we'll call it parserIt.}}\\[0.3cm]
+		\hspace*{0.5cm} {\color{cyan} \textit{while}} ({\color{green} parserIt}.hasNext()) {\color{cyan} \textit{do}}\\
+		\hspace*{1.5cm} {\color{green} street} = {\color{green} parserIt}.next();\\
+		\hspace*{1.5cm} {\color{green} x} = {\color{green} street}.firstCoordinate().getX();\\
+		\hspace*{1.5cm} {\color{green} y} = {\color{green} street}.firstCoordinate().getY();\\
+		\hspace*{1.5cm} {\color{green} row} = ({\color{green} x} - WestX) / {\color{red} 1.5};\\
+		\hspace*{1.5cm} {\color{green} col} = (NorthY - {\color{green} y}) / {\color{red} 1.5};\\
+		\hspace*{1.5cm} {\color{cyan} \textit{if}} ( {\color{green} street}.type().equalTo(\textquoteleft V\textquoteright) \&\& checkY(y , row)) {\color{cyan} \textit{do}}\\
+		\hspace*{2.5cm} {\color{green} row} = {\color{green} row} + {\color{red} 1};\\
+		\hspace*{1.5cm} {\color{cyan} \textit{else if}} (checkX(x, col)) {\color{cyan} \textit{do}}\\
+		\hspace*{2.5cm} {\color{green} col} = {\color{green} col} + {\color{red} 1};\\
+		\hspace*{1.5cm} Map.getArea(row,col).addStreet(street);
+	\end{minipage}}\\[0.5cm]
+Now the two methods checkY and checkX are shown.\\
+Both the methods have a boolean return type and try to verify it is needed to increase by one the calculated area (see above for the reasons). The parameter are different according to the type of the street: for a vertical road are required the y-part of the first coordinate and the calculated row while for a horizontal road the x-part of the first coordinate and the calculated column.\\
+
+\fbox{\begin{minipage}{0.8\textwidth}
+		\hspace*{0.5cm} boolean checkY (double y , int row) \textbraceleft \\
+		\hspace*{1.5cm} {\color{green} start} = NorthY - {\color{green} row} * {\color{red} 1,5};\\
+		\hspace*{1.5cm} {\color{cyan} \textit{if}} ({\color{green} y} \textgreater ({\color{green} start} + {\color{red} 1,5} * CORRECTOR)) {\color{cyan} \textit{do}}\\
+		\hspace*{2,5cm} {\color{cyan} \textit{return}} \textbf{true};\\
+		\hspace*{1,5cm} {\color{cyan} \textit{return}} \textbf{false};\\
+		\hspace*{0.5cm} \textbraceright \\
+		\\
+		\hspace*{0.5cm} boolean checkX (double x , int col) \textbraceleft \\
+		\hspace*{1.5cm} {\color{green} start} = EastX + {\color{green} col} * {\color{red} 1,5};\\
+		\hspace*{1.5cm} {\color{cyan} \textit{if}} ({\color{green} x} \textgreater ({\color{green} start} + {\color{red} 1,5} * CORRECTOR)) {\color{cyan} \textit{do}}\\
+		\hspace*{2,5cm} {\color{cyan} \textit{return}} \textbf{true};\\
+		\hspace*{1,5cm} {\color{cyan} \textit{return}} \textbf{false};\\
+		\hspace*{0.5cm} \textbraceright
+	\end{minipage}}\\[0.5cm]
 
 \section{Queue Creator Algorithms}
 \label{AlgorithmDesign:QueueCreatorAlgorithms}
@@ -33,12 +121,11 @@ The Queue Creator is a subcomponent of the Ride Allocator\footnote{see the \auto
 The queues' creation is an iterative process performed at the Ride Allocator creation and initialization. After the definition of the map and its areas, the Queue Creator is involved to create one queue into each area.\\
 
 \fbox{\begin{minipage}{0.8\textwidth}
-		\centering
-		{\color{blue} \textit{forall}} Area a {\color{blue} \textit{in}} Map {\color{blue} \textit{do}}\\
-		a.createQueue();
-	\end{minipage}}\\
+		\hspace*{3cm}  {\color{cyan} \textit{forall}} Area {\color{green} a} {\color{cyan} \textit{in}} Map {\color{cyan} \textit{do}}\\
+		\hspace*{4cm}   {\color{green} a}.createQueue();
+	\end{minipage}}\\[0.5cm]
 
-TO BE FILLED
+The \textit{createQueue} method is defined into the class Area: it is able to create one object \textit{queue} if and only if it has never created another queue yet. This definition does not require a Factory Method\footnote{see the \autoref{ArchitecturalDesign:design_patterns} for a definition.} pattern, because exists only one type of queue and no other types can be designed in future. In addition, an exception will be thrown if the method is called when a queue already exists\footnote{In a non object oriented programming language this error can be notified using a return value of the method createQueue. However this method can be called only by the Queue Creator, that is involved only once.}.
 
 \section{Queue Manager Algorithms}
 \label{AlgorithmDesign:QueueManagerAlgorithms}
