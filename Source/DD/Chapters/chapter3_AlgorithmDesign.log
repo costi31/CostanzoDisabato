@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  30 NOV 2015 09:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  30 NOV 2015 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -816,39 +816,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
 [4]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 120.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 123.
 
 
 LaTeX Warning: Reference `ArchitecturalDesign:provider' on page 5 undefined on 
-input line 120.
+input line 123.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
 
-LaTeX Warning: Reference `ArchitecturalDesign:design_patterns' on page 5 undefi
-ned on input line 128.
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
-[5] 
-AED: lastpage setting LastPage
+ []
+
+[5]
+
+LaTeX Warning: Reference `ArchitecturalDesign:design_patterns' on page 6 undefi
+ned on input line 131.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+
+AED: lastpage setting LastPage
+[7]
 
 Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
 (./chapter3_AlgorithmDesign.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `chapter3_AlgorithmDesign.out' has not change
 d.
 (rerunfilecheck)             Checksum: 25662FB353C399832C185FDE459CAC31;406.
@@ -858,8 +884,8 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15507 strings out of 493089
- 232249 string characters out of 6134841
+ 15508 strings out of 493089
+ 232255 string characters out of 6134841
  504270 words of memory out of 5000000
  18685 multiletter control sequences out of 15000+600000
  25456 words of font info for 51 fonts, out of 8000000 for 9000
@@ -872,10 +898,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-
 dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on chapter3_AlgorithmDesign.pdf (6 pages, 94077 bytes).
+Output written on chapter3_AlgorithmDesign.pdf (7 pages, 98023 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
+ 104 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

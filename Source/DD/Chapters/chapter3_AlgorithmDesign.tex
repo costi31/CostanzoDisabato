@@ -64,8 +64,8 @@ When the system starts the map creation it first creates the areas objects. The 
 		\hspace*{0.5 cm} MapCreator.createMap(WestX , SouthY , EastX , NorthY);\\[0.1cm]
 		\hspace*{0.5 cm} {\color{green} horizontalSectors} = (EastX - WestX) / {\color{red} 1.5} + {\color{red} 1};\\
 		\hspace*{0.5 cm} {\color{green} verticalSectors} = (NorthY - SouthY) / {\color{red} 1.5} + {\color{red} 1};\\
-		\hspace*{0.5cm} {\color{cyan} \textit{for}} {\color{green} i} = {\color{red} 0} -> {\color{green} verticalSectors} {\color{cyan} \textit{do}}\\
-		\hspace*{1.5 cm} {\color{cyan} \textit{for}} {\color{green} j} = {\color{red} 0} -> {\color{green} horizontalSectors} {\color{cyan} \textit{do}}\\
+		\hspace*{0.5cm} {\color{cyan} \textit{for}} {\color{green} i} = {\color{red} 0} -> {\color{green} verticalSectors} {\color{cyan} \textit{then}}\\
+		\hspace*{1.5 cm} {\color{cyan} \textit{for}} {\color{green} j} = {\color{red} 0} -> {\color{green} horizontalSectors} {\color{cyan} \textit{then}}\\
 		\hspace*{2.5cm} MapCreator.createArea(j , i);
 	\end{minipage}}\\[0.5cm]
 	
@@ -83,17 +83,17 @@ Now the algorithm is shown by restricting the use of chain invocations in order 
 
 \fbox{\begin{minipage}{0.8\textwidth}
 		{\color{blue} \textit{//We suppose we have an iterator between the streets, given by the parser. From now we'll call it parserIt.}}\\[0.3cm]
-		\hspace*{0.5cm} {\color{cyan} \textit{while}} ({\color{green} parserIt}.hasNext()) {\color{cyan} \textit{do}}\\
-		\hspace*{1.5cm} {\color{green} street} = {\color{green} parserIt}.next();\\
-		\hspace*{1.5cm} {\color{green} x} = {\color{green} street}.firstCoordinate().getX();\\
-		\hspace*{1.5cm} {\color{green} y} = {\color{green} street}.firstCoordinate().getY();\\
-		\hspace*{1.5cm} {\color{green} row} = ({\color{green} x} - WestX) / {\color{red} 1.5};\\
-		\hspace*{1.5cm} {\color{green} col} = (NorthY - {\color{green} y}) / {\color{red} 1.5};\\
-		\hspace*{1.5cm} {\color{cyan} \textit{if}} ( {\color{green} street}.type().equalTo(\textquoteleft V\textquoteright) \&\& checkY(y , row)) {\color{cyan} \textit{do}}\\
-		\hspace*{2.5cm} {\color{green} row} = {\color{green} row} + {\color{red} 1};\\
-		\hspace*{1.5cm} {\color{cyan} \textit{else if}} ( {\color{green} street}.type().equalTo(\textquoteleft H\textquoteright) \&\& checkX(x, col)) {\color{cyan} \textit{do}}\\
-		\hspace*{2.5cm} {\color{green} col} = {\color{green} col} + {\color{red} 1};\\
-		\hspace*{1.5cm} Map.getArea(row,col).addStreet(street);
+		\hspace*{0.3cm} {\color{cyan} \textit{while}} ({\color{green} parserIt}.hasNext()) {\color{cyan} \textit{then}}\\
+		\hspace*{1.3cm} {\color{green} street} = {\color{green} parserIt}.next();\\
+		\hspace*{1.3cm} {\color{green} x} = {\color{green} street}.firstCoordinate().getX();\\
+		\hspace*{1.3cm} {\color{green} y} = {\color{green} street}.firstCoordinate().getY();\\
+		\hspace*{1.3cm} {\color{green} row} = ({\color{green} x} - WestX) / {\color{red} 1.5};\\
+		\hspace*{1.3cm} {\color{green} col} = (NorthY - {\color{green} y}) / {\color{red} 1.5};\\
+		\hspace*{1.3cm} {\color{cyan} \textit{if}} ( {\color{green} street}.type().equalTo(\textquoteleft V\textquoteright) \&\& checkY(y , row)) {\color{cyan} \textit{then}}\\
+		\hspace*{2.3cm} {\color{green} row} = {\color{green} row} + {\color{red} 1};\\
+		\hspace*{1.3cm} {\color{cyan} \textit{else if}} ( {\color{green} street}.type().equalTo(\textquoteleft H\textquoteright) \&\& checkX(x, col)) {\color{cyan} \textit{then}}\\
+		\hspace*{2.3cm} {\color{green} col} = {\color{green} col} + {\color{red} 1};\\
+		\hspace*{1.3cm} Map.getArea(row,col).addStreet(street);
 	\end{minipage}}\\[0.5cm]
 Now the two methods checkY and checkX are shown.\\
 Both the methods have a boolean return type and try to verify it is needed to increase by one the calculated area (see above for the reasons). The parameter are different according to the type of the street: for a vertical road are required the y-part of the first coordinate and the calculated row while for a horizontal road the x-part of the first coordinate and the calculated column.\\
@@ -101,18 +101,21 @@ Both the methods have a boolean return type and try to verify it is needed to in
 \fbox{\begin{minipage}{0.8\textwidth}
 		\hspace*{0.5cm} boolean checkY (double y , int row) \textbraceleft \\
 		\hspace*{1.5cm} {\color{green} start} = NorthY - {\color{green} row} * {\color{red} 1,5};\\
-		\hspace*{1.5cm} {\color{cyan} \textit{if}} ({\color{green} y} \textgreater ({\color{green} start} + {\color{red} 1,5} * CORRECTOR)) {\color{cyan} \textit{do}}\\
+		\hspace*{1.5cm} {\color{cyan} \textit{if}} ({\color{green} y} \textgreater ({\color{green} start} + {\color{red} 1,5} * CORRECTOR)) {\color{cyan} \textit{then}}\\
 		\hspace*{2,5cm} {\color{cyan} \textit{return}} \textbf{true};\\
 		\hspace*{1,5cm} {\color{cyan} \textit{return}} \textbf{false};\\
 		\hspace*{0.5cm} \textbraceright \\
 		\\
 		\hspace*{0.5cm} boolean checkX (double x , int col) \textbraceleft \\
 		\hspace*{1.5cm} {\color{green} start} = EastX + {\color{green} col} * {\color{red} 1,5};\\
-		\hspace*{1.5cm} {\color{cyan} \textit{if}} ({\color{green} x} \textgreater ({\color{green} start} + {\color{red} 1,5} * CORRECTOR)) {\color{cyan} \textit{do}}\\
+		\hspace*{1.5cm} {\color{cyan} \textit{if}} ({\color{green} x} \textgreater ({\color{green} start} + {\color{red} 1,5} * CORRECTOR)) {\color{cyan} \textit{then}}\\
 		\hspace*{2,5cm} {\color{cyan} \textit{return}} \textbf{true};\\
 		\hspace*{1,5cm} {\color{cyan} \textit{return}} \textbf{false};\\
 		\hspace*{0.5cm} \textbraceright
 	\end{minipage}}\\[0.5cm]
+	
+This algorithm generates a first division of the city and its streets into the areas. The algorithm is not perfect and does not consider same particular situations as restricted-traffic zones or busy roads. To improve the quality of the city areas the administrators are able to move some streets between two areas. The administrators are supposed to decide to change a street with some criteria, so no checks are performed on those action.\\
+Finally, the final version of the city is saved on the database, even if a representation is maintained into the Ride Allocator (to be precisely the constructed version). 
 
 \section{Queue Creator Algorithms}
 \label{AlgorithmDesign:QueueCreatorAlgorithms}
@@ -121,16 +124,38 @@ The Queue Creator is a subcomponent of the Ride Allocator\footnote{see the \auto
 The queues' creation is an iterative process performed at the Ride Allocator creation and initialization. After the definition of the map and its areas, the Queue Creator is involved to create one queue into each area.\\
 
 \fbox{\begin{minipage}{0.8\textwidth}
-		\hspace*{3cm}  {\color{cyan} \textit{forall}} Area {\color{green} a} {\color{cyan} \textit{in}} Map {\color{cyan} \textit{do}}\\
+		\hspace*{3cm}  {\color{cyan} \textit{forall}} Area {\color{green} a} {\color{cyan} \textit{in}} Map {\color{cyan} \textit{then}}\\
 		\hspace*{4cm}   {\color{green} a}.createQueue();
 	\end{minipage}}\\[0.5cm]
 
-The \textit{createQueue} method is defined into the class Area: it is able to create one object \textit{queue} if and only if it has never created another queue yet. This definition does not require a Factory Method\footnote{see the \autoref{ArchitecturalDesign:design_patterns} for a definition.} pattern, because exists only one type of queue and no other types can be designed in future. In addition, an exception will be thrown if the method is called when a queue already exists\footnote{In a non object oriented programming language this error can be notified using a return value of the method createQueue. However this method can be called only by the Queue Creator, that is involved only once.}.
+The \textit{createQueue} method is defined into the class Area: it is able to create one object \textit{queue} if and only if it has never created another queue yet. This definition does not require a Factory Method\footnote{see the \autoref{ArchitecturalDesign:design_patterns} for a definition.} pattern, because exists only one type of queue and no other types can be designed in future. In addition, an exception will be thrown if the method is called when a queue already exists\footnote{In a non object oriented programming language this error can be notified using a return value of the method createQueue. However this method can be called only by the Queue Creator, that is involved only once.}.\\
+\\
+Into the database this method has no effects because no driver is waiting at the creation of the queues that are empty.
 
 \section{Queue Manager Algorithms}
 \label{AlgorithmDesign:QueueManagerAlgorithms}
 
-TO BE FILLED
+The Queue Manager has two main algorithms: one to add a driver to a queue by a position and the other one to update a queue (moving down or remove a driver).\\
+When a driver needs to be added to a queue, first the Queue Manager uses the Google Maps APIs to find the street by the position, then identify the area by a method into the Map component. (not shown here). At last is able to add the driver to the correct queue in the last position.\\
+
+\fbox{\begin{minipage}{0.8\textwidth}
+				\hspace*{0.5cm} void addDriver (Driver d , Position pos) \textbraceleft \\
+				\hspace*{1.5cm} {\color{green} street} = GoogleMaps.getStreetByPosition(pos);\\
+				\hspace*{1.5cm} {\color{green} area} = Map.getArea (street);\\
+				\hspace*{1.5cm} {\color{green} area}.enqueue(d);
+				\hspace*{1.5 cm} {\color{blue} \textit{//The method enqueue does not involves any methods into the DBMS. The System Controller, when asks for a driver adding, also call a similar function into the DBMS.}}\\
+				\hspace*{0.5cm} \textbraceright
+	\end{minipage}}\\[0.5cm]
+	
+When a driver has to be removed from the queue, the Queue Manager gives a specific method which is so simple: it removes only the first element into the desired area's queue. In addition, the method also gives the possibilities to move the driver from the first position to the last one by a flag. The modification need to be stored into the database, so the Ride Allocator, at his return, passes to the System Controller the results of the operations and the DBMS is able to correctly update the queue information. Hence, the Queue Manager only updates the queues, but it does not save any data.\\
+
+\fbox{\begin{minipage}{0.8\textwidth}
+		\hspace*{0.5cm} void moveDriver (Area a , boolean moveDown) \textbraceleft \\
+		\hspace*{1.5cm} {\color{green} driver} = {\color{green} area}.removeFirstElement();\\
+		\hspace*{1.5cm} {\color{cyan} \textit{if}} (moveDown) {\color{cyan} \textit{then}}\\
+		\hspace*{2.5cm} {\color{green} area}.enqueue(driver);
+		\hspace*{0.5cm} \textbraceright
+	\end{minipage}}\\[0.5cm]
 
 \section{Ride Assignment Algorithm}
 \label{AlgorithmDesign:RideAssignmentAlgorithm}
