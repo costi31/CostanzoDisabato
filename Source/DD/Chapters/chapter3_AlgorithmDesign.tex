@@ -91,7 +91,7 @@ Now the algorithm is shown by restricting the use of chain invocations in order 
 		\hspace*{1.5cm} {\color{green} col} = (NorthY - {\color{green} y}) / {\color{red} 1.5};\\
 		\hspace*{1.5cm} {\color{cyan} \textit{if}} ( {\color{green} street}.type().equalTo(\textquoteleft V\textquoteright) \&\& checkY(y , row)) {\color{cyan} \textit{do}}\\
 		\hspace*{2.5cm} {\color{green} row} = {\color{green} row} + {\color{red} 1};\\
-		\hspace*{1.5cm} {\color{cyan} \textit{else if}} (checkX(x, col)) {\color{cyan} \textit{do}}\\
+		\hspace*{1.5cm} {\color{cyan} \textit{else if}} ( {\color{green} street}.type().equalTo(\textquoteleft H\textquoteright) \&\& checkX(x, col)) {\color{cyan} \textit{do}}\\
 		\hspace*{2.5cm} {\color{green} col} = {\color{green} col} + {\color{red} 1};\\
 		\hspace*{1.5cm} Map.getArea(row,col).addStreet(street);
 	\end{minipage}}\\[0.5cm]
