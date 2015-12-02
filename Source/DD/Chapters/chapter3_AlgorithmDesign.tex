@@ -17,7 +17,7 @@ In this chapter the algorithms analysed are the following:
 \begin{itemize}
 	\item the city's areas creations and management;
 	\item the queue's management;
-	\item all the algorithms used to handle the special situation which occur when no cabmen are available in the area where the ride (which the Ride Allocator is no assigning) starting position is.\\
+	\item all the algorithms used to handle the special situation which occur when no cabmen are available in the area where the ride (which the Ride Allocator is now assigning) starting position is.\\
 \end{itemize}
 
 \section{Map and Areas' Creation Algorithms}
@@ -153,20 +153,48 @@ When a driver has to be removed from the queue, the Queue Manager gives a specif
 		\hspace*{0.5cm} void moveDriver (Area a , boolean moveDown) \textbraceleft \\
 		\hspace*{1.5cm} {\color{green} driver} = {\color{green} area}.removeFirstElement();\\
 		\hspace*{1.5cm} {\color{cyan} \textit{if}} (moveDown) {\color{cyan} \textit{then}}\\
-		\hspace*{2.5cm} {\color{green} area}.enqueue(driver);
+		\hspace*{2.5cm} {\color{green} area}.enqueue(driver);\\
 		\hspace*{0.5cm} \textbraceright
 	\end{minipage}}\\[0.5cm]
 
 \section{Ride Assignment Algorithm}
 \label{AlgorithmDesign:RideAssignmentAlgorithm}
 
-TO BE FILLED
+The ride are assigned by the Ride Allocator and inside that, by the Allocator subcomponent. The allocator can access to the Map and, as consequence, to the areas and to the related queues. When the System Controller involves the Ride Allocator to assign a driver to an imminent ride, it delegates also the possibilities to pass through the Client and Users Handler in order to communicate with the drivers, then it waits for the results (they will be saved on the database).\\
+The method used to assign a ride has only two parameters, the starting and the destination position. In an object oriented programming language this method will be defined using the overload principle to allows the possibility to use as starting position either a position or an address. For the destination position the method can accept only addresses. In this description we suppose that the method receives only addresses\footnote{in the version with position, the reader can see the \autoref{AlgorithmDesign:QueueManagerAlgorithms} to have an idea about the \textquotedblleft conversion\textquotedblright from a position to an address.}.\\
+The first passage for the algorithm is to find the correct area associated to the address and in this case the methods of the Map are used, as in \autoref{AlgorithmDesign:QueueManagerAlgorithms}. Afterwards, the Ride Allocator calls the first driver in the queue and waits for his answer one minute.\footnote{In the RASD document the driver has been supposed to answer immediately to a call, but to avoid some infinite waiting of the system (for instance for connecting problems on the driver's device) we define now a timer after which the cabman's answer is consider to be a deny.} Here, there are two possibilities: first the driver accepts, so the Ride Allocator immediately removes the driver from the queue and returns to the System Controller; else the driver denies, so the Ride Allocator move the driver to the bottom of the queue and then asks to the next driver into the queue.\\
+In both the possible cases the Ride Allocator has a list (the real implementation of this list is not given here) where save the key information about the ride that it is now assigning: so the detected area and the sequence of driver involved. The answers of each driver are not needed because only the last driver in the list has accepted the ride.\\
+
+\fbox{\begin{minipage}{0.8\textwidth}
+		\hspace*{0.5cm} \textit{list} assignRide (Address start, Address destination, \textit{linkToClientAndUsersHandler} handler) \textbraceleft \\
+		\hspace*{1.5cm} {\color{green} area} = Map.getArea(start);\\
+		\hspace*{1.5cm} {\color{green} listToReturn}.add(area);\\
+		\hspace*{1.5 cm} {\color{cyan} \textit{do}} \\
+		\hspace*{2.5cm} {\color{green} driver} = {\color{green} area}.removeFirstElement();\\
+		\hspace*{2.5cm} {\color{green} area}.enqueue(driver);\\
+		\hspace*{2.5cm} {\color{blue} //Above the driver is re-added to the queue}\\
+		\hspace*{2.5cm} {\color{green} listToReturn}.add(driver);\\
+		\hspace*{2.5cm} {\color{green} accepted} = {\color{green} handler}.ask(destination, \textit{timer value});\\
+		\hspace*{1.5cm} {\color{cyan} \textit{while}} ({\color{green} accepted} == \textbf{false});\\
+		\hspace*{1.5cm} {\color{green} area}.removeLastDriver();\\ 
+		\hspace*{0.5cm} \textbraceright
+	\end{minipage}}\\[0.5cm]
+
+\textit{Observation: the method ask of the handler asks to a cabman if he want to drive in a ride to a certain destination. The second parameter is the maximum time that the driver has to answer: if the timer expires the method return false (the notification of this event to the cabman is then handled by the Client and Users Handler)}.
 
 \section{Special Algorithms}
 \label{AlgorithmDesign:special}
 
-TO BE FILLED
+In this section will be given only an accurate description of the algorithms used to administrate the special situation that occur when in some area there is no driver into the queue.\\
+In the previous section, the algorithm that assign a ride does not consider this possibility. In some objected oriented languages this can be accepted and the special algorithm is invoked by an exception. In alternative is possible define a more exhaustive control flow that call the special algorithms into an if condition.\\
+The system does not allow an human-defined sequence of near areas to be called, so in this situation the first area chosen to find a driver will be randomly selected among the areas closest to the one where the starting position is in.\\
+After the choice of the next area the algorithm shown in \autoref{AlgorithmDesign:RideAssignmentAlgorithm} is called to find a driver for the ride. Obviously, if also this area has no available driver, a new area will be chosen to search a driver who is waiting.\\
 
+\section{Conclusion}
+\label{AlgorithmDesign:conclusion}
+
+In this chapter all the algorithms have been presented without consider the possibility to receive more than one rides to be assigned at the same time. If the two or more rides are in different areas, no problem occurs even if the algorithms are called in parallel.\\
+A precisation about the case that happen when two contemporaneous rides start from the same area is required. Calling in parallel the shown algorithm to assign the rides may lead to inconsistent and undesired situations. This problem can be easily solved by the introduction of synchronization strategies. The implementation of this strategies will not be discussed here, but to have an idea a possible (partial) solution is to have more than one thread to execute ride assignment. When the Ride Allocator is waiting for the driver's answer, it can accepts new requests on an other thread and, if the same area is involved the following driver in the queue will be involved, and so on. Note that this description does not describes all the aspects concerning the synchronization: for instance what happen if the first thread need another driver at the same time of the second one? In addition, if there is only one driver into the queue and he rejects the first ride, the system has to asks to him before enter into the special mode (this is a very strange and rarely case).
 
 
 
