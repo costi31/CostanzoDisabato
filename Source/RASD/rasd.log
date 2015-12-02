@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  18 NOV 2015 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  2 DEC 2015 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1027,12 +1027,12 @@ Package pdftex.def Info: ./figures/ClassDiagram.png used on input line 87.
  [19
 
  <./figures/ClassDiagram.png>]
-Underfull \hbox (badness 4242) in paragraph at lines 101--102
+Underfull \hbox (badness 4242) in paragraph at lines 102--103
 \T1/ppl/m/n/12 per-sonal in-for-ma-tions: name, sur-
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 101--102
+Underfull \hbox (badness 3492) in paragraph at lines 102--103
 \T1/ppl/m/n/12 to ac-cess the my-TaxiS-er-vice from
  []
 
@@ -1042,11 +1042,11 @@ Underfull \hbox (badness 3492) in paragraph at lines 101--102
 File: ./figures/SD_Registration.jpg Graphic file (type jpg)
 
 <use ./figures/SD_Registration.jpg>
-Package pdftex.def Info: ./figures/SD_Registration.jpg used on input line 115.
+Package pdftex.def Info: ./figures/SD_Registration.jpg used on input line 116.
 (pdftex.def)             Requested size: 597.50787pt x 570.55981pt.
 
 
-LaTeX Warning: Float too large for page by 3.55981pt on input line 117.
+LaTeX Warning: Float too large for page by 3.55981pt on input line 118.
 
 [21 <./figures/SD_Registration.jpg>] [22
 
@@ -1056,19 +1056,19 @@ LaTeX Warning: Float too large for page by 3.55981pt on input line 117.
 File: ./figures/SD_Login.jpg Graphic file (type jpg)
 
 <use ./figures/SD_Login.jpg>
-Package pdftex.def Info: ./figures/SD_Login.jpg used on input line 140.
+Package pdftex.def Info: ./figures/SD_Login.jpg used on input line 142.
 (pdftex.def)             Requested size: 597.50787pt x 648.09525pt.
 
 
-LaTeX Warning: Float too large for page by 81.09525pt on input line 142.
+LaTeX Warning: Float too large for page by 81.09525pt on input line 144.
 
 [23 <./figures/SD_Login.jpg>]
-Underfull \hbox (badness 2245) in paragraph at lines 155--156
+Underfull \hbox (badness 2245) in paragraph at lines 158--159
 \T1/ppl/m/n/12 and mod-i-fies them in the sys-tem
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 156--157
+Underfull \hbox (badness 1052) in paragraph at lines 159--160
 []\T1/ppl/m/n/12 Only if the user has mod-i-fied the
  []
 
@@ -1078,15 +1078,15 @@ Underfull \hbox (badness 1052) in paragraph at lines 156--157
 File: ./figures/SD_PersonalInformationManagement.jpg Graphic file (type jpg)
  <use ./figures/SD_PersonalInformationManagement.jpg>
 Package pdftex.def Info: ./figures/SD_PersonalInformationManagement.jpg used on
- input line 165.
+ input line 168.
 (pdftex.def)             Requested size: 597.50787pt x 536.9353pt.
 
-Underfull \hbox (badness 1389) in paragraph at lines 177--178
+Underfull \hbox (badness 1389) in paragraph at lines 181--182
 []\T1/ppl/m/n/12 The user con-firms his po-si-tion by
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 177--178
+Underfull \hbox (badness 1137) in paragraph at lines 181--182
 \T1/ppl/m/n/12 click-ing on the shown popup and
  []
 
@@ -1094,27 +1094,27 @@ Underfull \hbox (badness 1137) in paragraph at lines 177--178
 
 
 ] [25 <./figures/SD_PersonalInformationManagement.jpg>] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 185--195
+Underfull \hbox (badness 10000) in paragraph at lines 189--199
 
  []
 
 
-Underfull \hbox (badness 2538) in paragraph at lines 205--206
+Underfull \hbox (badness 2538) in paragraph at lines 210--211
 []\T1/ppl/m/n/12 The sys-tem con-firms the re-ceived
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 205--206
+Underfull \hbox (badness 1127) in paragraph at lines 210--211
 \T1/ppl/m/n/12 data to the user and in-forms him
  []
 
 [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 212--224
+Underfull \hbox (badness 10000) in paragraph at lines 217--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--224
+Underfull \hbox (badness 10000) in paragraph at lines 217--229
 
  []
 
@@ -1123,10 +1123,10 @@ File: ./figures/SD_ZerotimeReservation.png Graphic file (type png)
 
 <use ./figures/SD_ZerotimeReservation.png>
 Package pdftex.def Info: ./figures/SD_ZerotimeReservation.png used on input lin
-e 228.
+e 233.
 (pdftex.def)             Requested size: 597.50787pt x 530.32571pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--249
+Underfull \hbox (badness 10000) in paragraph at lines 239--255
 
  []
 
@@ -1135,7 +1135,7 @@ File: ./figures/SD_FutureReservation.jpg Graphic file (type jpg)
 
 <use ./figures/SD_FutureReservation.jpg>
 Package pdftex.def Info: ./figures/SD_FutureReservation.jpg used on input line 
-251.
+257.
 (pdftex.def)             Requested size: 554.36736pt x 419.46426pt.
  [30
 
@@ -1144,7 +1144,7 @@ Package pdftex.def Info: ./figures/SD_FutureReservation.jpg used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 264--265
+Underfull \hbox (badness 1107) in paragraph at lines 271--272
 []\T1/ppl/m/n/12 The driver clicks the start wait-ing
  []
 
@@ -1153,11 +1153,11 @@ File: ./figures/SD_StartWaitingTime.jpg Graphic file (type jpg)
 
 <use ./figures/SD_StartWaitingTime.jpg>
 Package pdftex.def Info: ./figures/SD_StartWaitingTime.jpg used on input line 2
-77.
+84.
 (pdftex.def)             Requested size: 597.50787pt x 573.28635pt.
 
 
-LaTeX Warning: Float too large for page by 36.28635pt on input line 279.
+LaTeX Warning: Float too large for page by 36.28635pt on input line 286.
 
 [31] [32 <./figures/SD_FutureReservation.jpg>]
 
@@ -1168,7 +1168,7 @@ Overfull \vbox (107.96861pt too high) has occurred while \output is active []
 
 
 [33] [34 <./figures/SD_StartWaitingTime.jpg>]
-Underfull \hbox (badness 2726) in paragraph at lines 291--292
+Underfull \hbox (badness 2726) in paragraph at lines 299--300
 []\T1/ppl/m/n/12 The driver fills the de-sired work
  []
 
@@ -1177,19 +1177,19 @@ File: ./figures/SD_WorkShiftsManagement.jpg Graphic file (type jpg)
 
 <use ./figures/SD_WorkShiftsManagement.jpg>
 Package pdftex.def Info: ./figures/SD_WorkShiftsManagement.jpg used on input li
-ne 300.
+ne 308.
 (pdftex.def)             Requested size: 567.55489pt x 510.3417pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 313--314
+Underfull \hbox (badness 1033) in paragraph at lines 322--323
 \T1/ppl/m/n/12 sys-tem redi-rects him to the [][]fu-ture[]
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 313--314
+Underfull \hbox (badness 1014) in paragraph at lines 322--323
 \T1/ppl/m/n/12 book-ing page (al-ready filled in all
  []
 
@@ -1204,15 +1204,15 @@ File: ./figures/SD_CheckReservations.png Graphic file (type png)
 
 <use ./figures/SD_CheckReservations.png>
 Package pdftex.def Info: ./figures/SD_CheckReservations.png used on input line 
-324.
+333.
 (pdftex.def)             Requested size: 597.50787pt x 543.72507pt.
  [38 <./figures/SD_CheckReservations.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 331--344
+Underfull \hbox (badness 10000) in paragraph at lines 341--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--344
+Underfull \hbox (badness 10000) in paragraph at lines 341--354
 
  []
 
@@ -1220,7 +1220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--344
 File: ./figures/SD_ReadTheAlerts.jpg Graphic file (type jpg)
 
 <use ./figures/SD_ReadTheAlerts.jpg>
-Package pdftex.def Info: ./figures/SD_ReadTheAlerts.jpg used on input line 346.
+Package pdftex.def Info: ./figures/SD_ReadTheAlerts.jpg used on input line 356.
 
 (pdftex.def)             Requested size: 597.50787pt x 235.3197pt.
  [39
@@ -1232,7 +1232,7 @@ File: ./figures/Statechart_ZerotimeRideClass.png Graphic file (type png)
 
 <use ./figures/Statechart_ZerotimeRideClass.png>
 Package pdftex.def Info: ./figures/Statechart_ZerotimeRideClass.png used on inp
-ut line 358.
+ut line 368.
 (pdftex.def)             Requested size: 390.0pt x 373.16187pt.
  [40
 
@@ -1242,7 +1242,7 @@ File: ./figures/Statechart_FutureRideClass.png Graphic file (type png)
 
 <use ./figures/Statechart_FutureRideClass.png>
 Package pdftex.def Info: ./figures/Statechart_FutureRideClass.png used on input
- line 365.
+ line 375.
 (pdftex.def)             Requested size: 390.0pt x 442.07262pt.
 ) [41
 
@@ -1355,10 +1355,10 @@ Package rerunfilecheck Info: File `rasd.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 17760 strings out of 494957
- 264468 string characters out of 6180027
- 543676 words of memory out of 5000000
- 20162 multiletter control sequences out of 15000+600000
+ 17780 strings out of 494957
+ 265104 string characters out of 6180027
+ 544241 words of memory out of 5000000
+ 20182 multiletter control sequences out of 15000+600000
  29878 words of font info for 69 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,18n,77p,1979b,2090s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1371,7 +1371,7 @@ r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on rasd.pdf (61 pages, 1337353 bytes).
+Output written on rasd.pdf (61 pages, 1337355 bytes).
 PDF statistics:
  1198 PDF objects out of 1200 (max. 8388607)
  1080 compressed objects within 11 object streams
