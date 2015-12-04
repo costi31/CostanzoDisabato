@@ -22,13 +22,25 @@
 \BOOKMARK [1][-]{section.3.3}{Queue Manager Algorithms}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.4}{Ride Assignment Algorithm}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.5}{Special Algorithms}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{User Interfaces Design}{}% 25
-\BOOKMARK [1][-]{section.4.1}{Registration/Login}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.2}{Personal Information Management}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.3}{Driver functionalities}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.4}{Zerotime Ride}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.5}{Future Ride}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.6}{Other User Functionalities}{chapter.4}% 31
-\BOOKMARK [0][-]{chapter.5}{Other Info}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Tools}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.2}{Working hours}{chapter.5}% 34
+\BOOKMARK [1][-]{section.3.6}{Conclusion}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{User Interfaces Design}{}% 26
+\BOOKMARK [1][-]{section.4.1}{Registration/Login}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{Personal Information Management}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.3}{Driver functionalities}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.4}{Zerotime Ride}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.5}{Future Ride}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.6}{Other User Functionalities}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Requirements Traceability}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Registration}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Login}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{Personal Information Management}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.4}{Ask for a Zerotime Ride}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.5}{Book a Future Ride}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.6}{Accept or Deny a Ride}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.7}{Start Waiting Time}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.8}{Work Shifts Management}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.9}{Check the Reservations}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.10}{Read the Alerts}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{Other Info}{}% 44
+\BOOKMARK [1][-]{section.6.1}{Tools}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.2}{Working hours}{chapter.6}% 46

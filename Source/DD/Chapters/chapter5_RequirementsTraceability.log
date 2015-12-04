@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  4 DEC 2015 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  4 DEC 2015 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**OtherInfo.tex
-(./OtherInfo.tex
+**chapter5_RequirementsTraceability.tex
+(./chapter5_RequirementsTraceability.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.cls
@@ -622,15 +622,15 @@ Package: glossary-tree 2015/07/17 v4.17 (NLCT)
 ))
 \glswrite=\write5
 \glo@main@file=\write6
-\openout6 = `OtherInfo.glo'.
+\openout6 = `chapter5_RequirementsTraceability.glo'.
 
-Package glossaries Info: Writing glossary file OtherInfo.glo on input line 124.
-
+Package glossaries Info: Writing glossary file chapter5_RequirementsTraceabilit
+y.glo on input line 124.
 )
 Package xr Info: IMPORTING LABELS FROM ../../RASD/chapters/requirements.aux on 
 input line 24.
-)) (./OtherInfo.aux)
-\openout1 = `OtherInfo.aux'.
+)) (./chapter5_RequirementsTraceability.aux)
+\openout1 = `chapter5_RequirementsTraceability.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -651,9 +651,11 @@ Package hyperref Info: Link coloring OFF on input line 4.
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
- (./OtherInfo.out) (./OtherInfo.out)
+
+(./chapter5_RequirementsTraceability.out)
+(./chapter5_RequirementsTraceability.out)
 \@outlinefile=\write7
-\openout7 = `OtherInfo.out'.
+\openout7 = `chapter5_RequirementsTraceability.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -738,52 +740,160 @@ Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 18.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
- [1
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 13.
 
-\openout5 = `OtherInfo.ist'.
+LaTeX Warning: Reference `ArchitecturalDesign:SD_Registration' on page 1 undefi
+ned on input line 13.
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] 
+LaTeX Warning: Reference `UI:RegistrationAndLogin' on page 1 undefined on input
+ line 13.
+
+
+LaTeX Warning: Reference `ArchitecturalDesign:SD_Login' on page 1 undefined on 
+input line 17.
+
+
+LaTeX Warning: Reference `UI:RegistrationAndLogin' on page 1 undefined on input
+ line 17.
+
+
+LaTeX Warning: Reference `ArchitecturalDesign:SD_ProfileManagement' on page 1 u
+ndefined on input line 21.
+
+
+LaTeX Warning: Reference `UI:PersonalInformationManagement' on page 1 undefined
+ on input line 21.
+
+[1
+
+\openout5 = `chapter5_RequirementsTraceability.ist'.
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `ArchitecturalDesign:SD_Zerotime' on page 2 undefined 
+on input line 25.
+
+
+LaTeX Warning: Reference `UI:ZerotimeRide' on page 2 undefined on input line 25
+.
+
+
+LaTeX Warning: Reference `ArchitecturalDesign:SD_FutureRide' on page 2 undefine
+d on input line 29.
+
+
+LaTeX Warning: Reference `UI:FutureRide' on page 2 undefined on input line 29.
+
+
+LaTeX Warning: Reference `UI:DriverFunctionalities' on page 2 undefined on inpu
+t line 33.
+
+[2]
+
+LaTeX Warning: Reference `ArchitecturalDesign:SD_StartWaitingTime' on page 3 un
+defined on input line 37.
+
+
+LaTeX Warning: Reference `UI:DriverFunctionalities' on page 3 undefined on inpu
+t line 37.
+
+
+LaTeX Warning: Reference `ArchitecturalDesign:SD_WorkShiftsManagement' on page 
+3 undefined on input line 41.
+
+
+LaTeX Warning: Reference `UI:DriverFunctionalities' on page 3 undefined on inpu
+t line 41.
+
+
+LaTeX Warning: Reference `ArchitecturalDesign:SD_CheckReservation' on page 3 un
+defined on input line 45.
+
+
+LaTeX Warning: Reference `UI:OtherUserFunctionalities' on page 3 undefined on i
+nput line 45.
+
+
+LaTeX Warning: Reference `UI:OtherUserFunctionalities' on page 3 undefined on i
+nput line 49.
+
+[3] 
 AED: lastpage setting LastPage
-[2
-
-]
+[4]
 
 Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
-(./OtherInfo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
-Package rerunfilecheck Info: File `OtherInfo.out' has not changed.
-(rerunfilecheck)             Checksum: C7B89ADD79E1DCE4D9FB1288650D1384;155.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+(./chapter5_RequirementsTraceability.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package rerunfilecheck Info: File `chapter5_RequirementsTraceability.out' has n
+ot changed.
+(rerunfilecheck)             Checksum: 8D0237950038EF9C9DC4CAFF17FE2B29;710.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 15507 strings out of 494957
- 230968 string characters out of 6180027
- 499973 words of memory out of 5000000
- 18456 multiletter control sequences out of 15000+600000
- 15786 words of font info for 37 fonts, out of 8000000 for 9000
+ 15506 strings out of 494957
+ 231543 string characters out of 6180027
+ 500021 words of memory out of 5000000
+ 18446 multiletter control sequences out of 15000+600000
+ 12517 words of font info for 26 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 57i,11n,45p,2034b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/palatino/uplr8a.pfb>
-Output written on OtherInfo.pdf (2 pages, 43878 bytes).
+ 57i,5n,45p,2058b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.3.2.12} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.11} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.10} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.9} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.8} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:ws} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{glo:ma} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/palatino/uplr8a.pfb>
+Output written on chapter5_RequirementsTraceability.pdf (4 pages, 46641 bytes).
+
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

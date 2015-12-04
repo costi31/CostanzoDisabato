@@ -30,20 +30,32 @@
 \contentsline {subsubsection}{Future Ride Booking}{26}{section*.34}
 \contentsline {subsubsection}{Zerotime Ride}{27}{section*.36}
 \contentsline {section}{\numberline {2.6}Component Interfaces}{27}{section.2.6}
-\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{31}{section.2.7}
-\contentsline {chapter}{\numberline {3}Algorithm Design}{34}{chapter.3}
-\contentsline {section}{\numberline {3.1}Map and Areas' Creation Algorithms}{35}{section.3.1}
-\contentsline {section}{\numberline {3.2}Queue Creator Algorithms}{38}{section.3.2}
-\contentsline {section}{\numberline {3.3}Queue Manager Algorithms}{39}{section.3.3}
-\contentsline {section}{\numberline {3.4}Ride Assignment Algorithm}{40}{section.3.4}
-\contentsline {section}{\numberline {3.5}Special Algorithms}{40}{section.3.5}
-\contentsline {chapter}{\numberline {4}User Interfaces Design}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Registration/Login}{41}{section.4.1}
-\contentsline {section}{\numberline {4.2}Personal Information Management}{42}{section.4.2}
-\contentsline {section}{\numberline {4.3}Driver functionalities}{44}{section.4.3}
-\contentsline {section}{\numberline {4.4}Zerotime Ride}{45}{section.4.4}
-\contentsline {section}{\numberline {4.5}Future Ride}{47}{section.4.5}
-\contentsline {section}{\numberline {4.6}Other User Functionalities}{48}{section.4.6}
-\contentsline {chapter}{\numberline {5}Other Info}{51}{chapter.5}
-\contentsline {section}{\numberline {5.1}Tools}{51}{section.5.1}
-\contentsline {section}{\numberline {5.2}Working hours}{52}{section.5.2}
+\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{34}{section.2.7}
+\contentsline {chapter}{\numberline {3}Algorithm Design}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Map and Areas' Creation Algorithms}{38}{section.3.1}
+\contentsline {section}{\numberline {3.2}Queue Creator Algorithms}{41}{section.3.2}
+\contentsline {section}{\numberline {3.3}Queue Manager Algorithms}{42}{section.3.3}
+\contentsline {section}{\numberline {3.4}Ride Assignment Algorithm}{43}{section.3.4}
+\contentsline {section}{\numberline {3.5}Special Algorithms}{45}{section.3.5}
+\contentsline {section}{\numberline {3.6}Conclusion}{45}{section.3.6}
+\contentsline {chapter}{\numberline {4}User Interfaces Design}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}Registration/Login}{47}{section.4.1}
+\contentsline {section}{\numberline {4.2}Personal Information Management}{48}{section.4.2}
+\contentsline {section}{\numberline {4.3}Driver functionalities}{50}{section.4.3}
+\contentsline {section}{\numberline {4.4}Zerotime Ride}{51}{section.4.4}
+\contentsline {section}{\numberline {4.5}Future Ride}{53}{section.4.5}
+\contentsline {section}{\numberline {4.6}Other User Functionalities}{54}{section.4.6}
+\contentsline {chapter}{\numberline {5}Requirements Traceability}{57}{chapter.5}
+\contentsline {section}{\numberline {5.1}Registration}{57}{section.5.1}
+\contentsline {section}{\numberline {5.2}Login}{57}{section.5.2}
+\contentsline {section}{\numberline {5.3}Personal Information Management}{58}{section.5.3}
+\contentsline {section}{\numberline {5.4}Ask for a Zerotime Ride}{58}{section.5.4}
+\contentsline {section}{\numberline {5.5}Book a Future Ride}{58}{section.5.5}
+\contentsline {section}{\numberline {5.6}Accept or Deny a Ride}{58}{section.5.6}
+\contentsline {section}{\numberline {5.7}Start Waiting Time}{59}{section.5.7}
+\contentsline {section}{\numberline {5.8}Work Shifts Management}{59}{section.5.8}
+\contentsline {section}{\numberline {5.9}Check the Reservations}{59}{section.5.9}
+\contentsline {section}{\numberline {5.10}Read the Alerts}{60}{section.5.10}
+\contentsline {chapter}{\numberline {6}Other Info}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Tools}{61}{section.6.1}
+\contentsline {section}{\numberline {6.2}Working hours}{62}{section.6.2}

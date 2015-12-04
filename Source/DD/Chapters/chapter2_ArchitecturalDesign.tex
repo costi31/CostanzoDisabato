@@ -334,7 +334,7 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 \label{ArchitecturalDesign:SD_CheckReservation}
 
 \begin{figure}[hb!]
-	\label{ArchitecturalDesign:sixthSD}
+	\label{ArchitecturalDesign:fourthSD}
 	\centering
 	\includegraphics[width = 0.9\textwidth] {runtime/SD_CheckTheReservations}
 	\caption[Sequence Diagram for Check the Reservations.] {The sequence diagram for the management of personal booking.}
@@ -346,7 +346,7 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 \label{ArchitecturalDesign:SD_StartWaitingTime}
 
 \begin{figure}[hb!]
-	\label{ArchitecturalDesign:fourthSD}
+	\label{ArchitecturalDesign:fifthSD}
 	\centering
 	\includegraphics[width = 0.9\textwidth] {runtime/SD_StartWaitingTime}
 	\caption[Sequence Diagram for Start Waiting Time.] {The sequence diagram for the notification of waiting time's start.}
@@ -355,10 +355,10 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 \clearpage
 
 \subsubsection{Work shifts Management}
-\label{ArchitecturalDesign:SD_WorkshiftsManagement}
+\label{ArchitecturalDesign:SD_WorkShiftsManagement}
 
 \begin{figure}[hb!]
-	\label{ArchitecturalDesign:fifthSD}
+	\label{ArchitecturalDesign:sixthSD}
 	\centering
 	\includegraphics[width = 0.85\textwidth] {runtime/SD_WorkshiftsManagement}
 	\caption[Sequence Diagram for the Work shifts Management.] {The sequence diagram for the management of the driver's work shifts.}
@@ -367,7 +367,7 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 %\clearpage
 
 \subsubsection{Future Ride Booking}
-\label{ArchitecturalDesign:SD_Zerotime}
+\label{ArchitecturalDesign:SD_FutureRide}
 
 \begin{figure}[hb!]
 	\label{ArchitecturalDesign:seventhSD}
@@ -383,7 +383,7 @@ In this section are displayed the sequence diagram of myTaxiService run-view. In
 \label{ArchitecturalDesign:SD_Zerotime}
 
 \begin{figure}[hb!]
-	\label{ArchitecturalDesign:seventhSD}
+	\label{ArchitecturalDesign:eightSD}
 	\centering
 	\includegraphics[width = \textwidth] {runtime/SD_ZerotimeRide}
 	\caption[Sequence Diagram for the Zerotime Ride.] {The sequence diagram for the asking for a zerotime ride.\\
@@ -402,17 +402,16 @@ The methods are written in the following way:
 
 \begin{itemize}
 	
-	\item \textbf{GpsInterface}. This interface is implemented by the GPS system. For the GPS functionality we use also the Google APIs to obtain the address corresponding to a gps position and to show the map.\\
+	\item \textbf{GpsInterface}. This interface is implemented by the GPS system. For the GPS functionality we use also the Google Maps APIs to obtain the address corresponding to a gps position and to show the map.\\
 	The GpsInterface offers two public methods:
 	\begin{itemize}
 		\item \textit{Position calculatePosition()}\\
 		it calculates the current position of the method's caller and return an object of type Position.
 		\item \textit{double getGpsLatitude(Position pos)}\\
 		it returns a double precision decimal number that represents the latitude of the Position given as parameter.
-	\end{itemize}
-	\begin{itemize}
 		\item \textit{double getGpsLongitude(Position pos)}\\
 		it returns a double precision decimal number that represents the longitude of the Position given as parameter
+		\\
 	\end{itemize}
 	
 	\item \textbf{RideAllocatorInterface}. This interface is implemented by the Ride Allocator to manage the rides and the queues of available drivers for each area. It offers three public methods:
@@ -423,9 +422,11 @@ The methods are written in the following way:
 		it calculates the Area which the Position of the driver (given as a second parameter) belongs to, then it add the Driver (given as first parameter) to the corresponding queue of available drivers of the area.
 		\item \textit{boolean isValidAddress(String city, String street)}\\
 		it verifies the existence of the address, given as the couple of String(s) representing the city and the street, in one of the areas covered by myTaxyService. It returns the boolean value true if the address exists, false otherwise.
+		\\
 	\end{itemize}	
 	
-	\item \textbf{ClientAndUsersHandlerInterface}. This interface is implemented by the Client and Users handler and offers the public methods to manage the user functionalities:
+	\item \textbf{ClientAndUsersHandlerInterface}. This interface is implemented by the Client and Users Handler. As described in the sections above the services are split into a few interfaces that are grouped by a common role or actor\footnote{For each method the checking of correctness of the caller actor is entrusted to the Security Manager.}. To simplify this section, we'll list them sequentially without respecting the division in groups.\\
+	This interface offers the public methods to manage the user functionalities:
 	\begin{itemize}
 		\item \textit{String login(String email, String password)}\\
 		this method needs two parameters: a String containing the e-mail of the user and a String containing the encrypted password with the method defined by the SecurityManagerInterface. It returns a String representing the result of the operation with a number identifier at starting and a text message after. All the possible results are:
@@ -435,23 +436,75 @@ The methods are written in the following way:
 			\item \textit{"2 : Login Error, the e-mail and/or the password are wrong"}
 		\end{itemize}
 		
-	\end{itemize}
-	\begin{itemize}
-		\item \textit{public String register(String email, String password, String name, String surname, String taxCode, Date birthday, String cityOfResidence)}\\
+		\item \textit{String register(String email, String password, String name, String surname, String taxCode, Date birthday, String cityOfResidence)}\\
 		this method needs many String parameters: the e-mail of the user, the encrypted password with the method defined by the SecurityManagerInterface, the name, surname, personal tax code, birthday, the city of residence. It returns a String representing the result of the operation with a number identifier at starting and a text message after. All the possible results are:
 		\begin{itemize}
 			\item \textit{"0 : Registration Successful, an e-mail with activation code has been sent"}
 			\item \textit{"1 : Registration Error, user already registered with that tax code"}
-			\item \textit{"2 : Registration Error, e-mail already in use"}
-			\item \textit{"3 : Registration Error, data are not valid"}	
+			\item \textit{"2 : Registration Error, e-mail address already in use"}
+			\item \textit{"3 : Registration Error, data are not valid"}
 		\end{itemize}
 		
-	\end{itemize}	
+		\item \textit{String changeEmail(String email)}\\
+		it changes the e-mail of the current logged user that calls the method, with the new one given as parameter. This method returns the result of the operation as a String containing a number identifier at starting and a text message after. All the possible results are:
+		\begin{itemize}
+			\item \textit{"0 : E-mail Address Changed, an 	e-mail with activation code has been sent"}
+			\item \textit{"1 : E-mail Changing Error, the specified e-mail address is already in use"}
+		\end{itemize}					
+
+		\item \textit{String changePassword(String oldPassword, String newPassword, String passwordConfirmation)}\\
+		it changes the current password of the current logged user that calls the method, with the new one given as second parameter. The first String parameter contains the old password encrypted with the method defined by the SecurityManagerInterface, the second parameter is the new password encrypted and the third one is the confirmation of the new password (the new password repeated) encrypted. This method returns the result of the operation as a String containing a number identifier at starting and a text message after. All the possible results are:
+		\begin{itemize}
+			\item \textit{"0 : Password Changed"}
+			\item \textit{"1 : Password Changing Error, the new password is not valid"}		
+			\item \textit{"2 : Password Changing Error, the new password and the password confirmation don't match"}
+			\item \textit{"3 : Password Changing Error, the old password is wrong"}		
+		\end{itemize}						
+
+		\item \textit{void askForRide(User passenger, Position departure, Position destination)}\\
+		it asks for	a zerotime ride for the passenger given as first parameter, with two Position parameters corresponding to the departure and the destination (second and third parameters).
+
+		\item \textit{void bookFutureRide(User passenger, Position departure, Position destination, Date departureTime)}\\
+		it books a ride for the passenger given as first parameter, with two Position parameters corresponding to the departure and the destination (second and third parameters) and one Date parameter representing the desired date (and also time) of the departure.
+		
+		\item \textit{Ride[] checkReservations()}\\
+		it shows all the Ride(s) (zerotime and future) asked by the current logged User. It returns an array of all the Ride(s).
+
+		\item \textit{void deleteRide(Ride ride)}\\
+		it deletes the ride given as first parameter (as already said it's possible only if the ride is a future reservation)
+
+		\item \textit{void changeRideTime(Ride ride, Date departureTime)}\\
+		it changes the departure date and time for the ride given as first parameter, with the new one given as second parameter.
+		
+		\item \textit{Object[][] readAlerts()}\\
+		it shows all the alerts to the user. The returned type is a matrix of Object(s) containing the date and the message in the columns for each alert in the rows.
+		
+		\item \textit{void acceptDenyRide(Ride ride, boolean accept)}\\
+		it accepts or deny a Ride, given as first parameter, for the current logged Driver. The first parameter is the Ride to accept or deny, the second parameter is the boolean value representing the desired choice, it is true if the driver wants to accept the ride, false otherwise.
+		
+		\item \textit{void startWaitingTime(Position pos)}\\
+		it starts the waiting time for the current logged Driver in the Position given as parameter, i.e. the driver is available and waiting for a ride request in the area associated to the provided position.
+		
+		\item \textit{void addWorkShift(WorkShift ws)}\\
+		it adds the WorkShift given as parameter (as described in the Class Diagram of RASD) characterised by a week day number, the starting time and the ending time.
+		
+		\item \textit{void removeWorkShift(WorkShift ws)}\\
+		it removes the WorkShift given as parameter (as described in the Class Diagram of RASD) characterised by a week day number, the starting time and the ending time. \\
+	\end{itemize}
+					
+					
+	\item \textbf{SystemControllerInterface}. This interface is implemented by the System Controller and offers only one public method:
+	\begin{itemize}
+		\item \textit{void enqueueRequest(Request req)}\\
+		it adds a Request, given as first parameter, to the queue of the sub Component Dispatcher. \\
+	\end{itemize}
 	
 	\item \textbf{SecurityManagerInterface}. This interface is implemented by the Security Manager and offers these public methods:
 	\begin{itemize}
 		\item \textit{String encryptPassword(String password)}\\
 		it encrypts a password given as a String parameter, with the hashing method estabilished by the security rules of the system, and returns the result.
+		\item \textit{boolean checkValidityOfRequest(Request req, User user)}\\
+		it checks the validity of a Request (first parameter) from a User (second parameter). It returns the boolean value true, if the user can submit the request, false otherwise. \\
 	\end{itemize}	
 	
 	\item \textbf{DBMSInterface}. This interface is implemented by the DBMS and offers general public methods to access the data of the database:
@@ -468,6 +521,10 @@ The methods are written in the following way:
 		
 		\item \textit{void setValue(String key, String value, String from, String whereCondition)}
 		sets the value of a specific key of any record in the database that respect the whereCondition parameter. The first parameter is the name of the key of which we want to set the value, given as second parameter, for a specific record. The third parameter is the name of the table or a join of tables, where the desired key is. The fourth parameter is a part of SQL query containing the conditions to search the desired record.
+		
+		\item \textit{void setValue(String[] key, String[] value, String from, String whereCondition)}
+		this is an overload method similar to the one above, but it sets the new values for many keys at the same time. The first parameter is the array of all the key names to modify, the second parameter is the array of all the new values for the keys (considered in the same order of the corresponding keys). The other parameters have the same meaning as before.
+		\\
 	\end{itemize}
 		
 	

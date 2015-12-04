@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  21 NOV 2015 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  4 DEC 2015 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,6 +313,24 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count113
 \lst@gtempboxa=\box30
@@ -352,13 +370,16 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 79.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2015/07/17 v4.17 (NLCT)
@@ -604,8 +625,11 @@ Package: glossary-tree 2015/07/17 v4.17 (NLCT)
 \openout6 = `chapter1_Introduction.glo'.
 
 Package glossaries Info: Writing glossary file chapter1_Introduction.glo on inp
-ut line 120.
-))) (./chapter1_Introduction.aux)
+ut line 124.
+)
+Package xr Info: IMPORTING LABELS FROM ../../RASD/chapters/requirements.aux on 
+input line 24.
+)) (./chapter1_Introduction.aux)
 \openout1 = `chapter1_Introduction.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -761,14 +785,14 @@ LaTeX Warning: Reference `architectural_design' on page 3 undefined on input li
 ne 38.
 
 
-LaTeX Warning: Reference `algorithm-design' on page 3 undefined on input line 4
+LaTeX Warning: Reference `algorithm_design' on page 3 undefined on input line 4
 0.
 
 
-LaTeX Warning: Reference `ui' on page 3 undefined on input line 42.
+LaTeX Warning: Reference `UIDesign' on page 3 undefined on input line 42.
 
 
-LaTeX Warning: Reference `requirement_traceability' on page 3 undefined on inpu
+LaTeX Warning: Reference `RequirementsTraceability' on page 3 undefined on inpu
 t line 44.
 
 
@@ -802,20 +826,20 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15015 strings out of 494957
- 225170 string characters out of 6180027
- 489823 words of memory out of 5000000
- 17978 multiletter control sequences out of 15000+600000
+ 15482 strings out of 494957
+ 230823 string characters out of 6180027
+ 500997 words of memory out of 5000000
+ 18434 multiletter control sequences out of 15000+600000
  12517 words of font info for 26 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 57i,10n,45p,2046b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,11n,45p,2046b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:mockup} has been referenced but does not exis
 t, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/palatino/uplr8a.pfb>
-Output written on chapter1_Introduction.pdf (3 pages, 40470 bytes).
+Output written on chapter1_Introduction.pdf (3 pages, 40527 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream

@@ -13,6 +13,7 @@
 In this chapter are shown the main \glspl{mockup} of myTaxiService, due to present the graphical user interfaces of the system for each functionality. All the \glspl{mockup} are displayed with an accurate description to prevent misunderstanding and to recall the functionality.\\
 
 \section{Registration/Login}
+\label{UI:RegistrationAndLogin}
 When an user connects to the WS or opens the MA, the first screens is the login page. For both the versions, there is a button to redirect to the registration page, if the user is not registered yet.\\
 The figure \ref{UI:loginWS} is the WS version where the registration button is made by a link on the phrase \textquotedblleft Not Registered yet? Click here\textquotedblright. At the same time the user can insert his credentials into the specific boxes.\\
 The figure \ref{UI:loginMA} is the corresponding \gls{mockup} for the mobile application: at the application opening the user can inserts his credentials or clicks on the registration button.\\
@@ -56,7 +57,8 @@ A non registered user has to enrol into the system, so he clicks on the correspo
 \end{figure}
 
 \section{Personal Information Management}
-The figures \ref{UI:managePersonalInformationWS} and \ref{UI:rmanagePersonalInformationMA} show the mockups for the  management of personal information.\\
+\label{UI:PersonalInformationManagement}
+The figures \ref{UI:managePersonalInformationWS} and \ref{UI:managePersonalInformationMA} show the mockups for the  management of personal information.\\
 The only information that can be modified are the email, the password and the city of residence. In both the myTaxiService's versions the other information are shown into a non-modifiable boxes (so they have a different color, typically grey, to mark this property).
 
 \begin{figure}[ht!]
@@ -72,14 +74,15 @@ The only information that can be modified are the email, the password and the ci
 		\centering
 		\includegraphics[height = 9cm] {mockups/ManagePersonalInformation_MA}
 		\caption{Personal Information Management page in mobile application.}
-		\label{UI:rmanagePersonalInformationMA}
+		\label{UI:managePersonalInformationMA}
 	\end{minipage}
 \end{figure}
 
 \clearpage
 
 \section{Driver functionalities}
-The functionalities reserved for the cabmen are developed only for the \gls{ma} version of myTaxiService: the reasons are explained in \autoref{ArchitecturalDesign:preamble}. When a cabman has to notifies the system that it is starting his workshift or he has ended a ride, so he is now waiting for a new ride, he uses the Start Waiting Time functionality that is shown in figure \ref{UI:startWaitingTime}: the displayed position is calculated by GPS.\\
+\label{UI:DriverFunctionalities}
+The functionalities reserved for the cab-men are developed only for the \gls{ma} version of myTaxiService: the reasons are explained in \autoref{ArchitecturalDesign:preamble}. When a cab-man has to notify the system that it is starting his work shift or he has ended a ride, so he is now waiting for a new ride, he uses the Start Waiting Time functionality that is shown in figure \ref{UI:startWaitingTime}: the displayed position is calculated by GPS.\\
 
 \begin{figure}[ht!]
 	\centering
@@ -111,8 +114,9 @@ At last, in figure \ref{UI:workshift} there is a mockup for the page where the d
 \end{figure}
 
 \section{Zerotime Ride}
+\label{UI:ZerotimeRide}
 When a user asks for a zerotime ride, he has to insert the starting and the destination positions (the first one can be calculated by the GPS) and then to confirm the request.\\
-In the \gls{ma} this sequence of operations is performed with three screens (mockups in figures \ref{UI:zerotimeMA1}, \ref{UI:zerotimeMA2} and \ref{UI:zerotimeMA3}), while into the \gls{ws} it is used only one screen split into the correspondent sections, shown in figure \ref{UI:zerotimeWS}.
+In the \gls{ma} this sequence of operations is performed with three screens (\glspl{mockup} in figures \ref{UI:zerotimeMA1}, \ref{UI:zerotimeMA2} and \ref{UI:zerotimeMA3}), while into the \gls{ws} it is used only one screen split into the correspondent sections, shown in figure \ref{UI:zerotimeWS}.
 
 \begin{figure}[ht!]
 	\centering
@@ -151,9 +155,10 @@ In the \gls{ma} this sequence of operations is performed with three screens (moc
 \clearpage
 
 \section{Future Ride}
+\label{UI:FutureRide}
 When a user desires to book a future ride, he has to insert the starting and the destination positions (the first one can be calculated by the GPS), the departure (both the date and the time) and then to confirm the request.\\
-In the \gls{ma} this sequence of operations is performed with three screens (mockups in figures \ref{UI:futuretimeMA1}, \ref{UI:futuretimeMA2} and \ref{UI:futuretimeMA3}), while into the \gls{ws} it is used only one screen split into the correspondent sections, shown in figure \ref{UI:futuretimeWS}.\\
-In both the \gls{ma} and the \gls{ws}, the departure inserting is made with a popup that uses the apposite operative system functionalities to insert the dates (for example a computer OS can use a calendar for dates and a box for time, while a mobile OS can use a dropdown list or something that slides following the finger's touch).\\
+In the \gls{ma} this sequence of operations is performed with three screens (\glspl{mockup} in figures \ref{UI:futuretimeMA1}, \ref{UI:futuretimeMA2} and \ref{UI:futuretimeMA3}), while into the \gls{ws} it is used only one screen split into the correspondent sections, shown in figure \ref{UI:futuretimeWS}.\\
+In both the \gls{ma} and the \gls{ws}, the departure inserting is made with a pop-up that uses the apposite operative system functionalities to insert the dates (for example a computer OS can use a calendar for dates and a box for time, while a mobile OS can use a dropdown list or something that slides following the finger's touch).\\
 
 \begin{figure}[ht!]
 	\centering
@@ -190,6 +195,7 @@ In both the \gls{ma} and the \gls{ws}, the departure inserting is made with a po
 \end{figure}
 
 \section{Other User Functionalities}
+\label{UI:OtherUserFunctionalities}
 myTaxiService gives other useful functionalities to the users.\\
 In \gls{ma} there are two screens: in figure \ref{UI:reservationMA1} the users can see all his reservation split into two sections, one for the future reservation (they can be edited) and one, at the bottom, for a list of the past rides; in figure \ref{UI:reservationMA2} the user can edit a specific reservation (either the departure or the positions can be modified) that it was selected in the previous page by a click on the \textquotedblleft edit, delete\textquotedblright  button.\\
 

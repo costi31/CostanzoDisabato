@@ -1,0 +1,53 @@
+\providecommand{\mainpath}{..} % Command to retrieve the path of the main file. It must be defined before documentclass.
+
+\documentclass[\mainpath/main]{subfiles}
+\begin{document}
+
+\chapter{Requirements Traceability}
+\label{RequirementsTraceability}
+This chapter explains how the functional requirements from the Requirements Analysis And Specification Document (RASD) have been designed and described in this Design Document (DD).\\
+Every section of this chapter refers to a functional requirement.
+
+\section{Registration}
+The section \ref{RASD:requirements:Registration} of the RASD describes the registration functionality. A visitor can register himself to myTaxyService only if he's new to the system, i.e. doesn't exist a user with the same tax code.\\
+In the DD we have satisfied this functional requirement, we have described the sequence of actions in the Sequence Diagram of \autoref{ArchitecturalDesign:SD_Registration} and represented the user interface to register both via \gls{ma} and \gls{ws} in \autoref{UI:RegistrationAndLogin}.
+
+\section{Login}
+The section \ref{RASD:requirements:Login} of the RASD describes the login functionality. A visitor can login into myTaxyService only if he's registered.
+In the DD we have satisfied this functional requirement, we have described the sequence of actions in the Sequence Diagram of \autoref{ArchitecturalDesign:SD_Login} and represented the user interface to login both via \gls{ma} and \gls{ws} in \autoref{UI:RegistrationAndLogin}.
+
+\section{Personal Information Management}
+The section \ref{RASD:requirements:PersonalInformationManagement} of the RASD describes the personal information management functionality. A logged user can modify some of his personal information: the e-mail, the password and the city of residence.\\
+In the DD we have satisfied this functional requirement, we have described the sequence of actions in the Sequence Diagram of \autoref{ArchitecturalDesign:SD_ProfileManagement} and represented the user interface to manage personal information both via \gls{ma} and \gls{ws} in \autoref{UI:PersonalInformationManagement}.
+
+\section{Ask for a Zerotime Ride}
+The sections \ref{RASD:requirements:ZerotimeReservationMA} and \ref{RASD:requirements:ZerotimeReservationWS} of the RASD describe the functionality of asking for a zerotime ride both via \gls{ma} and via \gls{ws}. A logged user can ask for a zerotime ride.\\
+In the DD we have satisfied this functional requirement, we have described the sequence of actions in the Sequence Diagram of \autoref{ArchitecturalDesign:SD_Zerotime} and represented the user interface to ask for a zerotime ride both via \gls{ma} and \gls{ws} in \autoref{UI:ZerotimeRide}.
+
+\section{Book a Future Ride}
+The section \ref{RASD:requirements:FutureReservation} of the RASD describes the functionality of booking a future ride both via \gls{ma} and via \gls{ws}. A logged user can book a future ride.\\
+In the DD we have satisfied this functional requirement, we have described the sequence of actions in the Sequence Diagram of \autoref{ArchitecturalDesign:SD_FutureRide} and represented the user interface to book a future ride both via \gls{ma} and \gls{ws} in \autoref{UI:FutureRide}.
+
+\section{Accept or Deny a Ride}
+The section \ref{RASD:requirements:ZerotimeReservationMA} of the RASD also describes within the functionality of the Driver to accept or deny a ride, via \gls{ma}. A logged driver can accept or deny a request for a ride when he receives it.\\
+In the DD we have satisfied this functional requirement and we have represented the user interface to accept or deny a ride via \gls{ma} in \autoref{UI:DriverFunctionalities}.
+
+\section{Start Waiting Time}
+The section \ref{RASD:requirements:StartWaitingTime} of the RASD describes the functionality of starting the waiting time via \gls{ma}. A logged driver notifies the system that he's available in an area and waiting for a ride and he is added to the queue of the area.\\
+In the DD we have satisfied this functional requirement, we have described the sequence of actions in the Sequence Diagram of \autoref{ArchitecturalDesign:SD_StartWaitingTime} and represented the user interface to start waiting time via \gls{ma} in \autoref{UI:DriverFunctionalities}.
+
+\section{Work Shifts Management}
+The section \ref{RASD:requirements:WorkShiftsManagement} of the RASD describes the functionality of management of the work shifts via \gls{ma}. A logged driver can add or delete a work shift in the week days.\\
+In the DD we have satisfied this functional requirement, we have described the sequence of actions in the Sequence Diagram of \autoref{ArchitecturalDesign:SD_WorkShiftsManagement} and represented the user interface to manage the work shifts via \gls{ma} in \autoref{UI:DriverFunctionalities}.
+
+\section{Check the Reservations}
+The section \ref{RASD:requirements:CheckReservations} of the RASD describes the functionality of checking the reservations (both zerotime and future rides) both via \gls{ma} and via \gls{ws}. A logged user can view the his reservations, modify the date or cancel them.\\
+In the DD we have satisfied this functional requirement, we have described the sequence of actions in the Sequence Diagram of \autoref{ArchitecturalDesign:SD_CheckReservation} and represented the user interface to check the reservations both via \gls{ma} and \gls{ws} in \autoref{UI:OtherUserFunctionalities}.
+
+\section{Read the Alerts}
+The section \ref{RASD:requirements:ReadAlerts} of the RASD describes the functionality of reading the received alerts both via \gls{ma} and via \gls{ws}. A logged user can only view his alerts, he cannot edit them.\\
+In the DD we have satisfied this functional requirement and we have represented the user interface to read the alerts both via \gls{ma} and \gls{ws} in \autoref{UI:OtherUserFunctionalities}.
+
+
+
+\end{document}
