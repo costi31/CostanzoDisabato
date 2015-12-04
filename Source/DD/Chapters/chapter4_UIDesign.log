@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  27 NOV 2015 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  4 DEC 2015 12:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -314,6 +314,24 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count113
 \lst@gtempboxa=\box30
@@ -353,13 +371,16 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 81.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 83.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2015/03/16 v4.15 (NLCT)
@@ -610,8 +631,11 @@ Package: glossary-tree 2015/02/03 v4.13 (NLCT)
 \openout6 = `chapter4_UIDesign.glo'.
 
 Package glossaries Info: Writing glossary file chapter4_UIDesign.glo on input l
-ine 120.
-))) (./chapter4_UIDesign.aux)
+ine 124.
+)
+Package xr Info: IMPORTING LABELS FROM ../../RASD/chapters/requirements.aux on 
+input line 24.
+)) (./chapter4_UIDesign.aux)
 \openout1 = `chapter4_UIDesign.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -734,7 +758,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
 
  []
 
@@ -748,7 +772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
 File: ../Figures/mockups/Login_WS.png Graphic file (type png)
 
 <use ../Figures/mockups/Login_WS.png>
-Package pdftex.def Info: ../Figures/mockups/Login_WS.png used on input line 26.
+Package pdftex.def Info: ../Figures/mockups/Login_WS.png used on input line 27.
 
 (pdftex.def)             Requested size: 188.21288pt x 174.27124pt.
 
@@ -756,11 +780,11 @@ Package pdftex.def Info: ../Figures/mockups/Login_WS.png used on input line 26.
 File: ../Figures/mockups/Login_MA.png Graphic file (type png)
 
 <use ../Figures/mockups/Login_MA.png>
-Package pdftex.def Info: ../Figures/mockups/Login_MA.png used on input line 33.
+Package pdftex.def Info: ../Figures/mockups/Login_MA.png used on input line 34.
 
 (pdftex.def)             Requested size: 112.0246pt x 227.62204pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
@@ -769,7 +793,7 @@ File: ../Figures/mockups/Registration_WS.png Graphic file (type png)
 
 <use ../Figures/mockups/Registration_WS.png>
 Package pdftex.def Info: ../Figures/mockups/Registration_WS.png used on input l
-ine 45.
+ine 46.
 (pdftex.def)             Requested size: 188.21288pt x 216.19707pt.
 
 <../Figures/mockups/Registration_MA.png, id=56, 305.14pt x 620.3175pt>
@@ -777,7 +801,7 @@ File: ../Figures/mockups/Registration_MA.png Graphic file (type png)
 
 <use ../Figures/mockups/Registration_MA.png>
 Package pdftex.def Info: ../Figures/mockups/Registration_MA.png used on input l
-ine 52.
+ine 53.
 (pdftex.def)             Requested size: 111.96881pt x 227.62204pt.
 
 <../Figures/mockups/ManagePersonalInformation_WS.png, id=59, 492.84125pt x 671.
@@ -786,7 +810,7 @@ File: ../Figures/mockups/ManagePersonalInformation_WS.png Graphic file (type pn
 g)
  <use ../Figures/mockups/ManagePersonalInformation_WS.png>
 Package pdftex.def Info: ../Figures/mockups/ManagePersonalInformation_WS.png us
-ed on input line 66.
+ed on input line 68.
 (pdftex.def)             Requested size: 188.21288pt x 256.44652pt.
 
 <../Figures/mockups/ManagePersonalInformation_MA.png, id=60, 359.3425pt x 730.7
@@ -795,7 +819,7 @@ File: ../Figures/mockups/ManagePersonalInformation_MA.png Graphic file (type pn
 g)
  <use ../Figures/mockups/ManagePersonalInformation_MA.png>
 Package pdftex.def Info: ../Figures/mockups/ManagePersonalInformation_MA.png us
-ed on input line 73.
+ed on input line 75.
 (pdftex.def)             Requested size: 125.92528pt x 256.0748pt.
  [2
 
@@ -807,14 +831,14 @@ LaTeX Warning: Text page 3 contains only floats.
 .png> <../Figures/mockups/ManagePersonalInformation_WS.png> <../Figures/mockups
 /ManagePersonalInformation_MA.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 82.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 85.
 
 
 LaTeX Warning: Reference `ArchitecturalDesign:preamble' on page 4 undefined on 
-input line 82.
+input line 85.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
@@ -823,7 +847,7 @@ File: ../Figures/mockups/StartWaitingTime.png Graphic file (type png)
 
 <use ../Figures/mockups/StartWaitingTime.png>
 Package pdftex.def Info: ../Figures/mockups/StartWaitingTime.png used on input 
-line 88.
+line 91.
 (pdftex.def)             Requested size: 126.02713pt x 256.0748pt.
 
 <../Figures/mockups/AcceptDenyRide.png, id=82, 283.0575pt x 575.14874pt>
@@ -831,20 +855,20 @@ File: ../Figures/mockups/AcceptDenyRide.png Graphic file (type png)
 
 <use ../Figures/mockups/AcceptDenyRide.png>
 Package pdftex.def Info: ../Figures/mockups/AcceptDenyRide.png used on input li
-ne 95.
+ne 98.
 (pdftex.def)             Requested size: 126.02713pt x 256.0748pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 104--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 104--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 104--108
 
  []
 
@@ -853,94 +877,94 @@ File: ../Figures/mockups/WorkShiftsManagement.png Graphic file (type png)
 
 <use ../Figures/mockups/WorkShiftsManagement.png>
 Package pdftex.def Info: ../Figures/mockups/WorkShiftsManagement.png used on in
-put line 108.
+put line 111.
 (pdftex.def)             Requested size: 111.96881pt x 227.62204pt.
  [4
 
  <../Figures/mockups/StartWaitingTime.png> <../Figures/mockups/AcceptDenyRide.p
 ng>]
-<../Figures/mockups/AskForZerotimeRide_MA_1.png, id=100, 283.0575pt x 575.14874
+<../Figures/mockups/AskForZerotimeRide_MA_1.png, id=101, 283.0575pt x 575.14874
 pt>
 File: ../Figures/mockups/AskForZerotimeRide_MA_1.png Graphic file (type png)
  <use ../Figures/mockups/AskForZerotimeRide_MA_1.png>
 Package pdftex.def Info: ../Figures/mockups/AskForZerotimeRide_MA_1.png used on
- input line 121.
+ input line 125.
 (pdftex.def)             Requested size: 112.0246pt x 227.62204pt.
 
-<../Figures/mockups/AskForZerotimeRide_MA_2.png, id=101, 283.0575pt x 575.14874
+<../Figures/mockups/AskForZerotimeRide_MA_2.png, id=102, 283.0575pt x 575.14874
 pt>
 File: ../Figures/mockups/AskForZerotimeRide_MA_2.png Graphic file (type png)
  <use ../Figures/mockups/AskForZerotimeRide_MA_2.png>
 Package pdftex.def Info: ../Figures/mockups/AskForZerotimeRide_MA_2.png used on
- input line 128.
+ input line 132.
 (pdftex.def)             Requested size: 112.0246pt x 227.62204pt.
 
-<../Figures/mockups/AskForZerotimeRide_MA_3.png, id=102, 283.0575pt x 575.14874
+<../Figures/mockups/AskForZerotimeRide_MA_3.png, id=103, 283.0575pt x 575.14874
 pt>
 File: ../Figures/mockups/AskForZerotimeRide_MA_3.png Graphic file (type png)
  <use ../Figures/mockups/AskForZerotimeRide_MA_3.png>
 Package pdftex.def Info: ../Figures/mockups/AskForZerotimeRide_MA_3.png used on
- input line 138.
+ input line 142.
 (pdftex.def)             Requested size: 119.02586pt x 241.84842pt.
 
-Underfull \hbox (badness 2680) in paragraph at lines 139--139
+Underfull \hbox (badness 2680) in paragraph at lines 143--143
 []\T1/ppl/m/n/10 Figure 1.12: |Ze-ro-time ride re-quest
  []
 
 
-<../Figures/mockups/AskForZerotimeRide_WS.png, id=103, 447.6725pt x 951.555pt>
+<../Figures/mockups/AskForZerotimeRide_WS.png, id=104, 447.6725pt x 951.555pt>
 File: ../Figures/mockups/AskForZerotimeRide_WS.png Graphic file (type png)
 
 <use ../Figures/mockups/AskForZerotimeRide_WS.png>
 Package pdftex.def Info: ../Figures/mockups/AskForZerotimeRide_WS.png used on i
-nput line 145.
+nput line 149.
 (pdftex.def)             Requested size: 113.77585pt x 241.84842pt.
  [5 <../Figures/mockups/WorkShiftsManagement.png>] [6 <../Figures/mockups/AskFo
 rZerotimeRide_MA_1.png> <../Figures/mockups/AskForZerotimeRide_MA_2.png> <../Fi
 gures/mockups/AskForZerotimeRide_MA_3.png> <../Figures/mockups/AskForZerotimeRi
 de_WS.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 154--157
+Underfull \hbox (badness 10000) in paragraph at lines 159--162
 
  []
 
 
-<../Figures/mockups/BookFutureRide_MA_1.png, id=127, 283.0575pt x 575.14874pt>
+<../Figures/mockups/BookFutureRide_MA_1.png, id=130, 283.0575pt x 575.14874pt>
 File: ../Figures/mockups/BookFutureRide_MA_1.png Graphic file (type png)
 
 <use ../Figures/mockups/BookFutureRide_MA_1.png>
 Package pdftex.def Info: ../Figures/mockups/BookFutureRide_MA_1.png used on inp
-ut line 162.
+ut line 167.
 (pdftex.def)             Requested size: 126.02713pt x 256.0748pt.
 
-<../Figures/mockups/BookFutureRide_MA_2.png, id=128, 283.0575pt x 575.14874pt>
+<../Figures/mockups/BookFutureRide_MA_2.png, id=131, 283.0575pt x 575.14874pt>
 File: ../Figures/mockups/BookFutureRide_MA_2.png Graphic file (type png)
 
 <use ../Figures/mockups/BookFutureRide_MA_2.png>
 Package pdftex.def Info: ../Figures/mockups/BookFutureRide_MA_2.png used on inp
-ut line 169.
+ut line 174.
 (pdftex.def)             Requested size: 126.02713pt x 256.0748pt.
 
-<../Figures/mockups/BookFutureRide_MA_3.png, id=129, 283.0575pt x 575.14874pt>
+<../Figures/mockups/BookFutureRide_MA_3.png, id=132, 283.0575pt x 575.14874pt>
 File: ../Figures/mockups/BookFutureRide_MA_3.png Graphic file (type png)
 
 <use ../Figures/mockups/BookFutureRide_MA_3.png>
 Package pdftex.def Info: ../Figures/mockups/BookFutureRide_MA_3.png used on inp
-ut line 179.
+ut line 184.
 (pdftex.def)             Requested size: 126.02713pt x 256.0748pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 \T1/ppl/m/n/10 mo-bile ap-pli-ca-tion: con-fir-ma-tion
  []
 
-<../Figures/mockups/BookFutureRide_WS.png, id=130, 447.6725pt x 979.66pt>
+<../Figures/mockups/BookFutureRide_WS.png, id=133, 447.6725pt x 979.66pt>
 File: ../Figures/mockups/BookFutureRide_WS.png Graphic file (type png)
 
 <use ../Figures/mockups/BookFutureRide_WS.png>
 Package pdftex.def Info: ../Figures/mockups/BookFutureRide_WS.png used on input
- line 186.
+ line 191.
 (pdftex.def)             Requested size: 117.01372pt x 256.0748pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
@@ -949,51 +973,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--195
  <../Figures/mockups/BookFutureRide_MA_1.png> <../Figures/mockups/BookFutureRid
 e_MA_2.png>] [8 <../Figures/mockups/BookFutureRide_MA_3.png> <../Figures/mockup
 s/BookFutureRide_WS.png>]
-<../Figures/mockups/CheckReservations_MA_1.png, id=150, 283.0575pt x 575.14874p
+<../Figures/mockups/CheckReservations_MA_1.png, id=154, 283.0575pt x 575.14874p
 t>
 File: ../Figures/mockups/CheckReservations_MA_1.png Graphic file (type png)
  <use ../Figures/mockups/CheckReservations_MA_1.png>
 Package pdftex.def Info: ../Figures/mockups/CheckReservations_MA_1.png used on 
-input line 202.
+input line 208.
 (pdftex.def)             Requested size: 112.0246pt x 227.62204pt.
 
-Underfull \hbox (badness 2027) in paragraph at lines 203--203
+Underfull \hbox (badness 2027) in paragraph at lines 209--209
 []\T1/ppl/m/n/10 Figure 1.18: |The view reser-va-tions
  []
 
 
-<../Figures/mockups/CheckReservations_MA_2.png, id=151, 283.0575pt x 575.14874p
+<../Figures/mockups/CheckReservations_MA_2.png, id=155, 283.0575pt x 575.14874p
 t>
 File: ../Figures/mockups/CheckReservations_MA_2.png Graphic file (type png)
  <use ../Figures/mockups/CheckReservations_MA_2.png>
 Package pdftex.def Info: ../Figures/mockups/CheckReservations_MA_2.png used on 
-input line 209.
+input line 215.
 (pdftex.def)             Requested size: 112.0246pt x 227.62204pt.
 
-<../Figures/mockups/CheckReservations_WS.png, id=154, 475.7775pt x 607.26875pt>
+<../Figures/mockups/CheckReservations_WS.png, id=158, 475.7775pt x 607.26875pt>
 File: ../Figures/mockups/CheckReservations_WS.png Graphic file (type png)
 <use ../Figures/mockups/CheckReservations_WS.png>
 Package pdftex.def Info: ../Figures/mockups/CheckReservations_WS.png used on in
-put line 219.
+put line 225.
 (pdftex.def)             Requested size: 167.18524pt x 213.39566pt.
  [9
 
  <../Figures/mockups/CheckReservations_MA_1.png> <../Figures/mockups/CheckReser
 vations_MA_2.png> <../Figures/mockups/CheckReservations_WS.png>]
-<../Figures/mockups/ReadAlerts_MA.png, id=167, 283.0575pt x 575.14874pt>
+<../Figures/mockups/ReadAlerts_MA.png, id=172, 283.0575pt x 575.14874pt>
 File: ../Figures/mockups/ReadAlerts_MA.png Graphic file (type png)
 
 <use ../Figures/mockups/ReadAlerts_MA.png>
 Package pdftex.def Info: ../Figures/mockups/ReadAlerts_MA.png used on input lin
-e 233.
+e 239.
 (pdftex.def)             Requested size: 98.01773pt x 199.16928pt.
 
-<../Figures/mockups/ReadAlerts_WS.png, id=168, 451.6875pt x 369.38pt>
+<../Figures/mockups/ReadAlerts_WS.png, id=173, 451.6875pt x 369.38pt>
 File: ../Figures/mockups/ReadAlerts_WS.png Graphic file (type png)
 
 <use ../Figures/mockups/ReadAlerts_WS.png>
 Package pdftex.def Info: ../Figures/mockups/ReadAlerts_WS.png used on input lin
-e 240.
+e 246.
 (pdftex.def)             Requested size: 167.2989pt x 136.815pt.
  
 AED: lastpage setting LastPage
@@ -1006,11 +1030,11 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
 (./chapter4_UIDesign.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
 Package rerunfilecheck Info: File `chapter4_UIDesign.out' has not changed.
 (rerunfilecheck)             Checksum: 3E86551BDCD6BB74EFDE2D8D70669F85;454.
 
@@ -1019,13 +1043,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15178 strings out of 493089
- 231597 string characters out of 6134841
- 493094 words of memory out of 5000000
- 18339 multiletter control sequences out of 15000+600000
+ 15657 strings out of 493089
+ 237569 string characters out of 6134841
+ 504268 words of memory out of 5000000
+ 18807 multiletter control sequences out of 15000+600000
  15729 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,75p,1872b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,11n,75p,1872b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:ws} has been referenced but does not exist, r
 eplaced by a fixed one
 
@@ -1038,10 +1062,10 @@ pdfTeX warning (dest): name{glo:mockup} has been referenced but does not exist,
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on chapter4_UIDesign.pdf (10 pages, 882198 bytes).
+Output written on chapter4_UIDesign.pdf (10 pages, 882494 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 200 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  33 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
