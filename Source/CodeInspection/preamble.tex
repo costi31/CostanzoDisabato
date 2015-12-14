@@ -1,0 +1,102 @@
+\usepackage[pdftex]{hyperref} % Package for references
+\hypersetup{
+	breaklinks=true,
+	pdfborder={0 0 0},
+	pdfstartview={FitH},
+	pdfpagemode={UseOutlines},
+	pdftitle={},
+	pdfauthor={},
+	pdfsubject={},
+	pdfkeywords={}
+}
+
+\usepackage{nameref}
+
+\usepackage[footnotesize]{caption} % Adds the possibility to write text with the footnote size and sets a smaller size for the caption of images
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage[english]{babel}
+\selectlanguage{english} % Sets to English the language of document
+
+\usepackage[printonlyused]{acronym} %Deletes some blank pages
+
+\usepackage[T1]{fontenc}	% Defines characters' type
+\usepackage[latin1]{inputenc} 	% Defines admissible fonts
+
+\usepackage{indentfirst} % Indents the first row of a paragraph
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{fancyvrb}
+
+\usepackage{fancyhdr} % Used to customize the header and footer of pages, like page numbering
+
+\usepackage{lastpage} % Used to obtain the number of pages
+
+\usepackage[usenames]{xcolor} % Used to color the text
+
+\usepackage{verbatim} % Used to insert block of comments
+
+\usepackage{listings} % Package for listings
+\usepackage{color}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+	%tabsize=8,
+	%numbers=left, % choose where to show the line number
+	basicstyle=\scriptsize\ttfamily,
+	% emphstyle=\ttfamily\itshape\underbar,
+	% showstringspaces=false,
+	frame=single,
+	aboveskip=1em,
+	backgroundcolor=\color{white},   % choose the background color
+	breaklines=true,                 % automatic line breaking only at whitespace
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	keywordstyle=\color{blue},       % keyword style
+	stringstyle=\color{mymauve}     % string literal style
+}
+\lstset{language=Java}
+
+
+\usepackage{enumitem}
+\setlist{nosep} % Deletes the space before an items list and after
+
+% Custom command to reset the page header and footer style
+% This command must be called every time after a begin document is called or after a new chapter has begun
+\newcommand{\setmyfancystyle}{
+	\pagestyle{fancy}
+	\thispagestyle{fancy}
+	\fancyhead{}
+	\fancyfoot{}
+	\renewcommand{\headrulewidth}{0pt} % deletes the horizontal line in the page header
+	\lhead{} \chead{} \rhead{}
+	\lfoot{} \cfoot{}
+	\rfoot{\thepage}
+}
+%-----------
+
+\renewcommand{\rmdefault}{ppl}
+\usepackage[scaled]{helvet}
+\usepackage{courier}
+\normalfont
+
+\frenchspacing
+\linespread{1.25} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Figures/}{../Figures/}} % Specifies the directory where pictures are stored
+
+\usepackage{subfiles} % Allow to manage the document as different files (useful for working in two at the same time
+
+\usepackage{xr} % Allows to use references to external latex documents
