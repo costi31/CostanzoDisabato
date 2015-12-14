@@ -1,10 +1,9 @@
-# Costanzo Disabato - myTaxyService
-This is the repository for a software project called myTaxyService, developed by Costanzo and Disabato, for the course **Software Engineering 2** at the Politecnico of Milano.
-The software is composed by both a website and a mobile application and it aims to give the opportunities to join the city taxi service easily and fastly.
-Besides the systems manages the taxists’ worktimes and the assignment of each ride to the corresponding customer.
+# Costanzo Disabato - Software Engineering 2 Project
+This is the repository for a project developed by Costanzo and Disabato, for the course **Software Engineering 2** at the Politecnico of Milano.
+The project is composed of two assignments, the first two refer to the development of a software called myTaxyService. The other two are the code inspection of an existing open source project, Glassfish, and testing.
 
 ## Contents
-The repository will contain all the deliveries requested for the course project. The RASD and DD documents will be uploaded also with the LaTex source code.
+The repository will contain all the deliveries requested for the course project and the LaTex source code of the documents.
 
 ## Authors
 Costanzo,
