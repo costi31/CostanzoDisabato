@@ -1,0 +1,39 @@
+\providecommand{\mainpath}{..} % Command to retrieve the path of the main file. It must be defined before documentclass.
+
+\documentclass[\mainpath/main]{subfiles}
+\begin{document}
+
+\chapter{Other Info}
+\label{OtherInfo}
+
+% Command to be executed after the starting of every chapter
+\setmyfancystyle
+% ----------------
+
+This chapter contains information about the used tools and the hours of work by the members of the working group.
+
+\section{Tools}
+For this Code Inspection (CI) assignment the following tools were used:
+\begin{itemize}
+	\item \LaTeX{} and TexStudio editor
+	\item Eclipse Mars 4.5 for Java EE
+	\item Sonarqube 5.2
+\end{itemize}
+
+\section{Working hours}
+\begin{table}[h!]
+	\centering
+\begin{tabular}{cccc}
+\hline
+Date       & Costanzo's hours & Disabato's hours  & \\ \hline
+2015/12/14 & 1.30h 			  & 1.30h 			  & \\ \hline
+2015/12/15 & 1h 			  & - 				  & \\ \hline 
+\\
+Total CI   & 2.30h 		      & 1.30h 			  & \\ \hline
+Global 	   & 57.30h 		  & 56.30h 			  & \\ \hline
+
+\end{tabular}
+\end{table}
+
+
+\end{document}
