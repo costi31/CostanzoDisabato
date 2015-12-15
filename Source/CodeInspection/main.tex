@@ -20,7 +20,7 @@
 % Command to easily include the code of the class assigned, from a line number to a line number.
 % E.g. from line 10 to 20:     \includecode{10}{20}
 \newcommand{\includecode}[2]{
-	\lstinputlisting[firstline=#1,lastline=#2]{\mainpath/Code/SecurityMechanismSelector.java}
+	\lstinputlisting[linerange=#1-#2,firstnumber=#1]{\mainpath/Code/SecurityMechanismSelector.java}
 }
 
 \documentclass[12pt]{report} 
@@ -113,7 +113,7 @@
 %----------------------------------------------------------------------------------------
 
 %Introduction
-%\subfile{Chapters/chapter1_Introduction}
+\subfile{Chapters/chapter1_Assignment}
 %Info
 %\subfile{Chapters/OtherInfo}
 

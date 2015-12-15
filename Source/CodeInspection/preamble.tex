@@ -46,26 +46,34 @@
 
 \usepackage{listings} % Package for listings
 \usepackage{color}
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\definecolor{javablue}{RGB}{42,0.0,255} % for strings
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+% Syntax highlighting for Java similar to Eclipse
 \lstset{
-	%tabsize=8,
-	%numbers=left, % choose where to show the line number
+	language=Java,
 	basicstyle=\scriptsize\ttfamily,
-	% emphstyle=\ttfamily\itshape\underbar,
-	% showstringspaces=false,
 	frame=single,
 	aboveskip=1em,
-	backgroundcolor=\color{white},   % choose the background color
+	backgroundcolor=\color{white},   % choose the background color	
 	breaklines=true,                 % automatic line breaking only at whitespace
-	captionpos=b,                    % sets the caption-position to bottom
-	commentstyle=\color{mygreen},    % comment style
-	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-	keywordstyle=\color{blue},       % keyword style
-	stringstyle=\color{mymauve}     % string literal style
+	captionpos=b,                    % sets the caption-position to bottom	
+	keywordstyle=\color{javapurple}\bfseries, %keyword style
+	stringstyle=\color{javablue}, % string literal style
+	commentstyle=\color{javagreen}, % comment style
+	morecomment=[s][\color{javadocblue}]{/**}{*/}, % javadoc style
+	numbers=left,
+	numberstyle=\tiny\color{black},
+	stepnumber=1,
+	numbersep=10pt,
+	tabsize=2
+	%showspaces=false,
+	%showstringspaces=false
 }
-\lstset{language=Java}
 
 
 \usepackage{enumitem}

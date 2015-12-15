@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  14 DEC 2015 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  15 DEC 2015 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -373,7 +373,7 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 91.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 101.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -496,9 +496,12 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 (../Code/SecurityMechanismSelector.java [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 41.
+ [2] [3] [4]) 
 AED: lastpage setting LastPage
-[3]
+[5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
  (./chapter1_Assignment.aux)
@@ -508,21 +511,22 @@ Package rerunfilecheck Info: File `chapter1_Assignment.out' has not changed.
 (rerunfilecheck)             Checksum: EA0A9E50A0ADAE6B15FFA71E683B337C;45.
  ) 
 Here is how much of TeX's memory you used:
- 11062 strings out of 494957
- 161312 string characters out of 6180027
- 522904 words of memory out of 5000000
- 14059 multiletter control sequences out of 15000+600000
- 10240 words of font info for 24 fonts, out of 8000000 for 9000
+ 11230 strings out of 494957
+ 163879 string characters out of 6180027
+ 611567 words of memory out of 5000000
+ 14123 multiletter control sequences out of 15000+600000
+ 12467 words of font info for 28 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 47i,12n,45p,362b,1948s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,45p,362b,1978s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/palatino/uplr8a.pfb>
-Output written on chapter1_Assignment.pdf (3 pages, 54551 bytes).
+e/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
+uplr8a.pfb>
+Output written on chapter1_Assignment.pdf (5 pages, 78451 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 208 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  14 DEC 2015 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  15 DEC 2015 10:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -548,6 +548,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -605,13 +618,209 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.68 \lstset
-            {language=Java}
+l.68 \definecolor
+                 {javared}{rgb}{0.6,0,0} % for strings
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+Missing character: There is no j in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+! Undefined control sequence.
+l.69 \definecolor
+                 {javagreen}{rgb}{0.25,0.5,0.35} % comments
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no j in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Undefined control sequence.
+l.70 \definecolor
+                 {javapurple}{rgb}{0.5,0,0.35} % keywords
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no j in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Undefined control sequence.
+l.71 \definecolor
+                 {javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no j in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 49--72
+[]
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 ,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 frame=single,
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 aboveskip=1em,
+ []
+
+
+Overfull \hbox (115.499pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 backgroundcolor=white,
+ []
+
+
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 breaklines=true,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 captionpos=b,
+ []
+
+
+Overfull \hbox (110.24904pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 commentstyle=mygreen,
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 escapeinside=%**),
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 keywordstyle=blue,
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 49--72
+\OT1/cmtt/m/n/10 stringstyle=mymauve
+ []
+
+! Undefined control sequence.
+l.73 \lstset
+            {language=Java,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \lstset{l
+              anguage=Java,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -626,59 +835,146 @@ Missing character: There is no J in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no a in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+! Undefined control sequence.
+l.74 	basicstyle=\scriptsize
+                            \ttfamily,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 49--69
+! Undefined control sequence.
+l.75 	keywordstyle=\color
+                         {javapurple}\bfseries,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 75.
+! Undefined control sequence.
+l.76 	stringstyle=\color
+                        {blue},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77 	commentstyle=\color
+                         {javagreen},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.78 	morecomment=[s][\color
+                            {javadocblue}]{/**}{*/},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80 	numberstyle=\tiny
+                       \color{black},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80 	numberstyle=\tiny\color
+                             {black},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 73--86
 []
  []
 
 
-Overfull \hbox (5.24995pt too wide) in paragraph at lines 49--69
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 73--86
 \OT1/cmtt/m/n/10 ,
  []
 
 
-Overfull \hbox (68.2494pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 frame=single,
+Overfull \hbox (125.9989pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 keywordstyle=javapurple,
  []
 
 
-Overfull \hbox (73.49936pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 aboveskip=1em,
+Overfull \hbox (89.24922pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 stringstyle=blue,
  []
 
 
-Overfull \hbox (115.499pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 backgroundcolor=white,
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 commentstyle=javagreen,
  []
 
 
-Overfull \hbox (83.99927pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 breaklines=true,
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 morecomment=[s][javadocblue]/***/,
  []
 
 
-Overfull \hbox (68.2494pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 captionpos=b,
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 numbers=left,
  []
 
 
-Overfull \hbox (110.24904pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 commentstyle=mygreen,
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 numberstyle=black,
  []
 
 
-Overfull \hbox (94.49918pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 escapeinside=%**),
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 stepnumber=1,
  []
 
 
-Overfull \hbox (94.49918pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 keywordstyle=blue,
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 numbersep=10pt,
  []
 
 
-Overfull \hbox (99.74913pt too wide) in paragraph at lines 49--69
-\OT1/cmtt/m/n/10 stringstyle=mymauve
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 tabsize=4,
+ []
+
+
+Overfull \hbox (89.24922pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 showspaces=false,
+ []
+
+
+Overfull \hbox (115.499pt too wide) in paragraph at lines 73--86
+\OT1/cmtt/m/n/10 showstringspaces=false 
  []
 
 
@@ -688,13 +984,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 \usepackage{
+l.88 \usepackage{
                  enumitem}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.72 \setlist
+l.89 \setlist
              {nosep} % Deletes the space before an items list and after
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -709,7 +1005,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \setlist{n
+l.89 \setlist{n
                osep} % Deletes the space before an items list and after
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -720,7 +1016,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 72--73
+Overfull \hbox (20.0pt too wide) in paragraph at lines 89--90
 [] 
  []
 
@@ -731,8 +1027,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \usepackage[scaled]{
-                         helvet}
+l.106 \usepackage[scaled]{
+                          helvet}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
@@ -743,18 +1039,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 \usepackage{
-                 courier}
+l.107 \usepackage{
+                  courier}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 91.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 108.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 ! Undefined control sequence.
-l.98 \graphicspath
-                  {{Figures/}{../Figures/}} % Specifies the directory where ...
+l.115 \graphicspath
+                   {{Figures/}{../Figures/}} % Specifies the directory where...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -768,14 +1065,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 \graphicspath{{F
-                     igures/}{../Figures/}} % Specifies the directory where ...
+l.115 \graphicspath{{F
+                      igures/}{../Figures/}} % Specifies the directory where...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (108.89893pt too wide) in paragraph at lines 98--99
+Overfull \hbox (108.89893pt too wide) in paragraph at lines 115--116
 []\OT1/ppl/m/n/10 Figures/../Figures/ 
  []
 
@@ -786,7 +1083,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 \usepackage{
+l.117 \usepackage{
                   subfiles} % Allow to manage the document as different file...
 
 \usepackage may only appear in the document preamble, i.e.,
@@ -799,7 +1096,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102 \usepackage{
+l.119 \usepackage{
                   xr} % Allows to use references to external latex documents
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -812,11 +1109,11 @@ between \documentclass and \begin{document}.
 
  
 Here is how much of TeX's memory you used:
- 55 strings out of 494957
- 794 string characters out of 6180027
+ 56 strings out of 494957
+ 810 string characters out of 6180027
  46355 words of memory out of 5000000
- 3391 multiletter control sequences out of 15000+600000
+ 3392 multiletter control sequences out of 15000+600000
  4235 words of font info for 16 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 14i,1n,11p,159b,79s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 16i,1n,11p,159b,92s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
