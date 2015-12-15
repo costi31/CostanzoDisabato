@@ -19,8 +19,12 @@
 
 % Command to easily include the code of the class assigned, from a line number to a line number.
 % E.g. from line 10 to 20:     \includecode{10}{20}
-\newcommand{\includecode}[2]{
+\newcommand{\includecode}[2][]{
 	\lstinputlisting[linerange=#1-#2,firstnumber=#1]{\mainpath/Code/SecurityMechanismSelector.java}
+}
+% Command to include the code of the class, with a third parameter that is the caption.
+\newcommand{\includecodecap}[3]{
+	\lstinputlisting[linerange=#1-#2,firstnumber=#1, caption=#3]{\mainpath/Code/SecurityMechanismSelector.java}
 }
 
 \documentclass[12pt]{report} 
@@ -115,7 +119,7 @@
 %Introduction
 \subfile{Chapters/chapter1_Assignment}
 %Info
-%\subfile{Chapters/OtherInfo}
+\subfile{Chapters/OtherInfo}
 
 
 \end{document}
