@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  15 DEC 2015 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  16 DEC 2015 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -488,17 +488,17 @@ Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 17.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 17.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--25
+Underfull \hbox (badness 10000) in paragraph at lines 17--23
 
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 25.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 25.
+nput line 24.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 24.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -508,23 +508,27 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 122.
-) 
+)
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 26.
+ (../Code/SecurityMechanismSelector.java [2])
+
 AED: lastpage setting LastPage
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
+[3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (./chapter1_Assignment.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
 Package rerunfilecheck Info: File `chapter1_Assignment.out' has not changed.
-(rerunfilecheck)             Checksum: B897613F505C45860B5CC39C719D7A4B;96.
+(rerunfilecheck)             Checksum: 59D3FCE4443EF340900B6CF443D2ACF0;300.
  ) 
 Here is how much of TeX's memory you used:
- 10935 strings out of 494957
- 159315 string characters out of 6180027
- 427663 words of memory out of 5000000
- 14010 multiletter control sequences out of 15000+600000
- 19777 words of font info for 38 fonts, out of 8000000 for 9000
+ 10995 strings out of 494957
+ 160362 string characters out of 6180027
+ 460663 words of memory out of 5000000
+ 14038 multiletter control sequences out of 15000+600000
+ 22157 words of font info for 41 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  47i,12n,45p,362b,1962s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -533,10 +537,10 @@ fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on chapter1_Assignment.pdf (2 pages, 66716 bytes).
+Output written on chapter1_Assignment.pdf (3 pages, 75792 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
