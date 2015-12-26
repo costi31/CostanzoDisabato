@@ -1,0 +1,18 @@
+\providecommand{\mainpath}{..} % Command to retrieve the path of the main file. It must be defined before documentclass.
+
+\documentclass[\mainpath/main]{subfiles}
+\begin{document}
+
+\chapter{A Corrected Code Version} % Second Appendix
+\label{AppendixB:Correction}
+
+% Command to be executed after the starting of every chapter
+\setmyfancystyle
+% ----------------
+
+In this appendix, a possible corrected version of the code is provided for only the assigned methods. Two important clarifications follow. First of all, the number of the lines is not the same for two main reasons: first, here the numeration starts from 1 at the first assigned method (without considering all previous code); second, the numeration cannot be the same due to we have modified several lines of codes.\\
+Then, we have added a new method to implement the logger. In fact, the code used to log some events is often duplicated in the assigned methods with a few differences. Hence, a better way to write that code is to define a new private method that includes the duplicated lines of code. In this way the code is more clear and readable and a change can be perform speedily and easily by a change on the method.
+
+\lstinputlisting[caption="A corrected version of the code.",showspaces= false, showstringspaces= false, tabsize= 4, showtabs= false, tab=\rightarrowfill]{\mainpath/Code/Correction.java}
+
+\end{document}
