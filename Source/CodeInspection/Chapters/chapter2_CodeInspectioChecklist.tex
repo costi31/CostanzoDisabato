@@ -1,5 +1,10 @@
 \providecommand{\mainpath}{..} % Command to retrieve the path of the main file. It must be defined before documentclass.
 
+% Command to include the code of the class, with a third parameter that is the caption and a special symbol to display the tabulations.
+\newcommand{\includecodecaptab}[3]{
+	\lstinputlisting[linerange=#1-#2,firstnumber=#1, caption=#3, showspaces= true, showstringspaces= false, tabsize= 4, showtabs= true, tab=\rightarrowfill]{\mainpath/Code/SecurityMechanismSelector.java}
+}
+
 \documentclass[\mainpath/main]{subfiles}
 \begin{document}
 
@@ -10,7 +15,152 @@
 \setmyfancystyle
 % ----------------
 
+In this chapter the detailed analysis of the assigned code is presented. We have decided to create a section for each main part of the code inspection's check-list and inside it, all the \textquotedblleft sub-points\textquotedblright are analysed at the same time.\footnote{The code inspection's check-list is available into the appendix.}This decision is to simplify the drafting of the text and to make the document more readable and easy to understand.\\
+However, the wrong code is often displayed and, in some particular cases, a possible correction of the code is provided (for instance the correct indentation of the last method checked).\\
+An important clarification is the following. We don't have tried to find out some bugs into the code for several reasons. First of all, we are not expert in security themes, so we are not able to identify problems or we don't know the best ways to implement the security protocols. Second (and last), the code assigned to us is too short to detect some bugs related to exactly that part of code and that not require to read and understand many and many other lines of code into the classes of the same package of the our one.\\
 
+\section{Naming Conventions}
+\label{CodeInspectionChecklist:NamingConventions}
+In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963, the two local variables have a meaningless name. A better one can be exactly the same of the belonging class.
+\includecodecap{965}{966}{}
+\includecodecap{977}{977}{}
+To be more precise, since this two variables are used only to memorize a method's return value and then, in the following lines of code, they are returned or used as parameters in other methods, the two names can be accepted.\\
+In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019, the local variable as a meaningless name. A meaningful name is \textit{toReturn}.
+\includecodecap{1020}{1020}{}
+See the \autoref{CodeInspectionChecklist:OtherErrors} for further observations about the role of this variable into the method.\\
+In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright at line 1086, we have three not respected conventions. First, the name of the method is wrong. The correct one is \textit{evaluateClientConformanceSsl(\textellipsis)}. After that, the second parameter is wrong because it contains an underscore to split two words.
+\includecodecap{1088}{1088}{}
+The last one is all the names of the local variables, for the same reason of the parameter.
+\includecodecap{1097}{1100}{}
+Finally, if we consider the entire class, also the following names do not respect the conventions.
+\includecodecap{124}{124}{}
+\includecodecap{279}{280}{}
+\begin{scriptsize}
+	\centerline{The same two variables above appear, with the same wrong names, at lines 301-302, 401-402 and 427-428.}
+\end{scriptsize}
+%\includecodecap{301}{302}{}
+%\includecodecap{401}{402}{}
+%\includecodecap{427}{428}{}
+\includecodecap{564}{564}{}
+\includecodecap{849}{849}{}
+\includecodecap{856}{856}{}
 
+\section{Indention}
+\label{CodeInspectionChecklist:Indention}
+In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963, the line 969 should be indented and the tab character should be replaced with four spaces (the number of spaces is the same of all the document).
+\includecodecaptab{968}{970}{}
+In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright at line 1086, we have several indention's errors.\\
+First of all, in the following lines tabs characters were used.
+\includecodecaptab{1092}{1095}{}
+\includecodecaptab{1142}{1151}{}
+\includecodecaptab{1173}{1179}{}
+\includecodecaptab{1189}{1193}{}
+Besides, the lines 1143, 1174 and 1190 are not indented while the lines 1151, 1178 and 1192 are not correctly aligned to the corresponding if at the lines, respectively, 1142, 1173 and 1189 (they are one \textquoteleft tab\textquoteright left).
+\includecodecaptab{1195}{1199}{}
+In the last block of code, the content of the \textquoteleft \textit{finally}\textquoteright clause is not indented.\\
+After that, the line 1183 is not indented correctly with respect to the if blocks in which it is inserted.
+\includecodecaptab{1181}{1183}{}
+Finally, the line 1194 and 1195 have an incorrect number of spaces.
+\includecodecaptab{1194}{1195}{}
+
+\section{Braces}
+\label{CodeInspectionChecklist:Braces}
+Reading the code assigned to us, we observe that the author decides to follow the \textit{Kernighan and Ritchie} style to write the parentheses\footnote{The same style is recommended by SonarQube's rules.}. It exists only one exception shown below.
+\includecodecap{1086}{1090}{}
+In the following lines of code are displayed the if or if-else blocks composed by only one instructions to execute not surrounded by braces.
+\includecodecap{1122}{1127}{}
+\includecodecap{1129}{1132}{}
+\includecodecap{1154}{1155}{}
+\includecodecap{1157}{1158}{}
+\includecodecap{1181}{1183}{}
+\includecodecap{1185}{1186}{}
+
+\section{File Organization}
+\label{CodeInspectionChecklist:FileOrganization}
+In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright at line 1086, the line 1182 has a length equal to 82 characters while the maximum allowed length is 80.\\
+In addition the comment's block at lines 1102-1115 has a length between 82 and 85 characters. A solution can be split into two lines the header of the table.
+
+\section{Wrapping lines}
+\label{CodeInspectionChecklist:WrappingLines}
+In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963, the following lines are not aligned with the starting of the string at the line above.
+\includecodecap{974}{975}{}
+\includecodecap{979}{980}{}
+In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999, the break-line at the line 999 should occur after the close curly bracket.
+\includecodecap{999}{1000}{} 
+Besides, the line 1016 is not correctly aligned to the starting of the string at the line above.
+\includecodecap{1015}{1016}{}
+In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019, the break-line at the lines 1023 and 1026 should occur after an operator and the following lines should be aligned to the open curly bracket.
+\includecodecap{1023}{1024}{}
+\includecodecap{1026}{1027}{}
+In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright at line 1086, there are many wrapping lines' errors.\\
+First of all, the declaration of the method's parameters seems incorrect, but it is acceptable and readable. Afterwards, into the following lines are shown the errors on the wrapping lines (they should occur after a comma or an operator) and on the alignment of the second line (it should be aligned at the expression's starting).
+\includecodecap{1093}{1094}{}
+\includecodecap{1122}{1124}{}
+\includecodecap{1143}{1150}{}
+\includecodecap{1173}{1178}{}
+\includecodecap{1181}{1182}{}
+\includecodecap{1190}{1191}{}
+\includecodecap{1197}{1198}{}
+
+\section{Comments}
+\label{CodeInspectionChecklist:Comments}
+In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963 and in the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019 there are no comments.\\
+If we consider the whole class the commented-out code without a reason and a date (when the code can be deleted from the source file) is at the lines 128, 136, 150, 317-325, 396, 397, 423, 486-492, 685-708, 719-778, 792 and 806.
+
+\section{Java Source Files}
+\label{CodeInspectionChecklist:JaveSourceFiles}
+TO DO
+
+\section{Package and Import Statements}
+\label{CodeInspectionChecklist:PackageandImportStatements}
+TO DO
+
+\section{Class and Interface Declarations}
+\label{CodeInspectionChecklist:ClassandInterfaceDeclarations}
+TO DO
+
+\section{Initialization and Declarations}
+\label{CodeInspectionChecklist:InitializationandDeclarations}
+In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963, the variables \textit{sc} has an useless assignment, so the lines 965 and 966 should be merged. Since the variable's type-name and the name of the method used to initialize it are too long, the best way to write it is define the variable at the first line and then initialize it in the following line.
+\includecodecap{965}{966}{}
+The declaration of the variable \textit{s} (line 977) should be moved at the beginning of the method, immediately after the declaration of the variable \textit{sc}.\\
+In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999, the initialization of the variable \textit{mech} at line 1007 is useless.\\
+Finally, in the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright  at line 1086, the local variables (lines 1087-1090) should be declared at the beginning of the method.
+
+\section{Method Calls}
+\label{CodeInspectionChecklist:MethodCalls}
+TO DO
+
+\section{Arrays}
+\label{CodeInspectionChecklist:Arrays}
+An array is used only in method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999 and no error has been found.
+
+\section{Object Comparison}
+\label{CodeInspectionChecklist:ObjectComparison}
+The comparisons between objects are all made with \textquotedblleft \textit{equals}\textquotedblright method and not with \textquotedblleft ==\textquotedblright operator. The only exceptions are when the second term of the equality is \textit{null} or if the equality is between integer numbers.
+
+\section{Output Format}
+\label{CodeInspectionChecklist:OutputFormat}
+TO DO
+
+\section{Computation, Comparison and Assignments}
+\label{CodeInspectionChecklist:ComputationComparisonandAssignments}
+TO DO
+
+\section{Exceptions}
+\label{CodeInspectionChecklist:Exceptions}
+TO DO
+
+\section{Flow of Control}
+\label{CodeInspectionChecklist:FlowofControl}
+TO DO
+
+\section{Files}
+\label{CodeInspectionChecklist:Files}
+No method (between the four assigned to us) uses a file.
+
+\section{Other Errors}
+\label{CodeInspectionChecklist:OtherErrors}
+TO DO
 
 \end{document}
