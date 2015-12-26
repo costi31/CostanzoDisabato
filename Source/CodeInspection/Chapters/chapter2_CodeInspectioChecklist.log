@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 DEC 2015 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 DEC 2015 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -388,25 +388,25 @@ Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 (./chapter2_CodeInspectioChecklist.aux)
 \openout1 = `chapter2_CodeInspectioChecklist.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 9.
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+Package hyperref Info: Link coloring OFF on input line 4.
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
  (./chapter2_CodeInspectioChecklist.out) (./chapter2_CodeInspectioChecklist.out
 )
 \@outlinefile=\write5
@@ -482,36 +482,36 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 9.
+(lastpage)             ! on input line 4.
 \c@lstlisting=\count128
 
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 18.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 18.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 18.
+(Font)              <6> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 18.
+(Font)              <7> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 18.
+(Font)              <5> on input line 13.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 22.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 17.
 [1
 
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 25.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 25.
+nput line 20.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 20.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -521,7 +521,7 @@ LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 965.
 )
 (../Code/SecurityMechanismSelector.java)
-Overfull \hbox (5.83412pt too wide) in paragraph at lines 27--29
+Overfull \hbox (5.83412pt too wide) in paragraph at lines 22--24
 \T1/ppl/m/n/12 To be more pre-cise, since this two vari-ables are used only to 
 mem-o-rize a method's
  []
@@ -534,7 +534,7 @@ mem-o-rize a method's
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
-Overfull \hbox (8.89053pt too wide) in paragraph at lines 50--51
+Overfull \hbox (8.89053pt too wide) in paragraph at lines 45--46
 []\T1/ppl/m/n/12 In the method ^^P\T1/ppl/m/it/12 get-Sub-ject-From-Se-cu-ri-ty
 -Cur-rent( )\T1/ppl/m/n/12 ^^Qat line 963, the line 969 should
  []
@@ -567,7 +567,7 @@ Overfull \hbox (8.89053pt too wide) in paragraph at lines 50--51
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
-Overfull \hbox (3.40665pt too wide) in paragraph at lines 107--109
+Overfull \hbox (3.40665pt too wide) in paragraph at lines 102--104
 []\T1/ppl/m/n/12 In the method ^^P\T1/ppl/m/it/12 get-Sub-ject-From-Se-cu-ri-ty
 -Cur-rent( )\T1/ppl/m/n/12 ^^Qat line 963 and in the method
  []
@@ -576,20 +576,20 @@ Overfull \hbox (3.40665pt too wide) in paragraph at lines 107--109
 
 AED: lastpage setting LastPage
 [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (./chapter2_CodeInspectioChecklist.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
 Package rerunfilecheck Info: File `chapter2_CodeInspectioChecklist.out' has not
  changed.
 (rerunfilecheck)             Checksum: 1B355BF04FA9D3F668730FBDC9D8AD18;1265.
  ) 
 Here is how much of TeX's memory you used:
- 11311 strings out of 493089
- 168705 string characters out of 6134841
- 501497 words of memory out of 5000000
- 14379 multiletter control sequences out of 15000+600000
+ 11309 strings out of 493089
+ 168682 string characters out of 6134841
+ 501413 words of memory out of 5000000
+ 14377 multiletter control sequences out of 15000+600000
  22725 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,12n,45p,565b,1165s stack positions out of 5000i,500n,10000p,200000b,80000s

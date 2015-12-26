@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 DEC 2015 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 DEC 2015 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,16 +288,22 @@ Package: wrapfig 2003/01/31  v 3.6
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count109
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count110
+\c@@ppsavesec=\count111
+\c@@ppsaveapp=\count112
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count110
+\FV@CodeLineNo=\count113
 \FV@InFile=\read2
 \FV@TabBox=\box29
-\c@FancyVerbLine=\count111
-\FV@StepNumber=\count112
+\c@FancyVerbLine=\count114
+\FV@StepNumber=\count115
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -333,23 +339,23 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count113
+\lst@mode=\count116
 \lst@gtempboxa=\box30
 \lst@token=\toks24
-\lst@length=\count114
+\lst@length=\count117
 \lst@currlwidth=\dimen127
-\lst@column=\count115
-\lst@pos=\count116
+\lst@column=\count118
+\lst@pos=\count119
 \lst@lostspace=\dimen128
 \lst@width=\dimen129
-\lst@newlines=\count117
-\lst@lineno=\count118
+\lst@newlines=\count120
+\lst@lineno=\count121
 \lst@maxwidth=\dimen130
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count119
-\lst@skipnumbers=\count120
+\c@lstnumber=\count122
+\lst@skipnumbers=\count123
 \lst@framebox=\box31
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
@@ -366,7 +372,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen131
 \enit@toks=\toks25
 \enit@inbox=\box32
-\enitdp@description=\count121
+\enitdp@description=\count124
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
@@ -374,7 +380,7 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 99.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 101.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -455,16 +461,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
+\scratchcounter=\count125
 \scratchdimen=\dimen132
 \scratchbox=\box34
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count125
+\MPscratchCnt=\count128
 \MPscratchDim=\dimen133
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -484,94 +490,86 @@ e
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 4.
-\c@lstlisting=\count128
+\c@lstlisting=\count131
 
-<../CodeInspectionChecklist.pdf, id=4, page=1, 597.23125pt x 845.1575pt>
-File: ../CodeInspectionChecklist.pdf Graphic file (type pdf)
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 13.
 
-<use ../CodeInspectionChecklist.pdf, page 1>
-Package pdftex.def Info: ../CodeInspectionChecklist.pdf, page1 used on input li
-ne 13.
-(pdftex.def)             Requested size: 418.25368pt x 591.88994pt.
-
-
-LaTeX Warning: Float too large for page by 0.35974pt on input line 14.
+LaTeX Warning: Reference `CodeInspectionChecklist' on page 1 undefined on input
+ line 13.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
-<../CodeInspectionChecklist.pdf, id=5, page=2, 597.23125pt x 845.1575pt>
-File: ../CodeInspectionChecklist.pdf Graphic file (type pdf)
+ []
 
-<use ../CodeInspectionChecklist.pdf, page 2>
-Package pdftex.def Info: ../CodeInspectionChecklist.pdf, page2 used on input li
-ne 17.
-(pdftex.def)             Requested size: 418.25368pt x 591.88994pt.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 16.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 
+Overfull \hbox (15.21928pt too wide) in paragraph at lines 18--19
+[]\T1/ppl/m/n/12 All class names, in-ter-face names, method names, class vari-a
+bles, method
+ []
 
-LaTeX Warning: Float too large for page by 0.35974pt on input line 18.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../CodeInspectionChecklist.pdf, id=6, page=3, 597.23125pt x 845.1575pt>
-File: ../CodeInspectionChecklist.pdf Graphic file (type pdf)
-
-<use ../CodeInspectionChecklist.pdf, page 3>
-Package pdftex.def Info: ../CodeInspectionChecklist.pdf, page3 used on input li
-ne 21.
-(pdftex.def)             Requested size: 418.25368pt x 591.88994pt.
+[1
 
 
-LaTeX Warning: Float too large for page by 0.35974pt on input line 22.
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 45.
 
-<../CodeInspectionChecklist.pdf, id=7, page=4, 597.23125pt x 845.1575pt>
-File: ../CodeInspectionChecklist.pdf Graphic file (type pdf)
+Overfull \hbox (55.22438pt too wide) in paragraph at lines 45--46
+[]$[]$ 
+ []
 
-<use ../CodeInspectionChecklist.pdf, page 4>
-Package pdftex.def Info: ../CodeInspectionChecklist.pdf, page4 used on input li
-ne 25.
-(pdftex.def)             Requested size: 418.25368pt x 591.88994pt.
-
-
-LaTeX Warning: Float too large for page by 0.35974pt on input line 26.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
+[2] [3] [4] 
 AED: lastpage setting LastPage
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../Co
-deInspectionChecklist.pdf>] [2 <../CodeInspectionChecklist.pdf>] [3 <../CodeIns
-pectionChecklist.pdf>] [4 <../CodeInspectionChecklist.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
-
-(./appendixA_CodeInspectioChecklist.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+[5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+ (./appendixA_CodeInspectioChecklist.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 Package rerunfilecheck Info: File `appendixA_CodeInspectioChecklist.out' has no
 t changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: F42A607174A9A947D61988010E082EF2;60.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 10541 strings out of 493089
- 156940 string characters out of 6134841
- 383332 words of memory out of 5000000
- 13891 multiletter control sequences out of 15000+600000
- 6308 words of font info for 18 fonts, out of 8000000 for 9000
+ 10679 strings out of 493089
+ 158584 string characters out of 6134841
+ 388829 words of memory out of 5000000
+ 14013 multiletter control sequences out of 15000+600000
+ 14128 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,11n,45p,361b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,45p,388b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on appendixA_CodeInspectioChecklist.pdf (4 pages, 237861 bytes).
-
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on appendixA_CodeInspectioChecklist.pdf (5 pages, 67189 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 9 words of extra memory for PDF output out of 10000 (max. 10000000)
 

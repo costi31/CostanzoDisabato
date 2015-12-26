@@ -1,0 +1,195 @@
+\providecommand{\mainpath}{..} % Command to retrieve the path of the main file. It must be defined before documentclass.
+
+\documentclass[\mainpath/main]{subfiles}
+\begin{document}
+	
+	\chapter{Code Inspection Checklist} % First Appendix
+	\label{AppendixA:CodeInspectionChecklist}
+	
+	% Command to be executed after the starting of every chapter
+	\setmyfancystyle
+	% ----------------
+	
+	In this appendix, the list of all points checked in our Code Inspection's analysis is provided split into the same sections of the \autoref{CodeInspectionChecklist}.\\
+	
+	\begin{itemize}
+		\item \textbf{Naming Conventions}
+		\begin{itemize}
+			\item {All class names, interface names, method names, class variables, method variables, and constants used should have meaningful names and do what the name suggests.}
+			\item {If one-character variables are used, they are used only for temporary throwaway variables, such as those used in for loops.}
+			\item Class names are nouns, in mixed case, with the first letter of each word in capitalized. Examples: class Raster; class ImageSprite;
+			\item Interface names should be capitalized like classes.
+			\item Method names should be verbs, with the first letter of each addition word
+             capitalized. Examples: getBackground(); computeTemperature().
+            \item Class variables, also called attributes, are mixed case, but might begin with an underscore (\textquoteleft \textunderscore \textquoteright) followed by a lowercase first letter. All the remaining words in the variable name have their first letter capitalized. Examples: \textunderscore windowHeight, timeSeriesData.
+			\item Constants are declared using all uppercase with words separated by an             underscore. Examples: MIN\textunderscore WIDTH; MAX\textunderscore HEIGHT;
+		\end{itemize}
+		
+		\item \textbf{Indention}
+		\begin{itemize}
+			\item Three or four spaces are used for indentation and done so consistently.
+			\item No tabs are used to indent.
+		\end{itemize}
+		
+		\item \textbf{Braces}
+		\begin{itemize}
+			\item Consistent bracing style is used, either the preferred \textit{Allman} style (first brace goes underneath the opening block) or the \textit{Kernighan and Ritchie} style (first brace is on the same line of the instruction that opens the new block).
+			\item All if, while, do-while, try-catch, and for statements that have only one statement to execute are surrounded by curly braces. Example:
+			
+			\parbox{\textwidth}{
+			\hspace*{1cm}if ( condition )\\
+			\hspace*{2cm} doThis();\\
+			The correct version is:\\
+			\hspace*{1cm}if ( condition ) \textbraceleft \\
+			\hspace*{2cm}doThis();\\
+			\textbraceright \\}
+			
+		\end{itemize}
+		
+		\item \textbf{File Organization}
+		\begin{itemize}
+			\item Blank lines and optional comments are used to separate sections (beginning comments, package/import statements, class/interface declarations which include class variable/attributes declarations, constructors, and methods).
+			\item Where practical, line length does not exceed 80 characters.
+			\item When line length must exceed 80 characters, it does NOT exceed 120 characters.
+		\end{itemize}
+		
+		\item \textbf{Wrapping Lines}
+		\begin{itemize}
+			\item Line break occurs after a comma or an operator.
+			\item Higher-level breaks are used.
+			\item A new statement is aligned with the beginning of the expression at the
+             same level as the previous line.
+		\end{itemize}
+		
+		\item \textbf{Comments}
+		\begin{itemize}
+			\item Comments are used to adequately explain what the class, interface, methods, and blocks of code are doing.
+			\item Commented out code contains a reason for being commented out and a date it can be removed from the source file if determined it is no longer needed.
+		\end{itemize}
+		
+		\item \textbf{Java Source Files}
+		\begin{itemize}
+			\item Each Java source file contains a single public class or interface.
+			\item The public class is the first class or interface in the file.
+			\item Check that the external program interfaces are implemented consistently
+			with what is described in the javadoc.
+			\item Check that the javadoc is complete (i.e., it covers all classes and files part
+			of the set of classes assigned to you).
+		\end{itemize}
+		
+		\item \textbf{Package and Import Statements}
+		\begin{itemize}
+			\item If any package statements are needed, they should be the first non- comment statements. Import statements follow.
+		\end{itemize}
+		
+		\item \textbf{Class and Interface Declarations}
+		\begin{itemize}
+			\item The class or interface declarations shall be in the following order:
+			\begin{itemize}
+				\item class/interface documentation comment
+				\item class or interface statement
+				\item class/interface implementation comment, if necessary
+				\item class (static) variables
+				\begin{itemize}
+					\item first public class variables
+					\item next protected class variables
+					\item next package level (no access modifier)
+					\item last private class variables
+				\end{itemize}
+				\item instance variables
+				\begin{itemize}
+					\item first public instance variables
+					\item next protected instance variables
+					\item next package level (no access modifier)
+					\item last private instance variables
+				\end{itemize}
+				\item constructors
+				\item methods
+		  \end{itemize}	
+		  
+		  \item Methods are grouped by functionality rather than by scope or
+          accessibility.
+		  \item Check that the code is free of duplicates, long methods, big classes,
+           breaking encapsulation, as well as if coupling and cohesion are adequate.			
+	   \end{itemize}
+	   
+	   \item \textbf{Initialization and Declarations}
+	   \begin{itemize}
+	   	\item Check that variables and class members are of the correct type. Check that they have the right visibility (public/private/protected).
+	   	\item Check that variables are declared in the proper scope.
+	   	\item Check that constructors are called when a new object is desired.
+	   	\item Check that all object references are initialized before use.
+	   	\item Variables are initialized where they are declared, unless dependent upon
+        a computation.
+		\item Declarations appear at the beginning of blocks (A block is any code
+         surrounded by curly braces \textbraceleft and \textbraceright ). The exception is a variable can be declared in a \textquoteleft for\textquoteright loop.
+	   \end{itemize}
+	   
+	   \item \textbf{Method Calls}
+	   \begin{itemize}
+	   	\item Check that parameters are presented in the correct order.
+	   	\item Check that the correct method is being called, or should it be a different
+		 method with a similar name.
+		\item Check that method returned values are used properly.
+	   \end{itemize}
+	   
+	    \item \textbf{Arrays}
+	    \begin{itemize}
+	    	\item Check that there are no off-by-one errors in array indexing (that is, all required array elements are correctly accessed through the index).
+	    	\item Check that all array (or other collection) indexes have been prevented from going out-of-bounds.
+	    	\item Check that constructors are called when a new array item is desired.
+	    \end{itemize}
+	    
+	    \item \textbf{Object Comparisons}
+	    \begin{itemize}
+	    	\item Check that all objects (including Strings) are compared with \textit{equals} and not with \textquoteleft \textit{==}\textquoteright.
+	    \end{itemize}
+	    
+	    \item \textbf{Output Format}
+	    \begin{itemize}
+	    	\item Check that displayed output is free of spelling and grammatical errors.
+	    	\item Check that error messages are comprehensive and provide guidance as to
+			how to correct the problem.
+	    	\item Check that the output is formatted correctly in terms of line stepping and
+			spacing.
+	    \end{itemize}
+		
+		\item \textbf{Computation, Comparisons and Assignments}
+		\begin{itemize}
+			\item Check that the implementation avoids \textit{brutish programming}.
+			\item Check order of computation/evaluation, operator precedence and parenthesizing.
+			\item Check the liberal use of parenthesis is used to avoid operator precedence problems.
+			\item Check that all denominators of a division are prevented from being zero.
+			\item Check that integer arithmetic, especially division, are used appropriately
+			to avoid causing unexpected truncation/rounding.
+			\item Check that the comparison and Boolean operators are correct.
+			\item Check throw-catch expressions, and check that the error condition is
+			actually legitimate.
+			\item Check that the code is free of any implicit type conversions.
+		\end{itemize}
+		
+		\item \textbf{Exceptions}
+		\begin{itemize}
+			\item Check that the relevant exceptions are caught.
+			\item Check that the appropriate action are taken for each catch block.
+		\end{itemize}
+		
+		\item \textbf{Flow of Control}
+		\begin{itemize}
+			\item In a switch statement, check that all cases are addressed by break or return.
+			\item Check that all switch statements have a default branch.
+			\item Check that all loops are correctly formed, with the appropriate initialization, increment and termination expressions.
+		\end{itemize}
+		
+		\item \textbf{Files}
+		\begin{itemize}
+			\item Check that all files are properly declared and opened.
+			\item Check that all files are closed properly, even in the case of an error
+			\item Check that EOF conditions are detected and handled correctly
+			\item Check that all file exceptions are caught and dealt with accordingly
+		\end{itemize}
+		
+	\end{itemize}
+	
+	
+\end{document}

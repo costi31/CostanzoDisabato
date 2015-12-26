@@ -17,11 +17,12 @@
 %----------------------------------------------------------------------------------------
 \providecommand{\mainpath}{.} % Command to retrieve the path of the main file. It must be defined before documentclass.
 
-% Command to easily include the code of the class assigned, from a line number to a line number.
-% E.g. from line 10 to 20:     \includecode{10}{20}
-\newcommand{\includecode}[2][]{
-	\lstinputlisting[linerange=#1-#2,firstnumber=#1]{\mainpath/Code/SecurityMechanismSelector.java}
+
+% Command to include the code of the class, with a third parameter that is the caption and a special symbol to display the tabulations.
+\newcommand{\includecodecaptab}[3]{
+	\lstinputlisting[linerange=#1-#2,firstnumber=#1, caption=#3, showspaces= true, showstringspaces= false, tabsize= 4, showtabs= true, tab=\rightarrowfill]{\mainpath/Code/SecurityMechanismSelector.java}
 }
+
 % Command to include the code of the class, with a third parameter that is the caption.
 \newcommand{\includecodecap}[3]{
 	\lstinputlisting[linerange=#1-#2,firstnumber=#1, caption=#3]{\mainpath/Code/SecurityMechanismSelector.java}
@@ -118,8 +119,19 @@
 
 %Introduction
 \subfile{Chapters/chapter1_Assignment}
+%Code Inspection
+\subfile{Chapters/chapter2_CodeInspectioChecklist}
 %Info
 \subfile{Chapters/OtherInfo}
 
+%----------------------------------------------------------------------------------------
+% APPENDICES
+%----------------------------------------------------------------------------------------
 
+\begin{appendix}
+	%Code Inspection Checklist
+	\subfile{Appendices/appendixA_CodeInspectioChecklist}
+	%Corrected code version
+	\subfile{Appendices/appendixB_ACorrectedCodeVersion}
+\end{appendix}
 \end{document}
