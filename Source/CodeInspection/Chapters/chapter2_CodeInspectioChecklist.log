@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 DEC 2015 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 DEC 2015 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,16 +288,22 @@ Package: wrapfig 2003/01/31  v 3.6
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count109
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count110
+\c@@ppsavesec=\count111
+\c@@ppsaveapp=\count112
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count110
+\FV@CodeLineNo=\count113
 \FV@InFile=\read2
 \FV@TabBox=\box29
-\c@FancyVerbLine=\count111
-\FV@StepNumber=\count112
+\c@FancyVerbLine=\count114
+\FV@StepNumber=\count115
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -333,23 +339,23 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count113
+\lst@mode=\count116
 \lst@gtempboxa=\box30
 \lst@token=\toks24
-\lst@length=\count114
+\lst@length=\count117
 \lst@currlwidth=\dimen127
-\lst@column=\count115
-\lst@pos=\count116
+\lst@column=\count118
+\lst@pos=\count119
 \lst@lostspace=\dimen128
 \lst@width=\dimen129
-\lst@newlines=\count117
-\lst@lineno=\count118
+\lst@newlines=\count120
+\lst@lineno=\count121
 \lst@maxwidth=\dimen130
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count119
-\lst@skipnumbers=\count120
+\c@lstnumber=\count122
+\lst@skipnumbers=\count123
 \lst@framebox=\box31
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
@@ -366,7 +372,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen131
 \enit@toks=\toks25
 \enit@inbox=\box32
-\enitdp@description=\count121
+\enitdp@description=\count124
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
@@ -374,7 +380,7 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 99.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 101.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -454,16 +460,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
+\scratchcounter=\count125
 \scratchdimen=\dimen132
 \scratchbox=\box34
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count125
+\MPscratchCnt=\count128
 \MPscratchDim=\dimen133
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -483,7 +489,7 @@ e
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 4.
-\c@lstlisting=\count128
+\c@lstlisting=\count131
 
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
@@ -572,27 +578,37 @@ Overfull \hbox (3.40665pt too wide) in paragraph at lines 102--104
 -Cur-rent( )\T1/ppl/m/n/12 ^^Qat line 963 and in the method
  []
 
-[7] (../Code/SecurityMechanismSelector.java) [8] [9]
+[7] (../Code/SecurityMechanismSelector.java [8])
+(../Code/SecurityMechanismSelector.java)
+(../Code/SecurityMechanismSelector.java [9])
+(../Code/SecurityMechanismSelector.java)
+(../Code/SecurityMechanismSelector.java) [10]
+(../Code/SecurityMechanismSelector.java)
+Overfull \hbox (4.33282pt too wide) in paragraph at lines 168--169
+\T1/ppl/m/n/12 Finally, in the method ^^P\T1/ppl/m/it/12 eval-u-ate_client_conf
+ormance_ssl(...)\T1/ppl/m/n/12 ^^Qthere is a big try block
+ []
+
 
 AED: lastpage setting LastPage
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+[11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./chapter2_CodeInspectioChecklist.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `chapter2_CodeInspectioChecklist.out' has not
  changed.
 (rerunfilecheck)             Checksum: 1B355BF04FA9D3F668730FBDC9D8AD18;1265.
  ) 
 Here is how much of TeX's memory you used:
- 11309 strings out of 493089
- 168682 string characters out of 6134841
- 501413 words of memory out of 5000000
- 14377 multiletter control sequences out of 15000+600000
+ 11436 strings out of 493089
+ 170837 string characters out of 6134841
+ 502829 words of memory out of 5000000
+ 14471 multiletter control sequences out of 15000+600000
  22725 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,12n,45p,565b,1165s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,45p,565b,1870s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/201
@@ -600,11 +616,11 @@ live/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/201
 dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on chapter2_CodeInspectioChecklist.pdf (10 pages, 118647 bytes).
+Output written on chapter2_CodeInspectioChecklist.pdf (11 pages, 123403 bytes).
 
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
- 335 compressed objects within 4 object streams
- 187 named destinations out of 1000 (max. 500000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 360 compressed objects within 4 object streams
+ 207 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

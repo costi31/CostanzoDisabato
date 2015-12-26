@@ -104,11 +104,12 @@ If we consider the whole class the commented-out code without a reason and a dat
 
 \section{Java Source Files}
 \label{CodeInspectionChecklist:JaveSourceFiles}
-TO DO
+The javadoc of the methods \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright , \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright  and \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright is not available.\\
+Finally, the javadoc of the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright  is not complete: the only available information are about the method description (parameters, exception and return value description are missing).
 
 \section{Package and Import Statements}
 \label{CodeInspectionChecklist:PackageandImportStatements}
-TO DO
+No errors related to this topic has been found.
 
 \section{Class and Interface Declarations}
 \label{CodeInspectionChecklist:ClassandInterfaceDeclarations}
@@ -124,7 +125,7 @@ Finally, in the method \textquotedblleft \textit{evaluate\textunderscore client\
 
 \section{Method Calls}
 \label{CodeInspectionChecklist:MethodCalls}
-TO DO
+No errors related to this topic has been found.
 
 \section{Arrays}
 \label{CodeInspectionChecklist:Arrays}
@@ -136,7 +137,11 @@ The comparisons between objects are all made with \textquotedblleft \textit{equa
 
 \section{Output Format}
 \label{CodeInspectionChecklist:OutputFormat}
-TO DO
+In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963, the following two strings have two spaces between the words split by the break-line.
+\includecodecap{974}{975}{}
+\includecodecap{979}{980}{}
+In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999, the same error has been detected.
+\includecodecap{1015}{1016}{}
 
 \section{Computation, Comparison and Assignments}
 \label{CodeInspectionChecklist:ComputationComparisonandAssignments}
@@ -144,11 +149,11 @@ TO DO
 
 \section{Exceptions}
 \label{CodeInspectionChecklist:Exceptions}
-TO DO
+No errors related to this topic has been found.
 
 \section{Flow of Control}
 \label{CodeInspectionChecklist:FlowofControl}
-TO DO
+No errors related to this topic has been found.
 
 \section{Files}
 \label{CodeInspectionChecklist:Files}
@@ -156,6 +161,10 @@ No method (between the four assigned to us) uses a file.
 
 \section{Other Errors}
 \label{CodeInspectionChecklist:OtherErrors}
-TO DO
+In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999, the variable \textit{useMech} is useless, since the boolean return value assumed by it is used only in the following if condition. Thus, the called function can be directly write into the if condition.
+\includecodecap{1010}{1011}{}
+In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019 the use of variable \textit{val} should be replaced by a directly return since it is often used the return and the variable is used only once.
+\includecodecap{1035}{1040}{}
+Finally, in the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright there is a big try block without any catch block and with the finally block. Since the use of the finally is to ensure a log writing we have many doubts on this choice.
 
 \end{document}

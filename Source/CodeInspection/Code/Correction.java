@@ -42,8 +42,7 @@
         CompoundSecMech mech;
         for(int i = 0; i < mechList.length; i++) {
             mech = mechList[i];
-            boolean useMech = useMechanism(mech);
-            if(useMech) {
+            if( useMechanism(mech) ) {
                 return mech;
             }
         }
@@ -52,7 +51,6 @@
     }
 
     private boolean useMechanism(CompoundSecMech mech) {
-        boolean val = true;
         TLS_SEC_TRANS tls = getCtc().getSSLInformation(mech);
 
         if (mech.sas_context_mech.supported_naming_mechanisms.length > 0 &&
@@ -69,10 +67,10 @@
         int targetRequires = tls.target_requires;
         if(isSet(targetRequires, EstablishTrustInClient.value)) {
             if(! sslUtils.isKeyAvailable()) {
-                val = false;
+                return false;
             }
         }
-        return val;
+        return true;
     }
 
     private boolean evaluateClientConformanceSsl(
