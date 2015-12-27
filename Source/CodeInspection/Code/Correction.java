@@ -53,11 +53,10 @@
     private boolean useMechanism(CompoundSecMech mech) {
         TLS_SEC_TRANS tls = getCtc().getSSLInformation(mech);
 
-        if (mech.sas_context_mech.supported_naming_mechanisms.length > 0 &&
-            !isMechanismSupported(mech.sas_context_mech)) {
-            return false;
-        } else if (mech.as_context_mech.client_authentication_mech.length > 0 &&
-                   !isMechanismSupportedAS(mech.as_context_mech)) {
+        if ( (mech.sas_context_mech.supported_naming_mechanisms.length > 0 &&
+             !isMechanismSupported(mech.sas_context_mech)) || 
+             (mech.as_context_mech.client_authentication_mech.length > 0 &&
+             !isMechanismSupportedAS(mech.as_context_mech))) {
             return false;
         }
 
@@ -65,12 +64,7 @@
             return true;
         }
         int targetRequires = tls.target_requires;
-        if(isSet(targetRequires, EstablishTrustInClient.value)) {
-            if(! sslUtils.isKeyAvailable()) {
-                return false;
-            }
-        }
-        return true;
+        return ! (isSet(targetRequires, EstablishTrustInClient.value) && ! sslUtils.isKeyAvailable());
     }
 
     private boolean evaluateClientConformanceSsl(
@@ -78,7 +72,7 @@
                         boolean  sslUsed,
                         X509Certificate[] certchain) {
         
-        boolean sslRequired  = false;
+        boolean sslRequired = false;
         boolean sslSupported = false;
         int sslTargetRequires = 0;
         int sslTargetSupports = 0;
@@ -108,19 +102,11 @@
             sslTargetRequires = this.getCtc().getTargetRequires(iordesc);
             sslTargetSupports = this.getCtc().getTargetSupports(iordesc);
 
-            if (isSet(sslTargetRequires, Integrity.value) ||
-                isSet(sslTargetRequires, Confidentiality.value) ||
-                isSet(sslTargetRequires, EstablishTrustInClient.value)) {
-                sslRequired = true;
-            } else {
-                sslRequired = false;
-            }
+            sslRequired = (isSet(sslTargetRequires, Integrity.value) ||
+                          isSet(sslTargetRequires, Confidentiality.value) ||
+                          isSet(sslTargetRequires,EstablishTrustInClient.value));
 
-            if ( sslTargetSupports != 0) {
-                sslSupported = true;
-            } else {
-                sslSupported = false;
-            }
+            sslSupported = ( sslTargetSupports != 0);
 
             /* Check for conformance for using SSL usage.
              * 
@@ -141,14 +127,8 @@
                          " " + sslSupported +
                          " " + sslUsed);
 
-            if (sslUsed) {
-                if (! (sslRequired || sslSupported)) {
-                    return false;  // security mechanism did not match
-                }
-            } else {
-                if (sslRequired) {
-                    return false;  // security mechanism did not match
-                }
+            if ((sslUsed && !(sslRequired || sslSupported)) || sslRequired) {
+                return false;
             }
 
             /* Check for conformance for SSL client authentication.
@@ -170,15 +150,11 @@
                          " " + 
                          isSet(sslTargetSupports,EstablishTrustInClient.value));
 
-            if (certchain != null) {
-                if ( ! ( isSet(sslTargetRequires, EstablishTrustInClient.value) ||
-                     isSet(sslTargetSupports, EstablishTrustInClient.value))) {
+            if ((certchain != null &&
+                 !(isSet(sslTargetRequires, EstablishTrustInClient.value) ||
+                 isSet(sslTargetSupports, EstablishTrustInClient.value))) ||
+                (isSet(sslTargetRequires, EstablishTrustInClient.value))) {
                     return false; // security mechanism did not match
-                }
-            } else {
-                if (isSet(sslTargetRequires, EstablishTrustInClient.value)) {
-                    return false; // security mechanism did not match
-                }
             }
 
             fineLevelLog("SecurityMechanismSelector.evaluate_client_" +

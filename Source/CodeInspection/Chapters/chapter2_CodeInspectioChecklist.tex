@@ -22,7 +22,7 @@ In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textqu
 To be more precise, since this two variables are used only to memorize a method's return value and then, in the following lines of code, they are returned or used as parameters in other methods, the two names can be accepted.\\
 In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019, the local variable as a meaningless name. A meaningful name is \textit{toReturn}.
 \includecodecap{1020}{1020}{}
-See the \autoref{CodeInspectionChecklist:OtherErrors} for further observations about the role of this variable into the method.\\
+See the \autoref{CodeInspectionChecklist:ComputationComparisonandAssignments} for further observations about the role of this variable into the method.\\
 In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright at line 1086, we have three not respected conventions. First, the name of the method is wrong. The correct one is \textit{evaluateClientConformanceSsl(\textellipsis)}. After that, the second parameter is wrong because it contains an underscore to split two words.
 \includecodecap{1088}{1088}{}
 The last one is all the names of the local variables, for the same reason of the parameter.
@@ -57,6 +57,7 @@ After that, the line 1183 is not indented correctly with respect to the if block
 \includecodecaptab{1181}{1183}{}
 Finally, the line 1194 and 1195 have an incorrect number of spaces.
 \includecodecaptab{1194}{1195}{}
+The correct indention of all the methods is available into the \autoref{AppendixB:Correction}.
 
 \section{Braces}
 \label{CodeInspectionChecklist:Braces}
@@ -164,7 +165,18 @@ In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\
 
 \section{Computation, Comparison and Assignments}
 \label{CodeInspectionChecklist:ComputationComparisonandAssignments}
-TO DO
+In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999, the variable \textit{useMech} is useless, since the boolean return value assumed by it is used only in the following if condition. Thus, the called function can be directly write into the if condition. (Brutish programming)
+\includecodecap{1010}{1011}{}
+In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019, the variable \textit{val} is used only once and it can be replaced by a directly use of the \textit{return} clause. According to the Brutish programming a better way to write the block at the lines 1035-1040 is \textit{return condition}, where the condition is obtained by a \textquoteleft \textit{negated}\textquoteright merge of the two nested if's conditions (the reason for the negation is the value of \textit{val} into the if).
+\includecodecap{1035}{1040}{}
+The block 1023-1029 contains an if-else statement with the same body both into the \textit{if} and into the \textit{else if} part. A better way to write this code is obtained by a merge of the two conditions into one.
+\includecodecap{1023}{1029}{}
+In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright the initialization of the variables at the lines 1097-1100 are useless (the default value for a boolean variable is false and for an integer variable is zero), but they can be accepted to make the code more readable.\\
+According to Brutish Programming all the \textit{return true/false} are correct because they are not written into an if-else clause. Due to the same rule, the assignments to the boolean variable at lines 1122-1127 and 1129-1132 can be written directly in the form \textit{variable = condition}.
+\includecodecap{1122}{1132}{}
+Finally, the two blocks at the lines 1153-1159 and 1180-1186 contain nested if that can be merged the first one (they have the same body).
+\includecodecap{1153}{1159}{}
+\includecodecap{1180}{1186}{}
 
 \section{Exceptions}
 \label{CodeInspectionChecklist:Exceptions}
@@ -180,10 +192,6 @@ No method (between the four assigned to us) uses a file.
 
 \section{Other Errors}
 \label{CodeInspectionChecklist:OtherErrors}
-In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999, the variable \textit{useMech} is useless, since the boolean return value assumed by it is used only in the following if condition. Thus, the called function can be directly write into the if condition.
-\includecodecap{1010}{1011}{}
-In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019 the use of variable \textit{val} should be replaced by a directly return since it is often used the return and the variable is used only once.
-\includecodecap{1035}{1040}{}
-Finally, in the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright there is a big try block without any catch block and with the finally block. Since the use of the finally is to ensure a log writing we have many doubts on this choice.
+In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright there is a big try block without any catch block and with the finally block. Since the use of the finally is to ensure a log writing we have many doubts on this choice.
 
 \end{document}

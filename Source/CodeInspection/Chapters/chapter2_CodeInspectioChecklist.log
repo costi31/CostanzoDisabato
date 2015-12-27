@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  27 DEC 2015 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  27 DEC 2015 21:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -552,8 +552,15 @@ Overfull \hbox (8.89053pt too wide) in paragraph at lines 45--46
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
-(../Code/SecurityMechanismSelector.java) [4]
 (../Code/SecurityMechanismSelector.java)
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 60.
+
+
+LaTeX Warning: Reference `AppendixB:Correction' on page 4 undefined on input li
+ne 60.
+
+[4] (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
@@ -573,7 +580,7 @@ Overfull \hbox (8.89053pt too wide) in paragraph at lines 45--46
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
-Overfull \hbox (3.40665pt too wide) in paragraph at lines 102--104
+Overfull \hbox (3.40665pt too wide) in paragraph at lines 103--105
 []\T1/ppl/m/n/12 In the method ^^P\T1/ppl/m/it/12 get-Sub-ject-From-Se-cu-ri-ty
 -Cur-rent( )\T1/ppl/m/n/12 ^^Qat line 963 and in the method
  []
@@ -583,49 +590,51 @@ Overfull \hbox (3.40665pt too wide) in paragraph at lines 102--104
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
-Underfull \hbox (badness 10000) in paragraph at lines 125--129
+Underfull \hbox (badness 10000) in paragraph at lines 126--130
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 129.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 130.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
  [9]
 (../Code/SecurityMechanismSelector.java) [10]
+(../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java) [11]
 (../Code/SecurityMechanismSelector.java)
 (../Code/SecurityMechanismSelector.java)
-Overfull \hbox (4.33282pt too wide) in paragraph at lines 187--188
-\T1/ppl/m/n/12 Finally, in the method ^^P\T1/ppl/m/it/12 eval-u-ate_client_conf
-ormance_ssl(...)\T1/ppl/m/n/12 ^^Qthere is a big try block
- []
-
-
+(../Code/SecurityMechanismSelector.java) [12]
+(../Code/SecurityMechanismSelector.java)
+(../Code/SecurityMechanismSelector.java) 
 AED: lastpage setting LastPage
-[12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+[13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./chapter2_CodeInspectioChecklist.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `chapter2_CodeInspectioChecklist.out' has not
  changed.
 (rerunfilecheck)             Checksum: 1B355BF04FA9D3F668730FBDC9D8AD18;1265.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 11508 strings out of 493089
- 172262 string characters out of 6134841
+ 11557 strings out of 493089
+ 173268 string characters out of 6134841
  502829 words of memory out of 5000000
- 14508 multiletter control sequences out of 15000+600000
- 22725 words of font info for 46 fonts, out of 8000000 for 9000
+ 14511 multiletter control sequences out of 15000+600000
+ 24174 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,12n,45p,565b,1165s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,45p,588b,1165s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
@@ -634,11 +643,11 @@ ive/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on chapter2_CodeInspectioChecklist.pdf (12 pages, 137910 bytes).
+Output written on chapter2_CodeInspectioChecklist.pdf (13 pages, 143478 bytes).
 
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 229 named destinations out of 1000 (max. 500000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 266 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
