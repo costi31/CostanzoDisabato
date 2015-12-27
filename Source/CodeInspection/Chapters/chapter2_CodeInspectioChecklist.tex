@@ -113,7 +113,26 @@ No errors related to this topic has been found.
 
 \section{Class and Interface Declarations}
 \label{CodeInspectionChecklist:ClassandInterfaceDeclarations}
-TO DO
+The convention related to the class attributes' declaration order is not respected. The errors are two. First, the variable used to log (\textit{\textunderscore logger}) has a class visibility, so it should be declared after \textit{public and static} attributes at line 127.
+\includecodecap{124}{127}{}
+The second one is on the variable \textit{localString}. Since it is declared \textit{private and static}, it should be written before the \textit{non-static and private} variables at the lines 130 and 131.
+\includecodecap{130}{131}{}
+\includecodecap{138}{139}{}
+The order of the methods into the class is in general correct because they are grouped by a common role and purpose.\\
+The analysis about the duplicated codes has been perfomed by use of SonarQube 5.2 tool. It detects two methods that have the same code for the most part of the contents. The methods are \textit{getSSLPort(\textellipsis)} and \textit{getSSLPorts(\textellipsis)} with the following headers:
+\includecodecap{221}{227}{}
+\includecodecap{344}{344}{}
+The duplicated blocks are two: one at the lines 230-249 copied at the lines 346-365 and the other one at the lines 254-276 replaced at the lines 373-395. These blocks of code are too long, so they are not shown here. In our opinion the two methods perform the same actions and they differ for the name (the second one is the plural of the first one) and for the return value.\\
+\\
+Finally, we report the complexity analysis of the SonarQube tool. The \textit{Cyclomatic Complexity} of the class is 334 which is greater than 200 authorized. Considering the methods the maximum allowed \textit{Cyclomatic Complexity} is 10 (even if in some cases it can be accepted a violation of this rule). The methods that do not respect this bound are:
+\begin{itemize}
+	\item \textit{getSSLPort(\textellipsis)} at line 227 which has 25;
+	\item \textit{getSSLPorts(\textellipsis)} at line 344 which has 27;
+	\item \textit{propagateIdentity(\textellipsis)} at line 614 which has 20;
+	\item \textit{getUsernameAndPassword(\textellipsis)} at line 788 which has 19;
+	\item \textit{getIdentity()} at line 882 which has 16;
+\end{itemize}
+
 
 \section{Initialization and Declarations}
 \label{CodeInspectionChecklist:InitializationandDeclarations}
