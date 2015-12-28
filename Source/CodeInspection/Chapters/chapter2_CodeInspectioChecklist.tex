@@ -10,9 +10,9 @@
 \setmyfancystyle
 % ----------------
 
-In this chapter the detailed analysis of the assigned code is presented. We have decided to create a section for each main part of the code inspection's check-list and inside it, all the \textquotedblleft sub-points\textquotedblright are analysed at the same time.\footnote{The code inspection's check-list is available into the appendix.}This decision is to simplify the drafting of the text and to make the document more readable and easy to understand.\\
+In this chapter the detailed analysis of the assigned code is presented. We have decided to create a section for each main part of the code inspection's check-list and inside it, all the \textquotedblleft sub-points\textquotedblright are analysed at the same time.\footnote{The code inspection's check-list is available into the appendix.}This decision is made to simplify the drafting of the text and to make the document more readable and easy to understand.\\
 However, the wrong code is often displayed and, in some particular cases, a possible correction of the code is provided (for instance the correct indentation of the last method checked).\\
-An important clarification is the following. We don't have tried to find out some bugs into the code for several reasons. First of all, we are not expert in security themes, so we are not able to identify problems or we don't know the best ways to implement the security protocols. Second (and last), the code assigned to us is too short to detect some bugs related to exactly that part of code and that not require to read and understand many and many other lines of code into the classes of the same package of the our one.\\
+An important clarification is the following. We don't have tried to find out some bugs into the code for several reasons. First of all, we are not expert in security themes, so we are not able to identify problems or we don't know the best ways to implement the security protocols. Second (and last), the code assigned to us is too short to detect some bugs related to exactly that part of code and that requires to read and understand many other lines of code into the classes of the same package of the our one.\\
 
 \section{Naming Conventions}
 \label{CodeInspectionChecklist:NamingConventions}
@@ -20,7 +20,7 @@ In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textqu
 \includecodecap{965}{966}{}
 \includecodecap{977}{977}{}
 To be more precise, since this two variables are used only to memorize a method's return value and then, in the following lines of code, they are returned or used as parameters in other methods, the two names can be accepted.\\
-In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019, the local variable as a meaningless name. A meaningful name is \textit{toReturn}.
+In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019, the local variable has a meaningless name. A meaningful name could be \textit{toReturn}.
 \includecodecap{1020}{1020}{}
 See the \autoref{CodeInspectionChecklist:ComputationComparisonandAssignments} for further observations about the role of this variable into the method.\\
 In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright at line 1086, we have three not respected conventions. First, the name of the method is wrong. The correct one is \textit{evaluateClientConformanceSsl(\textellipsis)}. After that, the second parameter is wrong because it contains an underscore to split two words.
@@ -50,10 +50,10 @@ First of all, in the following lines tabs characters were used.
 \includecodecaptab{1142}{1151}{}
 \includecodecaptab{1173}{1179}{}
 \includecodecaptab{1189}{1193}{}
-Besides, the lines 1143, 1174 and 1190 are not indented while the lines 1151, 1178 and 1192 are not correctly aligned to the corresponding if at the lines, respectively, 1142, 1173 and 1189 (they are one \textquoteleft tab\textquoteright left).
+Besides, the lines 1143, 1174 and 1190 are not indented while the lines 1151, 1178 and 1192 are not correctly aligned to the corresponding \textbf{\color{javapurple} if} at the lines, respectively, 1142, 1173 and 1189 (they are one \textquoteleft tab\textquoteright left).
 \includecodecaptab{1195}{1199}{}
 In the last block of code, the content of the \textquoteleft \textit{finally}\textquoteright clause is not indented.\\
-After that, the line 1183 is not indented correctly with respect to the if blocks in which it is inserted.
+After that, the line 1183 is not indented correctly with respect to the \textbf{\color{javapurple} if} blocks in which it is inserted.
 \includecodecaptab{1181}{1183}{}
 Finally, the line 1194 and 1195 have an incorrect number of spaces.
 \includecodecaptab{1194}{1195}{}
@@ -63,7 +63,7 @@ The correct indention of all the methods is available into the \autoref{Appendix
 \label{CodeInspectionChecklist:Braces}
 Reading the code assigned to us, we observe that the author decides to follow the \textit{Kernighan and Ritchie} style to write the parentheses\footnote{The same style is recommended by SonarQube's rules.}. It exists only one exception shown below.
 \includecodecap{1086}{1090}{}
-In the following lines of code are displayed the if or if-else blocks composed by only one instructions to execute not surrounded by braces.
+In the following lines of code, \textbf{\color{javapurple} if} or \textbf{\color{javapurple} if}-\textbf{\color{javapurple} else} blocks composed by only one instruction to execute are not surrounded by braces.
 \includecodecap{1122}{1127}{}
 \includecodecap{1129}{1132}{}
 \includecodecap{1154}{1155}{}
@@ -74,7 +74,7 @@ In the following lines of code are displayed the if or if-else blocks composed b
 \section{File Organization}
 \label{CodeInspectionChecklist:FileOrganization}
 In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright at line 1086, the line 1182 has a length equal to 82 characters while the maximum allowed length is 80.\\
-In addition the comment's block at lines 1102-1115 has a length between 82 and 85 characters. A solution can be split into two lines the header of the table.
+In addition the comment's block at lines 1102-1115 has a length between 82 and 85 characters. A solution can be to split the header of the table into two lines.
 
 \section{Wrapping lines}
 \label{CodeInspectionChecklist:WrappingLines}
@@ -89,7 +89,7 @@ In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedb
 \includecodecap{1023}{1024}{}
 \includecodecap{1026}{1027}{}
 In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright at line 1086, there are many wrapping lines' errors.\\
-First of all, the declaration of the method's parameters seems incorrect, but it is acceptable and readable. Afterwards, into the following lines are shown the errors on the wrapping lines (they should occur after a comma or an operator) and on the alignment of the second line (it should be aligned at the expression's starting).
+First of all, the declaration of the method's parameters seems incorrect, but it is acceptable and readable. Afterwards, into the following lines there are errors on the wrapping lines (they should occur after a comma or an operator) and on the alignment of the second line (it should be aligned at the expression's starting).
 \includecodecap{1093}{1094}{}
 \includecodecap{1122}{1124}{}
 \includecodecap{1143}{1150}{}
@@ -101,12 +101,12 @@ First of all, the declaration of the method's parameters seems incorrect, but it
 \section{Comments}
 \label{CodeInspectionChecklist:Comments}
 In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963 and in the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019 there are no comments.\\
-If we consider the whole class the commented-out code without a reason and a date (when the code can be deleted from the source file) is at the lines 128, 136, 150, 317-325, 396, 397, 423, 486-492, 685-708, 719-778, 792 and 806.
+If we consider the whole class, the commented-out code without a reason and a date (when the code can be deleted from the source file) is present at the lines 128, 136, 150, 317-325, 396, 397, 423, 486-492, 685-708, 719-778, 792 and 806.
 
 \section{Java Source Files}
 \label{CodeInspectionChecklist:JaveSourceFiles}
-The javadoc of the methods \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright , \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright  and \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright is not available.\\
-Finally, the javadoc of the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright  is not complete: the only available information are about the method description (parameters, exception and return value description are missing).
+The javadoc of the methods \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright , \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright  and \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright\ is missing.\\
+Finally, the javadoc of the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright\ is not complete: the only available information are about the method description (parameters, exception and return value description are missing).
 
 \section{Package and Import Statements}
 \label{CodeInspectionChecklist:PackageandImportStatements}
@@ -114,13 +114,13 @@ No errors related to this topic has been found.
 
 \section{Class and Interface Declarations}
 \label{CodeInspectionChecklist:ClassandInterfaceDeclarations}
-The convention related to the class attributes' declaration order is not respected. The errors are two. First, the variable used to log (\textit{\textunderscore logger}) has a class visibility, so it should be declared after \textit{public and static} attributes at line 127.
+The convention related to the class attributes' declaration order is not respected. The errors are two. First, the variable used to log (\textit{\textunderscore logger}) has a class visibility, so it should be declared after \textbf{\color{javapurple} public} and \textbf{\color{javapurple} static} attributes at line 127.
 \includecodecap{124}{127}{}
-The second one is on the variable \textit{localString}. Since it is declared \textit{private and static}, it should be written before the \textit{non-static and private} variables at the lines 130 and 131.
+The second one is on the variable \textit{localString}. Since it is declared \textbf{\color{javapurple} private} and \textbf{\color{javapurple} static}, it should be written before the non-\textbf{\color{javapurple} static} and \textbf{\color{javapurple} private} variables at the lines 130 and 131.
 \includecodecap{130}{131}{}
 \includecodecap{138}{139}{}
 The order of the methods into the class is in general correct because they are grouped by a common role and purpose.\\
-The analysis about the duplicated codes has been perfomed by use of SonarQube 5.2 tool. It detects two methods that have the same code for the most part of the contents. The methods are \textit{getSSLPort(\textellipsis)} and \textit{getSSLPorts(\textellipsis)} with the following headers:
+The analysis about the duplicated codes has been perfomed with the use of SonarQube 5.2 tool. It detects two methods that have the same code for the most part of the contents. The methods are \textit{getSSLPort(\textellipsis)} and \textit{getSSLPorts(\textellipsis)} with the following headers:
 \includecodecap{221}{227}{}
 \includecodecap{344}{344}{}
 The duplicated blocks are two: one at the lines 230-249 copied at the lines 346-365 and the other one at the lines 254-276 replaced at the lines 373-395. These blocks of code are too long, so they are not shown here. In our opinion the two methods perform the same actions and they differ for the name (the second one is the plural of the first one) and for the return value.\\
@@ -137,11 +137,11 @@ Finally, we report the complexity analysis of the SonarQube tool. The \textit{Cy
 
 \section{Initialization and Declarations}
 \label{CodeInspectionChecklist:InitializationandDeclarations}
-In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963, the variables \textit{sc} has an useless assignment, so the lines 965 and 966 should be merged. Since the variable's type-name and the name of the method used to initialize it are too long, the best way to write it is define the variable at the first line and then initialize it in the following line.
+In the method \textquotedblleft \textit{getSubjectFromSecurityCurrent( )}\textquotedblright at line 963, the variable \textit{sc} has an useless assignment, so the lines 965 and 966 should be merged. Since the variable's type-name and the name of the method used to initialize it are too long, the best way to write it is to define the variable at the first line and then initialize it in the following line.
 \includecodecap{965}{966}{}
 The declaration of the variable \textit{s} (line 977) should be moved at the beginning of the method, immediately after the declaration of the variable \textit{sc}.\\
-In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999, the initialization of the variable \textit{mech} at line 1007 is useless.\\
-Finally, in the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright  at line 1086, the local variables (lines 1087-1090) should be declared at the beginning of the method.
+In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright\ at line 999, the initialization of the variable \textit{mech} at line 1007 is useless.\\
+Finally, in the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright\ at line 1086, the local variables (lines 1087-1090) should be declared at the beginning of the method.
 
 \section{Method Calls}
 \label{CodeInspectionChecklist:MethodCalls}
@@ -149,11 +149,11 @@ No errors related to this topic has been found.
 
 \section{Arrays}
 \label{CodeInspectionChecklist:Arrays}
-An array is used only in method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999 and no error has been found.
+An array is used only in method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999 and no errors have been found.
 
 \section{Object Comparison}
 \label{CodeInspectionChecklist:ObjectComparison}
-The comparisons between objects are all made with \textquotedblleft \textit{equals}\textquotedblright method and not with \textquotedblleft ==\textquotedblright operator. The only exceptions are when the second term of the equality is \textit{null} or if the equality is between integer numbers.
+The comparisons between objects are all made with \textquotedblleft \textit{equals}\textquotedblright method and not with \textquotedblleft ==\textquotedblright operator. The only exceptions are when the second term of the equality is \textbf{\color{javapurple} null} or if the equality is between integer numbers.
 
 \section{Output Format}
 \label{CodeInspectionChecklist:OutputFormat}
@@ -165,33 +165,33 @@ In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\
 
 \section{Computation, Comparison and Assignments}
 \label{CodeInspectionChecklist:ComputationComparisonandAssignments}
-In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright at line 999, the variable \textit{useMech} is useless, since the boolean return value assumed by it is used only in the following if condition. Thus, the called function can be directly write into the if condition. (Brutish programming)
+In the method \textquotedblleft \textit{selectSecurityMechanism(\textellipsis)}\textquotedblright\ at line 999, the variable \textit{useMech} is useless, since the boolean return value assumed by it is used only in the following \textbf{\color{javapurple} if} condition. Thus, the called function can be directly write into the \textbf{\color{javapurple} if} condition. (Brutish programming)
 \includecodecap{1010}{1011}{}
-In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright at line 1019, the variable \textit{val} is used only once and it can be replaced by a directly use of the \textit{return} clause. According to the Brutish programming a better way to write the block at the lines 1035-1040 is \textit{return condition}, where the condition is obtained by a \textquoteleft \textit{negated}\textquoteright merge of the two nested if's conditions (the reason for the negation is the value of \textit{val} into the if).
+In the method \textquotedblleft \textit{useMechanism(\textellipsis)}\textquotedblright\ at line 1019, the variable \textit{val} is used only once and it can be replaced by a direct use of the \textbf{\color{javapurple} return} clause. According to the Brutish programming a better way to write the block at the lines 1035-1040 is \textit{return condition}, where the condition is obtained by a \textquoteleft \textit{negated}\textquoteright\ merge of the two nested \textbf{\color{javapurple} if}'s conditions (the reason for the negation is the value of \textit{val} into the \textbf{\color{javapurple} if}).
 \includecodecap{1035}{1040}{}
-The block 1023-1029 contains an if-else statement with the same body both into the \textit{if} and into the \textit{else if} part. A better way to write this code is obtained by a merge of the two conditions into one.
+The block 1023-1029 contains an \textbf{\color{javapurple} if}-\textbf{\color{javapurple} else} statement with the same body both into the \textbf{\color{javapurple} if} and into the \textbf{\color{javapurple} else if} part. A better way to write this code is obtained by merging the two conditions into one.
 \includecodecap{1023}{1029}{}
-In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright the initialization of the variables at the lines 1097-1100 are useless (the default value for a boolean variable is false and for an integer variable is zero), but they can be accepted to make the code more readable.\\
-According to Brutish Programming all the \textit{return true/false} are correct because they are not written into an if-else clause. Due to the same rule, the assignments to the boolean variable at lines 1122-1127 and 1129-1132 can be written directly in the form \textit{variable = condition}.
+In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright\ the initialization of the variables at the lines 1097-1100 are useless (the default value for a boolean variable is false and for an integer variable is zero), but they can be accepted to make the code more readable.\\
+According to Brutish Programming all the \textit{return true/false} are correct because they are not written into an \textbf{\color{javapurple} if}-\textbf{\color{javapurple} else} clause. Due to the same rule, the assignments to the boolean variable at lines 1122-1127 and 1129-1132 can be written directly in the form \textit{variable = condition}.
 \includecodecap{1122}{1132}{}
-Finally, the two blocks at the lines 1153-1159 and 1180-1186 contain nested if that can be merged the first one (they have the same body).
+Finally, the two blocks at the lines 1153-1159 and 1180-1186 contain nested \textbf{\color{javapurple} if} that can be merged the first one (they have the same body).
 \includecodecap{1153}{1159}{}
 \includecodecap{1180}{1186}{}
 
 \section{Exceptions}
 \label{CodeInspectionChecklist:Exceptions}
-No errors related to this topic has been found.
+No errors related to this topic have been found.
 
 \section{Flow of Control}
 \label{CodeInspectionChecklist:FlowofControl}
-No errors related to this topic has been found.
+No errors related to this topic have been found.
 
 \section{Files}
 \label{CodeInspectionChecklist:Files}
-No method (between the four assigned to us) uses a file.
+No methods (between the four assigned to us) use a file.
 
 \section{Other Errors}
 \label{CodeInspectionChecklist:OtherErrors}
-In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright there is a big try block without any catch block and with the finally block. Since the use of the finally is to ensure a log writing we have many doubts on this choice.
+In the method \textquotedblleft \textit{evaluate\textunderscore client\textunderscore conformance\textunderscore ssl(\textellipsis)}\textquotedblright there is a big \textbf{\color{javapurple} try} block without any \textbf{\color{javapurple} catch} block and with the \textbf{\color{javapurple} finally} block. Since the use of the \textbf{\color{javapurple} finally} is to ensure a log writing we have many doubts about this choice.
 
 \end{document}

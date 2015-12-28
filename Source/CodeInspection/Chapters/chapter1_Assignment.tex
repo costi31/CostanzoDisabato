@@ -14,7 +14,7 @@ In this chapter we will present the class that has been assigned to us. First, t
 
 \section{Assigned class}
 \label{Assignment:AssignedClass}
-The class assigned to us is called \textquotedblleft \textbf{SecurityMechanismSelector}\textquotedblright and is located in the following path relative to the root of Glassfish project:\\
+The class assigned to us is called \textquotedblleft \textbf{SecurityMechanismSelector}\textquotedblright\ and is located in the following path relative to the root of Glassfish project:\\
 \textit{
 appserver/security/ejb.security/src/main/java/com/sun/enterprise/iiop/security/
 }\\ \\
@@ -24,17 +24,32 @@ To present more clearly the class we include the first lines of code containing 
 \includecodecap{108}{122}{Class documentation and declaration}
 
 \subsection{Functional role}
-As the javadoc states, this class is responsible for selecting the security mechanism based on target configuration and client policies.
-
-TO BE CONTINUED...
+As the documentation states, this class is responsible for selecting the security mechanism based on target configuration and client policies. It reads the data related to a client and to a target from the current running context of the application.
 
 \section{Assigned methods}
 \label{Assignment:AssignedMethods}
 The methods assigned to us are 4, that are presented below, with the entire code and with our description of their functional role.
 
-\subsection{First method}
+\subsection{First method: getSubjectFromSecurityCurrent}
 \label{Assignment:AssignedMethods:FirstMethod}
 \includecodecap{963}{986}{First assigned method}
 This method is supposed to return the subject of the current security context. A Subject represents a grouping of related information for a single entity, such as a person. Such information includes the Subject's identities as well as its security-related attributes (passwords and cryptographic keys, for example).
+
+\subsection{Second method: selectSecurityMechanism}
+\label{Assignment:AssignedMethods:SecondMethod}
+\includecodecap{999}{1017}{Second assigned method}
+As the documentation states, this method selects and returns the first\footnote{It returns only the first supported security mechanism found in the array because the \textbf{\color{javapurple} for} cycle stops with \textbf{\color{javapurple} return} instruction when found} supported compound security mechanism from an array given as parameter. The mechanism to use is retrieved by calling the method \textit{useMechanism(CompoundSecMech mech)}. If no security mechanism of the array can be used an exception is thrown.
+
+\subsection{Third method: useMechanism}
+\label{Assignment:AssignedMethods:ThirdMethod}
+\includecodecap{1019}{1041}{Third assigned method}
+This method checks whether a security mechanism (given as parameter) can be used in the communication process between the client and the target or not. The method returns the boolean value \textbf{\color{javapurple} true} if the client request respects the target configuration, i.e. if the security mechanism required is supported by the target system, there are no errors and if the client can use the protocol TLS (Transport Layer Security) when the target system requires it for the desired security mechanism. Otherwise, if any of the conditions above is not satisfied, the method returns the boolean value \textbf{\color{javapurple} false}.
+
+\subsection{Fourth method: evaluate\_client\_conformance\_ssl}
+\label{Assignment:AssignedMethods:FourthMethod}
+\includecodecap{1086}{1201}{Fourth assigned method}
+This method evaluates the conformance of the use of the protocol SSL (Secure Sockets Layer) in the authentication process between the client and the target. The client can ask the authentication via SSL to the target. The target may support or not the SSL authentication and may strictly require it or not.\\
+There are five possible cases in which the client authentication request is conformant to the target configuration or not, based on the possible conditions described before. This conformance cases as described in a table inside a comment block from line 1102 and 1115, in the method's code above. The first column of the table shows whether the client asks for the SSL authentication or not, the second column shows whether the target requires it or not, the third columns shows whether the target supports SSL or not and finally the fourth column shows whether the client request is conformant to the target configuration or not.\\
+The returned boolean value of the method is \textbf{\color{javapurple} true} if the client request for SSL is conformant, \textbf{\color{javapurple} false} otherwise.
 
 \end{document}
