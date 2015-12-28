@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  28 DEC 2015 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  28 DEC 2015 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -569,8 +569,10 @@ Overfull \hbox (27.42104pt too wide) in paragraph at lines 41--42
 m/it/12 use-Mech-a-nism(CompoundSecMech
  []
 
-[3] (./Code/SecurityMechanismSelector.java)
-(./Code/SecurityMechanismSelector.java [4] [5] [6]))
+[3] (./Code/SecurityMechanismSelector.java) [4]
+(./Code/SecurityMechanismSelector.java [5
+
+] [6]))
 (./Chapters/chapter2_CodeInspectioChecklist.tex [7]
 Chapter 2.
 
@@ -697,7 +699,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
 Here is how much of TeX's memory you used:
  12148 strings out of 494957
  182134 string characters out of 6180027
- 588877 words of memory out of 5000000
+ 586877 words of memory out of 5000000
  14397 multiletter control sequences out of 15000+600000
  44512 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -710,7 +712,7 @@ rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (35 pages, 261228 bytes).
+Output written on main.pdf (35 pages, 261242 bytes).
 PDF statistics:
  1125 PDF objects out of 1200 (max. 8388607)
  1068 compressed objects within 11 object streams

@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {1.2.1}First method: getSubjectFromSecurityCurrent}{2}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Second method: selectSecurityMechanism}{3}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Third method: useMechanism}{4}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Fourth method: evaluate\_client\_conformance\_ssl}{4}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.4}Fourth method: evaluate\_client\_conformance\_ssl}{5}{subsection.1.2.4}
 \contentsline {chapter}{\numberline {2}Code Inspection Checklist}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Naming Conventions}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}Indention}{10}{section.2.2}
