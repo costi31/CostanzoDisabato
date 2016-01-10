@@ -14,15 +14,42 @@ In this chapter the purpose and the scope of the document will be presented in t
 
 \section{Purpose and Scope}
 \label{Introduction:PurposeAndScope}
-
+The purposes of this document are principally two. The first one is to describe the sequence of myTaxiService component's implementation. The sequence of the implementation of the components described in the Design Document is important for the testing phase.\\
+ The second main objective of this document is to define the testing phase of the components' interactions: an accurate description will be provided with the required new components and the tests' definitions, each in a dedicate section.\\
+ Finally, in order to accomplish the tests some tools are obviously needed. In this document we will pay particular attention to which tool and how they will be used.\\
+ \\
+ Up to now, we have described the purposes of the document. The global scope of the project follows, as it has been explained in the previous documents, to make the document easy to understand.\\
+ Users, once registered, are able to ask for an immediate ride or to book one of them.\\
+ \\
+ The system provides the user with a complete map of the city and its suburbs within the taxi service is available. The current position of the user is obtained by localization services of the user's smartphone if it's possible, otherwise the user notifies his position directly on the map with a marker or by a searching box. The destination is also chosen either graphically or by a research. The user can view the suggested path and then he must confirm the request.\\
+ \\
+ When a user asks for a ride, the system checks the availability of a taxi driver near the current position, by splitting the city in several areas and using a FIFO (First In First Out) policy to manage the assignment of the ride's driver. The selected driver can accept or decline the ride. In the former case the system informs the user about waiting time, estimated travelling time, prices and cab car-code. \\
+ \\
+ The system gives also the possibility to book a ride with at least two hours in advance. As the user does when he asks for a ride, he selects the desired starting venue and the destination. Afterwards, the system gives a calendar where the customer can choose the date (at most 30 days in advance) and the starting hour. Ten minutes before the meeting time the system starts all the operations described before in order to assign a taxi-driver.\\
+ \\
+ A reservation from the app or the website can be undone until the system confirmation of the availability of a taxi, while a booking can be cancelled at most fifteen minutes before the meeting hour.\\
+ \\
+ After those deadlines the ride is considered bought by the customers and an eventual absence on the established venue forbids other possibilities to book or to take a ride.
 
 \section{List of Definitions and Abbreviations}
 \label{Introduction:DefinitionsAndAbbrevations}
+\textit{Up to now, no definitions or acronyms or abbreviation have been used in the document. Hence, this section is now empty.
+In future we will provide some important definitions, like the kind od rides, the names of the tools and so on... TO BE CONTINUED}
 
 \section{List of Reference Documents}
 \label{Introduction:ReferenceDocuments}
+The reference documents are now listed. Note that, all the documents related on the \textit{myTaxyService} project are written by the same authors of this one, whereas the other documents have a reference of their author when this information is available.\\
+\begin{itemize}
+	\item Software Engineering 2 Project, AA 2015-2016 Assignments 4 - Test plan (available on beep platform only for registered students of Politecnico of Milan);
+	\item The Requirements Analysis and Specification Document (RASD) for \textit{myTaxiService} - v1.2, released on 6th November 2015;
+	\item The Design Document (DD) for \textit{myTaxiService} - v1.0, released on 4th December 2015;
+	\item \textit{Documentation of the used tools.. COMING SOON}
+\end{itemize}
 
 \section{Overall Description}
 \label{Introduction:Overall}
+In the \autoref{IntegrationStrategy} the preconditions, the required new components, the temporal development/testing order and the testing strategies are analysed in details.\\
+In the \autoref{IndividualStepsAndTestDescription} each test will be analysed by given a brief description and the expected results.\\
+In the \autoref{ToolsAndTestEquipmentRequired} a presentation of the used tools we will be provided with the reasons for their use. Finally, in the \autoref{ProgramStubsAndTestDataRequired} we will discuss about the special test data or program stubs required for each integration step.
 
 \end{document}

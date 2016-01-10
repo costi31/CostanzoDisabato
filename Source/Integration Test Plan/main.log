@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  9 JAN 2016 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  10 JAN 2016 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -485,43 +485,83 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
-) (./Chapters/chapter2_integration_strategy.texpdfTeX warning (ext4): destinati
-on with the same identifier (name{page.1}) has been already used, duplicate ign
-ored
+
+Overfull \hbox (8.84508pt too wide) in paragraph at lines 17--33
+\T1/ppl/m/n/12 scribe the se-quence of my-TaxiS-er-vice com-po-nent's im-ple-me
+n-ta-tion. The se-quence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--33
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.6 \chapter
-            {Integration Strategy} % First chapter [1
+l.33 
+      [1
 
 
-]
-Chapter 2.
-) (./Chapters/chapter3_individual_steps_and_test_description.tex [2
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
-]
-Chapter 3.
-) (./Chapters/chapter4_tools_and_test_equipment_required.tex [3
+ []
 
-]
-Chapter 4.
-) (./Chapters/chapter5_program_stubs_and_test_data_required.tex [4
-
-]
-Chapter 5.
-) (./Chapters/OtherInfo.tex [5
-
-]
-Chapter 6.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 18.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 43.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
 )
+(./Chapters/chapter2_integration_strategy.tex [3]
+Chapter 2.
+) (./Chapters/chapter3_individual_steps_and_test_description.tex [4
 
+]
+Chapter 3.
+) (./Chapters/chapter4_tools_and_test_equipment_required.tex [5
+
+]
+Chapter 4.
+) (./Chapters/chapter5_program_stubs_and_test_data_required.tex [6
+
+]
+Chapter 5.
+) (./Chapters/OtherInfo.tex [7
+
+]
+Chapter 6.
+) 
 AED: lastpage setting LastPage
-[6
+[8
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
@@ -534,23 +574,23 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 8951 strings out of 493089
- 135407 string characters out of 6134841
- 334098 words of memory out of 5000000
- 12255 multiletter control sequences out of 15000+600000
- 33679 words of font info for 53 fonts, out of 8000000 for 9000
+ 8955 strings out of 493089
+ 135440 string characters out of 6134841
+ 336098 words of memory out of 5000000
+ 12256 multiletter control sequences out of 15000+600000
+ 35232 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,43p,455b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,43p,523b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (8 pages, 131983 bytes).
+Output written on main.pdf (10 pages, 141269 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
