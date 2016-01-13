@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  9 JAN 2016 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  13 JAN 2016 10:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -441,38 +441,70 @@ Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
 
-AED: lastpage setting LastPage
+LaTeX Warning: Reference `IndividualStepsAndTestDescription' on page 1 undefine
+d on input line 19.
+
+
+LaTeX Warning: Reference `ProgramStubsAndTestDataRequired' on page 1 undefined 
+on input line 27.
+
 [1
 
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 34.
 
-(./chapter2_Integration_strategy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Underfull \hbox (badness 10000) in paragraph at lines 36--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+[2] 
+AED: lastpage setting LastPage
+[3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+ (./chapter2_Integration_strategy.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `chapter2_Integration_strategy.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 545D1A34848B199EEE414FF1D202D82D;348.
+(rerunfilecheck)             Checksum: E1536B186E4CBD8E9E390E2EEBCE0E5D;513.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 8753 strings out of 493089
- 132456 string characters out of 6134841
- 332392 words of memory out of 5000000
- 12124 multiletter control sequences out of 15000+600000
- 11068 words of font info for 24 fonts, out of 8000000 for 9000
+ 8781 strings out of 493089
+ 133140 string characters out of 6134841
+ 335392 words of memory out of 5000000
+ 12144 multiletter control sequences out of 15000+600000
+ 16450 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,10n,45p,358b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,10n,45p,847b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on chapter2_Integration_strategy.pdf (1 page, 30574 bytes).
+2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on chapter2_Integration_strategy.pdf (3 pages, 53049 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

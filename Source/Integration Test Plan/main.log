@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  10 JAN 2016 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  13 JAN 2016 09:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -543,25 +543,25 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
 )
 (./Chapters/chapter2_integration_strategy.tex [3]
 Chapter 2.
-) (./Chapters/chapter3_individual_steps_and_test_description.tex [4
+[4
 
-]
+]) (./Chapters/chapter3_individual_steps_and_test_description.tex [5]
 Chapter 3.
-) (./Chapters/chapter4_tools_and_test_equipment_required.tex [5
+) (./Chapters/chapter4_tools_and_test_equipment_required.tex [6
 
 ]
 Chapter 4.
-) (./Chapters/chapter5_program_stubs_and_test_data_required.tex [6
+) (./Chapters/chapter5_program_stubs_and_test_data_required.tex [7
 
 ]
 Chapter 5.
-) (./Chapters/OtherInfo.tex [7
+) (./Chapters/OtherInfo.tex [8
 
 ]
 Chapter 6.
 ) 
 AED: lastpage setting LastPage
-[8
+[9
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
@@ -574,23 +574,23 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 8955 strings out of 493089
- 135440 string characters out of 6134841
+ 8956 strings out of 493089
+ 135446 string characters out of 6134841
  336098 words of memory out of 5000000
  12256 multiletter control sequences out of 15000+600000
  35232 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,43p,523b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,43p,871b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (10 pages, 141269 bytes).
+Output written on main.pdf (11 pages, 142965 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 152 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
