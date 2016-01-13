@@ -26,29 +26,68 @@ Up to now, no further components need to be integrated to perform integration te
 \label{IntegrationStrategy:IntegrationTestingStrategy}
 We have decided to test our system's interactions with a bottom-up approach. In the \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration} it is possible to see the components' order of implementation defined by us with specific criteria. As soon as two components are available, the tests associated to their interactions have to be applied. Before starting the development of the following part of the system, all the tests should be successful.\\ Obviously, to perform some tests, we need to use a \textit{non-available} component (it has not been implemented yet): to simulate this components we will use some particular program stubs, if any, and they will be described in detail in the \autoref{ProgramStubsAndTestDataRequired}.
 
-
 \section{Sequence of Component/Function Integration}
 \label{IntegrationStrategy:SequenceofComponent_FunctionIntegration}
 In this section we point out the features related to the order of the components' development. Which is our order of implementation? Why do we need to develop the component \textit{A} before \textit{B}? These two questions are fully discussed from now.
 
 \subsection{Software Integration Sequence}
 \label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence}
-\textit{HERE description of Client and User Handler order of implementation}\\
-\\
-\textit{and of Ride Allocator}\\
-\\
-The interactions inside these two subsystems are not tested in this project phase, but when the single components are implemented. In fact, each component is tested as soon as its first implementation has been completed and until all the tests are successful the development can not be considered done.\\
-This kind of tests are not defined in this document, but in a specific one called \textit{Unit Test Plan Document}, not available for \textit{myTaxiService}.
+The \textquotedblleft subsystems\textquotedblright\ of \textit{myTaxiService} are two, both important.\\
+The \textit{Client and User Handler} has the specific role to bind the users' requests with the corresponding services on the system by enqueueing the request on the dispatcher. Then it is able to show the results or to perform the following interactions of the involved service.\\
+To handle these operations it has three components, with the names \textit{Authentication}, \textit{ServiceShow} and \textit{ClientInterface}\footnote{To have a brief description of each of them read the Design Document.}. In the \textellipsis %here we will have the figure
+the order of implementation is shown\footnote{According to the Design Document the reader may expect to see all the interfaces of the Client and User Handler. To simplify the representation all the interfaces and the classes have been grouped and inserted into the related component.}.
 
-\subsection{Subsystem Integration Sequence}
-\label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SubsystemIntegrationSequence}
-In this section we will present the global interactions between the \textit{myTaxiService}'s core subsystems and we will define all the interactions tests and their order.\\
 \begin{center}
 	\fbox{
 		\centering
 		Opssssss!! Image not available. This is embarrassing!}
 \end{center}
 
+The \textit{Ride Allocator} handles all is related to a ride, so the cabmen queues, the driver's assignments and positions' identification (by a GPS coordinate or an address).\\
+A more precise description is available in the Design Document, as usual, whereas here we are interested only in the implementation order shown in %here we will have the figure
 
+\begin{center}
+	\fbox{
+		\centering
+		Opssssss!! Image not available. This is embarrassing!}
+\end{center}
+
+The interactions and the integration inside these two subsystems are not tested in this project phase, but when the single components are implemented. In fact, each component is tested as soon as its first implementation has been completed and until all the tests are successful the development can not be considered done.\\
+This kind of tests are defined in a dedicated document, called \textit{Unit Test Plan Document}, not available now for \textit{myTaxiService}.
+
+\subsection{Subsystem Integration Sequence}
+\label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SubsystemIntegrationSequence}
+In this section we will present the global interactions between the \textit{myTaxiService}'s core subsystems and we will define all the integration tests and their order.\\
+In the %figure reference
+we can see the components' implementation order, as we suppose it is better: first of all the DBMS, then, in this order, all related to data checking or handling, to the users, to the security, to the rides and, finally, the dispatcher (the most important component in our system).
+\begin{center}
+	\fbox{
+		\centering
+		Opssssss!! Image not available. This is embarrassing!}
+\end{center}
+
+\textbf{Integration tests.}\\
+\begin{table}
+	\centering
+	\begin{tabular}[!ht]{c|p{12cm}c}
+		ID & Integration test & \\ \hline
+		% Created DBMS
+		I1 &  \centering DBMS $\rightarrow$ System Controller - Dispatcher  & \\ \hline
+		I2 & \centering System Controller - Dispatcher $\rightarrow$ DBMS  & \\ \hline
+		% Created User Creator
+		I3 & \centering System Controller - Dispatcher $\rightarrow$ User Creator   & \\ \hline
+		% Created User Checker
+		I4 & \centering System Controller - Dispatcher $\rightarrow$ User Checker   & \\ \hline
+		% Created Client and User Handler
+		I5 & \centering Client and User Handler $\rightarrow$ System Controller - Dispatcher   & \\ \hline
+		I6 & \centering System Controller - Dispatcher $\rightarrow$ Client and User Handler   & \\ \hline
+		I7 & \centering Client and User Handler $\rightarrow$ User Checker   & \\ \hline
+		% Created Data Checker and Security Manager
+		I8 & \centering Client and User Handler $\rightarrow$ System Controller - Data Checker , Security Manager   & \\ \hline
+		% Created Ride Allocator
+		I9 & \centering System Controller - Dispatcher $\rightarrow$ Ride Allocator   & \\ \hline
+		I10 & \centering Ride Allocator $\rightarrow$ System Controller - Dispatcher , Client and User Handler   & \\ \hline
+	\end{tabular}
+\end{table}
 
 \end{document}

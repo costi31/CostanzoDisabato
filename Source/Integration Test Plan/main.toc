@@ -7,12 +7,14 @@
 \contentsline {section}{\numberline {1.4}Overall Description}{3}{section.1.4}
 \contentsline {chapter}{\numberline {2}Integration Strategy}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Entry Criteria}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Elements to be Integrated}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Elements to be Integrated}{4}{section.2.2}
 \contentsline {section}{\numberline {2.3}Integration Testing Strategy}{5}{section.2.3}
 \contentsline {section}{\numberline {2.4}Sequence of Component/Function Integration}{5}{section.2.4}
-\contentsline {chapter}{\numberline {3}Individual Steps and Test Description}{6}{chapter.3}
-\contentsline {chapter}{\numberline {4}Tools and Test Equipment Required}{7}{chapter.4}
-\contentsline {chapter}{\numberline {5}Program Stubs and Test Data Required}{8}{chapter.5}
-\contentsline {chapter}{\numberline {6}Other Info}{9}{chapter.6}
-\contentsline {section}{\numberline {6.1}Tools}{9}{section.6.1}
-\contentsline {section}{\numberline {6.2}Working hours}{9}{section.6.2}
+\contentsline {subsection}{\numberline {2.4.1}Software Integration Sequence}{5}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Subsystem Integration Sequence}{6}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}Individual Steps and Test Description}{8}{chapter.3}
+\contentsline {chapter}{\numberline {4}Tools and Test Equipment Required}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}Program Stubs and Test Data Required}{10}{chapter.5}
+\contentsline {chapter}{\numberline {6}Other Info}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Tools}{11}{section.6.1}
+\contentsline {section}{\numberline {6.2}Working hours}{11}{section.6.2}

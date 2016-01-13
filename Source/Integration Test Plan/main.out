@@ -8,9 +8,11 @@
 \BOOKMARK [1][-]{section.2.2}{Elements to be Integrated}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.3}{Integration Testing Strategy}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.4}{Sequence of Component/Function Integration}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Individual Steps and Test Description}{}% 11
-\BOOKMARK [0][-]{chapter.4}{Tools and Test Equipment Required}{}% 12
-\BOOKMARK [0][-]{chapter.5}{Program Stubs and Test Data Required}{}% 13
-\BOOKMARK [0][-]{chapter.6}{Other Info}{}% 14
-\BOOKMARK [1][-]{section.6.1}{Tools}{chapter.6}% 15
-\BOOKMARK [1][-]{section.6.2}{Working hours}{chapter.6}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{Software Integration Sequence}{section.2.4}% 11
+\BOOKMARK [2][-]{subsection.2.4.2}{Subsystem Integration Sequence}{section.2.4}% 12
+\BOOKMARK [0][-]{chapter.3}{Individual Steps and Test Description}{}% 13
+\BOOKMARK [0][-]{chapter.4}{Tools and Test Equipment Required}{}% 14
+\BOOKMARK [0][-]{chapter.5}{Program Stubs and Test Data Required}{}% 15
+\BOOKMARK [0][-]{chapter.6}{Other Info}{}% 16
+\BOOKMARK [1][-]{section.6.1}{Tools}{chapter.6}% 17
+\BOOKMARK [1][-]{section.6.2}{Working hours}{chapter.6}% 18
