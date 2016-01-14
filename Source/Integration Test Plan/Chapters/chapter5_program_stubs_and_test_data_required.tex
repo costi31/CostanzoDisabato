@@ -10,19 +10,51 @@
 \setmyfancystyle
 % ----------------
 
+This chapter is dedicated to a detailed description of each required program stub to the integration tests.\\
 
-%Stubs finora
-%
-% 1 Client Simulator
-%
-% uno per la MA e uno per il WS?
-%
-% di sicuro abbiamo bisogno di uno che simuli il driver e uno che simuli lo user
+\section{Program Stubs}
+\label{ProgramStubsAndTestDataRequired:ProgramStubs}
+
+The Integration Test of \textit{myTaxyService} requires four program stubs to perform some interactions with the external environment and/or components, like the database.
+
+\subsection{User Simulator}
+\label{ProgramStubsAndTestDataRequired:ProgramStubs:UserSimulator}
+
+The User Simulator is a stub able to act as a normal user. It offers the following methods:
+\begin{itemize}
+	\item \textit{register}, to simulate a registration with fixed data;
+	\item \textit{login}, to simulate a login with the same credentials defined in the registration phase;
+	\item \textit{profileManagement}, to simulate the management of the user's personal profile. The change is only one for each execution and it is fixed as for he user's data.
+	\item \textit{zerotimeReservation}, that accepts as parameter a GPS coordinate and an address. It simulate a booking of a zerotime ride. The starting position of the ride is given as in the case where the user has activated the GPS and, to be precise, that value is the one passed as parameter. 
+	\item \textit{futureReservation}, to perform a future ride booking. For each calling of the method the departure is exactly three hours after the current time, whereas the two addresses are the same passed as parameter to the method\footnote{Both for this method and for the previous one, the addresses are not fixed as other data. The reason for this choice is easy: we can simulate the booking with valid values, depending on the simulated city.}.\\
+\end{itemize}
+Note that the two remaining functionalities (check the reservations and read the alerts) are not provided by this stub.
+
+
+\subsection{Driver Simulator}
+\label{ProgramStubsAndTestDataRequired:ProgramStubs:DriverSimulator}
+
+The Driver Simulator is a stub able to act as a driver. It offers two main methods:
+\begin{itemize}
+	\item \textit{accept}, to simulate the System request for a ride's assignment. In each method invocation it is performed the action of accepting a ride. An other version of this method, called \textit{randomRide} can either accept or deny a ride, if someone wants to test this specific case.
+	\item \textit{startWaiting}, that accepts a GPS position and with this value it simulates the \textit{Start Waiting Time} functionality.
+\end{itemize}
+Note that the working hours handling is not provided.
+
+\subsection{DataBase Stub}
+\label{ProgramStubsAndTestDataRequired:ProgramStubs:DataBaseStub}
+
+This stub is able to work as a real database for the other components. The methods offered by this stub allow to save and receive data as in a real interaction: in the former case the fake database perform no actions, whereas in the latter case fixed data are returned by each method. We do not point out on each method definition: to have an idea see the DBMS interface into the Design Document and imagine an application of them to the rides' data. 
+
+
+\subsection{Dispatcher Stub}
+\label{ProgramStubsAndTestDataRequired:ProgramStubs:DispatcherStub}
+
+TO BE WRITTEN
+
 %
 % 2 Dispatcher Simulator
 % Finchè non è implementato abbiamo bisogno di un componente semplice che chiami la funzione da noi passata come parametro. In alternativa si possono passare i due componenti tra cui far passare la richiesta. Boh vediamo.
-%
-% 3 DataBase simulator. Abbiamo bisogno di qualcosa che finga di ricevere e salvare i dati e poi restituisca dei valori standard quando richiesto! Questo quando il DBMS è coinvolto in qualche simulazione.
 %
 %
 
