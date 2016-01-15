@@ -10,12 +10,12 @@
 \setmyfancystyle
 % ----------------
 
-In this chapter the integration strategy will be described. In the \autoref{IntegrationStrategy:EntryCriteria} the prerequisites for the tests will be presented. In the \autoref{IntegrationStrategy:ElementsToBeIntegrated} is dedicated to the required and further components to be integrated in the system to execute some tests.\\
-Finally in the \autoref{IntegrationStrategy:IntegrationTestingStrategy} and in the \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration} the strategy used to test the integrations will be discussed with paying attention to the order.
+In this chapter the integration strategy will be described. In the \autoref{IntegrationStrategy:EntryCriteria} the prerequisites for the tests will be presented. The \autoref{IntegrationStrategy:ElementsToBeIntegrated} is dedicated to the required components to be integrated in the system to execute some tests.\\
+Finally in the sections \ref{IntegrationStrategy:IntegrationTestingStrategy} and \ref{IntegrationStrategy:SequenceofComponent_FunctionIntegration} the strategy used to test the integrations will be discussed, paying attention to the order.
 
 \section{Entry Criteria}
 \label{IntegrationStrategy:EntryCriteria}
-The criteria which are required to perform each test are easy. The involved components (and eventually needed program stubs) must have been developed and fully tested before executing the integration test.\\
+The criteria which are required to perform each test are easy. The involved components (and eventually needed program stubs) must be developed and fully tested before executing the integration test.\\
 In addition, for some test, further preconditions may be required. These prerequisites will not be described here, but in the \autoref{IndividualStepsAndTestDescription}, dedicated to test's description.
 
 \section{Elements to be Integrated}
@@ -33,9 +33,11 @@ In this section we point out the features related to the order of the components
 \subsection{Software Integration Sequence}
 \label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence}
 The \textquotedblleft subsystems\textquotedblright\ of \textit{myTaxiService} are two, both important.\\
-The \textit{Client and User Handler} has the specific role to bind the users' requests with the corresponding services on the system by enqueueing the request on the dispatcher. Then it is able to show the results or to perform the following interactions of the involved service.\\
+The \textit{Client and User Handler} has the specific role to bind the users' requests to the corresponding services on the system by enqueueing the request on the dispatcher. Then it is able to show the results or to perform the following interactions of the involved service.\\
 To handle these operations it has three components, with the names \textit{Authentication}, \textit{ServiceShow} and \textit{ClientInterface}\footnote{To have a brief description of each of them read the Design Document.}. In the \textellipsis %here we will have the figure
 the order of implementation is shown\footnote{According to the Design Document the reader may expect to see all the interfaces of the Client and User Handler. To simplify the representation all the interfaces and the classes have been grouped and inserted into the related component.}.
+
+\clearpage % I must add this command here to prevent the footnotes going on the next page
 
 \begin{center}
 	\fbox{
@@ -43,7 +45,7 @@ the order of implementation is shown\footnote{According to the Design Document t
 		Opssssss!! Image not available. This is embarrassing!}
 \end{center}
 
-The \textit{Ride Allocator} handles all is related to a ride, so the cabmen queues, the driver's assignments and positions' identification (by a GPS coordinate or an address).\\
+The \textit{Ride Allocator} handles everything that is related to a ride, so the taxy drivers' queues, their assignments and the identification of their positions (by GPS coordinates or an address).\\
 A more precise description is available in the Design Document, as usual, whereas here we are interested only in the implementation order shown in %here we will have the figure
 
 \begin{center}
