@@ -5,16 +5,21 @@
 \contentsline {section}{\numberline {1.2}List of Definitions and Abbreviations}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}List of Reference Documents}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Overall Description}{3}{section.1.4}
-\contentsline {chapter}{\numberline {2}Integration Strategy}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Entry Criteria}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Elements to be Integrated}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Integration Testing Strategy}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Sequence of Component/Function Integration}{5}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Software Integration Sequence}{5}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Subsystem Integration Sequence}{6}{subsection.2.4.2}
-\contentsline {chapter}{\numberline {3}Individual Steps and Test Description}{8}{chapter.3}
-\contentsline {chapter}{\numberline {4}Tools and Test Equipment Required}{9}{chapter.4}
-\contentsline {chapter}{\numberline {5}Program Stubs and Test Data Required}{10}{chapter.5}
-\contentsline {chapter}{\numberline {6}Other Info}{11}{chapter.6}
-\contentsline {section}{\numberline {6.1}Tools}{11}{section.6.1}
-\contentsline {section}{\numberline {6.2}Working hours}{11}{section.6.2}
+\contentsline {chapter}{\numberline {2}Integration Strategy}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Entry Criteria}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Elements to be Integrated}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Integration Testing Strategy}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Sequence of Component/Function Integration}{6}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Software Integration Sequence}{6}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Subsystem Integration Sequence}{7}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}Individual Steps and Test Description}{9}{chapter.3}
+\contentsline {chapter}{\numberline {4}Tools and Test Equipment Required}{10}{chapter.4}
+\contentsline {chapter}{\numberline {5}Program Stubs and Test Data Required}{12}{chapter.5}
+\contentsline {section}{\numberline {5.1}Program Stubs}{12}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}User Simulator}{12}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Driver Simulator}{13}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}DataBase Stub}{13}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Dispatcher Stub}{14}{subsection.5.1.4}
+\contentsline {chapter}{\numberline {6}Other Info}{15}{chapter.6}
+\contentsline {section}{\numberline {6.1}Tools}{15}{section.6.1}
+\contentsline {section}{\numberline {6.2}Working hours}{15}{section.6.2}

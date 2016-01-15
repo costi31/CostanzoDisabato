@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  15 JAN 2016 09:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  15 JAN 2016 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**chapter5_program_stubs_and_test_data_required.tex
-(./chapter5_program_stubs_and_test_data_required.tex
+**chapter4_tools_and_test_equipment_required.tex
+(./chapter4_tools_and_test_equipment_required.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.cls
@@ -339,8 +339,8 @@ Package: subfiles 2012/05/23 Federico Garcia
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )))
-(./chapter5_program_stubs_and_test_data_required.aux)
-\openout1 = `chapter5_program_stubs_and_test_data_required.aux'.
+(./chapter4_tools_and_test_equipment_required.aux)
+\openout1 = `chapter4_tools_and_test_equipment_required.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -362,10 +362,10 @@ LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
 
-(./chapter5_program_stubs_and_test_data_required.out)
-(./chapter5_program_stubs_and_test_data_required.out)
+(./chapter4_tools_and_test_equipment_required.out)
+(./chapter4_tools_and_test_equipment_required.out)
 \@outlinefile=\write5
-\openout5 = `chapter5_program_stubs_and_test_data_required.out'.
+\openout5 = `chapter4_tools_and_test_equipment_required.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -441,76 +441,87 @@ Package lastpage Info: Please have a look at the pageslts package at
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 13.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+LaTeX Warning: Reference `Introduction' on page 1 undefined on input line 13.
 
+
+LaTeX Warning: Reference `ProgramStubsAndTestDataRequired' on page 1 undefined 
+on input line 14.
+
+<../Figures/mockito.png, id=8, 803.0pt x 401.5pt>
+File: ../Figures/mockito.png Graphic file (type png)
+ <use ../Figures/mockito.png>
+Package pdftex.def Info: ../Figures/mockito.png used on input line 18.
+(pdftex.def)             Requested size: 113.80379pt x 56.9055pt.
+
+Overfull \hbox (3.761pt too wide) in paragraph at lines 21--23
+\T1/ppl/m/n/12 Further in-for-ma-tion about this tool are avail-able at its web
+-site, \T1/ppl/m/n/10 http://arquillian.org. 
  []
 
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 20.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 25.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
- [1
+<../Figures/arquillian.png, id=10, 200.75pt x 74.2775pt>
+File: ../Figures/arquillian.png Graphic file (type png)
 
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 29.
+<use ../Figures/arquillian.png>
+Package pdftex.def Info: ../Figures/arquillian.png used on input line 26.
+(pdftex.def)             Requested size: 153.80603pt x 56.9055pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 29.
-
-Overfull \hbox (9.97388pt too wide) in paragraph at lines 29--30
-\T1/ppl/m/n/12 whereas the two ad-dresses are the same passed as pa-ram-e-ter t
-o the method[][][]. 
- []
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+LaTeX Warning: Reference `ProgramStubsAndTestDataRequired' on page 1 undefined 
+on input line 29.
 
- []
+[1
 
-[2] 
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../Figu
+res/mockito.png> <../Figures/arquillian.png>]
+<../Figures/jmeter.jpg, id=24, 182.6825pt x 88.33pt>
+File: ../Figures/jmeter.jpg Graphic file (type jpg)
+
+<use ../Figures/jmeter.jpg>
+Package pdftex.def Info: ../Figures/jmeter.jpg used on input line 33.
+(pdftex.def)             Requested size: 117.69131pt x 56.9055pt.
+ 
 AED: lastpage setting LastPage
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
- (./chapter5_program_stubs_and_test_data_required.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
-Package rerunfilecheck Info: File `chapter5_program_stubs_and_test_data_require
-d.out' has not changed.
-(rerunfilecheck)             Checksum: 92CA153E3DFE5D925E01827F0D3F0B24;400.
+[2 <../Figures/jmeter.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
+ (./chapter4_tools_and_test_equipment_required.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+Package rerunfilecheck Info: File `chapter4_tools_and_test_equipment_required.o
+ut' has not changed.
+(rerunfilecheck)             Checksum: 4C9D17F5500767B5B9A070B1F2F13E75;68.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 8814 strings out of 493089
- 133683 string characters out of 6134841
- 335408 words of memory out of 5000000
- 12165 multiletter control sequences out of 15000+600000
- 22257 words of font info for 43 fonts, out of 8000000 for 9000
+ 8780 strings out of 493089
+ 132853 string characters out of 6134841
+ 334405 words of memory out of 5000000
+ 12137 multiletter control sequences out of 15000+600000
+ 17904 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,10n,45p,522b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,10n,45p,684b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on chapter5_program_stubs_and_test_data_required.pdf (3 pages, 6
-0464 bytes).
+exlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on chapter4_tools_and_test_equipment_required.pdf (2 pages, 1983
+01 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 24 words of extra memory for PDF output out of 10000 (max. 10000000)
 
