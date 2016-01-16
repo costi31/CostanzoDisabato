@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  15 JAN 2016 11:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  16 JAN 2016 15:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,21 +468,49 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 37.
  [2]
+<../Figures/ClientHandlerSequence.pdf, id=55, 495.65173pt x 95.75775pt>
+File: ../Figures/ClientHandlerSequence.pdf Graphic file (type pdf)
+
+<use ../Figures/ClientHandlerSequence.pdf>
+Package pdftex.def Info: ../Figures/ClientHandlerSequence.pdf used on input lin
+e 43.
+(pdftex.def)             Requested size: 418.25368pt x 80.80853pt.
+
 Overfull \hbox (9.37317pt too wide) in paragraph at lines 48--50
 \T1/ppl/m/n/12 A more pre-cise de-scrip-tion is avail-able in the De-sign Doc-u
 -ment, as usual, whereas
  []
 
+<../Figures/RideAllocatorSequence.pdf, id=57, 325.215pt x 97.5645pt>
+File: ../Figures/RideAllocatorSequence.pdf Graphic file (type pdf)
 
+<use ../Figures/RideAllocatorSequence.pdf>
+Package pdftex.def Info: ../Figures/RideAllocatorSequence.pdf used on input lin
+e 53.
+(pdftex.def)             Requested size: 325.2142pt x 97.56424pt.
+ [3
+
+ <../Figures/ClientHandlerSequence.pdf> <../Figures/RideAllocatorSequence.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../Figures/RideAllocatorSequence.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] <../Figures/IntegrationTestOrder.pdf, id=100, 587.79597pt x 408.92775pt>
+File: ../Figures/IntegrationTestOrder.pdf Graphic file (type pdf)
+
+<use ../Figures/IntegrationTestOrder.pdf>
+Package pdftex.def Info: ../Figures/IntegrationTestOrder.pdf used on input line
+ 68.
+(pdftex.def)             Requested size: 418.25368pt x 290.98341pt.
+ [4 <../Figures/IntegrationTestOrder.pdf>] 
 AED: lastpage setting LastPage
-[3
+[5
 
-] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
  (./chapter2_Integration_strategy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
 Package rerunfilecheck Info: File `chapter2_Integration_strategy.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: E1536B186E4CBD8E9E390E2EEBCE0E5D;513.
@@ -492,10 +520,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8816 strings out of 494957
- 132868 string characters out of 6180027
- 332735 words of memory out of 5000000
- 11922 multiletter control sequences out of 15000+600000
+ 8843 strings out of 494957
+ 134170 string characters out of 6180027
+ 330735 words of memory out of 5000000
+ 11939 multiletter control sequences out of 15000+600000
  23706 words of font info for 45 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  47i,11n,45p,847b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -504,10 +532,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
 alatino/uplri8a.pfb>
-Output written on chapter2_Integration_strategy.pdf (4 pages, 65940 bytes).
+Output written on chapter2_Integration_strategy.pdf (5 pages, 414732 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 72 words of extra memory for PDF output out of 10000 (max. 10000000)
 

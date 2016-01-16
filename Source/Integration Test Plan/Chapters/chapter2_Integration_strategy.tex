@@ -34,25 +34,26 @@ In this section we point out the features related to the order of the components
 \label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence}
 The \textquotedblleft subsystems\textquotedblright\ of \textit{myTaxiService} are two, both important.\\
 The \textit{Client and User Handler} has the specific role to bind the users' requests to the corresponding services on the system by enqueueing the request on the dispatcher. Then it is able to show the results or to perform the following interactions of the involved service.\\
-To handle these operations it has three components, with the names \textit{Authentication}, \textit{ServiceShow} and \textit{ClientInterface}\footnote{To have a brief description of each of them read the Design Document.}. In the \textellipsis %here we will have the figure
-the order of implementation is shown\footnote{According to the Design Document the reader may expect to see all the interfaces of the Client and User Handler. To simplify the representation all the interfaces and the classes have been grouped and inserted into the related component.}.
+To handle these operations it has three components, with the names \textit{Authentication}, \textit{ServiceShow} and \textit{ClientInterface}\footnote{To have a brief description of each of them read the Design Document.}. In the \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:ClientHandlerSequence} the order of implementation is shown\footnote{According to the Design Document the reader may expect to see all the interfaces of the Client and User Handler. To simplify the representation all the interfaces and the classes have been grouped and inserted into the related component.}.
 
 \clearpage % I must add this command here to prevent the footnotes going on the next page
 
-\begin{center}
-	\fbox{
-		\centering
-		Opssssss!! Image not available. This is embarrassing!}
-\end{center}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{ClientHandlerSequence}
+	\caption{Integration Sequence of Client and User Handler}
+	\label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:ClientHandlerSequence}
+\end{figure}
 
 The \textit{Ride Allocator} handles everything that is related to a ride, so the taxy drivers' queues, their assignments and the identification of their positions (by GPS coordinates or an address).\\
-A more precise description is available in the Design Document, as usual, whereas here we are interested only in the implementation order shown in %here we will have the figure
+A more precise description is available in the Design Document, as usual, whereas here we are interested only in the implementation order shown in \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:RideAllocatorSequence}
 
-\begin{center}
-	\fbox{
-		\centering
-		Opssssss!! Image not available. This is embarrassing!}
-\end{center}
+\begin{figure}[h]
+	\centering
+	\includegraphics{RideAllocatorSequence}
+	\caption{Integration Sequence of Ride Allocator}
+	\label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:RideAllocatorSequence}
+\end{figure}
 
 The interactions and the integration inside these two subsystems are not tested in this project phase, but when the single components are implemented. In fact, each component is tested as soon as its first implementation has been completed and until all the tests are successful the development can not be considered done.\\
 This kind of tests are defined in a dedicated document, called \textit{Unit Test Plan Document}, not available now for \textit{myTaxiService}.
@@ -60,16 +61,19 @@ This kind of tests are defined in a dedicated document, called \textit{Unit Test
 \subsection{Subsystem Integration Sequence}
 \label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SubsystemIntegrationSequence}
 In this section we will present the global interactions between the \textit{myTaxiService}'s core subsystems and we will define all the integration tests and their order.\\
-In the %figure reference
-we can see the components' implementation order, as we suppose it is better: first of all the DBMS, then, in this order, all related to data checking or handling, to the users, to the security, to the rides and, finally, the dispatcher (the most important component in our system).
-\begin{center}
-	\fbox{
-		\centering
-		Opssssss!! Image not available. This is embarrassing!}
-\end{center}
+In the \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:IntegrationTestOrder} we can see the components' implementation order, as we suppose it is better: first of all the DBMS, then, in this order, all related to data checking or handling, to the users, to the security, to the rides and, finally, the dispatcher (the most important component in our system).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{IntegrationTestOrder}
+	\caption{Integration Test Order}
+	\label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:IntegrationTestOrder}
+\end{figure}
+
+\clearpage
 
 \textbf{Integration tests.}\\
-\begin{table}
+\begin{table}[h]
 	\centering
 	\begin{tabular}[!ht]{c|p{12cm}c}
 		ID & Integration test & \\ \hline
