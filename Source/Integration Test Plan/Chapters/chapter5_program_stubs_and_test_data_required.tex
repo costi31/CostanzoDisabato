@@ -49,16 +49,6 @@ This stub is able to work as a real database for the other components. The metho
 \subsection{Dispatcher Stub}
 \label{ProgramStubsAndTestDataRequired:ProgramStubs:DispatcherStub}
 
-TO BE WRITTEN
-
-%
-% 2 Dispatcher Simulator
-% Finchè non è implementato abbiamo bisogno di un componente semplice che chiami la funzione da noi passata come parametro. In alternativa si possono passare i due componenti tra cui far passare la richiesta. Boh vediamo.
-%
-%
-
-
-
-
+This stub is able to act as the real System Dispatcher. The methods offered by this stub allow to enqueue the requests coming from other components and replies to the first request in the queue by simulating a fixed response for each possible method. In other words we provide the simplest answer for each method, without interacting with other components: for instance, when the Client and User Handler asks for a ride, the stubs gives a generic positive answer without really interacting with the Ride Allocator.
 
 \end{document}

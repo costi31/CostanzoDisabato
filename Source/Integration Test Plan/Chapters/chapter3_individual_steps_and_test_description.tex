@@ -82,14 +82,14 @@ In this chapter we are going to fully describe each test, pointing out the pre- 
 	\hline  Test Case Identifier & I5\\ 
 	\hline  Components Involved & Client and User Handler $\rightarrow$ System Controller - Dispatcher\\ 
 	\hline  Input Specifications & We want to simulate all kinds of user's request.\\ 
-	\hline  Purposes & We test the way each request is enqueued in the dispatcher, thus the method called and the parameters specification.\\
-	\hline  Output Specifications & Check if a request is correctly enqueued.\\ 
-	\hline  Environment Needed & System Dispatcher Stub.\\ 
+	\hline  Purposes & We test the way each request is enqueued in the dispatcher, thus the method called and the parameters specification. Then we test the following interactions for each request.\\
+	\hline  Output Specifications & Check if a request is correctly enqueued and handled in the right way.\\ 
+	\hline  Environment Needed & System Dispatcher Stub. Note that the exceptions or the alternative execution flows (for instance when a wrong data is inserted by the user and the system has to notify it) cannot be tested because the stub gives fixed and positive answers without performing any actions.\\ 
 	\hline 
 \end{tabular} 
 
 
-\section{Client and User Handler $\rightarrow$ User Checker , Security Manager}
+\section{Client and User Handler $\rightarrow$ User Checker, Security Manager}
 
 \begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
 	\hline  Test Case Identifier & I6\\ 
