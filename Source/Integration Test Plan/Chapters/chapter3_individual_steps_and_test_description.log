@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  18 JAN 2016 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  18 JAN 2016 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**chapter1_introduction.tex
-(./chapter1_introduction.tex
+**chapter3_individual_steps_and_test_description.tex
+(./chapter3_individual_steps_and_test_description.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.cls
@@ -339,8 +339,8 @@ Package: subfiles 2012/05/23 Federico Garcia
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )))
-(./chapter1_introduction.aux)
-\openout1 = `chapter1_introduction.aux'.
+(./chapter3_individual_steps_and_test_description.aux)
+\openout1 = `chapter3_individual_steps_and_test_description.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -361,10 +361,11 @@ Package hyperref Info: Link coloring OFF on input line 4.
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
- (./chapter1_introduction.out)
-(./chapter1_introduction.out)
+
+(./chapter3_individual_steps_and_test_description.out)
+(./chapter3_individual_steps_and_test_description.out)
 \@outlinefile=\write5
-\openout5 = `chapter1_introduction.out'.
+\openout5 = `chapter3_individual_steps_and_test_description.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -441,111 +442,275 @@ Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 19.
 
-Overfull \hbox (8.84508pt too wide) in paragraph at lines 17--33
-\T1/ppl/m/n/12 scribe the se-quence of my-TaxiS-er-vice com-po-nent's im-ple-me
-n-ta-tion. The se-quence
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 19.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 21.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 28.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+
+Underfull \hbox (badness 3009) in paragraph at lines 28--29
+[]\T1/ppl/m/n/12 monitors the proper queu-ing of re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--33
-
+Underfull \hbox (badness 2057) in paragraph at lines 33--34
+[]\T1/ppl/m/n/12 System Dis-patcher Stub. DataBas-eS-tub, to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--33
-
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 21--36
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--33
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 37.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 37.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 37.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[]\T1/ppl/m/n/12 We check the cor-rect-ness of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--33
-
+Underfull \hbox (badness 2057) in paragraph at lines 50--51
+[]\T1/ppl/m/n/12 System Dis-patcher Stub. DataBas-eS-tub, to
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 53.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--33
-
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 39--54
+[][]
  []
 
 [1
 
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 55.
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 63--64
+\T1/ppl/m/n/12 Cre-ator re-turns the cre-ated user and the
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 42.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
+
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 57--66
+[][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 67.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 67.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 67.
+
+
+Underfull \hbox (badness 6032) in paragraph at lines 71--72
+[]\T1/ppl/m/n/12 System Con-troller - Dis-patcher $\OMS/cmsy/m/n/12 !$ \T1/ppl/
+m/n/12 User
+ []
+
+
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 69--78
+[][] 
+ []
+
+[2]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 81--90
+[][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 92.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 92.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 92.
+
+
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 94--103
+[][] 
+ []
+
+[3]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 104.
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 113--114
+[]\T1/ppl/m/n/12 check the re-quest of en-cryp-tion of a
+ []
+
+
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 106--120
+[][] 
+ []
+
+[4]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 123--132
+[][] 
+ []
+
+[5]
+Overfull \hbox (2.66695pt too wide) in paragraph at lines 133--133
+[]\T1/ppl/b/n/17.28 Ride Al-lo-ca-tor $\OMS/cmsy/m/n/17.28 !$ \T1/ppl/b/n/17.28
+ Sys-tem Con-troller - Dis-patcher,
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 133.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 133.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 133.
+
+
+Overfull \hbox (0.51898pt too wide) in paragraph at lines 135--144
+[][] 
+ []
+
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 146.
+
+LaTeX Warning: Reference `IntegrationStrategy' on page 6 undefined on input lin
+e 146.
 
 
-LaTeX Warning: Reference `IntegrationStrategy' on page 3 undefined on input lin
-e 52.
+LaTeX Warning: Reference `ProgramStubsAndTestDataRequired' on page 6 undefined 
+on input line 146.
 
 
-LaTeX Warning: Reference `IndividualStepsAndTestDescription' on page 3 undefine
-d on input line 53.
+LaTeX Warning: Reference `ProgramStubsAndTestDataRequired' on page 6 undefined 
+on input line 148.
 
-
-LaTeX Warning: Reference `ToolsAndTestEquipmentRequired' on page 3 undefined on
- input line 54.
-
-
-LaTeX Warning: Reference `ProgramStubsAndTestDataRequired' on page 3 undefined 
-on input line 54.
-
-
+[6] 
 AED: lastpage setting LastPage
-[3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
- (./chapter1_introduction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
-Package rerunfilecheck Info: File `chapter1_introduction.out' has not changed.
-(rerunfilecheck)             Checksum: 879F778ADB0413763B4F0EE83BD35278;331.
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+ (./chapter3_individual_steps_and_test_description.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Package rerunfilecheck Info: File `chapter3_individual_steps_and_test_descripti
+on.out' has not changed.
+(rerunfilecheck)             Checksum: EA7B2633CB98A8BACE290B8FD4307E0E;1054.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8796 strings out of 493089
- 132887 string characters out of 6134841
- 336384 words of memory out of 5000000
- 12157 multiletter control sequences out of 15000+600000
- 16190 words of font info for 32 fonts, out of 8000000 for 9000
+ 8825 strings out of 493089
+ 133352 string characters out of 6134841
+ 337409 words of memory out of 5000000
+ 12165 multiletter control sequences out of 15000+600000
+ 22240 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,10n,45p,499b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,13n,45p,481b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on chapter1_introduction.pdf (4 pages, 63568 bytes).
+Output written on chapter3_individual_steps_and_test_description.pdf (7 pages, 
+67616 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

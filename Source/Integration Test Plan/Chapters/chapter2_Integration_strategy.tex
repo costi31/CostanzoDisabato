@@ -36,8 +36,6 @@ The \textquotedblleft subsystems\textquotedblright\ of \textit{myTaxiService} ar
 The \textit{Client and User Handler} has the specific role to bind the users' requests to the corresponding services on the system by enqueueing the request on the dispatcher. Then it is able to show the results or to perform the following interactions of the involved service.\\
 To handle these operations it has three components, with the names \textit{Authentication}, \textit{ServiceShow} and \textit{ClientInterface}\footnote{To have a brief description of each of them read the Design Document.}. In the \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:ClientHandlerSequence} the order of implementation is shown\footnote{According to the Design Document the reader may expect to see all the interfaces of the Client and User Handler. To simplify the representation all the interfaces and the classes have been grouped and inserted into the related component.}.
 
-\clearpage % I must add this command here to prevent the footnotes going on the next page
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{ClientHandlerSequence}
@@ -86,13 +84,12 @@ In the \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration:Soft
 		I4 & \centering System Controller - Dispatcher $\rightarrow$ User Checker   & \\ \hline
 		% Created Client and User Handler
 		I5 & \centering Client and User Handler $\rightarrow$ System Controller - Dispatcher   & \\ \hline
-		I6 & \centering System Controller - Dispatcher $\rightarrow$ Client and User Handler   & \\ \hline
-		I7 & \centering Client and User Handler $\rightarrow$ User Checker   & \\ \hline
+		I6 & \centering Client and User Handler $\rightarrow$ User Checker , Security Manager   & \\ \hline
 		% Created Data Checker and Security Manager
-		I8 & \centering Client and User Handler $\rightarrow$ System Controller - Data Checker , Security Manager   & \\ \hline
+		I7 & \centering Client and User Handler $\rightarrow$ System Controller - Data Checker , Security Manager   & \\ \hline
 		% Created Ride Allocator
-		I9 & \centering System Controller - Dispatcher $\rightarrow$ Ride Allocator   & \\ \hline
-		I10 & \centering Ride Allocator $\rightarrow$ System Controller - Dispatcher , Client and User Handler   & \\ \hline
+		I8 & \centering System Controller - Dispatcher $\rightarrow$ Ride Allocator   & \\ \hline
+		I9 & \centering Ride Allocator $\rightarrow$ System Controller - Dispatcher , Client and User Handler   & \\ \hline
 	\end{tabular}
 \end{table}
 

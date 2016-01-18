@@ -11,15 +11,25 @@
 \contentsline {section}{\numberline {2.3}Integration Testing Strategy}{6}{section.2.3}
 \contentsline {section}{\numberline {2.4}Sequence of Component/Function Integration}{6}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Software Integration Sequence}{6}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Subsystem Integration Sequence}{8}{subsection.2.4.2}
-\contentsline {chapter}{\numberline {3}Individual Steps and Test Description}{11}{chapter.3}
-\contentsline {chapter}{\numberline {4}Tools and Test Equipment Required}{12}{chapter.4}
-\contentsline {chapter}{\numberline {5}Program Stubs and Test Data Required}{14}{chapter.5}
-\contentsline {section}{\numberline {5.1}Program Stubs}{14}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}User Simulator}{14}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Driver Simulator}{15}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}DataBase Stub}{15}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Dispatcher Stub}{16}{subsection.5.1.4}
-\contentsline {chapter}{\numberline {6}Other Info}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}Working hours}{17}{section.6.1}
-\contentsline {section}{\numberline {6.2}Tools}{18}{section.6.2}
+\contentsline {subsection}{\numberline {2.4.2}Subsystem Integration Sequence}{7}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}Individual Steps and Test Description}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}DBMS $\rightarrow $ System Controller - Dispatcher}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}System Controller - Dispatcher $\rightarrow $ DBMS}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}System Controller - Dispatcher $\rightarrow $ User Creator}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}System Controller - Dispatcher $\rightarrow $ User Checker}{12}{section.3.4}
+\contentsline {section}{\numberline {3.5}Client and User Handler $\rightarrow $ System Controller - Dispatcher}{12}{section.3.5}
+\contentsline {section}{\numberline {3.6}Client and User Handler $\rightarrow $ User Checker , Security Manager}{13}{section.3.6}
+\contentsline {section}{\numberline {3.7}Client and User Handler $\rightarrow $ System Controller - Data Checker , Security Manager}{14}{section.3.7}
+\contentsline {section}{\numberline {3.8}System Controller - Dispatcher $\rightarrow $ Ride Allocator}{15}{section.3.8}
+\contentsline {section}{\numberline {3.9}Ride Allocator $\rightarrow $ System Controller - Dispatcher, Client and User Handler}{15}{section.3.9}
+\contentsline {section}{\numberline {3.10}System functionalities test.}{16}{section.3.10}
+\contentsline {chapter}{\numberline {4}Tools and Test Equipment Required}{17}{chapter.4}
+\contentsline {chapter}{\numberline {5}Program Stubs and Test Data Required}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Program Stubs}{19}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}User Simulator}{19}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Driver Simulator}{20}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}DataBase Stub}{20}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Dispatcher Stub}{21}{subsection.5.1.4}
+\contentsline {chapter}{\numberline {6}Other Info}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}Working hours}{22}{section.6.1}
+\contentsline {section}{\numberline {6.2}Tools}{23}{section.6.2}

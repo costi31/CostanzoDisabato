@@ -9,21 +9,143 @@
 % Command to be executed after the starting of every chapter
 \setmyfancystyle
 % ----------------
+% Command to increase  the space between the columns in all the tables of this chapter
+%\setlength{\tabcolsep}{15pt}
+%----------------
 
 
+In this chapter we are going to fully describe each test, pointing out the pre- and the post-conditions, the purposes and the environment needed.
 
-% I1 accodare una richiesta? Discuterne
-% I2 Chiamare i metodi corretti del DBMS
-% I3 corretta chiamata della creazione
-% I4 check ok per i vari tipi di user..
-% I5 corretto accodamento
-% I6 corretta risposta agli errori? Corretta gestione di altre risposte
-% I7 corretta chiamata delle identificazioni
-% I8 corretto check dei dati prima di inviare richiesta, corretto riconoscimento di una password e successiva richiesta di criptazione e corretta richiesta di modalità sicure.
-% I9 corrette chiamate
-% I10 risposta a una corsa correttamente invocata!
+\section{DBMS $\rightarrow$ System Controller - Dispatcher}
+
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	
+	\hline  Test Case Identifier & I1\\ 
+	\hline  Components Involved & DBMS $\rightarrow$ System Controller - Dispatcher\\ 
+	\hline  Input Specifications & Create all possible requests by the DBMS.\\ 
+	\hline  Purposes & The purposes of this test are:
+								 	\begin{itemize}
+										 	\item monitors the proper queuing of requests.
+											\item simulates a request generation.
+
+									\end{itemize}\\
+	\hline  Output Specifications & Check that the request are put into the dispatcher's queue only when they are generated.\\ 
+	\hline  Environment Needed & System Dispatcher Stub. DataBaseStub, to simulate the interactions between the DBMS and the database.\\ 
+	\hline 
+\end{tabular} 
+
+\section{System Controller - Dispatcher $\rightarrow$ DBMS}
+
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	\hline  Test Case Identifier & I2\\ 
+	\hline  Components Involved & System Controller - Dispatcher $\rightarrow$ DBMS\\ 
+	\hline  Input Specifications & We should generate typical data, but in this case it is sufficient to generate desired data for each DBMS interface method\footnotemark\\ 
+	\hline  Purposes & The purposes of this test are:
+										\begin{itemize}
+											\item find a data.
+											\item saves data into the database.
+											\item add/remove data from the database.
+										\end{itemize}\\
+	\hline  Output Specifications & We check the correctness of the searched/modified/added/removed data\\
+	\hline  Environment Needed & System Dispatcher Stub. DataBaseStub, to simulate the interactions between the DBMS and the database.\\ 
+	\hline 
+\end{tabular} 
+\footnotetext{see the section 2.6 of the Design Document.}
+
+\section{System Controller - Dispatcher $\rightarrow$ User Creator}
+
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	\hline  Test Case Identifier & I3\\ 
+	\hline  Components Involved & System Controller - Dispatcher $\rightarrow$ User Creator\\ 
+	\hline  Input Specifications & None.\\ 
+	\hline  Purposes & We want to test the creation of each kind of user.\\ 
+	\hline  Output Specifications & Checks if a user is correctly created.\\ 
+	\hline  Environment Needed & System Dispatcher Stub. Note that the User Creator returns the created user and the dispatcher has the role to save it into the database.\\ 
+	\hline 
+\end{tabular} 
+
+\section{System Controller - Dispatcher $\rightarrow$ User Checker}
+
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	\hline  Test Case Identifier & I4\\ 
+	\hline  Components Involved & System Controller - Dispatcher $\rightarrow$ User Checker\\ 
+	\hline  Input Specifications & We want to create each kind of user.\\ 
+	\hline  Purposes & We want to test the correct identification of the users. in the following way. First we pass a correct type of user, then a wrong type and the component should detect both cases.\\ 
+	\hline  Output Specifications & Check if correct result is given.\\ 
+	\hline  Environment Needed & System Dispatcher Stub. User Creator to create the users.\\ 
+	\hline 
+\end{tabular} 
+
+\section{Client and User Handler $\rightarrow$ System Controller - Dispatcher}
+
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	\hline  Test Case Identifier & I5\\ 
+	\hline  Components Involved & Client and User Handler $\rightarrow$ System Controller - Dispatcher\\ 
+	\hline  Input Specifications & We want to simulate all kinds of user's request.\\ 
+	\hline  Purposes & We test the way each request is enqueued in the dispatcher, thus the method called and the parameters specification.\\
+	\hline  Output Specifications & Check if a request is correctly enqueued.\\ 
+	\hline  Environment Needed & System Dispatcher Stub.\\ 
+	\hline 
+\end{tabular} 
 
 
+\section{Client and User Handler $\rightarrow$ User Checker , Security Manager}
 
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	\hline  Test Case Identifier & I6\\ 
+	\hline  Components Involved & Client and User Handler $\rightarrow$ User Checker , Security Manager\\ 
+	\hline  Input Specifications & We simulate different user's requests.\\ 
+	\hline  Purposes & The purpose of this group of tests is to check the correct authentication procedure, thus if for each request generated by the user, the Client and User Handler tries to identify it. The tests are several: we start from login (both user and driver) to check the shown homepage/services; then we check various request to verify if an additional check is performed before the interaction with the dispatcher.\\
+	\hline  Output Specifications & Check if the correct methods into the User Checker are called and check the results.\\ 
+	\hline  Environment Needed & System Dispatcher Stub to simulate the requests' queuing. User stub to simulate the interactions with the external world (both the stubs have fixed behaviour for each actions, but they are useful to be identified.). \\ 
+	\hline 
+\end{tabular} 
+
+\section{Client and User Handler $\rightarrow$ System Controller - Data Checker , Security Manager}
+
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	\hline  Test Case Identifier & I7\\ 
+	\hline  Components Involved & Client and User Handler $\rightarrow$ System Controller - Data Checker , Security Manager\\ 
+	\hline  Input Specifications & Possible inputs by users, both valid and invalid.\\ 
+	\hline  Purposes & The purposes are:
+									\begin{itemize}
+										\item check the invocation of data checking procedures on each kind of input.
+										\item check the request of encryption of a password only.
+										\item check the secure connection request during a login.
+									\end{itemize}\\ 
+	\hline  Output Specifications & Checks the identification of data errors (invalid emails, names, surnames or the presence of SQL injection). Check if the encryption is called after a password insertion. Check the invocation of secure connections.\\ 
+	\hline  Environment Needed & User stub to simulate the interactions with the external world.\\ 
+	\hline 
+\end{tabular}
+
+\section{System Controller - Dispatcher $\rightarrow$ Ride Allocator}
+
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	\hline  Test Case Identifier & I8\\ 
+	\hline  Components Involved & System Controller - Dispatcher $\rightarrow$ Ride Allocator\\ 
+	\hline  Input Specifications & We create a ride request into the System Dispatcher.\\ 
+	\hline  Purposes & We want to test if the correct methods inside the Ride Allocator are called. \\ 
+	\hline  Output Specifications & Checks the correct methods invocation  inside the Ride Allocator, ignoring the effects of the calls.\\ 
+	\hline  Environment Needed & Here, the System Dispatcher has been implemented.\\ 
+	\hline 
+\end{tabular} 
+
+\section{Ride Allocator $\rightarrow$ System Controller - Dispatcher, Client and User Handler}
+
+\begin{tabular}[!ht]{l@{\hspace{1cm}}p{8.5cm}}
+	\hline  Test Case Identifier & I9\\ 
+	\hline  Components Involved & Ride Allocator $\rightarrow$ System Controller - Dispatcher , Client and User Handler\\ 
+	\hline  Input Specifications & We want to simulate the rides' booking.\\ 
+	\hline  Purposes & We want to simulate all the ride's booking procedure, both for a future ride and for a zerotime ride. In the latter case we test all the assignment procedure.\\ 
+	\hline  Output Specifications & Check if the correct driver is called, check the correct methods invocations and check the system answers in each phase.\\ 
+	\hline  Environment Needed & User and Driver stubs to simulate the requests.\\ 
+	\hline 
+\end{tabular}
+
+\section{System functionalities test.}
+Finally, in the \autoref{IntegrationStrategy} we do not focus on the services handling, because the System Dispatcher is the last developed component. In each test where this component is not available, it has been simulated by an appropriate stub defined in the \autoref{ProgramStubsAndTestDataRequired}.\\
+Now, we want to check the correctness of each service. These tests are not described here because they are related only to one component functionalities, even if it interacts with some other components. Furthermore, these tests are described in the Unit Test Document, not available for \textit{myTaxyService}.\\
+To have an idea, with the stubs described in the \autoref{ProgramStubsAndTestDataRequired}
+each service will be tested independently, knowing that each other involved component works correctly\footnote{This is the reason why these tests are unit ones and not integration ones.}.
 
 \end{document}
