@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  21 JAN 2016 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  21 JAN 2016 23:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,21 +565,26 @@ Package pdftex.def Info: Figures/table/weights.pdf used on input line 48.
  [4] [5 <./Figures/table/complexity.pdf> <./Figures/table/weights.pdf>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 55.
-) (./Chapters/chapter3_Project_Schedule.tex [6
+ [6
 
-] [7]
+]
+Overfull \hbox (0.5311pt too wide) in paragraph at lines 83--95
+[] 
+ []
+
+) (./Chapters/chapter3_Project_Schedule.tex [7] [8]
 Chapter 3.
-) (./Chapters/chapter4_project_risks.tex [8
+) (./Chapters/chapter4_project_risks.tex [9
 
 ]
 Chapter 4.
-) (./Chapters/OtherInfo.tex [9
+) (./Chapters/OtherInfo.tex [10
 
 ]
 Chapter 5.
 ) 
 AED: lastpage setting LastPage
-[10
+[11
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
@@ -592,13 +597,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
  ) 
 Here is how much of TeX's memory you used:
- 9009 strings out of 493089
- 135768 string characters out of 6134841
+ 9010 strings out of 493089
+ 135775 string characters out of 6134841
  336098 words of memory out of 5000000
  12291 multiletter control sequences out of 15000+600000
  40514 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,43p,530b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,43p,530b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
@@ -606,10 +611,10 @@ xlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
 f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (13 pages, 274080 bytes).
+Output written on main.pdf (14 pages, 275648 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
