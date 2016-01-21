@@ -34,7 +34,7 @@ In this section we point out the features related to the order of the components
 \subsection{Software Integration Sequence}
 \label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence}
 The \textquotedblleft subsystems\textquotedblright\ of \textit{myTaxiService} are two, both important.\\
-The \textit{Client and User Handler} has the specific role to bind the users' requests to the corresponding services on the system by enqueueing the request on the dispatcher. Then it is able to show the results or to perform the following interactions of the involved service.\\
+The \textit{Client and User Handler} has the specific role to bind the users' requests to the corresponding services on the system by enqueuing the request on the dispatcher. Then it is able to show the results or to perform the following interactions of the involved service.\\
 To handle these operations it has three components, with the names \textit{Authentication}, \textit{ServiceShow} and \textit{ClientInterface}\footnote{To have a brief description of each of them read the Design Document.}. In the \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:ClientHandlerSequence} the order of implementation is shown\footnote{According to the Design Document the reader may expect to see all the interfaces of the Client and User Handler. To simplify the representation all the interfaces and the classes have been grouped and inserted into the related component.}.
 
 \begin{figure}[h]
@@ -44,7 +44,7 @@ To handle these operations it has three components, with the names \textit{Authe
 	\label{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:ClientHandlerSequence}
 \end{figure}
 
-The \textit{Ride Allocator} handles everything that is related to a ride, so the taxy drivers' queues, their assignments and the identification of their positions (by GPS coordinates or an address).\\
+The \textit{Ride Allocator} handles everything that is related to a ride, so the taxi drivers' queues, their assignments and the identification of their positions (by GPS coordinates or an address).\\
 A more precise description is available in the Design Document, as usual, whereas here we are interested only in the implementation order shown in \autoref{IntegrationStrategy:SequenceofComponent_FunctionIntegration:SoftwareIntegrationSequence:RideAllocatorSequence}
 
 \begin{figure}[h]
