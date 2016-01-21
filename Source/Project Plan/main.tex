@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\providecommand{\mainpath}{.} % Command to retrieve the path of the main file. It must be defined before documentclass.
+
+\documentclass[12pt]{report} 
+
+\input{\mainpath/preamble}
+
+%\externaldocument[RASD:]{\mainpath/../RASD/chapters/requirements}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\huge \bf{Politecnico di Milano}}\\[0.5cm]
+\textsf{\Large Department of Electronics, Information and Bioengineering}\\[0.25cm] % Major heading such as course name
+\textsf{\large Master Degree course in Computer Science Engineering}\\[0.5cm] % Minor heading such as course title
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 3 cm]{Figures/PoliMi}
+\end{figure}
+
+
+\HRule \\
+
+\LARGE \textbf {Project Plan (PD)} \\[0.2cm]
+\large \textit {myTaxiService}
+\\ % Title of your document
+\HRule \\
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=2cm]{logo3}
+\end{figure}
+
+\begin{flushleft}
+	\large \textit{Instructor:} Prof. Elisabetta Di Nitto \\[0.5cm]
+
+	\begin{minipage}{0.45\textwidth}
+	\begin{flushleft} \large
+	\emph{Authors:}\\
+	Luca Luciano Costanzo\\
+	Simone Disabato
+	\end{flushleft}
+	\end{minipage}
+	~
+	\begin{minipage}{0.45\textwidth}
+	\begin{flushright} \large
+	\emph{Code:} \\
+	789038\\
+	852863
+	\end{flushright}
+	\end{minipage} \\[1cm]
+
+\end{flushleft} 
+
+{\large Document version 1.0, released on \today} % Date, change the \today to a set date if you want to be precise
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\pagestyle{plain}
+\pagenumbering{Roman}
+
+\tableofcontents % Include a table of contents
+
+\cleardoublepage
+
+\setmyfancystyle
+\pagenumbering{arabic}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTERS
+%----------------------------------------------------------------------------------------
+
+%Introduction
+\subfile{Chapters/chapter1_introduction}
+
+%Project Estimation
+\subfile{Chapters/chapter2_Project_estimation}
+
+% ProjectSchedule
+\subfile{Chapters/chapter3_Project_Schedule}
+
+%Project Risks
+\subfile{Chapters/chapter4_project_risks}
+
+%Other info
+\subfile{Chapters/OtherInfo}
+
+\end{document}

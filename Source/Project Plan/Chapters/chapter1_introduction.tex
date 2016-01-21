@@ -1,0 +1,50 @@
+\providecommand{\mainpath}{..} % Command to retrieve the path of the main file. It must be defined before documentclass.
+
+\documentclass[\mainpath/main]{subfiles}
+\begin{document}
+
+\begin{abstract}
+	 The global scope of the project follows, as it has been explained in the previous documents,   to make the document easy to understand.\\
+	 Users, once registered, are able to ask for an immediate ride or to book one of them.\\
+	 \\
+	 The system provides the user with a complete map of the city and its suburbs within the taxi service is available. The current position of the user is obtained by localization services of the user's smartphone if it's possible, otherwise the user notifies his position directly on the map with a marker or by a searching box. The destination is also chosen either graphically or by a research. The user can view the suggested path and then he must confirm the request.\\
+	 When a user asks for a ride, the system checks the availability of a taxi driver near the current position, by splitting the city in several areas and using a FIFO (First In First Out) policy to manage the assignment of the ride's driver. The selected driver can accept or decline the ride. In the former case the system informs the user about waiting time, estimated travelling time, prices and cab car-code. \\
+	 The system gives also the possibility to book a ride with at least two hours in advance. As the user does when he asks for a ride, he selects the desired starting venue and the destination. Afterwards, the system gives a calendar where the customer can choose the date (at most 30 days in advance) and the starting hour. Ten minutes before the meeting time the system starts all the operations described before in order to assign a taxi-driver.\\
+	 A reservation from the app or the website can be undone until the system confirmation of the availability of a taxi, while a booking can be cancelled at most fifteen minutes before the meeting hour.\\
+	 After those deadlines the ride is considered bought by the customers and an eventual absence on the established venue forbids other possibilities to book or to take a ride.
+\end{abstract}
+
+\chapter{Introduction} % First chapter
+\label{Introduction}
+
+% Command to be executed after the starting of every chapter
+\setmyfancystyle
+% ----------------
+
+In this chapter the purpose of the document will be presented in the \autoref{Introduction:Purpose}. Then, other useful information are made available, for instance the list of definitions and abbreviations and the reference documents. Finally, in the \autoref{Introduction:Overall} an overall description of the document structure will be presented.
+
+\section{Purpose}
+\label{Introduction:Purpose}
+The purposes of this document are principally two. The first one is to estimate the project size, the effort and the cost, by using some algorithmic procedures. Second, a schedule and a plan for the document (partially retroactive, since this section should have been written in parallel with the Requirements Analysis and Specification Document), having a detailed analysis of team's member availability, the risks associated to the project and the associated recovery actions.
+
+\section{List of Definitions and Abbreviations}
+\label{Introduction:DefinitionsAndAbbrevations}
+\textit{Up to now, no definitions or acronyms or abbreviation have been used in the document. Hence, this section is empty.}
+
+\section{List of Reference Documents}
+\label{Introduction:ReferenceDocuments}
+The reference documents are now listed. Note that, all the documents related on the \textit{myTaxyService} project are written by the same authors of this one, whereas the other documents have a reference of their author when this information is available.\\
+\begin{itemize}
+	\item Software Engineering 2 Project, AA 2015-2016 Assignments 4 - Test plan (available on beep platform only for registered students of Politecnico of Milan);
+	\item The Requirements Analysis and Specification Document (RASD) for \textit{myTaxiService} - v1.2, released on 6th November 2015;
+	\item The Design Document (DD) for \textit{myTaxiService} - v1.0, released on 4th December 2015;
+	\item The Integration Test Plan Document (ITPD) for \textit{myTaxiService} - v1.01, released on 21th January 2016.
+\end{itemize}
+
+\section{Overall Description}
+\label{Introduction:Overall}
+The estimations concerning the project are presented in the \autoref{ProjectEstimation}, with two algorithmic techniques: the Function Points (FP) to (typically under-) evaluate the project size and the COnstructive COst MOdel (COCOMO) to estimate the project effort and the costs.\\
+The \autoref{ProjectSchedule} is reserved to the project schedule presentation and to the assignment of each task to a project's developer.\\
+Finally, the \autoref{ProjectRisks} the risks of the project and the related actions will be presented.
+
+\end{document}
