@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.1.6}Final Results}{9}{subsection.2.1.6}
 \contentsline {section}{\numberline {2.2}Effort Estimation (COCOMO II)}{10}{section.2.2}
 \contentsline {chapter}{\numberline {3}Project Schedule}{11}{chapter.3}
-\contentsline {chapter}{\numberline {4}Project Risks}{12}{chapter.4}
-\contentsline {chapter}{\numberline {5}Other Info}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Working hours}{13}{section.5.1}
-\contentsline {section}{\numberline {5.2}Tools}{13}{section.5.2}
+\contentsline {chapter}{\numberline {4}Project Risks}{13}{chapter.4}
+\contentsline {chapter}{\numberline {5}Other Info}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}Working hours}{14}{section.5.1}
+\contentsline {section}{\numberline {5.2}Tools}{14}{section.5.2}

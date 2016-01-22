@@ -1,12 +1,21 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  22 JAN 2016 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  22 JAN 2016 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**chapter3_Project_Schedule.tex
+(./chapter3_Project_Schedule.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/report.cls
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2012/05/23 Federico Garcia
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+)
+Preamble taken from file `../main'
+(../main.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -23,8 +32,9 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./preamble.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperr
-ef.sty
+)
+(../preamble.tex
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -67,22 +77,25 @@ Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
 Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen103
@@ -183,7 +196,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutheight=\dimen119
 \Gm@layouthoffset=\dimen120
 \Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks15
+\Gm@dimlist=\toks17
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -235,7 +248,7 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\AC@clearlist=\toks16
+\AC@clearlist=\toks18
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -246,8 +259,8 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
@@ -258,9 +271,9 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count107
-\float@exts=\toks19
+\float@exts=\toks21
 \float@box=\box26
-\@float@everytoks=\toks20
+\@float@everytoks=\toks22
 \@floatcapt=\box27
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
@@ -268,7 +281,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \WF@size=\dimen126
 \c@WF@wrappedlines=\count108
 \WF@box=\box28
-\WF@everypar=\toks21
+\WF@everypar=\toks23
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
@@ -281,7 +294,7 @@ Package: fancyvrb 2008/02/07
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
 \FV@CodeLineNo=\count110
-\FV@InFile=\read1
+\FV@InFile=\read2
 \FV@TabBox=\box29
 \c@FancyVerbLine=\count111
 \FV@StepNumber=\count112
@@ -305,7 +318,7 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip53
 \enit@outerparindent=\dimen127
-\enit@toks=\toks22
+\enit@toks=\toks24
 \enit@inbox=\box30
 \enitdp@description=\count113
 )
@@ -322,41 +335,36 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks23
-\verbatim@line=\toks24
-\verbatim@in@stream=\read2
-)))
+))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
-) (./main.aux)
-\openout1 = `main.aux'.
+)))
+(./chapter3_Project_Schedule.aux)
+\openout1 = `chapter3_Project_Schedule.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 26.
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
-
-(./main.out) (./main.out)
+Package hyperref Info: Link coloring OFF on input line 4.
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
+ (./chapter3_Project_Schedule.out)
+(./chapter3_Project_Schedule.out)
 \@outlinefile=\write5
-\openout5 = `main.out'.
+\openout5 = `chapter3_Project_Schedule.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -427,163 +435,29 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 26.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 42.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 43.
+(lastpage)             ! on input line 4.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 43.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 43.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 44.
-
-<Figures/PoliMi.pdf, id=80, 578.20877pt x 578.08434pt>
-File: Figures/PoliMi.pdf Graphic file (type pdf)
-
-<use Figures/PoliMi.pdf>
-Package pdftex.def Info: Figures/PoliMi.pdf used on input line 48.
-(pdftex.def)             Requested size: 85.35826pt x 85.33286pt.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 54.
- <Figures/logo3.png, id=81, 124.465pt x 244.915pt>
-File: Figures/logo3.png Graphic file (type png)
-
-<use Figures/logo3.png>
-Package pdftex.def Info: Figures/logo3.png used on input line 61.
-(pdftex.def)             Requested size: 56.9055pt x 111.97836pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 73.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 73.
- [1
-
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Figur
-es/PoliMi.pdf> <./Figures/logo3.png>] (./main.toc
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
-)
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
-
-[1
-
-
-] (./Chapters/chapter1_introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--15
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.15 \end{abstract}
-                    [1
-
-]
 Chapter 1.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 26.
-
-Overfull \hbox (6.20613pt too wide) in paragraph at lines 28--29
-\T1/ppl/m/n/12 Anal-y-sis and Spec-i-fi-ca-tion Doc-u-ment), hav-ing a de-taile
-d anal-y-sis of team's mem-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.38 	\item
-            Software Engineering 2 Project, AA 2015-2016 Assignments 4 - Tes...
-[1
-
-]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 38.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 42.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Overfull \hbox (21.52084pt too wide) in paragraph at lines 42--43
-\T1/pcr/m/n/12 edu / csse / research / COCOMOII / cocomo2000 . 0 / CII _ modelm
-an2000 .
- []
-
-) (./Chapters/chapter2_Project_estimation.tex [2]
-Chapter 2.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 27.
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 14.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
 
-Underfull \hbox (badness 1248) in paragraph at lines 34--34
-[]\T1/ppl/m/n/12 Count each unique input-output com-bi-na-
- []
+LaTeX Warning: Reference `ProjectEstimation:EffortEstimation' on page 1 undefin
+ed on input line 14.
 
-
-Overfull \hbox (14.4777pt too wide) in paragraph at lines 27--36
-[] 
- []
-
-[3
-
-] <Figures/table/complexity.pdf, id=149, 269.2167pt x 303.97948pt>
-File: Figures/table/complexity.pdf Graphic file (type pdf)
-
-<use Figures/table/complexity.pdf>
-Package pdftex.def Info: Figures/table/complexity.pdf used on input line 41.
-(pdftex.def)             Requested size: 269.21603pt x 303.97873pt.
-
-<Figures/table/weights.pdf, id=151, 290.04843pt x 110.96146pt>
-File: Figures/table/weights.pdf Graphic file (type pdf)
-
-<use Figures/table/weights.pdf>
-Package pdftex.def Info: Figures/table/weights.pdf used on input line 48.
-(pdftex.def)             Requested size: 290.04771pt x 110.96117pt.
- [4] [5 <./Figures/table/complexity.pdf> <./Figures/table/weights.pdf>]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 55.
- [6
-
-]
-Overfull \hbox (8.05042pt too wide) in paragraph at lines 79--87
-[] 
- []
-
-[7]
-Overfull \hbox (8.05042pt too wide) in paragraph at lines 98--109
-[] 
- []
-
-[8]
-Underfull \hbox (badness 1552) in paragraph at lines 136--136
-[]\T1/ppl/m/n/12 UFP to SLOC Con-
- []
-
-) (./Chapters/chapter3_Project_Schedule.tex [9] [10]
-Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
@@ -634,9 +508,10 @@ Overfull \hbox (19.48329pt too wide) in paragraph at lines 16--24
 [][]
  []
 
-[11
+[1
 
-]
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (9.74849pt too wide) in paragraph at lines 28--28
 []\T1/ppl/m/n/12 Worker(s)| 
  []
@@ -667,51 +542,43 @@ Underfull \hbox (badness 5288) in paragraph at lines 31--32
  []
 
 
-Overfull \hbox (19.48329pt too wide) in paragraph at lines 27--39
+Overfull \hbox (19.48329pt too wide) in paragraph at lines 27--38
 [][] 
  []
 
-) (./Chapters/chapter4_project_risks.tex [12
 
-]
-Chapter 4.
-) (./Chapters/OtherInfo.tex [13
-
-]
-Chapter 5.
-) 
 AED: lastpage setting LastPage
-[14
+[2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2BDC21037CD5F16CDE47314DB28F98A9;1214.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
+ (./chapter3_Project_Schedule.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+Package rerunfilecheck Info: File `chapter3_Project_Schedule.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: 1DB22B4F372076C0ABE45AD4F7C9FC7D;51.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 9018 strings out of 493089
- 135863 string characters out of 6134841
- 337098 words of memory out of 5000000
- 12292 multiletter control sequences out of 15000+600000
- 40514 words of font info for 63 fonts, out of 8000000 for 9000
+ 8773 strings out of 493089
+ 132317 string characters out of 6134841
+ 335388 words of memory out of 5000000
+ 12134 multiletter control sequences out of 15000+600000
+ 18842 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,43p,530b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,13n,45p,476b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (17 pages, 281934 bytes).
+exlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on chapter3_Project_Schedule.pdf (2 pages, 39123 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 35 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
