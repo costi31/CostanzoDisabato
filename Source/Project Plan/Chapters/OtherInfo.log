@@ -1,23 +1,23 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  25 JAN 2016 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.16)  25 JAN 2016 20:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **OtherInfo.tex
 (./OtherInfo.tex
 LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.cls
+Babel <3.9l> and hyphenation patterns for 4 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2012/05/23 Federico Garcia
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks14
 \verbatim@line=\toks15
 \verbatim@in@stream=\read1
 )
 Preamble taken from file `../main'
-(../main.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/base/report.cls
+(../main.tex (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -32,16 +32,15 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(../preamble.tex
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (../preamble.tex
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
@@ -81,33 +80,33 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 
 
 Package auxhook Warning: Cannot patch \document,
 (auxhook)                using \AtBeginDocument instead.
 
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen103
 \Hy@linkcounter=\count88
 \Hy@pagecounter=\count89
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count90
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -119,7 +118,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count91
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -144,12 +143,12 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver: hpdftex.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count96
 \c@bookmark@seq@number=\count97
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -158,18 +157,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 11.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count98
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen107
@@ -183,7 +182,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count99
 Package caption Info: hyperref package is loaded.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count100
 \Gm@cntv=\count101
@@ -198,31 +197,31 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks17
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count103
 ))
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen124
 \extrarowheight=\dimen125
@@ -238,13 +237,13 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@cols=\count104
 \TX@ftn=\toks19
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2014/09/25 3.9l The Babel package
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count105
 \U@D=\dimen131
@@ -253,14 +252,14 @@ File: babel.def 2014/09/25 3.9l Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/acronym/acronym.sty
+(/usr/share/texlive/texmf-dist/tex/latex/acronym/acronym.sty
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/bigfoot/suffix.sty
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
 \integerpart=\count106
 \decimalpart=\count107
@@ -269,25 +268,25 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 \AC@clearlist=\toks20
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks21
 \inpenc@posthook=\toks22
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/latin1.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/indentfirst.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count108
 \float@exts=\toks23
@@ -295,7 +294,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box27
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen132
 \WF@size=\dimen133
 \c@WF@wrappedlines=\count109
@@ -303,11 +302,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \WF@everypar=\toks25
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count110
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
@@ -319,7 +318,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \FV@StepNumber=\count113
 \FV@OutFile=\write4
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip46
 \f@ncyO@elh=\skip47
 \f@ncyO@erh=\skip48
@@ -330,10 +329,10 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \f@ncyO@olf=\skip53
 \f@ncyO@orf=\skip54
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/lastpage/lastpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip55
 \enit@outerparindent=\dimen134
@@ -341,21 +340,21 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box30
 \enitdp@description=\count114
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/helvet.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/courier.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 72.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ppl.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/subfiles/subfiles.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 ))) (./OtherInfo.aux)
 \openout1 = `OtherInfo.aux'.
@@ -379,6 +378,7 @@ Package hyperref Info: Link coloring OFF on input line 4.
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
+
 (./OtherInfo.out) (./OtherInfo.out)
 \@outlinefile=\write5
 \openout5 = `OtherInfo.out'.
@@ -422,7 +422,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
 \scratchdimen=\dimen135
@@ -435,10 +435,10 @@ Package caption Info: End \AtBeginDocument code.
 \MPnumerator=\count119
 \makeMPintoPDFobject=\count120
 \everyMPtoPDFconversion=\toks28
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -446,7 +446,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -466,7 +466,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 18.
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 35.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
@@ -477,29 +477,28 @@ AED: lastpage setting LastPage
 [1
 
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
-
-(./OtherInfo.aux)
+ (./OtherInfo.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `OtherInfo.out' has not changed.
 (rerunfilecheck)             Checksum: F108F48B70B2677A9C1F65B6994B64DA;155.
  ) 
 Here is how much of TeX's memory you used:
- 8881 strings out of 493089
- 133517 string characters out of 6134841
- 336212 words of memory out of 5000000
- 12237 multiletter control sequences out of 15000+600000
+ 8881 strings out of 494957
+ 132834 string characters out of 6180027
+ 331555 words of memory out of 5000000
+ 11994 multiletter control sequences out of 15000+600000
  15112 words of font info for 34 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 36 hyphenation exceptions out of 8191
  47i,10n,45p,338b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on OtherInfo.pdf (1 page, 41783 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/palatino/uplr8a.pfb>
+Output written on OtherInfo.pdf (1 page, 41792 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream

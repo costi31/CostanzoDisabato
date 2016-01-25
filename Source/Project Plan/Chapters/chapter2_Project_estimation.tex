@@ -235,13 +235,136 @@ The results are resumed below:
 		\hline 
 	\end{tabular} 
 	\begin{tabular}{|L{10.43cm}|C{2cm}|}
-		\hline \textbf{Total} & 11.92 \\
+		\hline \textbf{Total} & \textbf{11.92} \\
 		\hline
 	\end{tabular}
 \end{table}
 
 
 \subsection{Cost Drivers}
+The factor \textbf{EAF} in equation \ref{ProjectEstimation:effort-equation} is the product of seventeen Post-Architecture effort multipliers used in COCOMO II model to adjust the nominal effort, Person-Months, to reflect the software product under
+development. We will describe each of the multipliers and compute the corresponding value for our project. The values are obtained from the tables in the official COCOMO II Model 2000.0 and we do not report them here.  
 
+\begin{enumerate}
+	\item \textbf{Required Software Reliability (RELY)}:\\
+	This is the measure of the extent to which the software must perform its intended
+	function over a period of time. If the effect of a software failure is only slight inconvenience
+	then RELY is very low. If a failure would risk human life then RELY is very high.\\
+	This factor for myTaxiService has value \textit{Nominal} (1.00).
+	
+	\item \textbf{Data Base Size (DATA)}:\\
+	This cost driver attempts to capture the effect large test data requirements have on
+	product development. The rating is determined by calculating D/P, the ratio of bytes in the
+	testing database to SLOC (Source Lines Of Code) in the program.\\
+	Since we desire to have a \textit{Nominal} value (1.00) in this section (the database is one of the most important parts of our system) and we have a dimension in the order of SLOC near 6000\footnote{See the \autoref{ProjectEstimation:ProjectSize} to have two possible precise estimations for an OO programming language.}, we need a database dimension in the order of 6000*25 ~ 150 KB, where 25 is a \textit{Nominal} rate for the division D/SLOC (D = Database dimension).
+	
+	\item \textbf{Product Complexity (CPLX)}:\\
+	Complexity is divided into five areas: control operations, computational operations,
+	device-dependent operations, data management operations, and user interface management
+	operations. The complexity rating is the subjective weighted
+	average of the selected area ratings.\\
+	The value of this factor for our project is High (1.07).
+	
+	\item \textbf{Developed for Reusability (RUSE)}:\\
+	This cost driver accounts for the additional effort needed to construct components intended for reuse on current or future projects. Our application can be used by cab companies (and consequently the customers) of many cities or countries. Thus this value of reusability is intended as \textquotedblleft across product line \textquotedblright\ and set to \textit{Very High} (1.15).
+	
+	\item \textbf{Documentation Match to Life-Cycle Needs (DOCU)}:\\
+	Several software cost models have a cost driver for the level of required documentation.	In COCOMO II, the rating scale for the DOCU cost driver is evaluated in terms of the suitability of the project's documentation to its life-cycle needs. Our project is well documented during it's life-cycle, hence this value is \textit{Nominal} (1.00).
+	
+	\item \textbf{Execution Time Constraint (TIME)}:\\
+	This is a measure of the execution time constraint imposed upon a software system. The rating is expressed in terms of the percentage of available execution time expected to be used by the system or subsystem consuming the execution time resource. The rating ranges from nominal, less than 50\% of the execution time resource used, to extra high, 95\% of the execution time resource is consumed.\\
+	The execution time of myTaxyService operations is supposed to be less than 50\% of the total available time, in normal conditions, because for instance a ride should be rapidly assigned to a driver when a customer asks for it. Hence the value of this factor is \textit{Nominal} (1.00).
+	
+	\item \textbf{Main Storage Constraint (STOR)}:\\
+	This rating represents the degree of main storage constraint imposed on a software system or subsystem. The rating	ranges from nominal (less than 50\%), to extra high (95\%). The use of storage by myTaxiService should be less than 50\%, so the value is \textit{Nominal} (1.00).
+	
+	\item \textbf{Platform Volatility (PVOL)}:\\
+	In our application we can consider as platforms the DBMS, the operating system, the distributed information repositories, the browser, the web server, the Google Maps APIs and the hardware as far as the environment concerns. The platforms could change frequently (especially the Google Maps APIs), hence this value is \textit{Nominal} (1.00).
+	
+	\item \textbf{Analyst Capability (ACAP)}:\\
+	Analysts are personnel who work on requirements, high-level design and detailed design. The major attributes that should be considered in this rating are analysis and design ability, efficiency and thoroughness, and the ability to communicate and cooperate.\\
+	We have analysed any possible scenario of using of myTaxiService and any problem that may occur. The requirements have been correctly satisfied with the solutions described both in the RASD and DD. This value is set to \textit{Very High} (0.71).
+	
+	\item \textbf{Programmer Capability (PCAP)}:\\
+	This value is based on the capability of the programmers as a team rather than as individuals. Major factors which should be considered in the rating are ability, efficiency and thoroughness, and the ability to communicate and cooperate.\\
+	We have worked together efficiently and we have equally split the work between us. Hence the value for this factor is \textit{Very High} (0.76).
+	
+	\item \textbf{Personnel Continuity (PCON)}:\\
+	The rating scale for PCON is in terms of the project's annual personnel turnover: from 3\%, very high continuity, to 48\%, very low continuity. Since we are the only two people working on this project this value is set to \textit{Very High} continuity (0.81).
+	
+	\item \textbf{Applications Experience (APEX)}:\\
+	The rating for this cost driver (formerly labeled AEXP) is dependent on the level of	applications experience of the project team developing the software system or subsystem. The ratings are defined in terms of the project team's equivalent level of experience with this type of application. Since we haven't realised before this kind of commercial, distributed and multi-platform system (accessible both via website and smartphone), the value of this scale factor is \textit{Very Low} (1.22).
+	
+	\item \textbf{Platform Experience (PLEX)}:\\
+	The Post-Architecture model broadens the productivity influence of platform experience, PLEX (formerly labeled PEXP), by recognizing the importance of understanding the use of more	powerful platforms, including more graphic user interface, database, networking, and distributed	middleware capabilities.\\
+	Our knowledge about the aforementioned platforms is about one year and half, hence this value is set to \textit{Nominal} (1.00).
+	
+	\item \textbf{Language and Tool Experience (LTEX)}:\\
+	This is a measure of the level of programming language and software tool experience of the project team developing the software system or subsystem. Software development includes the use of tools that perform requirements and design representation and analysis, configuration
+	management, document extraction, library management, program style and formatting, consistency checking, planning and control, etc.\\
+	This value is set to \textit{Nominal} (1.00).\\
+	
+	\item \textbf{Use of Software Tools (TOOL)}:\\
+	The tool rating ranges from simple edit and code, to
+	integrated life-cycle management tools. We used StarUML to develop the diagrams (class diagram, sequence diagrams, statecharts, UX and so on) of the application and other tools useful for the design and representation of the architecture, such as Microsoft Visio and MySQL Workbench, and finally Git for the repository management. Thus this value is set to \textit{Nominal} (1.00).
+	
+	\item \textbf{Multisite Development (SITE)}:\\
+	This parameter reflects how we handled the distribution of development over distance and multiple platforms. We've used phones and chat, so this value is set to \textit{Nominal} (1.00).
+	
+	\item \textbf{Required Development Schedule (SCED)}:\\
+	This rating measures the schedule constraint imposed on the project team developing the	software. The ratings are defined in terms of the percentage of schedule stretch-out or acceleration with respect to a nominal schedule for a project requiring a given amount of effort.\\
+	Our efforts were well distributed over the available development time, hence this value is set to \textit{Nominal} (1.00).
+	\\
+	
+\end{enumerate}
+
+\clearpage
+
+The results are resumed below:
+\begin{table}[h]
+	\begin{tabular}{|L{8.5cm}|C{2.5cm}|C{2cm}|}
+		\hline \textbf{Cost Driver} & \textbf{Factor} & \textbf{Value} \\
+		\hline Required Software Reliability (RELY) & Nominal & 1.00 \\
+		\hline Data Base Size (DATA) & Nominal & 1.00 \\
+		\hline Product Complexity (CPLX) & High & 1.07 \\
+		\hline Developed for Reusability (RUSE) & Very High & 1.15 \\
+		\hline Documentation Match to Life-Cycle Needs (DOCU) & Nominal & 1.00 \\
+		\hline Execution Time Constraint (TIME) & Nominal & 1.00 \\
+		\hline Main Storage Constraint (STOR) & Nominal & 1.00 \\
+		\hline Platform Volatility (PVOL) & Nominal & 1.00 \\
+		\hline Analyst Capability (ACAP) & Very High & 0.71 \\
+		\hline Programmer Capability (PCAP) & Very High & 0.76 \\
+		\hline Personnel Continuity (PCON) & Very High & 0.81 \\
+		\hline Applications Experience (APEX) & Very Low & 1.22 \\
+		\hline Platform Experience (PLEX) & Nominal & 1.00 \\
+		\hline Language and Tool Experience (LTEX) & Nominal & 1.00 \\
+		\hline Use of Software Tools (TOOL) & Nominal & 1.00 \\
+		\hline Multisite Development (SITE) & Nominal & 1.00 \\
+		\hline Required Development Schedule (SCED) & Nominal & 1.00 \\
+		\hline 
+	\end{tabular} 
+	\begin{tabular}{|L{11.43cm}|C{2cm}|}
+		\hline \textbf{Total product} & \textbf{0.656} \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{Effort Estimation Results}
+Now that we have calculated all the values for the the scale drivers and the cost drivers we can compute the result of the Effort Equation in terms of Person-Months required and also the duration of the project development by imposing that the number of people working on it is two.\\
+For the effort equation we have to calculate the value of the exponent \textbf{E} of the equation, with the following formula:
+\[
+E = B + 0.01 * \sum SF_{i} = B + 0.01 * 11.92 = 0.91 + 0.1192 = 1.0292
+\]
+where the value of \textbf{B} is 0.91 for COCOMO II 2000.0.\\
+\\
+Now that we have the value of E and the value of \textbf{EAF} (that is the product of the cost drivers), if we program the software in Java (for example) the estimated number of source lines of code is 5833 \footnote{we have estimated this value in \autoref{ProjectEstimation:ProjectSize}} (which corresponds to a value of KSLOC equal to 5.833), thus the result of the effort equation is:
+\[
+effort = 2.94 * EAF * (KSLOC)^E = 2.94 * 0.656 * (5.833)^{1.0292} = 11.84424\ PM
+\]
+\\
+Since we are are developing the project only in two people, we impose the number that could be estimated as $N = effort / duration$ equal to 2, so that we can estimate the duration of the development as:
+\[
+duration = effort / N = 11.84424 / 2 = 5.922 \approx 6\ months
+\]
 
 \end{document}
