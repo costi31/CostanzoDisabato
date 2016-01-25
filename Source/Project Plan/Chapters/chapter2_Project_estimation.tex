@@ -184,8 +184,6 @@ sizes. These five scale factors with their corresponding numerical values are re
 
 The scale factors and their values for our project are:
 
-% TODO: Magari posso andare più nel dettaglio di ogni singolo scale factor
-
 \begin{itemize}
 	\item \textbf{PREC - Precedentedness:}\\
 	Reflects the previous experience of the organisation with this type of project. Since we haven't realised before this kind of commercial, distributed and multi-platform system (accessible both via website and smartphone), the value of this scale factor is \textit{Low} (4.96).
@@ -200,7 +198,28 @@ The scale factors and their values for our project are:
 	Reflects how well the development team know each other and work together. In our case we know each other very well and we have also worked together before for another important project. For the development of myTaxiService we have worked together most of the time and other times we have split equally the work between us and worked independently at home, always communicating. Thus this value is \textit{Extra High} (0.00).
 	
 	\item \textbf{PMAT - Process Maturity:}\\
-	Reflects the process maturity of the organisation. TO BE CONTINUED
+	Reflects the process maturity of the organisation. We have calculated this value basing on the 18 Key Process Areas (KPAs) in the SEI Capability Maturity Model\footnote{Paulk et al. 1995}. We report only the assigned value for each KPA:
+	\begin{enumerate}
+		\item Requirements Management: Almost-Always
+		\item Software Project Planning: Almost-Always
+		\item Software Project Tracking and Oversight: Frequently
+		\item Software Subcontract Management: Does not apply
+		\item Software Quality Assurance (SQA): Frequently
+		\item Software Configuration Management (SCM): Frequently
+		\item Organization Process Focus: Does not apply
+		\item Organization Process Definition: Does not apply
+		\item Training Program: Does not apply
+		\item Integrated Software Management: Almost-Always
+		\item Software Product Engineering: Almost-Always
+		\item Intergroup Coordination: Almost-Always
+		\item Peer Reviews: Frequently
+		\item Quantitative Process Management: About Half
+		\item Software Quality Management: About Half
+		\item Defect Prevention: Rarely
+		\item Technology Change Management: Rarely
+		\item Process Change Management: About Half
+	\end{enumerate}
+	In the manual we can translate this classifications into a value between zero and five with a formula which we do not report. The given value is $3.4$, thus the value is high. 
 	\\
 \end{itemize}
 
@@ -212,11 +231,11 @@ The results are resumed below:
 		\hline FLEX - Development Flexibility & Very High & 1.01 \\
 		\hline RESL - Architecture/Risk Resolution & High & 2.83 \\
 		\hline TEAM - Team Cohesion & Extra High & 0.00 \\
-		\hline PMAT - Process Maturity & TODO & TODO \\
+		\hline PMAT - Process Maturity & High & 3.12 \\
 		\hline 
 	\end{tabular} 
 	\begin{tabular}{|L{10.43cm}|C{2cm}|}
-		\hline \textbf{Total} & 8.8 TO UPDATE \\
+		\hline \textbf{Total} & 11.92 \\
 		\hline
 	\end{tabular}
 \end{table}
