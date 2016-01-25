@@ -10,5 +10,19 @@
 \setmyfancystyle
 % ----------------
 
+In this chapter we are going to discuss about the risks associated with our project and for each of them we will provide a detailed analysis and some possible recovery actions.\\
+
+\section{Taxi Position Identification}
+The most critical component of the system is the queue management and the taxi position identification. Since these services are provided by external components (i.e., the GPS and the Google Maps API), we cannot fix eventual problems related to their functionalities' working.\\
+Supposing that these components are fully tested and we can guarantee the correct provided results in each relevant situation (for our application), the risk is still present.\\
+In fact, the GPS installed on each taxi has a reliability not equal to 1 (as each real component): when a fault occurs the system should be able to correctly identify the taxi and to allow the driver to continue his work. This problematic has been considered during Design phase: a driver can insert manually his position and continue to notify the system about his availability for a ride and his current area. Obviously, the case in which the taxi driver inserts a wrong address to make a joke is not considered because it is not realistic: each driver wants to work and to earn the commissions guaranteed by the rides.
+
+\section{Internet connection}
+The system works through Internet, so we have ensured (even if we did not write) that each person (both user and driver) who is using the system is connected to Internet with a stable connection, thus the connection cannot go down for a long time.\\
+In the application working this assumption is not always true and it assumes particular relevance when the involved person is a driver. Since he cannot communicate with the system, the latter one is no longer able to manage correctly his position and to assign him a ride. The problem may be related to several causes and most of them are not related to our application. For instance, some phone companies have a bad coverage on the city and the driver has a contract with those companies. This problem we suppose that is solved directly by the cab company which have equipped all its drivers with a work-phone having a connection provided by a good company.
+
+\section{Taxi accidents}
+The system we have designed has no way to detect the accidents. If the accident occurs during a ride, the driver has to notify the company by a call (about the gravity of the accidents, the passenger's health conditions, the assurance requested data and so on), but not the system which still considers the driver performing a ride.\\
+If the accident occurs during the transfer to the starting position of a ride, the driver also call the company to notify the event (providing the usual information). The company takes charge of the situation, hence it will call the passenger to inform it and (the administrators) will notify the system about the \textquotedblleft lost\textquotedblright\ driver and the ride which needs a new cab-man.
 
 \end{document}
