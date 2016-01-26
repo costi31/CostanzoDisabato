@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 JAN 2016 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 JAN 2016 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,41 +587,53 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
  [6
 
 ]
-Overfull \hbox (8.05042pt too wide) in paragraph at lines 79--87
+Overfull \hbox (3.77835pt too wide) in paragraph at lines 79--87
 [] 
  []
 
 [7]
-Overfull \hbox (8.05042pt too wide) in paragraph at lines 98--109
+Overfull \hbox (8.05042pt too wide) in paragraph at lines 99--111
 [] 
  []
 
 [8]
-Underfull \hbox (badness 1552) in paragraph at lines 136--136
+Underfull \hbox (badness 1552) in paragraph at lines 138--138
+[]|\T1/ppl/m/n/12 UFP to SLOC Con-
+ []
+
+[9]
+Underfull \hbox (badness 1552) in paragraph at lines 147--147
 []|\T1/ppl/m/n/12 UFP to SLOC Con-
  []
 
 
-Overfull \hbox (1.70605pt too wide) in paragraph at lines 148--149
+Overfull \hbox (11.90918pt too wide) in paragraph at lines 146--153
+[][]
+ []
+
+
+Overfull \hbox (1.70605pt too wide) in paragraph at lines 157--158
 \T1/ppl/m/n/12 II. Fol-low-ing this model we can cal-cu-late the re-quired ef-f
 ort mea-sured in Person-
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 154--157
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--166
 
  []
 
-[10]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 170.
+[10
 
-Overfull \hbox (10.37975pt too wide) in paragraph at lines 169--183
+]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 179.
+
+Overfull \hbox (10.37975pt too wide) in paragraph at lines 178--192
 [][] 
  []
 
 
-Overfull \hbox (8.04001pt too wide) in paragraph at lines 188--190
+Overfull \hbox (8.04001pt too wide) in paragraph at lines 197--199
 \T1/ppl/m/n/12 Reflects the pre-vi-ous ex-pe-ri-ence of the or-gan-i-sa-tion wi
 th this type of project.
  []
@@ -629,46 +641,46 @@ th this type of project.
 [11
 
 ] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--241
+Underfull \hbox (badness 10000) in paragraph at lines 237--250
 [][]
  []
 
 
-Overfull \hbox (6.34866pt too wide) in paragraph at lines 245--247
+Overfull \hbox (6.34866pt too wide) in paragraph at lines 254--256
 \T1/ppl/m/n/12 ef-fort mul-ti-pli-ers used in CO-COMO II model to ad-just the n
 om-i-nal ef-fort, Person-
  []
 
 [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 302--306
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
 [16]
-Overfull \hbox (0.92467pt too wide) in paragraph at lines 314--318
+Overfull \hbox (0.92467pt too wide) in paragraph at lines 323--327
 \T1/ppl/m/n/12 age of sched-ule stretch-out or ac-cel-er-a-tion with re-spect t
 o a nom-i-nal sched-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--318
+Underfull \hbox (badness 10000) in paragraph at lines 323--327
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 325--350
+Underfull \hbox (badness 10000) in paragraph at lines 334--359
 [][]
  []
 
 [18
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 357--361
+Underfull \hbox (badness 10000) in paragraph at lines 366--370
 
  []
 
@@ -887,35 +899,38 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6DE738BA43825D2C2EAE240FB54D5B2D;1708.
+(rerunfilecheck)             Checksum: 25035B60C4FFBFB5B45533C1EDDC75AE;1708.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
  ) 
 Here is how much of TeX's memory you used:
- 9194 strings out of 493089
- 137893 string characters out of 6134841
+ 9195 strings out of 493089
+ 137905 string characters out of 6134841
  346938 words of memory out of 5000000
  12400 multiletter control sequences out of 15000+600000
  41963 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,43p,817b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/pal
-atino/uplri8a.pfb>
-Output written on main.pdf (29 pages, 373439 bytes).
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palat
+ino/uplri8a.pfb>
+Output written on main.pdf (29 pages, 373984 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
- 417 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 419 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
  229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

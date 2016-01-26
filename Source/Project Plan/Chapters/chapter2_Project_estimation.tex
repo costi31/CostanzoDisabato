@@ -69,42 +69,44 @@ In the table the analysis is summarize:
 \subsection{External Logic Files}
 The system acquires data from te GPS interface. A GPS position is essentially a tuple of type Position, described in our database. Hence, we have a low complexity type and 5 FP.
 
-\subsection{External Inputs}
-The possible interactions between the users and the system, defined in the RASD, are now quickly described in terms of complexity:
-\begin{itemize}
-	\item Login/Logout: these operations are simple due to one entity only is involved, so the complexity is low;
-	\item Start Waiting Time/End of a ride: these operation requires to interact with three types of files (Position, Area and Driver Waiting) with one element per type, thus the complexity is low;
-	\item Check the Reservations: this is a group of three related operations (shows the alerts and gives the possibilities to modify or to cancel a ride) that involve one type and potentially more than 16 elements, so the complexity is average;
-\end{itemize}
-In the following table we have summarized the results:\\[0.5cm]
-\begin{tabular}{p{7cm}@{\hspace{1.5cm}}p{5cm}r}
-	\hline EI & Complexity & FP \\
-	\hline Login/Logout & Low & 2x3 \\
-	Start Waiting Time / End of a Ride & Low & 2x3 \\
-	Check the Reservations & Average & 3x4 \\
-	\hline Total & & 24
-\end{tabular}
-
 \subsection{External Inquiries}
 The system allows the user to interact with it through the following operations:
 \begin{itemize}
-	\item Registration: this operation is performed only by simple user (not a driver) and involves one data type, the one related to the new user. Its complexity is low;
-	\item Profile Management: this operation allows the user to modify a little personal data, so the complexity is low;
-	\item Work shift Management: this operation requires to interact to 2 entities (driver and work shift) and can involve more than 20 elements to perform the validity checks. Hence the complexity is high;
-	\item Book a ride (both future or zerotime): these operations needs many interactions between the system and the user, for instance to show the detected position or to analyse the inserted time/address;
-	\item Ride Allocation: we also insert this function because the system has to interact in a simple way with the taxi driver. Since many and many taxi drivers or queues may be involved before one is available, the complexity is high. Note that the notifications of the operations are not reported here, but in the External Input section;
-	\item Taxi Driver Ride Request: this is the operation used to ask a rider the availability for a ride, the complexity is low.
+	\item View the Reservations: this operation involves one type and potentially more than 16 elements, so the complexity is average;
+	\item Ride Allocation: we also insert this function because the system has to interact in a simple way with the taxi driver. Since many and many taxi drivers or queues may be involved before one is available, the complexity is high. Note that the notifications of the operations are not reported here, but in the External Input/Output section;
+	\item Users Information: this operation allows the system administrator to show the data related to the users registered to the service. The complexity is average since the number of users is greater than 16. 
 \end{itemize}
 In the following table we have summarize the results:\\[0.5cm]
 \begin{tabular}{p{7cm}@{\hspace{1.5cm}}p{5cm}r}
 	\hline EQ & Complexity & FP \\
-	\hline Registration & Low &  3\\
-	Profile Management & Low & 3\\
-	Workshift Management & High & 6\\
-	Book a ride & High & 2x6\\
+	\hline View the Reservations & Average & 4\\
 	Ride Allocation & High & 6 \\
-	Taxi Driver Ride Request & Low & 3 \\
-	\hline Total & & 33
+	Users Information & Average & 4 \\
+	\hline Total & & 14
+\end{tabular}
+
+\subsection{External Inputs}
+The possible interactions between the users and the system, defined in the RASD, are now quickly described in terms of complexity:
+\begin{itemize}
+	\item Registration/ Profile Management: this operation is performed only by simple user (not a driver) and involves one data type, the one related to the new user. Its complexity is low;
+	\item Login/Logout: these operations are simple due to one entity only is involved, so the complexity is low;
+	\item Start Waiting Time/End of a ride: these operation requires to interact with three types of files (Position, Area and Driver Waiting) with one element per type, thus the complexity is low;
+	\item Work shift Management: this operation requires to interact to 2 entities (driver and work shift) and can involve more than 20 elements to perform the validity checks. Hence the complexity is high;
+	\item Book a ride (both future or zerotime): these operations needs many interactions between the system and the user, for instance to show the detected position or to analyse the inserted time/address;
+	\item Taxi Driver Ride Request: this is the operation used to ask a rider the availability for a ride, the complexity is low;
+	\item Reserved Ride Management: these two operations allow the user to modify or cancel a future ride. The complexity is average since the number of rides may be greater than 20.
+\end{itemize}
+In the following table we have summarized the results:\\[0.5cm]
+\begin{tabular}{p{7cm}@{\hspace{1.5cm}}p{5cm}r}
+	\hline EI & Complexity & FP \\
+	\hline Registration/Profile Management & Low &  2x3\\
+	Login/Logout & Low & 2x3 \\
+	Start Waiting Time / End of a Ride & Low & 2x3 \\
+	Work shift Management & High & 6\\
+	Book a ride & High & 2x6\\
+	Taxi Driver Ride Request & Low & 3\\
+	Check the Reservations & Average & 3x4 \\
+	\hline Total & & 51
 \end{tabular}
 
 \subsection{External Outputs}
@@ -125,20 +127,27 @@ The Function Point found in the previous sections are reported in the following 
 	\hline Function Type & Value \\
 	\hline Internal Logic Files (ILF) & 31\\
 			   External Logic Files (ELF) & 5\\
-			   External Inputs (EI) & 24\\
-			   External Inquiries (EQ) & 33\\
+			   External Inputs (EI) & 51\\
+			   External Inquiries (EQ) & 14\\
 			   External Outputs (EO) & 18\\
-	\hline Total & 111\\[0.5cm]
+	\hline Total & 119\\[0.5cm]
 \end{tabular}
 	
 Since our project has no a specific programming language to be used, in the following table we report the project size estimations both for the C++ and for the Java. In addition we report a few interesting measure with C, Assembler and Machine Code:\\[0.2cm]
 \begin{tabular}{p{5.5cm}@{\hspace{1cm}} p{4cm}@{\hspace{1cm}} r}
 	\hline Programming Language & UFP to SLOC Conversion Ratios\footnotemark & Lines of Code \\
-	\hline Java & \centering 53 & 5833\\
-			   C++ & \centering 55 & 6105\\
-	\hline C & \centering 128 & 14208\\
-			   Assembly - Basic & \centering 320 & 35520\\
-			   Machine Code & \centering 640 & 71040 \\ \hline
+	\hline Java & \centering 53 & 6307\\
+			   C++ & \centering 55 & 6545\\
+	\hline
+\end{tabular}
+
+\clearpage
+
+\begin{tabular}{p{5.5cm}@{\hspace{1cm}} p{4cm}@{\hspace{1cm}} r}
+	\hline Programming Language & UFP to SLOC Conversion Ratios\footnotemark & Lines of Code \\
+	\hline C & \centering 128 & 15232\\
+	Assembly - Basic & \centering 320 & 38080\\
+	Machine Code & \centering 640 & 76160 \\ \hline
 \end{tabular}
 \footnotetext{The values are still taken from the COCOMO II reference manual.}
 
@@ -256,7 +265,7 @@ development. We will describe each of the multipliers and compute the correspond
 	This cost driver attempts to capture the effect large test data requirements have on
 	product development. The rating is determined by calculating D/P, the ratio of bytes in the
 	testing database to SLOC (Source Lines Of Code) in the program.\\
-	Since we desire to have a \textit{Nominal} value (1.00) in this section (the database is one of the most important parts of our system) and we have a dimension in the order of SLOC near 6000\footnote{See the \autoref{ProjectEstimation:ProjectSize} to have two possible precise estimations for an OO programming language.}, we need a database dimension in the order of 6000*25 ~ 150 KB, where 25 is a \textit{Nominal} rate for the division D/SLOC (D = Database dimension).
+	Since we desire to have a \textit{Nominal} value (1.00) in this section (the database is one of the most important parts of our system) and we have a dimension in the order of SLOC near 6400\footnote{See the \autoref{ProjectEstimation:ProjectSize} to have two possible precise estimations for an OO programming language.}, we need a database dimension in the order of 6400*25 ~ 160 KB, where 25 is a \textit{Nominal} rate for the division D/SLOC (D = Database dimension).
 	
 	\item \textbf{Product Complexity (CPLX)}:\\
 	Complexity is divided into five areas: control operations, computational operations,
@@ -357,14 +366,14 @@ E = B + 0.01 * \sum SF_{i} = B + 0.01 * 11.92 = 0.91 + 0.1192 = 1.0292
 \]
 where the value of \textbf{B} is 0.91 for COCOMO II 2000.0.\\
 \\
-Now that we have the value of E and the value of \textbf{EAF} (that is the product of the cost drivers), if we program the software in Java (for example) the estimated number of source lines of code is 5833 \footnote{we have estimated this value in \autoref{ProjectEstimation:ProjectSize}} (which corresponds to a value of KSLOC equal to 5.833), thus the result of the effort equation is:
+Now that we have the value of E and the value of \textbf{EAF} (that is the product of the cost drivers), if we program the software in Java (for example) the estimated number of source lines of code is 6307 \footnote{we have estimated this value in \autoref{ProjectEstimation:ProjectSize}} (which corresponds to a value of KSLOC equal to 6.307), thus the result of the effort equation is:
 \[
-effort = 2.94 * EAF * (KSLOC)^E = 2.94 * 0.656 * (5.833)^{1.0292} = 11.84424\ PM
+effort = 2.94 * EAF * (KSLOC)^E = 2.94 * 0.656 * (6.307)^{1.0292} = 12.83597\ PM
 \]
 \\
 Since we are are developing the project only in two people, we impose the number that could be estimated as $N = effort / duration$ equal to 2, so that we can estimate the duration of the development as:
 \[
-duration = effort / N = 11.84424 / 2 = 5.922 \approx 6\ months
+duration = effort / N = 12.83597 / 2 = 6.4180 \approx 6.5\ months
 \]
 
 \end{document}

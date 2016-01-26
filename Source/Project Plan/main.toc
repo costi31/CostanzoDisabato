@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {2.1}Project Size (Function Points)}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Internal Logic Files}{6}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}External Logic Files}{6}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}External Inputs}{7}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}External Inquiries}{7}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.3}External Inquiries}{7}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}External Inputs}{7}{subsection.2.1.4}
 \contentsline {subsection}{\numberline {2.1.5}External Outputs}{8}{subsection.2.1.5}
 \contentsline {subsection}{\numberline {2.1.6}Final Results}{9}{subsection.2.1.6}
 \contentsline {section}{\numberline {2.2}Effort Estimation (COCOMO II)}{10}{section.2.2}
