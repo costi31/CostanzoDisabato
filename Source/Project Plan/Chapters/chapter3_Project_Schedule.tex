@@ -11,14 +11,15 @@
 % ----------------
 
 This chapter is dedicated to the project schedule. For each part of the project we report in a table the deadline, (not necessarily) a probably initial date, the description and the division among the team members (who are the authors of this document), identified by the following characters: \textquoteleft \textbf{L}\textquoteright\ for Luca Luciano Costanzo and \textquoteleft \textbf{S}\textquoteright\ for Simone Disabato.\\
-To clarify the deadlines, we suppose that we have at our disposal about 20-25 hours per week to work at the project development\footnote{Note that the value 25 hours per week is the same used in the \autoref{ProjectEstimation:EffortEstimation} to calculate the required person-month.}.\\
+To clarify the deadlines, we suppose that we have at our disposal about 20-25 hours per week to work at the project development and the COCOMO II analysis establishes a total required time of six month (see the dedicated chapter for further information).\\
 
 \begin{tabular}{p{2.5cm}p{2.5cm}p{1.5cm}@{\hspace{1cm}}p{6cm}}
 	\hline Initial Date & Deadline & Worker(s) & Description \\
 	\hline October 2015 & 6th November 2015 & \centering L , S & Requirements Analysis and Specification Document (RASD) and Project Planning\footnotemark. \\
 	\hline 7th November 2015 & 4th December 2015 & \centering L, S & Design Document (DD).\\
 	\hline 4th December 2015 & 6th January 2016 & \centering L , S & Working on other assignments.\\
-	\hline 6th January 2016 & 18th January 2016 & \centering L , S & Integration Test Plan Document (ITPD).\\ \hline
+	\hline 6th January 2016 & 18th January 2016 & \centering L , S & Integration Test Plan Document (ITPD).\\ 
+	\hline
 \end{tabular}
 \footnotetext{In a real project the Project Plan should be written in parallel with the RASD.}
 
@@ -27,14 +28,28 @@ To clarify the deadlines, we suppose that we have at our disposal about 20-25 ho
 \begin{tabular}{p{2.5cm}p{2.5cm}p{1.5cm}@{\hspace{1cm}}p{6cm}}
 	\hline Initial Date & Deadline & Worker(s) &Description \\
 	\hline  & 3rd March 2016 & \centering L , S & Politecnico Exams\\
-	\hline 4th March 2016 & to be defined (value A)& \centering L & Development of the Database structure and of the DataBase Management Service.\\
-	\hline 4th March 2016 & to be defined (value B < A) & \centering S & Development of the part of the System controller concerning the users (creation and identification)\\
-	\hline B & to be defined (value C ~ A?) & \centering S & Development of the System Security Manager.\\
-	\hline C = A & D & \centering L , S & Unit Tests of the part developed by the other team member. Application of the Integration Tests available on the developed components. Correction of code errors.\\
-	\hline D & E & \centering L , S & Development of the Client and User Handler, with Unit Test in parallel.\\
+	\hline 4th March 2016 & 1st April 2016 & \centering L & Development of the Database structure and of the DataBase Management Service.\\
+	\hline 4th March 2016 & 24th March 2016 & \centering S & Development of the part of the System controller concerning the users (creation and identification)\\
+	\hline 24th March 2016 & 8th April 2016 & \centering S & Development of the System Security Manager.\\
+	\hline 8th April 2016 & 16th April 2016 & \centering L , S & Unit Tests of the part developed by the other team member. Application of the Integration Tests available on the developed components. Correction of code errors.\\
+	\hline 16th April 2016 & 12th May 2016 & \centering L , S & Development of the Client and User Handler, with Unit Test in parallel.\\
+	\hline 12th May 2016 & 25th May 2016 & \centering L , S & Development of the components related to the rides. The unit tests of the ride allocator will be performed in parallel.\\
+	\hline 25th May 2016 & 1st June 2016 & \centering L , S & Application of the unit tests related to the new developed parts.\\
+	\hline 1st June 2016 & 20th June 2016 & \centering L , S & Development of the Dispatcher, with a major focus on the unit tests, since it is the key component of the system.\\
 	\hline
-	% I valori di A B C D E vanno definiti in base al calcolo di COCOMO II
-	% To be continued 
 \end{tabular}
+
+\clearpage
+
+\begin{tabular}{p{2.5cm}p{2.5cm}p{1.5cm}@{\hspace{1cm}}p{6cm}}
+	\hline Initial Date & Deadline & Worker(s) &Description \\
+	\hline 20th June 2016 & 30th June 2016 & \centering L , S & Final phase of the Integration Test Plan and Performance Tests. \\
+	\hline
+\end{tabular}
+
+\section{Analysis of the proposed schedule}
+In the \autoref{ProjectEstimation:EffortEstimation} we have estimated the required time for the whole project and the result is about six months.\\ 
+We have considered this time split in two parts: two months for the documents and four for the development. Nevertheless, the real time to write the documents is about 2 months and half, for academic reasons.\\
+At the date of 1st July 2016 we have the estimated final deadline that we want to respect. Note that at that date only the system part of \textit{myTaxiService} and the website version\footnote{This front-end will be developed in parallel with the Client and User Handler.} will be developed. The mobile applications front-end will not be implemented within the end of June. Since the development of those applications do not require difficult algorithms or special data structures (they have only the role to show the information/notifications and notify to the server the requests) we can develop them in about three weeks in July\footnote{Android and IOS versions only.}. Hence, the final deadline of the project becomes the 21st July 2016.
 
 \end{document}
